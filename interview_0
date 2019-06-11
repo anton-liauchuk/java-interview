@@ -1,0 +1,9 @@
+dbunit, db in memoty for tests
+jpa - запрос с фильтрацией, что останется в entity?
+@transactional методы
+аутентификация в микросервисах
+spring data jpa/hibernate
+sql/ join vs subselect / transactions in jdbc
+get is it transaction
+retry implemented tools
+nosql mongodb

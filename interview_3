@@ -8,10 +8,10 @@
 wait/notify для чего?
 wait где может быть использован?
 что такое synchronized? как использовать?
-один метод synchronized, второй нет. Работа есть с объектом. Есть ли проблемы?
-изменения в synchronized для записи? а для чтения не synchronized? будут ли проблемы?
-violotile для чего используется?
-violotile как связано happen before?
+* один метод synchronized, второй нет. Работа есть с объектом. Есть ли проблемы?
+* изменения в synchronized для записи? а для чтения не synchronized? будут ли проблемы?
+volatile для чего используется?
+volatile как связано с happens before?
 интерфейс LOck?
 concurrent  коллекции?
 copyonwrite arraylist?
