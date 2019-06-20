@@ -1,5 +1,9 @@
-способы коммуникации между микросервисами
-message queue - коммуникации между микросервисами
+способы коммуникации между микросервисами?
+https://dzone.com/articles/communication-between-microservices
+
+что можете расказать о message queue как о возможном способе коммуникации между микросервисами?
+https://dev.to/matteojoliveau/microservices-communications-why-you-should-switch-to-message-queues--48ia
+
 exchange в message queue
 принципиальная разница между soap и rest
 что такое rest-архитектура? что должно выполняться?
@@ -34,7 +38,7 @@ jquery объект по id? if кусок кода?
 чтобы не зашел внутрь jquery length?
 js однопоточный или многопоточный?
 closure в js что это?
-2 метода с один названием с раазным кол-м параметров ? это норм?
+2 метода с один названием с разным кол-м параметров ? это норм?
 как работает redux?
 что такое reducer?
 можно state менять в компоненте?
