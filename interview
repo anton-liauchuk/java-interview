@@ -5,18 +5,36 @@ https://dzone.com/articles/communication-between-microservices
 https://dev.to/matteojoliveau/microservices-communications-why-you-should-switch-to-message-queues--48ia
 
 exchange в message queue
+Exchange: a queue aggregator that abstract away message queues and routes messages to the appropriate queue based on some predefined logic.
+
 принципиальная разница между soap и rest
+https://dzone.com/articles/difference-between-rest-and-soap-api
+
 что такое rest-архитектура? что должно выполняться?
+https://stackoverflow.com/questions/671118/what-exactly-is-restful-programming
+https://restfulapi.net/rest-architectural-constraints/
+
 есть state в rest архитектуре
+https://restfulapi.net/statelessness/
+
 query params в rest архитектуре
+https://stackoverflow.com/questions/4024271/rest-api-best-practices-where-to-put-parameters
+
 get vs post чем отличаются?
 почему везде не использовать post?
 почему get , в чем концепт? (кэширование)
 get кэшируется и быстрее?
+https://stackoverflow.com/questions/2080863/what-is-the-difference-between-a-http-get-and-http-post-and-why-is-http-post-wea
+
 архитектурные паттерны в целом?
+https://dzone.com/articles/software-architecture-the-5-patterns-you-need-to-k
+
 single responsibility в чем суть?
+https://javarush.ru/groups/posts/osnovnye-principy-dizajna-klassov-solid-v-java
+
 почему только одну обязанность?
 класс с кучей статических внутренних классов? в чем подвох? с точки зрения безопасности?
+
 что в спринге реализовано для DI? какой паттерн используется?
 что такое бин в спринге?
 как бин попадает в контейнер?
