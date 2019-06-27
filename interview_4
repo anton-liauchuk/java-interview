@@ -1,4 +1,5 @@
 расскажи про последний проект
+
 транзакционность в микросервисах
 https://www.baeldung.com/transactions-across-microservices
 
@@ -10,10 +11,16 @@ https://blog.overops.com/5-ways-to-not-f-up-your-microservices-in-production/
 в качестве rest-клиента что используется?
 какую java используете?
 какие нововведения в java 8, 9, 10, 11?
+
 в чем концептуальное отличие stream api от collection?
+https://stackoverflow.com/questions/39432699/what-is-the-difference-between-streams-and-collections-in-java-8
+
 реализовать stream api (с функциями filter, map), lambda можно использовать
-что такое vilotile?
-как мы создаем копии объектов вне violitile?
+
+что такое volatile?
+https://www.baeldung.com/java-volatile
+
+как мы создаем копии объектов вне volatile?
 где хранится ссылка на объект?
 типы памяти в Java?
 кроме heap что еще есть?
@@ -23,8 +30,14 @@ https://blog.overops.com/5-ways-to-not-f-up-your-microservices-in-production/
 был опыт troubleshooting?
 пользовались profiler?
 что такое stop the world?
+
 чем отличается int, Integer, AtomicInteger?
+https://stackoverflow.com/questions/8660691/what-is-the-difference-between-integer-and-int-in-java
+https://stackoverflow.com/questions/38846976/what-is-the-difference-between-atomic-integer-and-normal-immutable-integer-class
+
 i++ для Integer, что будет с памятью?
+https://stackoverflow.com/questions/13280134/why-does-post-increment-work-on-wrapper-classes
+
 что такое servlet api?
 
 в чем разница между параметрами и аттрибутами?
@@ -46,14 +59,17 @@ c nosql был опыт?
 как конфигурили спринг? (xml, java configs)
 что такое lookup method?
 использовали транзакции в спринге?
-испольщовали declaration transaction в спринге?
+использовали declarative transaction в спринге?
 в спринге что создает прокси?
 в чем разница beanFactory/factoryBean?
 @LoggableAutowired - своя аннотация, как это сделать?
 spring boot использовали?
 в чем отличие от спринга?
 как добавить свои конфигурации?
+
 где описание конфигураций в meta-inf?
+https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-developing-auto-configuration.html
+
 есть опыт в spring cloud?
 
 attached/detached entity что это значит?
@@ -73,7 +89,10 @@ https://stackoverflow.com/questions/3220336/whats-the-use-of-session-flush-in-hi
 https://getinstance.info/articles/javascript/variables-scope-in-javascript/
 
 запаблишить переменные из функции js?
+
 зачем нужен bind? а есть call & apply?
+https://medium.com/@jhawleypeters/javascript-call-vs-apply-vs-bind-61447bc5e989
+
 потеря контекста в js?
 с docker работали?
 по tcp/ip знаете что-нибудь?

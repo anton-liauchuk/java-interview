@@ -7,3 +7,23 @@ sql/ join vs subselect / transactions in jdbc
 get is it transaction
 retry implemented tools
 nosql mongodb
+одни данные в транзакции, а другие на уровне БД
+
+Requirements:
+Essential Skills
+•	4+ years' experience using Java/J2EE based technologies.
+•	Solid knowledge of object-oriented development.
+•	Working knowledge of Spring.
+•	Experience Hibernate/JPA, web frameworks, SQL.
+•	Web development experience (JavaScript, HTML, CSS and/or Angular is a bonus).
+•	Experience with source control ideally Git and GitHub.
+Desirable Skills
+•	Amazon Web Services.
+•	TDD.
+•	Ability to design RESTful APIs.
+•	Exposure to working in an agile (scrum) environment.
+
+
+Технологии: Java, Hibernate, Spring Data, Spring MVC, Spring Batch, Spring Boot, Spring Cloud, Guava, Backbone, Angular, React, Redux, JQuery, Karma, JSLint, MSSQL, Maven, Git/GitHub, Tomcat, Jetty, Intellij IDEA, Solr, Zookeeper, Redis, Liquibase, Flyway, DBUnit, Mockito, Rest Assured, Wiremock, JMock, Selenium, SoapUI, JMeter, Snowplow, Swagger, Velocity, iText, Docker, Jenkins 2, Nexus, Groovy, Splunk, Ansible, AWS, Terraform
+
+AWS (CodeDeploy, S3, Route53, CloudWatch, EC2, StepFuntions, Fargate, EC2 Container Service, Lambda, CodePipeline, EFS, RDS, DynamoDB, ElastiCache, Redshift, VPC, CloudFront, IAM, Certificate Manager, API Gateway, SQS, SNS, SES, CloudFormation, CloudTrail, WAF, Data Pipeline, ALB)
