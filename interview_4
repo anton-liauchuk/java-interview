@@ -1,7 +1,11 @@
 расскажи про последний проект
 транзакционность в микросервисах
+https://www.baeldung.com/transactions-across-microservices
+
 кроме транзакций, в микросервисах какие еще могут быть проблемы?
-как решается проблема с коммуникацие, когда какой-либо сервис не доступен?
+https://blog.overops.com/5-ways-to-not-f-up-your-microservices-in-production/
+
+как решается проблема с коммуникацией, когда какой-либо сервис не доступен?
 а если rabbitMQ отвалится?
 в качестве rest-клиента что используется?
 какую java используете?
@@ -21,9 +25,14 @@
 что такое stop the world?
 чем отличается int, Integer, AtomicInteger?
 i++ для Integer, что будет с памятью?
-что такое servler api?
+что такое servlet api?
+
 в чем разница между параметрами и аттрибутами?
+https://stackoverflow.com/questions/5243754/difference-between-getattribute-and-getparameter
+
 жизненный цикл сервлета?
+https://www.geeksforgeeks.org/life-cycle-of-a-servlet/
+
 а можно ли какой-то сервлет быстрее создать, чем другие?
 что такое servlet mapping?
 с бд работали?
@@ -46,15 +55,23 @@ spring boot использовали?
 как добавить свои конфигурации?
 где описание конфигураций в meta-inf?
 есть опыт в spring cloud?
+
 attached/detached entity что это значит?
+https://stackoverflow.com/questions/2573739/what-are-detached-persistent-and-transient-objects-in-hibernate
+
 а зачем нужен flush?
+https://stackoverflow.com/questions/3220336/whats-the-use-of-session-flush-in-hibernate
+
 в spring attached/dettached как называются?
 уровни кэша в hibernate?
 где находится кэш первого уровня?
 как конкретно использовали solr?
 как http протокол работает?
 а body в http?
+
 области видимости в js есть?
+https://getinstance.info/articles/javascript/variables-scope-in-javascript/
+
 запаблишить переменные из функции js?
 зачем нужен bind? а есть call & apply?
 потеря контекста в js?
