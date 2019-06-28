@@ -5,16 +5,19 @@
 транзакционность в микросервисах
 https://www.baeldung.com/transactions-across-microservices
 
+опыт работы с распределенными транзакциями?
+
+несколько микросервисов, распр транзакция?
+
 что такое транзакция?
 что должно выполняться? для чего нужны?
+https://proselyte.net/tutorials/sql/sql-transactions/
+
 как бд обеспечивает согласованность данных?
 optimistic/pessimistic locking в чем разница?
 Eventual consistency что такое?
 использовали транзакции в спринге?
 использовали declarative transaction в спринге?
-в спринге что создает прокси?
-опыт работы с распределенными транзакциями?
-несколько микросервисов, распр транзакция?
 
 @transactional методы
 Service {
