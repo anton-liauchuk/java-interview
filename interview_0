@@ -1,10 +1,29 @@
 dbunit, db in memoty for tests
 jpa - запрос с фильтрацией, что останется в entity?
-@transactional методы
+
+[transaction] @transactional методы
+Service {
+
+@Transactional
+void a(){
+//
+}
+
+void b(){
+...
+a();
+...
+}
+
+}
+
+s.a();
+s.b();
+
 аутентификация в микросервисах
 spring data jpa/hibernate
 sql/ join vs subselect / transactions in jdbc
-get is it transaction
+[transaction] get is it transaction
 retry implemented tools
 nosql mongodb
 одни данные в транзакции, а другие на уровне БД
