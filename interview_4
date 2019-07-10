@@ -30,6 +30,8 @@ https://blog.risingstack.com/designing-microservices-architecture-for-failure/
 https://dzone.com/articles/circuit-breaker-pattern
 
 а если rabbitMQ отвалится?
+https://dzone.com/articles/rabbitmq-in-microservices
+
 в качестве rest-клиента что используется?
 какую java используете?
 какие нововведения в java 8, 9, 10, 11?
