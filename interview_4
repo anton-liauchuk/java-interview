@@ -1,12 +1,34 @@
 расскажи про последний проект
 
 [transaction] транзакционность в микросервисах
+Options:
+1. Distributed transaction
+A distributed transaction is a very complex process with a lot of moving parts that can fail. Also, if these parts run on different machines or even in different data centers, the process of committing a transaction could become very long and unreliable.
+2. Two-Phase Commit Protocol
+The problem with 2PC is that it is quite slow compared to the time for operation of a single microservice.
+Coordinating the transaction between microservices, even if they are on the same network, can really slow the system down.
+3. Eventual Consistency and Compensation
+By far, one of the most feasible models of handling consistency across microservices is eventual consistency.
+One way to solve it would be with a message-driven approach including compensation.
+The messaging platform could ensure that the messages sent by the microservices are persisted. Then they would be delivered at a later time if the receiver weren’t currently available
 https://www.baeldung.com/transactions-across-microservices
+https://habr.com/ru/company/nixsolutions/blog/321686/
+https://habr.com/ru/company/nixsolutions/blog/322214/
 
 кроме транзакций, в микросервисах какие еще могут быть проблемы?
+1. As if monitoring a monolith wasn’t hard enough
+2. Logging is distributed between services
+3. An issue that’s caused by one service, can cause trouble elsewhere
+4. Finding the root cause of problems
+5. Version management and cyclic dependencies between services
 https://blog.overops.com/5-ways-to-not-f-up-your-microservices-in-production/
 
 как решается проблема с коммуникацией, когда какой-либо сервис не доступен?
+1. The circuit breaker pattern is the solution to this problem. The basic idea behind the circuit breaker is very simple. You wrap a protected function call in a circuit breaker object, which monitors for failures. Once the failures reach a certain threshold, the circuit breaker trips, and all further calls to the circuit breaker return with an error or with some alternative service or default message, without the protected call being made at all. This will make sure system is responsive and threads are not waiting for an unresponsive call.
+2. Retry Logic
+https://blog.risingstack.com/designing-microservices-architecture-for-failure/
+https://dzone.com/articles/circuit-breaker-pattern
+
 а если rabbitMQ отвалится?
 в качестве rest-клиента что используется?
 какую java используете?
