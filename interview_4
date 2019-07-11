@@ -33,27 +33,53 @@ https://dzone.com/articles/circuit-breaker-pattern
 https://dzone.com/articles/rabbitmq-in-microservices
 
 в качестве rest-клиента что используется?
-какую java используете?
+1. Netflix provides Feign as an abstraction over REST-based calls, by which microservices can communicate with each other, but developers don't have to bother about REST internal details.
+https://dzone.com/articles/microservices-communication-feign-as-rest-client
+
 какие нововведения в java 8, 9, 10, 11?
 
 в чем концептуальное отличие stream api от collection?
+Streams differ from collections in several ways:
+No storage. A stream is not a data structure that stores elements; instead, it conveys elements from a source such as a data structure, an array, a generator function, or an I/O channel, through a pipeline of computational operations.
+Functional in nature. An operation on a stream produces a result, but does not modify its source. For example, filtering a Stream obtained from a collection produces a new Stream without the filtered elements, rather than removing elements from the source collection.
+Laziness-seeking. Many stream operations, such as filtering, mapping, or duplicate removal, can be implemented lazily, exposing opportunities for optimization. For example, "find the first  String with three consecutive vowels" need not examine all the input strings. Stream operations are divided into intermediate (Stream-producing) operations and terminal (value- or side-effect-producing) operations. Intermediate operations are always lazy.
+Possibly unbounded. While collections have a finite size, streams need not. Short-circuiting operations such as limit(n) or findFirst() can allow computations on infinite streams to complete in finite time.
+Consumable. The elements of a stream are only visited once during the life of a stream. Like an Iterator, a new stream must be generated to revisit the same elements of the source.
 https://stackoverflow.com/questions/39432699/what-is-the-difference-between-streams-and-collections-in-java-8
 
 реализовать stream api (с функциями filter, map), lambda можно использовать
 
 что такое volatile?
+In Java, each thread has a separate memory space known as working memory; this holds the values of different variables used for performing operations. After performing an operation, thread copies the updated value of the variable to the main memory, and from there other threads can read the latest value.
+Simply put, the volatile keyword marks a variable to always go to main memory, for both reads and writes, in the case of multiple threads accessing it.
 https://www.baeldung.com/java-volatile
 
 как мы создаем копии объектов вне volatile?
+stack
+
 где хранится ссылка на объект?
+stack
+https://stackoverflow.com/questions/13624462/where-does-class-object-reference-variable-get-stored-in-java-in-heap-or-stac
+
 типы памяти в Java?
-кроме heap что еще есть?
-как вызываются методы? как передаются параметры?
-куда передаются параметры? как это делается?
+Cтек – участок памяти, тесно связанный с потоками. У каждого потока есть свой стек, которые хранит локальные переменные, параметры методов и стек вызовов. Переменная, хранящаяся в стеке одного потока, не видна для другого.
+Куча – общий участок памяти, который делится между всеми потоками. Объекты, неважно локальные или любого другого уровня, создаются в куче. Для улучшения производительности, поток обычно кэширует значения из кучи в свой стек, в этом случае для того, чтобы указать потоку, что переменную следует читать из кучи используется ключевое слово volatile.
+https://github.com/enhorse/java-interview/blob/master/concurrency.md#%D0%A0%D0%B0%D1%81%D1%81%D0%BA%D0%B0%D0%B6%D0%B8%D1%82%D0%B5-%D0%BE-%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8-%D0%BF%D0%B0%D0%BC%D1%8F%D1%82%D0%B8-java
+
 что такое java agent?
+Сам агент это отдельное приложение которое предоставляет доступ к механизму манипуляции байт-кодом (java.lang.instrument) в runtime.
+https://habr.com/ru/post/230239/
+https://www.javacodegeeks.com/2015/09/java-agents.html
+
 был опыт troubleshooting?
+
+
 пользовались profiler?
+A Java Profiler is a tool that monitors Java bytecode constructs and operations at the JVM level. These code constructs and operations include object creation, iterative executions (including recursive calls), method executions, thread executions, and garbage collections.
+https://www.baeldung.com/java-profilers
+
 что такое stop the world?
+garbage collector
 
 чем отличается int, Integer, AtomicInteger?
 https://stackoverflow.com/questions/8660691/what-is-the-difference-between-integer-and-int-in-java
