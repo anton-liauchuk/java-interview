@@ -82,24 +82,39 @@ https://www.baeldung.com/java-profilers
 garbage collector
 
 чем отличается int, Integer, AtomicInteger?
+int is a primitive type. Variables of type int store the actual binary value for the integer you want to represent. int.parseInt("1") doesn't make sense because int is not a class and therefore doesn't have any methods.
+Integer is a class, no different from any other in the Java language. Variables of type Integer store references to Integer objects, just as with any other reference (object) type. Integer.parseInt("1") is a call to the static method parseInt from class Integer (note that this method actually returns an int and not an Integer).
+To be more specific, Integer is a class with a single field of type int. This class is used where you need an int to be treated like any other object, such as in generic types or situations where you need nullability.
+
+AtomicInteger is used in multithreaded environments when you need to make sure that only one thread can update an int variable. The advantage is that no external synchronization is requried since the operations which modify it's value are executed in a thread-safe way.
 https://stackoverflow.com/questions/8660691/what-is-the-difference-between-integer-and-int-in-java
 https://stackoverflow.com/questions/38846976/what-is-the-difference-between-atomic-integer-and-normal-immutable-integer-class
 
 i++ для Integer, что будет с памятью?
+variable will be changed
 https://stackoverflow.com/questions/13280134/why-does-post-increment-work-on-wrapper-classes
 
 что такое servlet api?
 
 в чем разница между параметрами и аттрибутами?
+getParameter() returns http request parameters. Those passed from the client to the server. For example http://example.com/servlet?parameter=1. Can only return String
+getAttribute() is for server-side usage only - you fill the request with attributes that you can use within the same request. For example - you set an attribute in a servlet, and read it from a JSP. Can be used for any object, not just string.
 https://stackoverflow.com/questions/5243754/difference-between-getattribute-and-getparameter
 
-жизненный цикл сервлета?
+[servlet] жизненный цикл сервлета?
+There are three life cycle methods of a Servlet:
+init()
+service()
+destroy()
 https://www.geeksforgeeks.org/life-cycle-of-a-servlet/
 
 а можно ли какой-то сервлет быстрее создать, чем другие?
-что такое servlet mapping?
-с бд работали?
-что такое having в sql?
+
+[servlet] что такое servlet mapping?
+Servlet mapping specifies the web container of which java servlet should be invoked for a url given by client. It maps url patterns to servlets. When there is a request from a client, servlet container decides to which application it should forward to. Then context path of url is matched for mapping servlets.
+https://javapapers.com/servlet/what-is-servlet-mapping/
+
+[sql] что такое having в sql?
 
 [transaction] что такое транзакция?
 https://github.com/enhorse/java-interview/blob/master/db.md#%D0%A7%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-%D1%82%D1%80%D0%B0%D0%BD%D0%B7%D0%B0%D0%BA%D1%86%D0%B8%D1%8F
