@@ -115,6 +115,12 @@ Servlet mapping specifies the web container of which java servlet should be invo
 https://javapapers.com/servlet/what-is-servlet-mapping/
 
 [sql] что такое having в sql?
+HAVING filters records that work on summarized GROUP BY results.
+HAVING applies to summarized group records, whereas WHERE applies to individual records.
+Only the groups that meet the HAVING criteria will be returned.
+HAVING requires that a GROUP BY clause is present.
+WHERE and HAVING can be in the same query.
+https://www.dofactory.com/sql/having
 
 [transaction] что такое транзакция?
 https://github.com/enhorse/java-interview/blob/master/db.md#%D0%A7%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-%D1%82%D1%80%D0%B0%D0%BD%D0%B7%D0%B0%D0%BA%D1%86%D0%B8%D1%8F
