@@ -15,7 +15,7 @@ https://www.baeldung.com/transactions-across-microservices
 https://habr.com/ru/company/nixsolutions/blog/321686/
 https://habr.com/ru/company/nixsolutions/blog/322214/
 
-кроме транзакций, в микросервисах какие еще могут быть проблемы?
+[microservices] кроме транзакций, в микросервисах какие еще могут быть проблемы?
 1. As if monitoring a monolith wasn’t hard enough
 2. Logging is distributed between services
 3. An issue that’s caused by one service, can cause trouble elsewhere
@@ -23,22 +23,34 @@ https://habr.com/ru/company/nixsolutions/blog/322214/
 5. Version management and cyclic dependencies between services
 https://blog.overops.com/5-ways-to-not-f-up-your-microservices-in-production/
 
-как решается проблема с коммуникацией, когда какой-либо сервис не доступен?
+[microservices] как решается проблема с коммуникацией, когда какой-либо сервис не доступен?
 1. The circuit breaker pattern is the solution to this problem. The basic idea behind the circuit breaker is very simple. You wrap a protected function call in a circuit breaker object, which monitors for failures. Once the failures reach a certain threshold, the circuit breaker trips, and all further calls to the circuit breaker return with an error or with some alternative service or default message, without the protected call being made at all. This will make sure system is responsive and threads are not waiting for an unresponsive call.
 2. Retry Logic
 https://blog.risingstack.com/designing-microservices-architecture-for-failure/
 https://dzone.com/articles/circuit-breaker-pattern
 
-а если rabbitMQ отвалится?
+[rabbitMQ] что такое rabbitMQ?
+RabbitMQ, also known as Open-Source Message Broker, supports multiple message protocols and can be deployed on distributed systems. It is lightweight and makes it easy to deploy applications. It mainly acts as a queue where a message which is entered can first be operated on. RabbitMQ runs on many operating systems and cloud environments and provides a wide range of developer tools for most popular languages. It is a Producer-Consumer style pattern where the producer sends a message and the consumer consumes it. The main features of RabbitMQ are mentioned below:
+Asynchronous Messaging
+Distributed Deployment
+Management & Monitoring
+Enterprise- and Cloud-Ready
 https://dzone.com/articles/rabbitmq-in-microservices
 
-в качестве rest-клиента что используется?
+[rabbitMQ] а если rabbitMQ отвалится?
+
+[rest] в качестве rest-клиента что используется?
 1. Netflix provides Feign as an abstraction over REST-based calls, by which microservices can communicate with each other, but developers don't have to bother about REST internal details.
+2. Jersey
+3. Spring RestTemplate
 https://dzone.com/articles/microservices-communication-feign-as-rest-client
+https://stackoverflow.com/questions/221442/rest-clients-for-java
 
-какие нововведения в java 8, 9, 10, 11?
+[java] какие нововведения в java 8, 9, 10, 11?
+https://codete.com/blog/java-8-java-11-quick-guide/
+https://www.quora.com/What-are-the-differences-between-Java-8-9-10-and-11
 
-в чем концептуальное отличие stream api от collection?
+[java] в чем концептуальное отличие stream api от collection?
 Streams differ from collections in several ways:
 No storage. A stream is not a data structure that stores elements; instead, it conveys elements from a source such as a data structure, an array, a generator function, or an I/O channel, through a pipeline of computational operations.
 Functional in nature. An operation on a stream produces a result, but does not modify its source. For example, filtering a Stream obtained from a collection produces a new Stream without the filtered elements, rather than removing elements from the source collection.
@@ -47,41 +59,42 @@ Possibly unbounded. While collections have a finite size, streams need not. Shor
 Consumable. The elements of a stream are only visited once during the life of a stream. Like an Iterator, a new stream must be generated to revisit the same elements of the source.
 https://stackoverflow.com/questions/39432699/what-is-the-difference-between-streams-and-collections-in-java-8
 
-реализовать stream api (с функциями filter, map), lambda можно использовать
+[java] реализовать stream api (с функциями filter, map), lambda можно использовать
 
-что такое volatile?
+[java] [concurrency] что такое volatile?
 In Java, each thread has a separate memory space known as working memory; this holds the values of different variables used for performing operations. After performing an operation, thread copies the updated value of the variable to the main memory, and from there other threads can read the latest value.
 Simply put, the volatile keyword marks a variable to always go to main memory, for both reads and writes, in the case of multiple threads accessing it.
 https://www.baeldung.com/java-volatile
 
-как мы создаем копии объектов вне volatile?
+[java] как мы создаем копии объектов вне volatile?
 stack
 
-где хранится ссылка на объект?
+[java] где хранится ссылка на объект?
 stack
 https://stackoverflow.com/questions/13624462/where-does-class-object-reference-variable-get-stored-in-java-in-heap-or-stac
 
-типы памяти в Java?
+[java] типы памяти в Java?
 Cтек – участок памяти, тесно связанный с потоками. У каждого потока есть свой стек, которые хранит локальные переменные, параметры методов и стек вызовов. Переменная, хранящаяся в стеке одного потока, не видна для другого.
 Куча – общий участок памяти, который делится между всеми потоками. Объекты, неважно локальные или любого другого уровня, создаются в куче. Для улучшения производительности, поток обычно кэширует значения из кучи в свой стек, в этом случае для того, чтобы указать потоку, что переменную следует читать из кучи используется ключевое слово volatile.
 https://github.com/enhorse/java-interview/blob/master/concurrency.md#%D0%A0%D0%B0%D1%81%D1%81%D0%BA%D0%B0%D0%B6%D0%B8%D1%82%D0%B5-%D0%BE-%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8-%D0%BF%D0%B0%D0%BC%D1%8F%D1%82%D0%B8-java
 
-что такое java agent?
+[java] что такое java agent?
 Сам агент это отдельное приложение которое предоставляет доступ к механизму манипуляции байт-кодом (java.lang.instrument) в runtime.
 https://habr.com/ru/post/230239/
 https://www.javacodegeeks.com/2015/09/java-agents.html
 
-был опыт troubleshooting?
+[java] был опыт troubleshooting?
+logs, new relic
 
 
-пользовались profiler?
+[java] пользовались profiler?
 A Java Profiler is a tool that monitors Java bytecode constructs and operations at the JVM level. These code constructs and operations include object creation, iterative executions (including recursive calls), method executions, thread executions, and garbage collections.
 https://www.baeldung.com/java-profilers
 
 что такое stop the world?
 garbage collector
 
-чем отличается int, Integer, AtomicInteger?
+[java] чем отличается int, Integer, AtomicInteger?
 int is a primitive type. Variables of type int store the actual binary value for the integer you want to represent. int.parseInt("1") doesn't make sense because int is not a class and therefore doesn't have any methods.
 Integer is a class, no different from any other in the Java language. Variables of type Integer store references to Integer objects, just as with any other reference (object) type. Integer.parseInt("1") is a call to the static method parseInt from class Integer (note that this method actually returns an int and not an Integer).
 To be more specific, Integer is a class with a single field of type int. This class is used where you need an int to be treated like any other object, such as in generic types or situations where you need nullability.
@@ -89,13 +102,13 @@ AtomicInteger is used in multithreaded environments when you need to make sure t
 https://stackoverflow.com/questions/8660691/what-is-the-difference-between-integer-and-int-in-java
 https://stackoverflow.com/questions/38846976/what-is-the-difference-between-atomic-integer-and-normal-immutable-integer-class
 
-i++ для Integer, что будет с памятью?
+[java] i++ для Integer, что будет с памятью?
 variable will be changed
 https://stackoverflow.com/questions/13280134/why-does-post-increment-work-on-wrapper-classes
 
-что такое servlet api?
+[servlet] что такое servlet api?
 
-в чем разница между параметрами и аттрибутами?
+[servlet] в чем разница между параметрами и аттрибутами?
 getParameter() returns http request parameters. Those passed from the client to the server. For example http://example.com/servlet?parameter=1. Can only return String
 getAttribute() is for server-side usage only - you fill the request with attributes that you can use within the same request. For example - you set an attribute in a servlet, and read it from a JSP. Can be used for any object, not just string.
 https://stackoverflow.com/questions/5243754/difference-between-getattribute-and-getparameter
@@ -136,23 +149,34 @@ https://habr.com/ru/post/446662/
 
 [transaction] как бд обеспечивает согласованность данных?
 
-
 [transaction] optimistic/pessimistic locking в чем разница?
 Optimistic Locking is a strategy where you read a record, take note of a version number (other methods to do this involve dates, timestamps or checksums/hashes) and check that the version hasn't changed before you write the record back. When you write the record back you filter the update on the version to make sure it's atomic. (i.e. hasn't been updated between when you check the version and write the record to the disk) and update the version in one hit.
 Pessimistic Locking is when you lock the record for your exclusive use until you have finished with it. It has much better integrity than optimistic locking but requires you to be careful with your application design to avoid Deadlocks. To use pessimistic locking you need either a direct connection to the database (as would typically be the case in a two tier client server application) or an externally available transaction ID that can be used independently of the connection.
 https://stackoverflow.com/questions/129329/optimistic-vs-pessimistic-locking
 
 [transaction] Eventual consistency что такое?
+Согласованность в конечном счете (eventual consistency) означает, что если в течение достаточно долгого периода времени в систему не поступают новые операции обновления данных, то можно ожидать, что результаты всех предыдущих операций обновления данных в конце концов распространятся по всем узлам системы, и все реплики данных согласуются
 http://citforum.ru/database/articles/kuz_oltp_2010/2.shtml
 
-c nosql был опыт?
-как конфигурили спринг? (xml, java configs)
-что такое lookup method?
+[nosql] c nosql был опыт?
 
-[transaction] использовали declarative transaction в спринге?
+[spring] как конфигурили спринг?
+xml-based configuration, when you describe configuration in xml file;
+java-based configuration, when configuration is Java class, marked with specific annotations;
+groovy-based configuration, when configuration is file with Groovy code;
+https://stackoverflow.com/questions/35807056/how-many-ways-are-there-to-configure-the-spring-framework-what-are-the-differen
+
+что такое lookup method?
+The getter method will return us the reference that is been set but suppose you want a new instance of the dependent bean each time you invoke the getter method
+https://www.javacodegeeks.com/2015/05/spring-lookup-method-example.html
+
+[transaction] [spring] использовали declarative transaction в спринге?
 https://stackoverflow.com/questions/11222103/declarative-or-programmatic-transaction-in-spring
 
-в спринге что создает прокси?
+[spring] в спринге что создает прокси?
+After the bean instances are created they are run through a series of BeanPostProcessors - Based on the AOP advice, the proxies are created by a BeanPostProcessor called AnnotationAwareAspectJAutoProxyCreator (or possibly its subclasses)
+https://stackoverflow.com/questions/12648394/when-does-spring-creates-proxies-in-the-beans-lifecycle
+
 в чем разница beanFactory/factoryBean?
 @LoggableAutowired - своя аннотация, как это сделать?
 spring boot использовали?
