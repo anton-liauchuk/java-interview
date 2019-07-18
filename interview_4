@@ -171,7 +171,10 @@ https://stackoverflow.com/questions/2573739/what-are-detached-persistent-and-tra
 https://stackoverflow.com/questions/3220336/whats-the-use-of-session-flush-in-hibernate
 
 в spring attached/dettached как называются?
+
 уровни кэша в hibernate?
+https://habr.com/ru/post/135176/
+
 где находится кэш первого уровня?
 как конкретно использовали solr?
 как http протокол работает?
