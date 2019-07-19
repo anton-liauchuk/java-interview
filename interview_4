@@ -176,20 +176,25 @@ https://stackoverflow.com/questions/11222103/declarative-or-programmatic-transac
 [spring] в спринге что создает прокси?
 After the bean instances are created they are run through a series of BeanPostProcessors - Based on the AOP advice, the proxies are created by a BeanPostProcessor called AnnotationAwareAspectJAutoProxyCreator (or possibly its subclasses)
 https://stackoverflow.com/questions/12648394/when-does-spring-creates-proxies-in-the-beans-lifecycle
+https://dzone.com/articles/spring-pitfalls-proxying
+https://ntsim.uk/posts/a-closer-look-at-spring-proxies
 
-в чем разница beanFactory/factoryBean?
+[spring] в чем разница beanFactory/factoryBean?
+The BeanFactory is an interface in Spring and is a factory class for managing beans. The BeanFactory is the core of the IOC container. The accusations include: instantiating, configuring objects in the application and establishing dependencies between them. The ApplicationContext is an advanced version of the BeanFactory.
+FactoryBean is a way to customize the instantiation of the bean, through the implementation of the FactoryBean, complete the custom bean instantiation details. For example, the FactoryBean proxy object can be used to intercept all its methods to form AOP-like functions. Using FactoryBean avoids the need to configure various properties in the XML file, which is more flexible, but you need to encode the instantiation of the class in the implementation class of the FactoryBean.
+http://www.programmersought.com/article/6987917473/
 
-@LoggableAutowired - своя аннотация, как это сделать?
+[spring] @LoggableAutowired - своя аннотация, как это сделать?
 beanpostprocessor
 
-spring boot использовали?
-
-в чем отличие от спринга?
+[spring] в чем отличие от спринга?
 https://dzone.com/articles/understanding-the-basics-of-spring-vs-spring-boot
 
-как добавить свои конфигурации?
+[spring] как добавить свои конфигурации?
+https://www.baeldung.com/spring-boot-custom-auto-configuration
 
-где описание конфигураций в meta-inf?
+[spring] где описание конфигураций в meta-inf?
+META-INF/spring.factories
 https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-developing-auto-configuration.html
 
 есть опыт в spring cloud?
@@ -200,12 +205,16 @@ https://stackoverflow.com/questions/2573739/what-are-detached-persistent-and-tra
 [hibernate] а зачем нужен flush?
 https://stackoverflow.com/questions/3220336/whats-the-use-of-session-flush-in-hibernate
 
-в spring attached/dettached как называются?
+в spring attached/detached как называются?
 
 [hibernate] уровни кэша в hibernate?
+Кеш первого уровня (First-level cache);
+Кеш второго уровня (Second-level cache);
+Кеш запросов (Query cache);
 https://habr.com/ru/post/135176/
 
 [hibernate] где находится кэш первого уровня?
+Кеш первого уровня всегда привязан к объекту сессии. Hibernate всегда по умолчанию использует этот кеш и его нельзя отключить.
 https://habr.com/ru/post/135176/
 
 как конкретно использовали solr?
