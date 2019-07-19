@@ -178,9 +178,15 @@ After the bean instances are created they are run through a series of BeanPostPr
 https://stackoverflow.com/questions/12648394/when-does-spring-creates-proxies-in-the-beans-lifecycle
 
 в чем разница beanFactory/factoryBean?
+
 @LoggableAutowired - своя аннотация, как это сделать?
+beanpostprocessor
+
 spring boot использовали?
+
 в чем отличие от спринга?
+https://dzone.com/articles/understanding-the-basics-of-spring-vs-spring-boot
+
 как добавить свои конфигурации?
 
 где описание конфигураций в meta-inf?
@@ -191,18 +197,23 @@ https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-dev
 attached/detached entity что это значит?
 https://stackoverflow.com/questions/2573739/what-are-detached-persistent-and-transient-objects-in-hibernate
 
-а зачем нужен flush?
+[hibernate] а зачем нужен flush?
 https://stackoverflow.com/questions/3220336/whats-the-use-of-session-flush-in-hibernate
 
 в spring attached/dettached как называются?
 
-уровни кэша в hibernate?
+[hibernate] уровни кэша в hibernate?
 https://habr.com/ru/post/135176/
 
-где находится кэш первого уровня?
+[hibernate] где находится кэш первого уровня?
+https://habr.com/ru/post/135176/
+
 как конкретно использовали solr?
-как http протокол работает?
-а body в http?
+
+[http] как http протокол работает?
+https://www.quora.com/How-does-HTTP-work
+
+[http] а body в http?
 
 области видимости в js есть?
 https://getinstance.info/articles/javascript/variables-scope-in-javascript/
