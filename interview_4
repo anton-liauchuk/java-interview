@@ -223,18 +223,26 @@ https://habr.com/ru/post/135176/
 https://www.quora.com/How-does-HTTP-work
 
 [http] а body в http?
+https://stackoverflow.com/questions/978061/http-get-with-request-body
 
-области видимости в js есть?
+[js] области видимости в js есть?
+Локальная область видимости (уровня функции)
+Глобальная область видимости
 https://getinstance.info/articles/javascript/variables-scope-in-javascript/
 
-зачем нужен bind? а есть call & apply?
-https://medium.com/@jhawleypeters/javascript-call-vs-apply-vs-bind-61447bc5e989
+[js] зачем нужен bind? а есть call & apply?
+https://www.codementor.io/niladrisekhardutta/how-to-call-apply-and-bind-in-javascript-8i1jca6jp
 
-потеря контекста в js?
-с docker работали?
-по tcp/ip знаете что-нибудь?
-есть большущий список, нужно сделать поиск по какому-то полю
-бд выполняют эту задачу
+[js]потеря контекста в js?
+https://ru.stackoverflow.com/questions/535030/%D0%9F%D0%BE%D1%82%D0%B5%D1%80%D1%8F-%D0%BA%D0%BE%D0%BD%D1%82%D0%B5%D0%BA%D1%81%D1%82%D0%B0-%D0%B2%D1%8B%D0%B7%D0%BE%D0%B2%D0%B0
+
+[docker] с docker работали?
+
+[tcp/ip] по tcp/ip знаете что-нибудь?
+https://www.hostingadvice.com/blog/tcpip-make-internet-work/
+
+[algorithm] есть большущий список, нужно сделать поиск по какому-то полю (бд выполняют эту задачу)
+
 что больше понравился react или angular?
 какие life-cycle методы есть у компонента?
 чем отличается state от props?
