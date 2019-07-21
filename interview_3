@@ -37,34 +37,81 @@ https://stackoverflow.com/questions/106591/what-is-the-volatile-keyword-useful-f
 [java] [concurrency] volatile как связано с happens before?
 https://github.com/enhorse/java-interview/blob/master/concurrency.md#%D1%80%D0%B0%D1%81%D1%81%D0%BA%D0%B0%D0%B6%D0%B8%D1%82%D0%B5-%D0%BE-%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8-%D0%BF%D0%B0%D0%BC%D1%8F%D1%82%D0%B8-java
 
-[java] [concurrency] интерфейс LOck?
-concurrent  коллекции?
-copyonwrite arraylist?
-concurrenthashmap?
-в чем преимущества перед hashtable?
-с какими бд работали?
-какие orm?
-spring data jpa использовали?
+[java] [concurrency] интерфейс Lock?
+A java.util.concurrent.locks.Lock interface is used to as a thread synchronization mechanism similar to synchronized blocks. New Locking mechanism is more flexible and provides more options than a synchronized block. Main differences between a Lock and a synchronized block are following −
+Guarantee of sequence − Synchronized block does not provide any guarantee of sequence in which waiting thread will be given access. Lock interface handles it.
+No timeout − Synchronized block has no option of timeout if lock is not granted. Lock interface provides such option.
+Single method − Synchronized block must be fully contained within a single method whereas a lock interface's methods lock() and unlock() can be called in different methods.
+https://www.tutorialspoint.com/java_concurrency/concurrency_lock
+
+[java] [concurrency] concurrent  коллекции?
+ConcurrentHashMap
+CopyOnWriteArrayList/CopyOnWriteArraySet
+BlockingQueue
+https://habr.com/ru/company/luxoft/blog/157273/
+https://medium.com/coding-corpus/concurrent-collections-in-java-9b131e41b3ad
+
+[java] [concurrency] CopyOnWriteArraylist?
+Все операции по изменению коллекции (add, set, remove) приводят к созданию новой копии внутреннего массива. Тем самым гарантируется, что при проходе итератором по коллекции не кинется ConcurrentModificationException. Следует помнить, что при копировании массива копируются только референсы (ссылки) на объекты (shallow copy), т.ч. доступ к полям элементов не thread-safe. CopyOnWrite коллекции удобно использовать, когда write операции довольно редки, например при реализации механизма подписки listeners и прохода по ним.
+https://habr.com/ru/company/luxoft/blog/157273/
+https://medium.com/coding-corpus/concurrent-collections-in-java-9b131e41b3ad
+
+[java] [concurrency] concurrenthashmap?
+основные преимущества и особенности реализации ConcurrentHashMap:
+Карта имеет схожий с hashmap интерфейс взаимодействия
+Операции чтения не требуют блокировок и выполняются параллельно
+Операции записи зачастую также могут выполняться параллельно без блокировок
+При создании указывается требуемый concurrencyLevel, определяемый по статистике чтения и записи
+Элементы карты имеют значение value, объявленное как volatile
+https://habr.com/ru/post/132884/
+
+[java] [concurrency] в чем преимущества перед hashtable?
+ConcurrentHashMap uses multiple buckets to store data. This avoids read locks and greatly improves performance over a HashTable. Both are thread safe, but there are obvious performance wins with ConcurrentHashMap.
+When you read from a ConcurrentHashMap using get(), there are no locks, contrary to the HashTable for which all operations are simply synchronized. HashTable was released in old versions of Java whereas ConcurrentHashMap is a java 5+ thing.
+HashMap is the best thing to use in a single threaded application.
+https://stackoverflow.com/questions/12646404/concurrenthashmap-and-hashtable-in-java
+
+[database] с какими бд работали?
+[orm] какие orm?
+[spring] [spring data] [spring data jpa] spring data jpa использовали?
 
 [transaction] уровни изоляции транзакций?
-https://proselyte.net/tutorials/sql/sql-transactions/
+В порядке увеличения изолированности транзакций и, соответственно, надёжности работы с данными:
+Чтение неподтверждённых данных (грязное чтение) (read uncommitted, dirty read) — чтение незафиксированных изменений как своей транзакции, так и параллельных транзакций. Нет гарантии, что данные, изменённые другими транзакциями, не будут в любой момент изменены в результате их отката, поэтому такое чтение является потенциальным источником ошибок. Невозможны потерянные изменения, возможны неповторяемое чтение и фантомы.
+Чтение подтверждённых данных (read committed) — чтение всех изменений своей транзакции и зафиксированных изменений параллельных транзакций. Потерянные изменения и грязное чтение не допускается, возможны неповторяемое чтение и фантомы.
+Повторяемость чтения (repeatable read, snapshot) — чтение всех изменений своей транзакции, любые изменения, внесённые параллельными транзакциями после начала своей, недоступны. Потерянные изменения, грязное и неповторяемое чтение невозможны, возможны фантомы.
+Упорядочиваемость (serializable) — результат параллельного выполнения сериализуемой транзакции с другими транзакциями должен быть логически эквивалентен результату их какого-либо последовательного выполнения. Проблемы синхронизации не возникают.
 https://github.com/enhorse/java-interview/blob/master/db.md#%D0%BA%D0%B0%D0%BA%D0%B8%D0%B5-%D1%81%D1%83%D1%89%D0%B5%D1%81%D1%82%D0%B2%D1%83%D1%8E%D1%82-%D1%83%D1%80%D0%BE%D0%B2%D0%BD%D0%B8-%D0%B8%D0%B7%D0%BE%D0%BB%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D1%82%D1%80%D0%B0%D0%BD%D0%B7%D0%B0%D0%BA%D1%86%D0%B8%D0%B9
 
-Какие проблемы могут возникать при параллельном доступе с использованием транзакций?
+[transaction] Какие проблемы могут возникать при параллельном доступе с использованием транзакций?
+При параллельном выполнении транзакций возможны следующие проблемы:
+Потерянное обновление (lost update) — при одновременном изменении одного блока данных разными транзакциями одно из изменений теряется;
+«Грязное» чтение (dirty read) — чтение данных, добавленных или изменённых транзакцией, которая впоследствии не подтвердится (откатится);
+Неповторяющееся чтение (non-repeatable read) — при повторном чтении в рамках одной транзакции ранее прочитанные данные оказываются изменёнными;
+Фантомное чтение (phantom reads) — одна транзакция в ходе своего выполнения несколько раз выбирает множество записей по одним и тем же критериям. Другая транзакция в интервалах между этими выборками добавляет или удаляет записи или изменяет столбцы некоторых записей, используемых в критериях выборки первой транзакции, и успешно заканчивается. В результате получится, что одни и те же выборки в первой транзакции дают разные множества записей.
 https://github.com/enhorse/java-interview/blob/master/db.md#%D0%BA%D0%B0%D0%BA%D0%B8%D0%B5-%D0%BF%D1%80%D0%BE%D0%B1%D0%BB%D0%B5%D0%BC%D1%8B-%D0%BC%D0%BE%D0%B3%D1%83%D1%82-%D0%B2%D0%BE%D0%B7%D0%BD%D0%B8%D0%BA%D0%B0%D1%82%D1%8C-%D0%BF%D1%80%D0%B8-%D0%BF%D0%B0%D1%80%D0%B0%D0%BB%D0%BB%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%BC-%D0%B4%D0%BE%D1%81%D1%82%D1%83%D0%BF%D0%B5-%D1%81-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%D0%BC-%D1%82%D1%80%D0%B0%D0%BD%D0%B7%D0%B0%D0%BA%D1%86%D0%B8%D0%B9
 
-nosql бд?
-как spring boot?
-писал авто-конфигурации?
-как авто-поднятие конфигураций происходит?
-где bean definitions указаны?
-чтоб spring boot увидел авто-конфигурации?
-чтоб автоматом поднимало? как сделать? (через мета-инф)
+[database] nosql бд?
+
+[spring] [spring boot] как spring boot?
+[spring] [spring boot] писал авто-конфигурации?
+
+[spring] [spring boot] как авто-поднятие конфигураций происходит?
+https://www.javadevjournal.com/spring-boot/how-spring-boot-auto-configuration-works/
+
+[spring] [spring boot] где bean definitions указаны?
+[spring] [spring boot] чтоб spring boot увидел авто-конфигурации?
+[spring] [spring boot] чтоб автоматом поднимало? как сделать? (через мета-инф)
 с докером есть опыт?
 docker compose есть опыт?
 gradle/maven опыт?
 unit tests что использовали?
 какие знаете шаблоны проектирования?
-паттерн визитор?
-какую проблему решает визитор?
+
+[pattern] паттерн визитор?
+https://refactoring.guru/ru/design-patterns/visitor
+
+[pattern] какую проблему решает визитор?
+https://refactoring.guru/ru/design-patterns/visitor
+
 код deadlock
