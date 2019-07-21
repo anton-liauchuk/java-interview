@@ -2,11 +2,24 @@
 equals/hashcode какой контракт?
 правила переопределения equals/hashcode?
 алгоритмическая сложность при hashcode = 1 ?
-алгоритмическая сложность на get в hashmap ?
+
+[java] [collections] алгоритмическая сложность на get в hashmap ?
+It depends on many things. It's usually O(1), with a decent hash which itself is constant time... but you could have a hash which takes a long time to compute, and if there are multiple items in the hash map which return the same hash code, get will have to iterate over them calling equals on each of them to find a match.
+https://stackoverflow.com/questions/4553624/hashmap-get-put-complexity
+
 equals/hashcode одни и те же поля нужны?
 мапы в многопоточной среде? какие мапы и какие нюансы?
 5 наиболее часто используемых тобой паттернов?
-отличия фасада от proxy/gateway ?
+
+[patterns] отличия фасада от proxy/gateway ?
+Reviewing Facade in the GoF book and the link in another answer to Martin Fowler's Gateway, it appears that their focus is in opposite directions.
+Facade provides a simple uniform view of complex internals to (one or more)external clients;
+Gateway provides a simple uniform view of external resources to the internals of an application.
+This distinction lets us focus on which is more important in a design :
+With the Facade, the external system is our customer; it is better to add complexity facing inwards if it makes the external interface simpler.
+With the Gateway, the internal system is our customer; give it all the help we can, even if the externals are more complex.
+https://stackoverflow.com/questions/4422211/what-is-the-difference-between-facade-and-gateway-design-patterns
+
 а чем плох конструктор на 15 параметров?
 какие тесты приходилось писать? с какими технологиями?
 отличия интеграционных от unit тестов?
