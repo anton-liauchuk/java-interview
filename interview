@@ -44,10 +44,16 @@ default scope для бина?
 какие есть еще бины?
 что такое prototype scope?
 spring service в многопоточной среде?
-сделать сервис thread-safe, как?
+
+[spring] сделать сервис thread-safe, как?
+http://dolszewski.com/spring/spring-bean-thread-safety-guide/
+
 service with repo, how to do thread-safe service? вычитывает одно, из друго репо другое и тд?
 способы синзронизации потоков?
+
 нестатический метод sync, что будет монитором?
+https://stackoverflow.com/questions/6367885/difference-between-synchronizing-a-static-method-and-a-non-static-method
+
 что не рекомендуется делать в параллельных стримах?
 inner статический vs нестатический?
 есть ли доступ к приватной переменной внешенго класса из внутреннего?
