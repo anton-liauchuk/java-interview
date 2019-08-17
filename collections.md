@@ -1,6 +1,12 @@
 # Collections
++ [Алгоритмическая сложность get в Hashmap?](#алгоритмическая-сложность-get-в-hashmap)
++ [Какие есть коллекции? интерфейсы? реализации?](#какие-есть-коллекции-интерфейсы-реализации)
++ [В чем разница между LinkedList и ArrayList?](#в-чем-разница-между-linkedlist-и-arraylist)
++ [Что лучше использовать LinkedList или ArrayList?](#что-лучше-использовать-linkedlist-или-arraylist)
++ [Устройство HashMap?](#устройство-hashmap)
++ [Реализации map?](#реализации-map)
 
-## Алгоритмическая сложность get в hashmap?
+## Алгоритмическая сложность get в Hashmap?
 It depends on many things. It's usually O(1), with a decent hash which itself is constant time... but you could have a hash which takes a long time to compute, and if there are multiple items in the hash map which return the same hash code, get will have to iterate over them calling equals on each of them to find a match.
 ###### Relative links:
 + https://stackoverflow.com/questions/4553624/hashmap-get-put-complexity
