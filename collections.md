@@ -4,7 +4,7 @@
 + [В чем разница между LinkedList и ArrayList?](#в-чем-разница-между-linkedlist-и-arraylist)
 + [Что лучше использовать LinkedList или ArrayList?](#что-лучше-использовать-linkedlist-или-arraylist)
 + [Устройство HashMap?](#устройство-hashmap)
-+ [Реализации map?](#реализации-map)
++ [Реализации Map?](#реализации-map)
 
 ## Алгоритмическая сложность get в Hashmap?
 It depends on many things. It's usually O(1), with a decent hash which itself is constant time... but you could have a hash which takes a long time to compute, and if there are multiple items in the hash map which return the same hash code, get will have to iterate over them calling equals on each of them to find a match.
@@ -23,7 +23,7 @@ It depends on many things. It's usually O(1), with a decent hash which itself is
 ## Устройство HashMap?
 ###### Relative links:
 
-## Реализации map?
+## Реализации Map?
 + Hashtable — хэш-таблица, методы которой синхронизированы. Не позволяет использовать null в качестве значения или ключа и не является упорядоченной.
 + HashMap — хэш-таблица. Позволяет использовать null в качестве значения или ключа и не является упорядоченной.
 + LinkedHashMap — упорядоченная реализация хэш-таблицы.

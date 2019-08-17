@@ -1,42 +1,5 @@
-[java] [concurrency] wait/notify для чего?
-Эти методы поределены у класса Object и предназначены для взаимодействия потоков между собой при межпоточной синхронизации.
-wait(): освобождает монитор и переводит вызывающий поток в состояние ожидания до тех пор, пока другой поток не вызовет метод notify()/notifyAll();
-notify(): продолжает работу потока, у которого ранее был вызван метод wait();
-notifyAll(): возобновляет работу всех потоков, у которых ранее был вызван метод wait().
-https://github.com/enhorse/java-interview/blob/master/concurrency.md#%D0%BA%D0%B0%D0%BA-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D1%8E%D1%82-%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B-wait-%D0%B8-notifynotifyall
-
-[java] [concurrency] wait где может быть использован?
-synchronized
-https://stackoverflow.com/questions/2779484/why-must-wait-always-be-in-synchronized-block
-https://github.com/enhorse/java-interview/blob/master/concurrency.md#%D0%BF%D0%BE%D1%87%D0%B5%D0%BC%D1%83-%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B-wait-%D0%B8-notify-%D0%B2%D1%8B%D0%B7%D1%8B%D0%B2%D0%B0%D1%8E%D1%82%D1%81%D1%8F-%D1%82%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE-%D0%B2-%D1%81%D0%B8%D0%BD%D1%85%D1%80%D0%BE%D0%BD%D0%B8%D0%B7%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%BE%D0%BC-%D0%B1%D0%BB%D0%BE%D0%BA%D0%B5
-
-[java] [concurrency] что такое synchronized? как использовать?
-A piece of logic marked with synchronized becomes a synchronized block, allowing only one thread to execute at any given time.
-https://www.baeldung.com/java-synchronized
-
 [java] [concurrency] один метод synchronized, второй нет. Работа есть с объектом. Есть ли проблемы?
 [java] [concurrency] изменения в synchronized для записи? а для чтения не synchronized? будут ли проблемы?
-
-[java] [concurrency] volatile для чего используется?
-the volatile modifier guarantees that any thread that reads a field will see the most recently written value.
-https://stackoverflow.com/questions/106591/what-is-the-volatile-keyword-useful-for
-
-[java] [concurrency] volatile как связано с happens before?
-https://github.com/enhorse/java-interview/blob/master/concurrency.md#%D1%80%D0%B0%D1%81%D1%81%D0%BA%D0%B0%D0%B6%D0%B8%D1%82%D0%B5-%D0%BE-%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8-%D0%BF%D0%B0%D0%BC%D1%8F%D1%82%D0%B8-java
-
-[java] [concurrency] интерфейс Lock?
-A java.util.concurrent.locks.Lock interface is used to as a thread synchronization mechanism similar to synchronized blocks. New Locking mechanism is more flexible and provides more options than a synchronized block. Main differences between a Lock and a synchronized block are following −
-Guarantee of sequence − Synchronized block does not provide any guarantee of sequence in which waiting thread will be given access. Lock interface handles it.
-No timeout − Synchronized block has no option of timeout if lock is not granted. Lock interface provides such option.
-Single method − Synchronized block must be fully contained within a single method whereas a lock interface's methods lock() and unlock() can be called in different methods.
-https://www.tutorialspoint.com/java_concurrency/concurrency_lock
-
-[java] [concurrency] concurrent  коллекции?
-ConcurrentHashMap
-CopyOnWriteArrayList/CopyOnWriteArraySet
-BlockingQueue
-https://habr.com/ru/company/luxoft/blog/157273/
-https://medium.com/coding-corpus/concurrent-collections-in-java-9b131e41b3ad
 
 [java] [concurrency] CopyOnWriteArraylist?
 Все операции по изменению коллекции (add, set, remove) приводят к созданию новой копии внутреннего массива. Тем самым гарантируется, что при проходе итератором по коллекции не кинется ConcurrentModificationException. Следует помнить, что при копировании массива копируются только референсы (ссылки) на объекты (shallow copy), т.ч. доступ к полям элементов не thread-safe. CopyOnWrite коллекции удобно использовать, когда write операции довольно редки, например при реализации механизма подписки listeners и прохода по ним.
