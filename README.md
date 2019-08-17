@@ -1,7 +1,10 @@
 # Вопросы для Java собеседования
 
++ [Collections](#Collections)
 + [Spring](#Spring)
 + [Microservices](#Microservices)
+
+## Collections
 
 ## Spring
 + [Как сделать spring сервис thread-safe?](spring.md#как-сделать-spring-сервис-thread-safe)
