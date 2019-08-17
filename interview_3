@@ -1,26 +1,6 @@
 [java] [concurrency] один метод synchronized, второй нет. Работа есть с объектом. Есть ли проблемы?
 [java] [concurrency] изменения в synchronized для записи? а для чтения не synchronized? будут ли проблемы?
 
-[java] [concurrency] CopyOnWriteArraylist?
-Все операции по изменению коллекции (add, set, remove) приводят к созданию новой копии внутреннего массива. Тем самым гарантируется, что при проходе итератором по коллекции не кинется ConcurrentModificationException. Следует помнить, что при копировании массива копируются только референсы (ссылки) на объекты (shallow copy), т.ч. доступ к полям элементов не thread-safe. CopyOnWrite коллекции удобно использовать, когда write операции довольно редки, например при реализации механизма подписки listeners и прохода по ним.
-https://habr.com/ru/company/luxoft/blog/157273/
-https://medium.com/coding-corpus/concurrent-collections-in-java-9b131e41b3ad
-
-[java] [concurrency] concurrenthashmap?
-основные преимущества и особенности реализации ConcurrentHashMap:
-Карта имеет схожий с hashmap интерфейс взаимодействия
-Операции чтения не требуют блокировок и выполняются параллельно
-Операции записи зачастую также могут выполняться параллельно без блокировок
-При создании указывается требуемый concurrencyLevel, определяемый по статистике чтения и записи
-Элементы карты имеют значение value, объявленное как volatile
-https://habr.com/ru/post/132884/
-
-[java] [concurrency] в чем преимущества перед hashtable?
-ConcurrentHashMap uses multiple buckets to store data. This avoids read locks and greatly improves performance over a HashTable. Both are thread safe, but there are obvious performance wins with ConcurrentHashMap.
-When you read from a ConcurrentHashMap using get(), there are no locks, contrary to the HashTable for which all operations are simply synchronized. HashTable was released in old versions of Java whereas ConcurrentHashMap is a java 5+ thing.
-HashMap is the best thing to use in a single threaded application.
-https://stackoverflow.com/questions/12646404/concurrenthashmap-and-hashtable-in-java
-
 [database] с какими бд работали?
 [orm] какие orm?
 

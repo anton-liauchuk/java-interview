@@ -61,11 +61,6 @@ https://stackoverflow.com/questions/39432699/what-is-the-difference-between-stre
 
 [java] реализовать stream api (с функциями filter, map), lambda можно использовать
 
-[java] [concurrency] что такое volatile?
-In Java, each thread has a separate memory space known as working memory; this holds the values of different variables used for performing operations. After performing an operation, thread copies the updated value of the variable to the main memory, and from there other threads can read the latest value.
-Simply put, the volatile keyword marks a variable to always go to main memory, for both reads and writes, in the case of multiple threads accessing it.
-https://www.baeldung.com/java-volatile
-
 [java] как мы создаем копии объектов вне volatile?
 stack
 
