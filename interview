@@ -45,9 +45,6 @@ default scope для бина?
 что такое prototype scope?
 spring service в многопоточной среде?
 
-[spring] сделать сервис thread-safe, как?
-http://dolszewski.com/spring/spring-bean-thread-safety-guide/
-
 service with repo, how to do thread-safe service? вычитывает одно, из друго репо другое и тд?
 способы синзронизации потоков?
 

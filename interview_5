@@ -23,11 +23,6 @@ https://stackoverflow.com/questions/2659593/what-is-the-use-of-interface-constan
 [database] запрос медленно работает, что делает?
 [database] tools для нахождения проблем с запросами?
 [database] explain tools для анализа запросов?
-[spring] scopes?
-[spring] виды DI?
-[spring] что через конструктор/setter?
-[spring] catch ошибок в контроллере?
-[spring] env в спринге?
 [architecture] тесты?
 [architecture] [microservices] виды коммуникаций в микросервисах?
 [architecture] [microservices] асинхронный vs синхронный вид коммуникации?

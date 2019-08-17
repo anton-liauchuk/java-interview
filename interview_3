@@ -73,7 +73,6 @@ https://stackoverflow.com/questions/12646404/concurrenthashmap-and-hashtable-in-
 
 [database] с какими бд работали?
 [orm] какие orm?
-[spring] [spring data] [spring data jpa] spring data jpa использовали?
 
 [transaction] уровни изоляции транзакций?
 В порядке увеличения изолированности транзакций и, соответственно, надёжности работы с данными:
@@ -93,15 +92,6 @@ https://github.com/enhorse/java-interview/blob/master/db.md#%D0%BA%D0%B0%D0%BA%D
 
 [database] nosql бд?
 
-[spring] [spring boot] как spring boot?
-[spring] [spring boot] писал авто-конфигурации?
-
-[spring] [spring boot] как авто-поднятие конфигураций происходит?
-https://www.javadevjournal.com/spring-boot/how-spring-boot-auto-configuration-works/
-
-[spring] [spring boot] где bean definitions указаны?
-[spring] [spring boot] чтоб spring boot увидел авто-конфигурации?
-[spring] [spring boot] чтоб автоматом поднимало? как сделать? (через мета-инф)
 с докером есть опыт?
 docker compose есть опыт?
 gradle/maven опыт?

@@ -160,12 +160,6 @@ http://citforum.ru/database/articles/kuz_oltp_2010/2.shtml
 
 [nosql] c nosql был опыт?
 
-[spring] как конфигурили спринг?
-xml-based configuration, when you describe configuration in xml file;
-java-based configuration, when configuration is Java class, marked with specific annotations;
-groovy-based configuration, when configuration is file with Groovy code;
-https://stackoverflow.com/questions/35807056/how-many-ways-are-there-to-configure-the-spring-framework-what-are-the-differen
-
 что такое lookup method?
 The getter method will return us the reference that is been set but suppose you want a new instance of the dependent bean each time you invoke the getter method
 https://www.javacodegeeks.com/2015/05/spring-lookup-method-example.html
@@ -179,23 +173,8 @@ https://stackoverflow.com/questions/12648394/when-does-spring-creates-proxies-in
 https://dzone.com/articles/spring-pitfalls-proxying
 https://ntsim.uk/posts/a-closer-look-at-spring-proxies
 
-[spring] в чем разница beanFactory/factoryBean?
-The BeanFactory is an interface in Spring and is a factory class for managing beans. The BeanFactory is the core of the IOC container. The accusations include: instantiating, configuring objects in the application and establishing dependencies between them. The ApplicationContext is an advanced version of the BeanFactory.
-FactoryBean is a way to customize the instantiation of the bean, through the implementation of the FactoryBean, complete the custom bean instantiation details. For example, the FactoryBean proxy object can be used to intercept all its methods to form AOP-like functions. Using FactoryBean avoids the need to configure various properties in the XML file, which is more flexible, but you need to encode the instantiation of the class in the implementation class of the FactoryBean.
-http://www.programmersought.com/article/6987917473/
-
 [spring] @LoggableAutowired - своя аннотация, как это сделать?
 beanpostprocessor
-
-[spring] в чем отличие от спринга?
-https://dzone.com/articles/understanding-the-basics-of-spring-vs-spring-boot
-
-[spring] как добавить свои конфигурации?
-https://www.baeldung.com/spring-boot-custom-auto-configuration
-
-[spring] где описание конфигураций в meta-inf?
-META-INF/spring.factories
-https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-developing-auto-configuration.html
 
 есть опыт в spring cloud?
 
