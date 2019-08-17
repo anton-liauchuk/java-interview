@@ -1,4 +1,7 @@
-как разбили монолит? почему так?
+[microservices] как разбивается монолит на микросервисы?
+https://martinfowler.com/articles/break-monolith-into-microservices.html
+https://dzone.com/articles/from-monolith-to-microservices
+
 что можно использовать для коммуникации для микросервисов?
 типы аутентификации? мб web specific?
 что использовалось как auth service на проекте с jwt?
