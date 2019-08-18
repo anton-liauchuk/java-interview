@@ -81,3 +81,6 @@ HashMap is the best thing to use in a single threaded application.
 
 ## Способы синхронизации потоков?
 ###### Relative links:
+
+## todo код deadlock?
+###### Relative links:

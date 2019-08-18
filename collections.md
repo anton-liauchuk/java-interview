@@ -13,6 +13,9 @@ It depends on many things. It's usually O(1), with a decent hash which itself is
 ###### Relative links:
 + https://stackoverflow.com/questions/4553624/hashmap-get-put-complexity
 
+## Алгоритмическая сложность при get для HashMap для ключей, у которыъ hashcode = 1 ?
+###### Relative links:
+
 ## Какие есть коллекции? интерфейсы? реализации?
 ###### Relative links:
 
@@ -39,3 +42,6 @@ It depends on many things. It's usually O(1), with a decent hash which itself is
 
 ## Различия между set и map?
 ###### Relative links:
+
+## мапы в многопоточной среде? какие есть мапы, нюансы?
+

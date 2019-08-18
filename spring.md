@@ -88,3 +88,32 @@ META-INF/spring.factories
 ## Как авто-поднятие конфигураций происходит?
 ###### Relative links:
 + https://www.javadevjournal.com/spring-boot/how-spring-boot-auto-configuration-works/
+
+## что такое lookup method?
+The getter method will return us the reference that is been set but suppose you want a new instance of the dependent bean each time you invoke the getter method
+###### Relative links:
++ https://www.javacodegeeks.com/2015/05/spring-lookup-method-example.html
+
+## использовали declarative transaction в спринге?
+###### Relative links:
++ https://stackoverflow.com/questions/11222103/declarative-or-programmatic-transaction-in-spring
+
+## в спринге что создает прокси?
+After the bean instances are created they are run through a series of BeanPostProcessors - Based on the AOP advice, the proxies are created by a BeanPostProcessor called AnnotationAwareAspectJAutoProxyCreator (or possibly its subclasses)
+###### Relative links:
++ https://stackoverflow.com/questions/12648394/when-does-spring-creates-proxies-in-the-beans-lifecycle
++ https://dzone.com/articles/spring-pitfalls-proxying
++ https://ntsim.uk/posts/a-closer-look-at-spring-proxies
+
+## @LoggableAutowired - своя аннотация, как это сделать?
+beanpostprocessor
+
+## в spring attached/detached entities как называются?
+
+## вызов @transactional spring в том же классе
+###### Relative links:
++ https://stackoverflow.com/questions/3423972/spring-transaction-method-call-by-the-method-within-the-same-class-does-not-wo
+
+
+
+
