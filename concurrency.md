@@ -1,4 +1,14 @@
 # Concurrency
++ [Методы wait/notify для чего используются?](#как-сделать-spring-сервис-thread-safe)
++ [Где может быть использован метод wait?](#как-сделать-spring-сервис-thread-safe)
++ [Что такое synchronized? как использовать?](#как-сделать-spring-сервис-thread-safe)
++ [Ключевое слово volatile для чего используется?](#как-сделать-spring-сервис-thread-safe)
++ [Как volatile связано с happens before?](#как-сделать-spring-сервис-thread-safe)
++ [Какие есть concurrent коллекции?](#как-сделать-spring-сервис-thread-safe)
++ [Что можете рассказать о CopyOnWriteArraylist?](#как-сделать-spring-сервис-thread-safe)
++ [Что можете рассказать о ConcurrentHashMap?](#как-сделать-spring-сервис-thread-safe)
++ [В чем преимущества ConcurrentHashMap перед HashTable?](#как-сделать-spring-сервис-thread-safe)
++ [Что такое синхронизированный доступ?](#как-сделать-spring-сервис-thread-safe)
 
 ## Методы wait/notify для чего используются?
 Эти методы определены у класса Object и предназначены для взаимодействия потоков между собой при межпоточной синхронизации.
