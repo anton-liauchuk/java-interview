@@ -13,11 +13,30 @@ It depends on many things. It's usually O(1), with a decent hash which itself is
 ###### Relative links:
 + https://stackoverflow.com/questions/4553624/hashmap-get-put-complexity
 
-## Алгоритмическая сложность при get для HashMap для ключей, у которыъ hashcode = 1 ?
+## Алгоритмическая сложность при get для HashMap для ключей, у которыъ hashcode = 1?
+В случае возникновения коллизий объект node сохраняется в структуре данных "связанный список" и метод equals() используется для сравнения ключей. Это сравнения для поиска верного ключа в связанном списке -линейная операция и в худшем случае сложность равнa O(n). Для исправления этой проблемы в Java 8 после достижения определенного порога вместо связанных списков используются сбалансированные деревья. Это означает, что HashMap в начале сохраняет объекты в связанном списке, но после того, как колличество элементов в хэше достигает определенного порога происходит переход к сбалансированным деревьям. Что улучшает производительность в худшем случае с O(n) до O(log n).
 ###### Relative links:
++ https://habr.com/ru/post/421179/
 
 ## Какие есть коллекции? интерфейсы? реализации?
+The collection interfaces are divided into two groups. The most basic interface, java.util.Collection, has the following descendants:
++ java.util.Set
++ java.util.SortedSet
++ java.util.NavigableSet
++ java.util.Queue
++ java.util.concurrent.BlockingQueue
++ java.util.concurrent.TransferQueue
++ java.util.Deque
++ java.util.concurrent.BlockingDeque
+
+The other collection interfaces are based on java.util.Map and are not true collections. However, these interfaces contain collection-view operations, which enable them to be manipulated as collections. Map has the following offspring:
++ java.util.SortedMap
++ java.util.NavigableMap
++ java.util.concurrent.ConcurrentMap
++ java.util.concurrent.ConcurrentNavigableMap
 ###### Relative links:
++ https://docs.oracle.com/javase/8/docs/technotes/guides/collections/overview.html
++ https://habr.com/ru/post/237043/
 
 ## В чем разница между LinkedList и ArrayList?
 ###### Relative links:
@@ -40,8 +59,8 @@ It depends on many things. It's usually O(1), with a decent hash which itself is
 ## Сложность удаления из связного списка последнего элемента?
 ###### Relative links:
 
-## Различия между set и map?
+## Различия между Set и Map?
 ###### Relative links:
 
-## мапы в многопоточной среде? какие есть мапы, нюансы?
+## Какие есть мапы для многопоточной среды?
 

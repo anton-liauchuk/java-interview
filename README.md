@@ -6,8 +6,18 @@
 + [Spring](#Spring)
 + [Servlet](#Servlet)
 + [Hibernate](#Hibernate)
++ [Git](#Git)
++ [Maven](#Maven)
 + [Microservices](#Microservices)
 + [JavaScript](#JavaScript)
++ [Linux](#Linux)
++ [Algorithms](#Algorithms)
++ [Patterns](#Patterns)
++ [React](#React)
++ [REST](#REST)
++ [SQL](#SQL)
++ [Test](#Test)
++ [Transactions](#Transactions)
 
 ## Core
 
@@ -56,4 +66,26 @@
 
 ## Hibernate
 
+## Git
+
+## Maven
+
+## Microservices
+
 ## JavaScript
+
+## Algorithms
+
+## Linux
+
+## Patterns
+
+## React
+
+## REST
+
+## SQL
+
+## Test
+
+## Transactions
