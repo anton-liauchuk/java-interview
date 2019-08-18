@@ -46,19 +46,6 @@ https://dzone.com/articles/rabbitmq-in-microservices
 https://dzone.com/articles/microservices-communication-feign-as-rest-client
 https://stackoverflow.com/questions/221442/rest-clients-for-java
 
-[java] какие нововведения в java 8, 9, 10, 11?
-https://codete.com/blog/java-8-java-11-quick-guide/
-https://www.quora.com/What-are-the-differences-between-Java-8-9-10-and-11
-
-[java] в чем концептуальное отличие stream api от collection?
-Streams differ from collections in several ways:
-No storage. A stream is not a data structure that stores elements; instead, it conveys elements from a source such as a data structure, an array, a generator function, or an I/O channel, through a pipeline of computational operations.
-Functional in nature. An operation on a stream produces a result, but does not modify its source. For example, filtering a Stream obtained from a collection produces a new Stream without the filtered elements, rather than removing elements from the source collection.
-Laziness-seeking. Many stream operations, such as filtering, mapping, or duplicate removal, can be implemented lazily, exposing opportunities for optimization. For example, "find the first  String with three consecutive vowels" need not examine all the input strings. Stream operations are divided into intermediate (Stream-producing) operations and terminal (value- or side-effect-producing) operations. Intermediate operations are always lazy.
-Possibly unbounded. While collections have a finite size, streams need not. Short-circuiting operations such as limit(n) or findFirst() can allow computations on infinite streams to complete in finite time.
-Consumable. The elements of a stream are only visited once during the life of a stream. Like an Iterator, a new stream must be generated to revisit the same elements of the source.
-https://stackoverflow.com/questions/39432699/what-is-the-difference-between-streams-and-collections-in-java-8
-
 [java] реализовать stream api (с функциями filter, map), lambda можно использовать
 
 [java] как мы создаем копии объектов вне volatile?
@@ -100,26 +87,6 @@ https://stackoverflow.com/questions/38846976/what-is-the-difference-between-atom
 [java] i++ для Integer, что будет с памятью?
 variable will be changed
 https://stackoverflow.com/questions/13280134/why-does-post-increment-work-on-wrapper-classes
-
-[servlet] что такое servlet api?
-
-[servlet] в чем разница между параметрами и аттрибутами?
-getParameter() returns http request parameters. Those passed from the client to the server. For example http://example.com/servlet?parameter=1. Can only return String
-getAttribute() is for server-side usage only - you fill the request with attributes that you can use within the same request. For example - you set an attribute in a servlet, and read it from a JSP. Can be used for any object, not just string.
-https://stackoverflow.com/questions/5243754/difference-between-getattribute-and-getparameter
-
-[servlet] жизненный цикл сервлета?
-There are three life cycle methods of a Servlet:
-init()
-service()
-destroy()
-https://www.geeksforgeeks.org/life-cycle-of-a-servlet/
-
-а можно ли какой-то сервлет быстрее создать, чем другие?
-
-[servlet] что такое servlet mapping?
-Servlet mapping specifies the web container of which java servlet should be invoked for a url given by client. It maps url patterns to servlets. When there is a request from a client, servlet container decides to which application it should forward to. Then context path of url is matched for mapping servlets.
-https://javapapers.com/servlet/what-is-servlet-mapping/
 
 [sql] что такое having в sql?
 HAVING filters records that work on summarized GROUP BY results.
@@ -173,23 +140,7 @@ beanpostprocessor
 
 есть опыт в spring cloud?
 
-attached/detached entity что это значит?
-https://stackoverflow.com/questions/2573739/what-are-detached-persistent-and-transient-objects-in-hibernate
-
-[hibernate] а зачем нужен flush?
-https://stackoverflow.com/questions/3220336/whats-the-use-of-session-flush-in-hibernate
-
 в spring attached/detached как называются?
-
-[hibernate] уровни кэша в hibernate?
-Кеш первого уровня (First-level cache);
-Кеш второго уровня (Second-level cache);
-Кеш запросов (Query cache);
-https://habr.com/ru/post/135176/
-
-[hibernate] где находится кэш первого уровня?
-Кеш первого уровня всегда привязан к объекту сессии. Hibernate всегда по умолчанию использует этот кеш и его нельзя отключить.
-https://habr.com/ru/post/135176/
 
 как конкретно использовали solr?
 

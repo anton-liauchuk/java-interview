@@ -1,9 +1,14 @@
 # Вопросы для Java собеседования
 
++ [Core](#Core)
 + [Collections](#Collections)
 + [Concurrency](#Concurrency)
 + [Spring](#Spring)
++ [Servlet](#Servlet)
++ [Hibernate](#Hibernate)
 + [Microservices](#Microservices)
+
+## Core
 
 ## Collections
 + [Алгоритмическая сложность get в Hashmap?](collections.md#алгоритмическая-сложность-get-в-hashmap)
@@ -45,3 +50,7 @@
 + [Где можно хранить список конфигураций в meta-inf?](spring.md#где-можно-хранить-список-конфигураций-в-meta-inf)
 + [Возможные виды конфигураций в Spring?](spring.md#возможные-виды-конфигураций-в-spring)
 + [Как авто-поднятие конфигураций происходит?](spring.md#как-авто-поднятие-конфигураций-происходит)
+
+## Servlet
+
+## Hibernate

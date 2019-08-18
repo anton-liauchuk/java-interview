@@ -35,11 +35,6 @@ https://javarush.ru/groups/posts/osnovnye-principy-dizajna-klassov-solid-v-java
 почему только одну обязанность?
 класс с кучей статических внутренних классов? в чем подвох? с точки зрения безопасности?
 
-способы синхронизации потоков?
-
-нестатический метод sync, что будет монитором?
-https://stackoverflow.com/questions/6367885/difference-between-synchronizing-a-static-method-and-a-non-static-method
-
 что не рекомендуется делать в параллельных стримах?
 inner статический vs нестатический?
 есть ли доступ к приватной переменной внешенго класса из внутреннего?

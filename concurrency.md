@@ -9,6 +9,8 @@
 + [Что можете рассказать о ConcurrentHashMap?](#что-можете-рассказать-о-concurrenthashmap)
 + [В чем преимущества ConcurrentHashMap перед HashTable?](#в-чем-преимущества-concurrenthashmap-перед-hashtable)
 + [Что такое синхронизированный доступ?](#что-такое-синхронизированный-доступ)
++ [Нестатический метод sync, что будет монитором?](#что-такое-синхронизированный-доступ)
++ [Способы синхронизации потоков?](#способы-синхронизации-потоков)
 
 ## Методы wait/notify для чего используются?
 Эти методы определены у класса Object и предназначены для взаимодействия потоков между собой при межпоточной синхронизации.
@@ -73,3 +75,9 @@ HashMap is the best thing to use in a single threaded application.
 ## Что такое синхронизированный доступ?
 ###### Relative links:
 
+## Нестатический метод synchronized, что будет монитором?
+###### Relative links:
++ https://stackoverflow.com/questions/6367885/difference-between-synchronizing-a-static-method-and-a-non-static-method
+
+## Способы синхронизации потоков?
+###### Relative links:

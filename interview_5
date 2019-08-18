@@ -9,11 +9,8 @@ The constant interface pattern is a poor use of interfaces. That a class uses so
 There are several constant interfaces in the java platform libraries, such as java.io.ObjectStreamConstants. These interfaces should be regarded as anomalies and should not be emulated.
 https://stackoverflow.com/questions/2659593/what-is-the-use-of-interface-constants
 
-[java] collection interfaces?
-[java] чем отличается set vs map?
 [java] контракт equals/hashcode?
 [java] если объекты равны, hash должен быть равен?
-[java] сложность удаления из связного списка последнего элемента?
 [java] вложенные классы?
 [java] как сделать builder?
 [pattern] pattern observer?
