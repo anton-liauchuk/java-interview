@@ -35,18 +35,7 @@ https://javarush.ru/groups/posts/osnovnye-principy-dizajna-klassov-solid-v-java
 почему только одну обязанность?
 класс с кучей статических внутренних классов? в чем подвох? с точки зрения безопасности?
 
-что в спринге реализовано для DI? какой паттерн используется?
-что такое бин в спринге?
-как бин попадает в контейнер?
-в чем разница между @service vs @component?
-после создания бина, можно ли его как-то подкрутить? что-то добавить и тд?
-default scope для бина?
-какие есть еще бины?
-что такое prototype scope?
-spring service в многопоточной среде?
-
-service with repo, how to do thread-safe service? вычитывает одно, из друго репо другое и тд?
-способы синзронизации потоков?
+способы синхронизации потоков?
 
 нестатический метод sync, что будет монитором?
 https://stackoverflow.com/questions/6367885/difference-between-synchronizing-a-static-method-and-a-non-static-method
