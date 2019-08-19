@@ -1,14 +1,14 @@
 # Collections
 + [Алгоритмическая сложность get в Hashmap?](#алгоритмическая-сложность-get-в-hashmap)
-+ [Алгоритмическая сложность при get для HashMap для ключей, у которых hashcode = 1?](#алгоритмическая-сложность-get-в-hashmap)
++ [Алгоритмическая сложность при get для HashMap для ключей, у которых hashcode = 1?](#алгоритмическая-сложность-при-get-для-hashmap-для-ключей-у-которых-hashcode--1)
 + [Какие есть коллекции? интерфейсы? реализации?](#какие-есть-коллекции-интерфейсы-реализации)
 + [В чем разница между LinkedList и ArrayList?](#в-чем-разница-между-linkedlist-и-arraylist)
 + [Что лучше использовать LinkedList или ArrayList?](#что-лучше-использовать-linkedlist-или-arraylist)
 + [Устройство HashMap?](#устройство-hashmap)
 + [Какие существуют реализации Map?](#какие-существуют-реализации-map)
-+ [Сложность удаления из связного списка последнего элемента?](#реализации-map)
-+ [Различия между Set и Map?](#реализации-map)
-+ [Какие есть мапы для многопоточной среды?](#реализации-map)
++ [Сложность удаления из связного списка последнего элемента?](#сложность-удаления-из-связного-списка-последнего-элемента)
++ [Различия между Set и Map?](#различия-между-set-и-map)
++ [Какие есть мапы для многопоточной среды?](#какие-есть-мапы-для-многопоточной-среды)
 
 ## Алгоритмическая сложность get в Hashmap?
 It depends on many things. It's usually O(1), with a decent hash which itself is constant time... but you could have a hash which takes a long time to compute, and if there are multiple items in the hash map which return the same hash code, get will have to iterate over them calling equals on each of them to find a match.
