@@ -1,4 +1,7 @@
-## архитектурные паттерны в целом?
+#Patterns
++ [Архитектурные паттерны в целом?](#алгоритмическая-сложность-get-в-hashmap)
+
+## Архитектурные паттерны в целом?
 ###### Relative links:
 + https://dzone.com/articles/software-architecture-the-5-patterns-you-need-to-k
 

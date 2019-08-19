@@ -23,11 +23,15 @@
 
 ## Collections
 + [Алгоритмическая сложность get в Hashmap?](collections.md#алгоритмическая-сложность-get-в-hashmap)
++ [Алгоритмическая сложность при get для HashMap для ключей, у которых hashcode = 1?](collections.md#алгоритмическая-сложность-get-в-hashmap)
 + [Какие есть коллекции? интерфейсы? реализации?](collections.md#какие-есть-коллекции-интерфейсы-реализации)
 + [В чем разница между LinkedList и ArrayList?](collections.md#в-чем-разница-между-linkedlist-и-arraylist)
 + [Что лучше использовать LinkedList или ArrayList?](collections.md#что-лучше-использовать-linkedlist-или-arraylist)
 + [Устройство HashMap?](collections.md#устройство-hashmap)
-+ [Реализации Map?](collections.md#реализации-map)
++ [Какие существуют реализации Map?](collections.md#какие-существуют-реализации-map)
++ [Сложность удаления из связного списка последнего элемента?](collections.md#реализации-map)
++ [Различия между Set и Map?](collections.md#реализации-map)
++ [Какие есть мапы для многопоточной среды?](collections.md#реализации-map)
 
 ## Concurrency
 + [Методы wait/notify для чего используются?](concurrency.md#методы-waitnotify-для-чего-используются)
