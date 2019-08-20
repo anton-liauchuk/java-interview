@@ -1,6 +1,9 @@
 # Core
 
-## Какие нововведения в java 8, 9, 10, 11?
+## Какие нововведения в java 8?
++ Lambda expressions, Method Reference , Optional, Streams added.
++ Advanced Date , Time, Zone and Calendar Classes introduced.
++ PermGen Removed.
 ###### Relative links:
 + https://codete.com/blog/java-8-java-11-quick-guide/
 + https://www.quora.com/What-are-the-differences-between-Java-8-9-10-and-11
@@ -35,17 +38,28 @@ stack
 + https://habr.com/ru/post/230239/
 + https://www.javacodegeeks.com/2015/09/java-agents.html
 
-## был опыт troubleshooting?
-logs, new relic
+## Возможные средства troubleshooting?
++ Java Profilers
++ Tracing Java Web Requests and Transactions
++ Java Application Performance Management (APM)
++ Real User Monitoring (RUM)
++ JVM Performance Metrics
++ Web Server (Apache/Nginx) Access Logs
++ Tracking All Java Exceptions
++ Memory Analysis
 ###### Relative links:
++ https://stackify.com/java-performance-tools-8-types-tools-need-know/
 
-## Пользовались profiler?
+## Что такое profiler?
 A Java Profiler is a tool that monitors Java bytecode constructs and operations at the JVM level. These code constructs and operations include object creation, iterative executions (including recursive calls), method executions, thread executions, and garbage collections.
 ###### Relative links:
 + https://www.baeldung.com/java-profilers
 
 ## Что такое stop the world?
-garbage collector
+Stop-the-world will occur no matter which GC algorithm you choose. Stop-the-world means that the JVM is stopping the application from running to execute a GC. When stop-the-world occurs, every thread except for the threads needed for the GC will stop their tasks. The interrupted tasks will resume only after the GC task has completed. GC tuning often means reducing this stop-the-world time.
+###### Relative links:
++ https://www.cubrid.org/blog/understanding-java-garbage-collection
++ https://stackoverflow.com/questions/16695874/why-does-the-jvm-full-gc-need-to-stop-the-world
 
 ## Чем отличается int, Integer, AtomicInteger?
 + int is a primitive type. Variables of type int store the actual binary value for the integer you want to represent. int.parseInt("1") doesn't make sense because int is not a class and therefore doesn't have any methods.
