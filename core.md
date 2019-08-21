@@ -18,9 +18,6 @@ Streams differ from collections in several ways:
 ###### Relative links:
 + https://stackoverflow.com/questions/39432699/what-is-the-difference-between-streams-and-collections-in-java-8
 
-## Реализовать stream api (с функциями filter, map), lambda можно использовать
-###### Relative links:
-
 ## Где хранится ссылка на объект?
 stack
 ###### Relative links:
@@ -80,40 +77,68 @@ The constant interface pattern is a poor use of interfaces. That a class uses so
 + https://stackoverflow.com/questions/2659593/what-is-the-use-of-interface-constants
 
 ## Контракт equals/hashcode?
+objects which are .equals() MUST have the same .hashCode().
 ###### Relative links:
++ https://stackoverflow.com/questions/17027777/relationship-between-hashcode-and-equals-method-in-java
 
 ## Правила переопределения equals/hashcode?
++ Always use same attributes of an object to generate hashCode() and equals() both.
++ equals() must be consistent (if the objects are not modified, then it must keep returning the same value).
++ Whenever a.equals(b), then a.hashCode() must be same as b.hashCode().
++ If you override one, then you should override the other.
+###### Relative links:
+https://howtodoinjava.com/java/basics/java-hashcode-equals-methods/
 
 ## Для equals/hashcode нужны одни и те же поля?
-
-## Если объекты равны, hash должен быть равен?
+The fields don't have to be the same. The requirement is for two objects that are equal, they must have the same hash code. If they have the same hash code, they don't have to be equal. For example, you could return 1 as your hash code always, and you would obey the hash code contract, no matter what fields you used in your equals method. Returning 1 all the time would improve the computation time of hashCode, but HashMap's performance would drop since it would have to resort to equals() more often.
 ###### Relative links:
++ https://stackoverflow.com/questions/22827652/different-fields-for-equals-and-hashcode
 
 ## Для чего используются вложенные классы?
++ It is a way of logically grouping classes that are only used in one place.
++ It increases encapsulation.
++ It can lead to more readable and maintainable code.
 ###### Relative links:
++ https://stackoverflow.com/questions/11398122/what-are-the-purposes-of-inner-classes
++ https://docs.oracle.com/javase/tutorial/java/javaOO/nested.html
 
 ## Что лучше использовать interfaces или abstract classes?
+Use abstract classes when you have a class that A is kind of B and interface when A can do B.
++ A class can implement multiple interfaces, but it can only extend one abstract class.
++ Interfaces allow the creation of proxies that encapsulate a concrete class. This is used extensively by frameworks in order to intercept method calls to the concrete class (e.g., for starting a transaction before the method is executed or to write to the log).
 ###### Relative links:
++ https://stackoverflow.com/questions/2971265/situation-where-interface-is-better-than-abstract-class
++ https://stackoverflow.com/questions/11889588/choosing-interface-or-abstract-class
 
-## Есть ли доступ к приватной переменной внешенго класса из внутреннего?
+## Есть ли доступ к приватной переменной внешнего класса из внутреннего?
+Inner classes has access to private fields from outer class.
 ###### Relative links:
++ https://www.geeksforgeeks.org/nested-classes-java/
 
 ## Различия между статическим внутренним и нестатическим внутренним классами?
++ Static nested classes do not directly have access to other members(non-static variables and methods) of the enclosing class because as it is static, it must access the non-static members of its enclosing class through an object. That is, it cannot refer to non-static members of its enclosing class directly. Because of this restriction, static nested classes are seldom used.
++ Non-static nested classes (inner classes) has access to all members(static and non-static variables and methods, including private) of its outer class and may refer to them directly in the same way that other non-static members of the outer class do.
 ###### Relative links:
++ https://www.geeksforgeeks.org/nested-classes-java/
++ https://stackoverflow.com/questions/253492/static-nested-class-in-java-why
 
 ## Что не рекомендуется делать в параллельных стримах?
+The problem is that all parallel streams use common fork-join thread pool, and if you submit a long-running task, you effectively block all threads in the pool. Consequently, you block all other tasks that are using parallel streams.
 ###### Relative links:
-
-## client по ссылке? кусок кода?
-###### Relative links:
++ https://dzone.com/articles/think-twice-using-java-8
++ https://stackoverflow.com/questions/20375176/should-i-always-use-a-parallel-stream-when-possible
 
 ## методы у класса object?
+toString(), hashCode(), equals(Object obj), getClass(), finalize(), clone(), wait(), notify() notifyAll()
+###### Relative links:
++ https://www.geeksforgeeks.org/object-class-in-java/
 
 ## что такое jmeter?
+Apache JMeter is an open source, Java-based, load testing tool that can be used to analyze the functional behavior of a system and measure the performance of a system under a load test. A load test will simulate end-user behavior that approach the limits of an application’s specifications. Apache JMeter can be used to simulate varying or heavy loads on singular or multiple servers, networks or objects to test a system’s strength.
+###### Relative links:
++ https://searchsoftwarequality.techtarget.com/definition/Apache-JMeter
 
 ## снять дамп памяти для приложения? как это сделать?
-
-## как лучше всего замерить время выполнения метода? что думаешь о проверке с помощью end date - start date?
-
-
-
+Possible options from the link.
+###### Relative links:
++ https://www.baeldung.com/java-heap-dump-capture
