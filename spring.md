@@ -20,11 +20,19 @@
 + [Как авто-поднятие конфигураций происходит?](#как-авто-поднятие-конфигураций-происходит)
 
 ## Как сделать spring сервис thread-safe?
+There are several ways, probably too long to list here but here are a few examples:
++ Design your beans immutable: for example have no setters and only use constructor arguments to create a bean. There are other ways, such as Builder pattern, etc..
++ Design your beans stateless: for example a bean that does something can be just a function (or several). This bean in most cases can and should be stateless, which means it does not have any state, it only does things with function arguments you provide each time (on each invocation)
++ Design your beans persistent: which is a special case of "immutable", but has some very nice properties. Usually is used in functional programming, where Spring (at least yet) not as useful as in imperative world, but I have used them with Scala/Spring projects.
++ Design your beans with locks [last resort]: I would recommend against this unless you are working on a lower level library. The reason is we (humans) are not good thinking in terms of locks. Just the way we are raised and nurtured. Everything happens in parallel without us needing to "put that rain on pause, let me get an umbrella". Computers however are all about locks when you are talking "multiple things at the same time", hence there are some of us (exceptional people) who are doing their fair share and implementing libraries based on these locks. Most of other humans can just use these libraries and worry not about concurrency.
 ###### Relative links:
 + http://dolszewski.com/spring/spring-bean-thread-safety-guide/
++ https://stackoverflow.com/questions/15745140/are-spring-objects-thread-safe
 
 ## Что такое бин?
+The objects that form the backbone of your application and that are managed by the Spring IoC container are called beans. A bean is an object that is instantiated, assembled, and otherwise managed by a Spring IoC container. These beans are created with the configuration metadata that you supply to the container.
 ###### Relative links:
++ https://www.tutorialspoint.com/spring/spring_bean_definition.htm
 
 ## Как бин попадает в контейнер?
 ###### Relative links:
