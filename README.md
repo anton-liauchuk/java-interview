@@ -105,6 +105,9 @@
 - [Где находится кэш первого уровня?](hibernate.md#где-находится-кэш-первого-уровня)
 
 ## Git
+- [Различия между merge и rebase?](git.md#различия-между-merge-и-rebase)
+- [Что такое reset?](git.md#что-такое-reset)
+- [Различия между soft reset и hard reset?](git.md#различия-между-soft-reset-и-hard-reset)
 
 ## Maven
 
