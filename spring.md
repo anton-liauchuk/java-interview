@@ -2,7 +2,6 @@
 + [Как сделать spring сервис thread-safe?](#как-сделать-spring-сервис-thread-safe)
 + [Что такое бин?](#что-такое-бин)
 + [Как бин попадает в контейнер?](#Как-бин-попадает-в-контейнер)
-+ [Что в спринге реализовано для DI? какой паттерн используется?](#что-в-спринге-реализовано-для-di-какой-паттерн-используется)
 + [Какие бывают spring scopes?](#какие-бывают-spring-scopes)
 + [В чем разница между @Service vs @Component?](#в-чем-разница-между-service-vs-component)
 + [После создания бина, можно ли его как-то подкрутить? что-то добавить и тд?](#после-создания-бина-можно-ли-его-как-то-подкрутить-что-то-добавить-и-тд)
@@ -17,7 +16,11 @@
 + [Как добавить свои авто-конфигурации?](#как-добавить-свои-авто-конфигурации)
 + [Где можно хранить список конфигураций в meta-inf?](#где-можно-хранить-список-конфигураций-в-meta-inf)
 + [Возможные виды конфигураций в Spring?](#возможные-виды-конфигураций-в-spring)
-+ [Как авто-поднятие конфигураций происходит?](#как-авто-поднятие-конфигураций-происходит)
++ [что такое lookup method?](#что-такое-lookup-method)
++ [что такое declarative transaction в spring?](#что-такое-declarative-transaction-в-spring)
++ [что создает прокси?](#что-создает-прокси)
++ [как сделать свою аннотацию @LoggableAutowired?](#как-сделать-свою-аннотацию-@LoggableAutowired)
++ [вызов @transactional spring в том же классе](#вызов-@transactional-spring-в-том-же-классе)
 
 ## Как сделать spring сервис thread-safe?
 There are several ways, probably too long to list here but here are a few examples:
@@ -134,7 +137,7 @@ The getter method will return us the reference that is been set but suppose you 
 ###### Relative links:
 + https://www.javacodegeeks.com/2015/05/spring-lookup-method-example.html
 
-## использовали declarative transaction в спринге?
+## что такое declarative transaction в spring?
 1. Allows us to manage transactions through configuration.
 2. This means separating transaction logic with business logic.
 3. We use annotations (Or XML files) to manage transactions.
@@ -143,14 +146,14 @@ The getter method will return us the reference that is been set but suppose you 
 ###### Relative links:
 + https://stackoverflow.com/questions/11222103/declarative-or-programmatic-transaction-in-spring
 
-## в спринге что создает прокси?
+## что создает прокси?
 After the bean instances are created they are run through a series of BeanPostProcessors - Based on the AOP advice, the proxies are created by a BeanPostProcessor called AnnotationAwareAspectJAutoProxyCreator (or possibly its subclasses)
 ###### Relative links:
 + https://stackoverflow.com/questions/12648394/when-does-spring-creates-proxies-in-the-beans-lifecycle
 + https://dzone.com/articles/spring-pitfalls-proxying
 + https://ntsim.uk/posts/a-closer-look-at-spring-proxies
 
-## @LoggableAutowired - своя аннотация, как это сделать?
+## как сделать свою аннотацию @LoggableAutowired?
 beanpostprocessor
 
 ## вызов @transactional spring в том же классе
