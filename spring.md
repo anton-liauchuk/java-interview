@@ -97,22 +97,25 @@ ExceptionHandler is a Spring annotation that provides a mechanism to treat excep
 ###### Relative links:
 + https://www.toptal.com/java/spring-boot-rest-api-error-handling
 
-## Что из себя представляет environment?
-###### Relative links:
-
 ## В чем разница между BeanFactory и FactoryBean?
-The BeanFactory is an interface in Spring and is a factory class for managing beans. The BeanFactory is the core of the IOC container. The accusations include: instantiating, configuring objects in the application and establishing dependencies between them. The ApplicationContext is an advanced version of the BeanFactory.
-FactoryBean is a way to customize the instantiation of the bean, through the implementation of the FactoryBean, complete the custom bean instantiation details. For example, the FactoryBean proxy object can be used to intercept all its methods to form AOP-like functions. Using FactoryBean avoids the need to configure various properties in the XML file, which is more flexible, but you need to encode the instantiation of the class in the implementation class of the FactoryBean.
++ The BeanFactory is an interface in Spring and is a factory class for managing beans. The BeanFactory is the core of the IOC container. The accusations include: instantiating, configuring objects in the application and establishing dependencies between them. The ApplicationContext is an advanced version of the BeanFactory.
++ FactoryBean is a way to customize the instantiation of the bean, through the implementation of the FactoryBean, complete the custom bean instantiation details. For example, the FactoryBean proxy object can be used to intercept all its methods to form AOP-like functions. Using FactoryBean avoids the need to configure various properties in the XML file, which is more flexible, but you need to encode the instantiation of the class in the implementation class of the FactoryBean.
 ###### Relative links:
 + http://www.programmersought.com/article/6987917473/
 
 ## Различия между Spring и Spring Boot?
++ Spring Boot does all of those using AutoConfiguration and will take care of all the internal dependencies that your application needs — all you need to do is run your application. Spring Boot will auto-configure with the Dispatcher Servlet, if Spring jar  is in the class path. It will auto-configue to the datasource, if Hibernate jar  is in the class path. Spring Boot gives us a pre-configured set of Starter Projects to be added as a dependency in our project.
++ During web-application development, we would need the jars that we want to use, which versions of the jars to use, and how to connect them together. All web applications have similar needs, for example, Spring MVC, Jackson Databind, Hibernate core, and Log4j (for logging). So, we had to choose the compatible versions of all these jars. In order to decrease the complexity, Spring Boot has introduced what we call Spring Boot Starters.
 ###### Relative links:
 + https://dzone.com/articles/understanding-the-basics-of-spring-vs-spring-boot
++ https://dzone.com/articles/spring-vs-spring-boot
 
 ## Как добавить свои авто-конфигурации?
++ You need to opt-in to auto-configuration by adding the @EnableAutoConfiguration or @SpringBootApplication annotations to one of your @Configuration classes.
++ Spring Boot checks for the presence of a META-INF/spring.factories file within your published jar. The file should list your configuration classes under the EnableAutoConfiguration key, as shown in the following example:
 ###### Relative links:
 + https://www.baeldung.com/spring-boot-custom-auto-configuration
++ https://docs.spring.io/spring-boot/docs/current/reference/html/using-boot-auto-configuration.html
 
 ## Где можно хранить список конфигураций в meta-inf?
 META-INF/spring.factories
@@ -126,16 +129,17 @@ META-INF/spring.factories
 ###### Relative links:
 + https://stackoverflow.com/questions/35807056/how-many-ways-are-there-to-configure-the-spring-framework-what-are-the-differen
 
-## Как авто-поднятие конфигураций происходит?
-###### Relative links:
-+ https://www.javadevjournal.com/spring-boot/how-spring-boot-auto-configuration-works/
-
 ## что такое lookup method?
 The getter method will return us the reference that is been set but suppose you want a new instance of the dependent bean each time you invoke the getter method
 ###### Relative links:
 + https://www.javacodegeeks.com/2015/05/spring-lookup-method-example.html
 
 ## использовали declarative transaction в спринге?
+1. Allows us to manage transactions through configuration.
+2. This means separating transaction logic with business logic.
+3. We use annotations (Or XML files) to manage transactions.
+4. Easy to maintain. Boilerplate is kept away from business logic.
+5. Preferred when working with large amount of Transaction logic.
 ###### Relative links:
 + https://stackoverflow.com/questions/11222103/declarative-or-programmatic-transaction-in-spring
 
@@ -149,9 +153,8 @@ After the bean instances are created they are run through a series of BeanPostPr
 ## @LoggableAutowired - своя аннотация, как это сделать?
 beanpostprocessor
 
-## в spring attached/detached entities как называются?
-
 ## вызов @transactional spring в том же классе
+The problem here is, that Spring's AOP proxies don't extend but rather wrap your service instance to intercept calls. This has the effect, that any call to "this" from within your service instance is directly invoked on that instance and cannot be intercepted by the wrapping proxy (the proxy is not even aware of any such call).
 ###### Relative links:
 + https://stackoverflow.com/questions/3423972/spring-transaction-method-call-by-the-method-within-the-same-class-does-not-wo
 
