@@ -92,8 +92,17 @@
 + [вызов @transactional spring в том же классе](spring.md#вызов-transactional-spring-в-том-же-классе)
 
 ## Servlet
+- [Что такое servlet api?](servlet.md#что-такое-servlet-api)
+- [В чем разница между параметрами и аттрибутами?](servlet.md#в-чем-разница-между-параметрами-и-аттрибутами)
+- [Жизненный цикл сервлета?](servlet.md#жизненный-цикл-сервлета)
+- [Можно ли какой-то сервлет быстрее создать, чем другие?](servlet.md#можно-ли-какой-то-сервлет-быстрее-создать-чем-другие)
+- [Что такое servlet mapping?](servlet.md#что-такое-servlet-mapping)
 
 ## Hibernate
+- [Что значит attached/detached entity?](hibernate.md#что-значит-attacheddetached-entity)
+- [Зачем нужен flush?](hibernate.md#зачем-нужен-flush)
+- [Уровни кэша в hibernate?](hibernate.md#уровни-кэша-в-hibernate)
+- [Где находится кэш первого уровня?](hibernate.md#где-находится-кэш-первого-уровня)
 
 ## Git
 

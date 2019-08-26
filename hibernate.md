@@ -1,8 +1,8 @@
 # Hibernate
-+ [Что значит attached/detached entity?](#алгоритмическая-сложность-get-в-hashmap)
-+ [Зачем нужен flush?](#алгоритмическая-сложность-get-в-hashmap)
-+ [Уровни кэша в hibernate?](#алгоритмическая-сложность-get-в-hashmap)
-+ [Где находится кэш первого уровня?](#алгоритмическая-сложность-get-в-hashmap)
+- [Что значит attached/detached entity?](#что-значит-attacheddetached-entity)
+- [Зачем нужен flush?](#зачем-нужен-flush)
+- [Уровни кэша в hibernate?](#уровни-кэша-в-hibernate)
+- [Где находится кэш первого уровня?](#где-находится-кэш-первого-уровня)
 
 ## Что значит attached/detached entity?
 ###### Relative links:
