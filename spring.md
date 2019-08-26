@@ -35,34 +35,67 @@ The objects that form the backbone of your application and that are managed by t
 + https://www.tutorialspoint.com/spring/spring_bean_definition.htm
 
 ## Как бин попадает в контейнер?
-###### Relative links:
+The IoC container receives metadata from either an XML file, Java annotations, or Java code. The container gets its instructions on what objects to instantiate, configure, and assemble from simple Plain Old Java Objects (POJO) by reading the configuration metadata provided. These created objects through this process called Spring Beans.
 
-## Что в спринге реализовано для DI? какой паттерн используется?
+The responsibilities of IoC container are:
++ Instantiating the bean
++ Wiring the beans together
++ Configuring the beans
++ Managing the bean’s entire life-cycle
 ###### Relative links:
++ https://www.zoltanraffai.com/blog/how-does-spring-work-internally/
 
 ## Какие бывают spring scopes?
++ singleton. Scopes a single bean definition to a single object instance per Spring IoC container.
++ prototype. Scopes a single bean definition to any number of object instances.
++ request. Scopes a single bean definition to the lifecycle of a single HTTP request; that is each and every HTTP request will have its own instance of a bean created off the back of a single bean definition. Only valid in the context of a web-aware Spring ApplicationContext.
++ session. Scopes a single bean definition to the lifecycle of a HTTP Session. Only valid in the context of a web-aware Spring ApplicationContext.
++ global session. Scopes a single bean definition to the lifecycle of a global HTTP Session. Typically only valid when used in a portlet context. Only valid in the context of a web-aware Spring ApplicationContext.
 ###### Relative links:
++ https://docs.spring.io/spring/docs/3.0.0.M3/reference/html/ch04s04.html
 
 ## В чем разница между @Service vs @Component?
+Apart from the fact that it's used to indicate, that it's holding the business logic, there’s nothing else noticeable in this annotation; but who knows, Spring may add some additional exceptional in future.
 ###### Relative links:
++ https://stackoverflow.com/questions/6827752/whats-the-difference-between-component-repository-service-annotations-in
 
 ## После создания бина, можно ли его как-то подкрутить? что-то добавить и тд?
++ afterPropertiesSet method;
++ annotation @PostConstruct;
++ init-method attribute;
++ BeanPostProcessor;
 ###### Relative links:
++ https://codippa.com/callback-methods-in-spring-beans/
++ http://findnerd.com/list/view/How-to-call-a-method-after-bean-initialization-is-complete/7530/
 
 ## Scope для бина по умолчанию?
+singleton
 ###### Relative links:
++ https://www.tutorialspoint.com/spring/spring_bean_scopes.htm
 
 ## Что такое prototype scope?
+prototype. Scopes a single bean definition to any number of object instances.
 ###### Relative links:
++ https://docs.spring.io/spring/docs/3.0.0.M3/reference/html/ch04s04.html
 
 ## Какие существуют виды DI?
++ Constructor-Based Dependency Injection;
++ Setter-Based Dependency Injection;
++ Field-Based Dependency Injection;
 ###### Relative links:
++ https://www.baeldung.com/inversion-control-and-dependency-injection-in-spring
++ https://www.javacodegeeks.com/2019/02/field-setter-constructor-injection.html
 
 ## Какие зависимости лучше добавлять через конструктор, а какие через setter?
++ required dependencies via constructor;
++ optional dependencies via setter;
 ###### Relative links:
++ https://www.dariawan.com/tutorials/spring/constructor-vs-setter-dependency-injection/
 
 ## Как обрабатывать исключения в контроллерах?
+ExceptionHandler is a Spring annotation that provides a mechanism to treat exceptions that are thrown during execution of handlers (Controller operations). This annotation, if used on methods of controller classes, will serve as the entry point for handling exceptions thrown within this controller only. Altogether, the most common way is to use @ExceptionHandler on methods of @ControllerAdvice classes so that the exception handling will be applied globally or to a subset of controllers.
 ###### Relative links:
++ https://www.toptal.com/java/spring-boot-rest-api-error-handling
 
 ## Что из себя представляет environment?
 ###### Relative links:
