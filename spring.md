@@ -19,8 +19,8 @@
 + [что такое lookup method?](#что-такое-lookup-method)
 + [что такое declarative transaction в spring?](#что-такое-declarative-transaction-в-spring)
 + [что создает прокси?](#что-создает-прокси)
-+ [как сделать свою аннотацию @LoggableAutowired?](#как-сделать-свою-аннотацию-@LoggableAutowired)
-+ [вызов @transactional spring в том же классе](#вызов-@transactional-spring-в-том-же-классе)
++ [как сделать свою аннотацию @LoggableAutowired?](#как-сделать-свою-аннотацию-LoggableAutowired)
++ [вызов @transactional spring в том же классе](#вызов-transactional-spring-в-том-же-классе)
 
 ## Как сделать spring сервис thread-safe?
 There are several ways, probably too long to list here but here are a few examples:
