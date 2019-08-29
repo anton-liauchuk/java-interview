@@ -110,6 +110,10 @@
 - [Различия между soft reset и hard reset?](git.md#различия-между-soft-reset-и-hard-reset)
 
 ## Maven
+- [Различия между maven и gradle?](maven.md#различия-между-maven-и-gradle)
+- [библиотеки разных версий в maven?](maven.md#библиотеки-разных-версий-в-maven)
+- [что такое dependency management в maven?](maven.md#что-такое-dependency-management-в-maven)
+- [есть ли наследование pom в maven?](maven.md#есть-ли-наследование-pom-в-maven)
 
 ## Microservices
 
