@@ -1,14 +1,14 @@
 ## способы коммуникации между микросервисами?
++ Synchronous protocol. HTTP is a synchronous protocol. The client sends a request and waits for a response from the service. That's independent of the client code execution that could be synchronous (thread is blocked) or asynchronous (thread isn't blocked, and the response will reach a callback eventually). The important point here is that the protocol (HTTP/HTTPS) is synchronous and the client code can only continue its task when it receives the HTTP server response.
++ Asynchronous protocol. Other protocols like AMQP (a protocol supported by many operating systems and cloud environments) use asynchronous messages. The client code or message sender usually doesn't wait for a response. It just sends the message as when sending a message to a RabbitMQ queue or any other message broker.
 ###### Relative links:
++ https://docs.microsoft.com/en-us/dotnet/architecture/microservices/architect-microservice-container-applications/communication-in-microservice-architecture
 + https://dzone.com/articles/communication-between-microservices
-
-## что можете расказать о message queue как о возможном способе коммуникации между микросервисами?
-###### Relative links:
-+ https://dev.to/matteojoliveau/microservices-communications-why-you-should-switch-to-message-queues--48ia
 
 ## exchange в message queue?
 Exchange: a queue aggregator that abstract away message queues and routes messages to the appropriate queue based on some predefined logic.
 ###### Relative links:
++ https://dev.to/matteojoliveau/microservices-communications-why-you-should-switch-to-message-queues--48ia
 
 ## в чем плюсы микросервисов?
 
