@@ -1,3 +1,14 @@
+# Microservices
+- [способы коммуникации между микросервисами?](#способы-коммуникации-между-микросервисами)
+- [exchange в message queue?](#exchange-в-message-queue)
+- [в чем плюсы микросервисов?](#в-чем-плюсы-микросервисов)
+- [минусы микросервисов?](#минусы-микросервисов)
+- [В микросервисах какие могут быть проблемы?](#в-микросервисах-какие-могут-быть-проблемы)
+- [как решается проблема с коммуникацией, когда какой-либо сервис не доступен?](#как-решается-проблема-с-коммуникацией-когда-какой-либо-сервис-не-доступен)
+- [что такое rabbitMQ?](#что-такое-rabbitmq)
+- [асинхронный vs синхронный вид коммуникации?](#асинхронный-vs-синхронный-вид-коммуникации)
+- [возможные решениея для реализации аутентификации в микросервисной архитектуре?](#возможные-решениея-для-реализации-аутентификации-в-микросервисной-архитектуре)
+
 ## способы коммуникации между микросервисами?
 + Synchronous protocol. HTTP is a synchronous protocol. The client sends a request and waits for a response from the service. That's independent of the client code execution that could be synchronous (thread is blocked) or asynchronous (thread isn't blocked, and the response will reach a callback eventually). The important point here is that the protocol (HTTP/HTTPS) is synchronous and the client code can only continue its task when it receives the HTTP server response.
 + Asynchronous protocol. Other protocols like AMQP (a protocol supported by many operating systems and cloud environments) use asynchronous messages. The client code or message sender usually doesn't wait for a response. It just sends the message as when sending a message to a RabbitMQ queue or any other message broker.
@@ -11,8 +22,24 @@ Exchange: a queue aggregator that abstract away message queues and routes messag
 + https://dev.to/matteojoliveau/microservices-communications-why-you-should-switch-to-message-queues--48ia
 
 ## в чем плюсы микросервисов?
++ Technology Heterogeneity
++ Resilience
++ Scaling
++ Ease of Deployment
++ Organizational Alignment
++ Composability
++ Optimizing for Replaceability
+###### Relative links:
++ https://stackoverflow.com/questions/34903605/microservices-what-are-pros-and-cons
++ https://www.tiempodev.com/blog/disadvantages-of-a-microservices-architecture/
 
 ## минусы микросервисов?
++ Microservices Are More Complex
++ Microservices Require Cultural Changes
++ Microservices Are More Expensive
++ Microservices Pose Security Challenges
+###### Relative links:
+https://www.tiempodev.com/blog/disadvantages-of-a-microservices-architecture/
 
 ## В микросервисах какие могут быть проблемы?
 1. As if monitoring a monolith wasn’t hard enough
@@ -39,20 +66,19 @@ RabbitMQ, also known as Open-Source Message Broker, supports multiple message pr
 ###### Relative links:
 + https://dzone.com/articles/rabbitmq-in-microservices
 
-## оптимальный путь перехода от монолита к микросервисам?
-https://martinfowler.com/articles/break-monolith-into-microservices.html
-https://dzone.com/articles/from-monolith-to-microservices
-
-## виды коммуникаций в микросервисах?
-
 ## асинхронный vs синхронный вид коммуникации?
++ Synchronous protocol. HTTP is a synchronous protocol. The client sends a request and waits for a response from the service. That's independent of the client code execution that could be synchronous (thread is blocked) or asynchronous (thread isn't blocked, and the response will reach a callback eventually). The important point here is that the protocol (HTTP/HTTPS) is synchronous and the client code can only continue its task when it receives the HTTP server response.
++ Asynchronous protocol. Other protocols like AMQP (a protocol supported by many operating systems and cloud environments) use asynchronous messages. The client code or message sender usually doesn't wait for a response. It just sends the message as when sending a message to a RabbitMQ queue or any other message broker.
+###### Relative links:
+https://docs.microsoft.com/en-us/dotnet/architecture/microservices/architect-microservice-container-applications/communication-in-microservice-architecture
 
-## как организовать аутентификацию для микросервисов и web-приложения, в которое ты заходишь?
+## возможные решениея для реализации аутентификации в микросервисной архитектуре?
+1. Distributed Session Management
+2. Client Token
+3. Single sign-on
+4. Client Token with API Gateway
+5. Third-party application access
+6. Mutual Authentication
 ###### Relative links:
 + https://medium.com/tech-tajawal/microservice-authentication-and-authorization-solutions-e0e5e74b248a
-
-
-
-
-
-
++ https://medium.com/@marcus.cavalcanti/stateless-authentication-for-microservices-9914c3529663
