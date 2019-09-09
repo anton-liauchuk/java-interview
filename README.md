@@ -1,5 +1,7 @@
-# Вопросы для Java собеседования
+# Java interview questions
+This repository contains interview questions for Java developers.
 
+# Table of Contents
 + [Core](#Core)
 + [Collections](#Collections)
 + [Concurrency](#Concurrency)
