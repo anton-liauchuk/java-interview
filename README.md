@@ -92,11 +92,9 @@ This repository contains interview questions for Java developers.
 - [Does @transactional method work in the case of execution in the same class?](spring.md#does-transactional-method-work-in-the-case-of-execution-in-the-same-class)
 
 ## Servlet
-- [Что такое servlet api?](servlet.md#что-такое-servlet-api)
-- [В чем разница между параметрами и аттрибутами?](servlet.md#в-чем-разница-между-параметрами-и-аттрибутами)
-- [Жизненный цикл сервлета?](servlet.md#жизненный-цикл-сервлета)
-- [Можно ли какой-то сервлет быстрее создать, чем другие?](servlet.md#можно-ли-какой-то-сервлет-быстрее-создать-чем-другие)
-- [Что такое servlet mapping?](servlet.md#что-такое-servlet-mapping)
+- [What is difference between parameters and attributes?](servlet.md#what-is-difference-between-parameters-and-attributes)
+- [What is the life cycle of servlet?](servlet.md#what-is-the-life-cycle-of-servlet)
+- [What is the servlet mapping?](servlet.md#what-is-the-servlet-mapping)
 
 ## Hibernate
 - [Что значит attached/detached entity?](hibernate.md#что-значит-attacheddetached-entity)
