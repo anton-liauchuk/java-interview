@@ -45,16 +45,16 @@ This repository contains interview questions for Java developers.
 - [Possible Ways to Capture Java Heap Dumps?](core.md#possible-ways-to-capture-java-heap-dumps)
 
 ## Collections
-+ [Алгоритмическая сложность get в Hashmap?](collections.md#алгоритмическая-сложность-get-в-hashmap)
-+ [Алгоритмическая сложность при get для HashMap для ключей, у которых hashcode = 1?](collections.md#алгоритмическая-сложность-при-get-для-hashmap-для-ключей-у-которых-hashcode--1)
-+ [Какие есть коллекции? интерфейсы? реализации?](collections.md#какие-есть-коллекции-интерфейсы-реализации)
-+ [В чем разница между LinkedList и ArrayList?](collections.md#в-чем-разница-между-linkedlist-и-arraylist)
-+ [Что лучше использовать LinkedList или ArrayList?](collections.md#что-лучше-использовать-linkedlist-или-arraylist)
-+ [Устройство HashMap?](collections.md#устройство-hashmap)
-+ [Какие существуют реализации Map?](collections.md#какие-существуют-реализации-map)
-+ [Сложность удаления из связного списка последнего элемента?](collections.md#сложность-удаления-из-связного-списка-последнего-элемента)
-+ [Различия между Set и Map?](collections.md#различия-между-set-и-map)
-+ [Какие есть мапы для многопоточной среды?](collections.md#какие-есть-мапы-для-многопоточной-среды)
+- [What is the complexity for get in Hashmap?](collections.md#what-is-the-complexity-for-get-in-hashmap)
+- [What is the complexity for get in Hashmap for keys with hashcode = 1?](collections.md#what-is-the-complexity-for-get-in-hashmap-for-keys-with-hashcode--1)
+- [What is the hierarchy of collections?](collections.md#what-is-the-hierarchy-of-collections)
+- [What is the difference between LinkedList and ArrayList?](collections.md#what-is-the-difference-between-linkedlist-and-arraylist)
+- [What is better to use LinkedList or ArrayList?](collections.md#what-is-better-to-use-linkedlist-or-arraylist)
+- [What is the implementation of HashMap?](collections.md#what-is-the-implementation-of-hashmap)
+- [What are the implementations of Map?](collections.md#what-are-the-implementations-of-map)
+- [What is the complexity of removing the last element from LinkedList?](collections.md#what-is-the-complexity-of-removing-the-last-element-from-linkedlist)
+- [What are the differences between Set and Map?](collections.md#what-are-the-differences-between-set-and-map)
+- [Possible maps in concurrency?](collections.md#possible-maps-in-concurrency)
 
 ## Concurrency
 + [Методы wait/notify для чего используются?](concurrency.md#методы-waitnotify-для-чего-используются)
