@@ -57,16 +57,18 @@ This repository contains interview questions for Java developers.
 - [Possible maps in concurrency?](collections.md#possible-maps-in-concurrency)
 
 ## Concurrency
-+ [Методы wait/notify для чего используются?](concurrency.md#методы-waitnotify-для-чего-используются)
-+ [Где может быть использован метод wait?](concurrency.md#где-может-быть-использован-метод-wait)
-+ [Что такое synchronized? как использовать?](concurrency.md#что-такое-synchronized-как-использовать)
-+ [Ключевое слово volatile для чего используется?](concurrency.md#ключевое-слово-volatile-для-чего-используется)
-+ [Как volatile связано с happens before?](concurrency.md#как-volatile-связано-с-happens-before)
-+ [Какие есть concurrent коллекции?](concurrency.md#какие-есть-concurrent-коллекции)
-+ [Что можете рассказать о CopyOnWriteArraylist?](concurrency.md#что-можете-рассказать-о-copyonwritearraylist)
-+ [Что можете рассказать о ConcurrentHashMap?](concurrency.md#что-можете-рассказать-о-concurrenthashmap)
-+ [В чем преимущества ConcurrentHashMap перед HashTable?](concurrency.md#в-чем-преимущества-concurrenthashmap-перед-hashtable)
-+ [Что такое синхронизированный доступ?](concurrency.md#что-такое-синхронизированный-доступ)
+- [Методы wait/notify для чего используются?](concurrency.md#методы-waitnotify-для-чего-используются)
+- [Where wait() can be used?](concurrency.md#where-wait-can-be-used)
+- [What is the keyword synchronized?](concurrency.md#what-is-the-keyword-synchronized)
+- [What is the keyword volatile?](concurrency.md#what-is-the-keyword-volatile)
+- [How volatile is related to happens before?](concurrency.md#how-volatile-is-related-to-happens-before)
+- [What are the concurrent collections?](concurrency.md#what-are-the-concurrent-collections)
+- [What is CopyOnWriteArrayList?](concurrency.md#what-is-copyonwritearraylist)
+- [What can you say about ConcurrentHashMap?](concurrency.md#what-can-you-say-about-concurrenthashmap)
+- [What are the benefits of using ConcurrentHashMap over HashTable?](concurrency.md#what-are-the-benefits-of-using-concurrenthashmap-over-hashtable)
+- [What is the synchronized access?](concurrency.md#what-is-the-synchronized-access)
+- [What is the monitor for non-static synchronized method?](concurrency.md#what-is-the-monitor-for-non-static-synchronized-method)
+
 
 ## Spring
 + [Как сделать spring сервис thread-safe?](spring.md#как-сделать-spring-сервис-thread-safe)

@@ -1,86 +1,81 @@
 # Concurrency
-+ [Методы wait/notify для чего используются?](#методы-waitnotify-для-чего-используются)
-+ [Где может быть использован метод wait?](#где-может-быть-использован-метод-wait)
-+ [Что такое synchronized? как использовать?](#что-такое-synchronized-как-использовать)
-+ [Ключевое слово volatile для чего используется?](#ключевое-слово-volatile-для-чего-используется)
-+ [Как volatile связано с happens before?](#как-volatile-связано-с-happens-before)
-+ [Какие есть concurrent коллекции?](#какие-есть-concurrent-коллекции)
-+ [Что можете рассказать о CopyOnWriteArraylist?](#что-можете-рассказать-о-copyonwritearraylist)
-+ [Что можете рассказать о ConcurrentHashMap?](#что-можете-рассказать-о-concurrenthashmap)
-+ [В чем преимущества ConcurrentHashMap перед HashTable?](#в-чем-преимущества-concurrenthashmap-перед-hashtable)
-+ [Что такое синхронизированный доступ?](#что-такое-синхронизированный-доступ)
-+ [Нестатический метод sync, что будет монитором?](#что-такое-синхронизированный-доступ)
-+ [Способы синхронизации потоков?](#способы-синхронизации-потоков)
+- [Методы wait/notify для чего используются?](#методы-waitnotify-для-чего-используются)
+- [Where wait() can be used?](#where-wait-can-be-used)
+- [What is the keyword synchronized?](#what-is-the-keyword-synchronized)
+- [What is the keyword volatile?](#what-is-the-keyword-volatile)
+- [How volatile is related to happens before?](#how-volatile-is-related-to-happens-before)
+- [What are the concurrent collections?](#what-are-the-concurrent-collections)
+- [What is CopyOnWriteArrayList?](#what-is-copyonwritearraylist)
+- [What can you say about ConcurrentHashMap?](#what-can-you-say-about-concurrenthashmap)
+- [What are the benefits of using ConcurrentHashMap over HashTable?](#what-are-the-benefits-of-using-concurrenthashmap-over-hashtable)
+- [What is the synchronized access?](#what-is-the-synchronized-access)
+- [What is the monitor for non-static synchronized method?](#what-is-the-monitor-for-non-static-synchronized-method)
+
 
 ## Методы wait/notify для чего используются?
-Эти методы определены у класса Object и предназначены для взаимодействия потоков между собой при межпоточной синхронизации.
-+ wait(): освобождает монитор и переводит вызывающий поток в состояние ожидания до тех пор, пока другой поток не вызовет метод notify()/notifyAll();
-+ notify(): продолжает работу потока, у которого ранее был вызван метод wait();
-+ notifyAll(): возобновляет работу всех потоков, у которых ранее был вызван метод wait().
+***wait().*** It tells the calling thread to give up the lock and go to sleep until some other thread enters the same monitor and calls notify().
+***notify().*** It wakes up one single thread that called wait() on the same object. It should be noted that calling notify() does not actually give up a lock on a resource. It tells a waiting thread that that thread can wake up. However, the lock is not actually given up until the notifier’s synchronized block has completed.
+***notifyAll().*** It wakes up all the threads that called wait() on the same object. The highest priority thread will run first in most of the situation, though not guaranteed. Other things are same as notify() method above.
 ###### Relative links:
-+ https://github.com/enhorse/java-interview/blob/master/concurrency.md#%D0%BA%D0%B0%D0%BA-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D1%8E%D1%82-%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B-wait-%D0%B8-notifynotifyall
++ https://howtodoinjava.com/java/multi-threading/wait-notify-and-notifyall-methods/
 
-## Где может быть использован метод wait?
+## Where wait() can be used?
 synchronized
 ###### Relative links:
 + https://stackoverflow.com/questions/2779484/why-must-wait-always-be-in-synchronized-block
-+ https://github.com/enhorse/java-interview/blob/master/concurrency.md#%D0%BF%D0%BE%D1%87%D0%B5%D0%BC%D1%83-%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B-wait-%D0%B8-notify-%D0%B2%D1%8B%D0%B7%D1%8B%D0%B2%D0%B0%D1%8E%D1%82%D1%81%D1%8F-%D1%82%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE-%D0%B2-%D1%81%D0%B8%D0%BD%D1%85%D1%80%D0%BE%D0%BD%D0%B8%D0%B7%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%BE%D0%BC-%D0%B1%D0%BB%D0%BE%D0%BA%D0%B5
 
-## Что такое synchronized? как использовать?
+## What is the keyword synchronized?
 A piece of logic marked with synchronized becomes a synchronized block, allowing only one thread to execute at any given time.
 ###### Relative links:
 + https://www.baeldung.com/java-synchronized
 
-## Ключевое слово volatile для чего используется?
+## What is the keyword volatile?
 the volatile modifier guarantees that any thread that reads a field will see the most recently written value. In Java, each thread has a separate memory space known as working memory; this holds the values of different variables used for performing operations. After performing an operation, thread copies the updated value of the variable to the main memory, and from there other threads can read the latest value. Simply put, the volatile keyword marks a variable to always go to main memory, for both reads and writes, in the case of multiple threads accessing it.
 ###### Relative links:
 + https://stackoverflow.com/questions/106591/what-is-the-volatile-keyword-useful-for
 + https://www.baeldung.com/java-volatile
 
-## Как volatile связано с happens before?
-###### Relative links:
-+ https://github.com/enhorse/java-interview/blob/master/concurrency.md#%D1%80%D0%B0%D1%81%D1%81%D0%BA%D0%B0%D0%B6%D0%B8%D1%82%D0%B5-%D0%BE-%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8-%D0%BF%D0%B0%D0%BC%D1%8F%D1%82%D0%B8-java
+## How volatile is related to happens before?
+To address the instruction reordering challenge, the Java volatile keyword gives a "happens-before" guarantee, in addition to the visibility guarantee. The happens-before guarantee guarantees that:
++ Reads from and writes to other variables cannot be reordered to occur after a write to a volatile variable, if the reads / writes originally occurred before the write to the volatile variable. The reads / writes before a write to a volatile variable are guaranteed to "happen before" the write to the volatile variable. Notice that it is still possible for e.g. reads / writes of other variables located after a write to a volatile to be reordered to occur before that write to the volatile. Just not the other way around. From after to before is allowed, but from before to after is not allowed.
++ Reads from and writes to other variables cannot be reordered to occur before a read of a volatile variable, if the reads / writes originally occurred after the read of the volatile variable. Notice that it is possible for reads of other variables that occur before the read of a volatile variable can be reordered to occur after the read of the volatile. Just not the other way around. From before to after is allowed, but from after to before is not allowed.
 
-## Какие есть concurrent коллекции?
+The above happens-before guarantee assures that the visibility guarantee of the volatile keyword are being enforced.
+###### Relative links:
++ http://tutorials.jenkov.com/java-concurrency/volatile.html#the-java-volatile-happens-before-guarantee
+
+## What are the concurrent collections?
 + ConcurrentHashMap
 + CopyOnWriteArrayList/CopyOnWriteArraySet
 + BlockingQueue
 ###### Relative links:
-+ https://habr.com/ru/company/luxoft/blog/157273/
 + https://medium.com/coding-corpus/concurrent-collections-in-java-9b131e41b3ad
 
-## Что можете рассказать о CopyOnWriteArraylist?
-Все операции по изменению коллекции (add, set, remove) приводят к созданию новой копии внутреннего массива. Тем самым гарантируется, что при проходе итератором по коллекции не кинется ConcurrentModificationException. Следует помнить, что при копировании массива копируются только референсы (ссылки) на объекты (shallow copy), т.ч. доступ к полям элементов не thread-safe. CopyOnWrite коллекции удобно использовать, когда write операции довольно редки, например при реализации механизма подписки listeners и прохода по ним.
+## What is CopyOnWriteArrayList?
+A thread-safe variant of ArrayList in which all mutative operations (add, set, and so on) are implemented by making a fresh copy of the underlying array.
 ###### Relative links:
-+ https://habr.com/ru/company/luxoft/blog/157273/
++ https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/CopyOnWriteArrayList.html
 + https://medium.com/coding-corpus/concurrent-collections-in-java-9b131e41b3ad
 
-## Что можете рассказать о ConcurrentHashMap?
-Основные преимущества и особенности реализации ConcurrentHashMap:
-+ Карта имеет схожий с hashmap интерфейс взаимодействия
-+ Операции чтения не требуют блокировок и выполняются параллельно
-+ Операции записи зачастую также могут выполняться параллельно без блокировок
-+ При создании указывается требуемый concurrencyLevel, определяемый по статистике чтения и записи
-+ Элементы карты имеют значение value, объявленное как volatile
+## What can you say about ConcurrentHashMap?
+A hash table supporting full concurrency of retrievals and high expected concurrency for updates. This class obeys the same functional specification as Hashtable, and includes versions of methods corresponding to each method of Hashtable. However, even though all operations are thread-safe, retrieval operations do not entail locking, and there is not any support for locking the entire table in a way that prevents all access. This class is fully interoperable with Hashtable in programs that rely on its thread safety but not on its synchronization details.
 ###### Relative links:
++ https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentHashMap.html
 + https://habr.com/ru/post/132884/
 
-## В чем преимущества ConcurrentHashMap перед HashTable?
+## What are the benefits of using ConcurrentHashMap over HashTable?
 ConcurrentHashMap uses multiple buckets to store data. This avoids read locks and greatly improves performance over a HashTable. Both are thread safe, but there are obvious performance wins with ConcurrentHashMap.
 When you read from a ConcurrentHashMap using get(), there are no locks, contrary to the HashTable for which all operations are simply synchronized. HashTable was released in old versions of Java whereas ConcurrentHashMap is a java 5+ thing.
 HashMap is the best thing to use in a single threaded application.
 ###### Relative links:
 + https://stackoverflow.com/questions/12646404/concurrenthashmap-and-hashtable-in-java
 
-## Что такое синхронизированный доступ?
+## What is the synchronized access?
+Synchronized blocks in Java are marked with the synchronized keyword. A synchronized block in Java is synchronized on some object. All synchronized blocks synchronized on the same object can only have one thread executing inside them at the same time. All other threads attempting to enter the synchronized block are blocked until the thread inside the synchronized block exits the block.
 ###### Relative links:
+- http://tutorials.jenkov.com/java-concurrency/synchronized.html
 
-## Нестатический метод synchronized, что будет монитором?
+## What is the monitor for non-static synchronized method?
+When synchronizing a non static method, the monitor belongs to the instance.
 ###### Relative links:
 + https://stackoverflow.com/questions/6367885/difference-between-synchronizing-a-static-method-and-a-non-static-method
-
-## Способы синхронизации потоков?
-###### Relative links:
-
-## todo код deadlock?
-###### Relative links:
