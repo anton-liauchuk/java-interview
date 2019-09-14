@@ -97,10 +97,10 @@ This repository contains interview questions for Java developers.
 - [What is the servlet mapping?](servlet.md#what-is-the-servlet-mapping)
 
 ## Hibernate
-- [Что значит attached/detached entity?](hibernate.md#что-значит-attacheddetached-entity)
-- [Зачем нужен flush?](hibernate.md#зачем-нужен-flush)
-- [Уровни кэша в hibernate?](hibernate.md#уровни-кэша-в-hibernate)
-- [Где находится кэш первого уровня?](hibernate.md#где-находится-кэш-первого-уровня)
+- [What is detached entity?](hibernate.md#what-is-detached-entity)
+- [What is the use of flush?](hibernate.md#what-is-the-use-of-flush)
+- [What are the cache levels?](hibernate.md#what-are-the-cache-levels)
+- [What is the first-level cache?](hibernate.md#what-is-the-first-level-cache)
 
 ## Git
 - [Различия между merge и rebase?](git.md#различия-между-merge-и-rebase)
