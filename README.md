@@ -114,15 +114,15 @@ This repository contains interview questions for Java developers.
 - [Does maven support inheritance for pom files?](#does-maven-support-inheritance-for-pom-files)
 
 ## Microservices
-- [способы коммуникации между микросервисами?](microservices.md#способы-коммуникации-между-микросервисами)
-- [exchange в message queue?](microservices.md#exchange-в-message-queue)
-- [в чем плюсы микросервисов?](microservices.md#в-чем-плюсы-микросервисов)
-- [минусы микросервисов?](microservices.md#минусы-микросервисов)
-- [В микросервисах какие могут быть проблемы?](microservices.md#в-микросервисах-какие-могут-быть-проблемы)
-- [как решается проблема с коммуникацией, когда какой-либо сервис не доступен?](microservices.md#как-решается-проблема-с-коммуникацией-когда-какой-либо-сервис-не-доступен)
-- [что такое rabbitMQ?](microservices.md#что-такое-rabbitmq)
-- [асинхронный vs синхронный вид коммуникации?](microservices.md#асинхронный-vs-синхронный-вид-коммуникации)
-- [возможные решениея для реализации аутентификации в микросервисной архитектуре?](microservices.md#возможные-решениея-для-реализации-аутентификации-в-микросервисной-архитектуре)
+- [What are the possible ways for communication between microservices?](#what-are-the-possible-ways-for-communication-between-microservices)
+- [What is exchange in message queue?](#what-is-exchange-in-message-queue)
+- [What are the benefits of microservices?](#what-are-the-benefits-of-microservices)
+- [What are the disadvantages of microservices?](#what-are-the-disadvantages-of-microservices)
+- [What are the possible issues in microservices](#what-are-the-possible-issues-in-microservices)
+- [What are the possible solutions for the case when one service is not available?](#what-are-the-possible-solutions-for-the-case-when-one-service-is-not-available)
+- [What is RabbitMQ?](#what-is-rabbitmq)
+- [What is the difference between synchronous and asynchronous communication?](#what-is-the-difference-between-synchronous-and-asynchronous-communication)
+- [What are possible ways for implementing authentication in microservices?](#what-are-possible-ways-for-implementing-authentication-in-microservices)
 
 ## JavaScript
 - [Какие есть области видимости?](javascript.md#какие-есть-области-видимости)
