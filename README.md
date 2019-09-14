@@ -103,35 +103,35 @@ This repository contains interview questions for Java developers.
 - [What is the first-level cache?](hibernate.md#what-is-the-first-level-cache)
 
 ## Git
-- [What is the difference between merge and rebase?](#what-is-the-difference-between-merge-and-rebase)
-- [What is git reset?](#what-is-git-reset)
-- [What is the difference between soft reset and hard reset?](#what-is-the-difference-between-soft-reset-and-hard-reset)
+- [What is the difference between merge and rebase?](git.md#what-is-the-difference-between-merge-and-rebase)
+- [What is git reset?](git.md#what-is-git-reset)
+- [What is the difference between soft reset and hard reset?](git.md#what-is-the-difference-between-soft-reset-and-hard-reset)
 
 ## Maven
-- [What is the difference between Maven and Gradle?](#what-is-the-difference-between-maven-and-gradle)
-- [How will work Maven in the case of multiple version of the same dependency?](#how-will-work-maven-in-the-case-of-multiple-version-of-the-same-dependency)
-- [What is the dependency management in Maven?](#what-is-the-dependency-management-in-maven)
-- [Does maven support inheritance for pom files?](#does-maven-support-inheritance-for-pom-files)
+- [What is the difference between Maven and Gradle?](maven.md#what-is-the-difference-between-maven-and-gradle)
+- [How will work Maven in the case of multiple version of the same dependency?](maven.md#how-will-work-maven-in-the-case-of-multiple-version-of-the-same-dependency)
+- [What is the dependency management in Maven?](maven.md#what-is-the-dependency-management-in-maven)
+- [Does maven support inheritance for pom files?](maven.md#does-maven-support-inheritance-for-pom-files)
 
 ## Microservices
-- [What are the possible ways for communication between microservices?](#what-are-the-possible-ways-for-communication-between-microservices)
-- [What is exchange in message queue?](#what-is-exchange-in-message-queue)
-- [What are the benefits of microservices?](#what-are-the-benefits-of-microservices)
-- [What are the disadvantages of microservices?](#what-are-the-disadvantages-of-microservices)
-- [What are the possible issues in microservices](#what-are-the-possible-issues-in-microservices)
-- [What are the possible solutions for the case when one service is not available?](#what-are-the-possible-solutions-for-the-case-when-one-service-is-not-available)
-- [What is RabbitMQ?](#what-is-rabbitmq)
-- [What is the difference between synchronous and asynchronous communication?](#what-is-the-difference-between-synchronous-and-asynchronous-communication)
-- [What are possible ways for implementing authentication in microservices?](#what-are-possible-ways-for-implementing-authentication-in-microservices)
+- [What are the possible ways for communication between microservices?](microservices.md#what-are-the-possible-ways-for-communication-between-microservices)
+- [What is exchange in message queue?](microservices.md#what-is-exchange-in-message-queue)
+- [What are the benefits of microservices?](microservices.md#what-are-the-benefits-of-microservices)
+- [What are the disadvantages of microservices?](microservices.md#what-are-the-disadvantages-of-microservices)
+- [What are the possible issues in microservices](microservices.md#what-are-the-possible-issues-in-microservices)
+- [What are the possible solutions for the case when one service is not available?](microservices.md#what-are-the-possible-solutions-for-the-case-when-one-service-is-not-available)
+- [What is RabbitMQ?](microservices.md#what-is-rabbitmq)
+- [What is the difference between synchronous and asynchronous communication?](microservices.md#what-is-the-difference-between-synchronous-and-asynchronous-communication)
+- [What are possible ways for implementing authentication in microservices?](microservices.md#what-are-possible-ways-for-implementing-authentication-in-microservices)
 
 ## JavaScript
-- [Какие есть области видимости?](javascript.md#какие-есть-области-видимости)
-- [Что такое bind? call & apply?](javascript.md#что-такое-bind-call--apply)
-- [Потеря контекста в js?](javascript.md#потеря-контекста-в-js)
-- [js однопоточный или многопоточный?](javascript.md#js-однопоточный-или-многопоточный)
-- [Что такое closure в js?](javascript.md#что-такое-closure-в-js)
-- [Как проверить присутствует ли идентификатор в html?](javascript.md#как-проверить-присутствует-ли-идентификатор-в-html)
-- [2 функции с одинаковам названием, но разным количеством параметров, могут ли быть проблемы?](javascript.md#2-функции-с-одинаковам-названием-но-разным-количеством-параметров-могут-ли-быть-проблемы)
+- [What are possible variable scopes?](javascript.md#what-are-possible-variable-scopes)
+- [What is bind? call & apply?](javascript.md#what-is-bind-call--apply)
+- [What is losing of context in js?](javascript.md#what-is-losing-of-context-in-js)
+- [Is Javascript single threaded?](javascript.md#is-javascript-single-threaded)
+- [What is closure in js?](javascript.md#what-is-closure-in-js)
+- [How to check if element exists in html?](javascript.md#how-to-check-if-element-exists-in-html)
+- [2 functions with the same name but with different number of parameters. Can be the issues in this case?](javascript.md#2-functions-with-the-same-name-but-with-different-number-of-parameters-can-be-the-issues-in-this-case)
 
 ## Linux
 - [как вывести список процессов в командной строке linux?](linux.md#как-вывести-список-процессов-в-командной-строке-linux)
