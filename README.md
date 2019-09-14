@@ -134,18 +134,18 @@ This repository contains interview questions for Java developers.
 - [2 functions with the same name but with different number of parameters. Can be the issues in this case?](javascript.md#2-functions-with-the-same-name-but-with-different-number-of-parameters-can-be-the-issues-in-this-case)
 
 ## Linux
-- [как вывести список процессов в командной строке linux?](linux.md#как-вывести-список-процессов-в-командной-строке-linux)
+- [How to print the list of processes in terminal Linux?](linux.md#how-to-print-the-list-of-processes-in-terminal-linux)
 
 ## Patterns
-+ [Какие знаешь архитектурные паттерны?](patterns.md#какие-знаешь-архитектурные-паттерны)
-+ [В чем суть single responsibility?](patterns.md#в-чем-суть-single-responsibility)
-+ [Отличия фасада от proxy/gateway?](patterns.md#отличия-фасада-от-proxygateway)
-+ [что можно предложить вместо констуктора с большим количеством параметров?](patterns.md#что-можно-предложить-вместо-констуктора-с-большим-количеством-параметров)
-+ [как реализовать builder?](patterns.md#как-реализовать-builder)
-+ [Что можете рассказать о паттерне визитор?](patterns.md#что-можете-рассказать-о-паттерне-визитор)
-+ [какую проблему решает визитор?](patterns.md#какую-проблему-решает-визитор)
-+ [Что можете рассказать о паттерне observer?](patterns.md#что-можете-рассказать-о-паттерне-observer)
-+ [как инициализировать классы в зависимости от типа?](patterns.md#как-инициализировать-классы-в-зависимости-от-типа)
+- [Which architectural patterns you know?](patterns.md#which-architectural-patterns-you-know)
+- [What does it mean single responsibility?](patterns.md#what-does-it-mean-single-responsibility)
+- [What is the difference between facade and proxy/gateway?](patterns.md#what-is-the-difference-between-facade-and-proxygateway)
+- [What can we do in the case of constructor with big number of parameters?](patterns.md#what-can-we-do-in-the-case-of-constructor-with-big-number-of-parameters)
+- [How can be implemented builder?](patterns.md#how-can-be-implemented-builder)
+- [What is pattern Visitor?](patterns.md#what-is-pattern-visitor)
+- [What is the issue can be solved by visitor?](patterns.md#what-is-the-issue-can-be-solved-by-visitor)
+- [What can you say about pattern observer?](patterns.md#what-can-you-say-about-pattern-observer)
+- [How to initialize object depends on type?](patterns.md#how-to-initialize-object-depends-on-type)
 
 ## REST
 - [Что такое rest-архитектура? что должно выполняться?](rest.md#что-такое-rest-архитектура-что-должно-выполняться)

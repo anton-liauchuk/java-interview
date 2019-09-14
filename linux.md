@@ -1,7 +1,7 @@
 #Linux
-- [как вывести список процессов в командной строке linux?](#как-вывести-список-процессов-в-командной-строке-linux)
+- [How to print the list of processes in terminal Linux?](#how-to-print-the-list-of-processes-in-terminal-linux)
 
-## как вывести список процессов в командной строке linux?
+## How to print the list of processes in terminal Linux?
 The ps command lists running processes. The following command lists all processes running on your system:
 ```
 ps -A
