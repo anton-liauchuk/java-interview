@@ -103,15 +103,15 @@ This repository contains interview questions for Java developers.
 - [What is the first-level cache?](hibernate.md#what-is-the-first-level-cache)
 
 ## Git
-- [Различия между merge и rebase?](git.md#различия-между-merge-и-rebase)
-- [Что такое reset?](git.md#что-такое-reset)
-- [Различия между soft reset и hard reset?](git.md#различия-между-soft-reset-и-hard-reset)
+- [What is the difference between merge and rebase?](#what-is-the-difference-between-merge-and-rebase)
+- [What is git reset?](#what-is-git-reset)
+- [What is the difference between soft reset and hard reset?](#what-is-the-difference-between-soft-reset-and-hard-reset)
 
 ## Maven
-- [Различия между maven и gradle?](maven.md#различия-между-maven-и-gradle)
-- [библиотеки разных версий в maven?](maven.md#библиотеки-разных-версий-в-maven)
-- [что такое dependency management в maven?](maven.md#что-такое-dependency-management-в-maven)
-- [есть ли наследование pom в maven?](maven.md#есть-ли-наследование-pom-в-maven)
+- [What is the difference between Maven and Gradle?](#what-is-the-difference-between-maven-and-gradle)
+- [How will work Maven in the case of multiple version of the same dependency?](#how-will-work-maven-in-the-case-of-multiple-version-of-the-same-dependency)
+- [What is the dependency management in Maven?](#what-is-the-dependency-management-in-maven)
+- [Does maven support inheritance for pom files?](#does-maven-support-inheritance-for-pom-files)
 
 ## Microservices
 - [способы коммуникации между микросервисами?](microservices.md#способы-коммуникации-между-микросервисами)
