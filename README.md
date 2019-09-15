@@ -148,27 +148,27 @@ This repository contains interview questions for Java developers.
 - [How to initialize object depends on type?](patterns.md#how-to-initialize-object-depends-on-type)
 
 ## REST
-- [Что такое rest-архитектура? что должно выполняться?](rest.md#что-такое-rest-архитектура-что-должно-выполняться)
-- [Есть ли state в rest архитектуре](rest.md#есть-ли-state-в-rest-архитектуре)
-- [Можно ли использовать query params в rest архитектуре?](rest.md#можно-ли-использовать-query-params-в-rest-архитектуре)
-- [Различия между get и post?](rest.md#различия-между-get-и-post)
-- [Принципиальная разница между soap и rest?](rest.md#принципиальная-разница-между-soap-и-rest)
-- [при get-запросе что-то обновляется на серваке, это правильно?](rest.md#при-get-запросе-что-то-обновляется-на-серваке-это-правильно)
-- [возможно ли передать body в get запросах?](rest.md#возможно-ли-передать-body-в-get-запросах)
-- [какие типы запросов в http протоколе?](rest.md#какие-типы-запросов-в-http-протоколе)
-- [зачем нужен метод options?](rest.md#зачем-нужен-метод-options)
-- [различия между put и post?](rest.md#различия-между-put-и-post)
-- [в качестве rest-клиента что может использоваться?](rest.md#в-качестве-rest-клиента-что-может-использоваться)
-- [как http протокол работает?](rest.md#как-http-протокол-работает)
+- [What is rest architecture? What are the requirements?](rest.md#what-is-rest-architecture-what-are-the-requirements)
+- [Is there state in rest architecture?](rest.md#is-there-state-in-rest-architecture)
+- [Can be used query params in rest architecture?](rest.md#can-be-used-query-params-in-rest-architecture)
+- [What is the difference get and post?](rest.md#what-is-the-difference-get-and-post)
+- [What is the difference between soap and rest?](rest.md#what-is-the-difference-between-soap-and-rest)
+- [Is it correct to update something during get request?](rest.md#is-it-correct-to-update-something-during-get-request)
+- [Is it possible to use body in get requests?](rest.md#is-it-possible-to-use-body-in-get-requests)
+- [What are possible types of requests for http protocol?](rest.md#what-are-possible-types-of-requests-for-http-protocol)
+- [Why method options is needed?](rest.md#why-method-options-is-needed)
+- [What is the difference between put and post?](rest.md#what-is-the-difference-between-put-and-post)
+- [What can be used as rest client?](rest.md#what-can-be-used-as-rest-client)
+- [How http protocol work?](rest.md#how-http-protocol-work)
 
 ## SQL
-- [что такое having в sql?](sql.md#что-такое-having-в-sql)
-- [возможные проблемы индексов?](sql.md#возможные-проблемы-индексов)
+- [What is having in sql?](sql.md#what-is-having-in-sql)
+- [What are the possible issues with indexes?](sql.md#what-are-the-possible-issues-with-indexes)
 
 ## Test
-- [отличия интеграционных от unit тестов?](test.md#отличия-интеграционных-от-unit-тестов)
-- [unit тест тестирует 2 класса, это правильно? это unit или интеграционный тест?](test.md#unit-тест-тестирует-2-класса-это-правильно-это-unit-или-интеграционный-тест)
-- [что можно использовать для unit tests?](test.md#что-можно-использовать-для-unit-tests)
+- [What is the difference between integration and unit tests?](test.md#what-is-the-difference-between-integration-and-unit-tests)
+- [Unit test executes code from 2 classes, is it correct? Is it unit or integration test?](test.md#unit-test-executes-code-from-2-classes-is-it-correct-is-it-unit-or-integration-test)
+- [What can be used for unit tests?](test.md#what-can-be-used-for-unit-tests)
 
 ## Transactions
 - [что такое транзакция?](transaction.md#что-такое-транзакция)
