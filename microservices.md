@@ -1,13 +1,14 @@
 # Microservices
-- [способы коммуникации между микросервисами?](#способы-коммуникации-между-микросервисами)
-- [exchange в message queue?](#exchange-в-message-queue)
-- [в чем плюсы микросервисов?](#в-чем-плюсы-микросервисов)
-- [минусы микросервисов?](#минусы-микросервисов)
-- [В микросервисах какие могут быть проблемы?](#в-микросервисах-какие-могут-быть-проблемы)
-- [как решается проблема с коммуникацией, когда какой-либо сервис не доступен?](#как-решается-проблема-с-коммуникацией-когда-какой-либо-сервис-не-доступен)
-- [что такое rabbitMQ?](#что-такое-rabbitmq)
-- [асинхронный vs синхронный вид коммуникации?](#асинхронный-vs-синхронный-вид-коммуникации)
-- [возможные решениея для реализации аутентификации в микросервисной архитектуре?](#возможные-решениея-для-реализации-аутентификации-в-микросервисной-архитектуре)
+- [What are the possible ways for communication between microservices?](#what-are-the-possible-ways-for-communication-between-microservices)
+- [What is exchange in message queue?](#what-is-exchange-in-message-queue)
+- [What are the benefits of microservices?](#what-are-the-benefits-of-microservices)
+- [What are the disadvantages of microservices?](#what-are-the-disadvantages-of-microservices)
+- [What are the possible issues in microservices](#what-are-the-possible-issues-in-microservices)
+- [What are the possible solutions for the case when one service is not available?](#what-are-the-possible-solutions-for-the-case-when-one-service-is-not-available)
+- [What is RabbitMQ?](#what-is-rabbitmq)
+- [What is the difference between synchronous and asynchronous communication?](#what-is-the-difference-between-synchronous-and-asynchronous-communication)
+- [What are possible ways for implementing authentication in microservices?](#what-are-possible-ways-for-implementing-authentication-in-microservices)
+- [What is Eventual consistency?](#what-is-eventual-consistency)
 
 ## What are the possible ways for communication between microservices?
 + Synchronous protocol. HTTP is a synchronous protocol. The client sends a request and waits for a response from the service. That's independent of the client code execution that could be synchronous (thread is blocked) or asynchronous (thread isn't blocked, and the response will reach a callback eventually). The important point here is that the protocol (HTTP/HTTPS) is synchronous and the client code can only continue its task when it receives the HTTP server response.
@@ -82,3 +83,8 @@ https://docs.microsoft.com/en-us/dotnet/architecture/microservices/architect-mic
 ###### Relative links:
 + https://medium.com/tech-tajawal/microservice-authentication-and-authorization-solutions-e0e5e74b248a
 + https://medium.com/@marcus.cavalcanti/stateless-authentication-for-microservices-9914c3529663
+
+## What is Eventual consistency?
+Rather than ensuring that the system is in a consistent state all the time, instead we can accept that the system will get it at some point in the future. This approach is especially useful for long-living business operations.
+###### Relative links:
++ https://softwareengineering.stackexchange.com/questions/354911/microservices-handling-eventual-consistency

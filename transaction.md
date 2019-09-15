@@ -57,8 +57,3 @@ Distributed transactions span multiple physical systems, whereas standard transa
 + ***Pessimistic Locking*** is when you lock the record for your exclusive use until you have finished with it. It has much better integrity than optimistic locking but requires you to be careful with your application design to avoid Deadlocks. To use pessimistic locking you need either a direct connection to the database (as would typically be the case in a two tier client server application) or an externally available transaction ID that can be used independently of the connection.
 ###### Relative links:
 + https://stackoverflow.com/questions/129329/optimistic-vs-pessimistic-locking
-
-## What is Eventual consistency?
-Rather than ensuring that the system is in a consistent state all the time, instead we can accept that the system will get it at some point in the future. This approach is especially useful for long-living business operations.
-###### Relative links:
-+ https://softwareengineering.stackexchange.com/questions/354911/microservices-handling-eventual-consistency

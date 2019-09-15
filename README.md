@@ -123,6 +123,7 @@ This repository contains interview questions for Java developers.
 - [What is RabbitMQ?](microservices.md#what-is-rabbitmq)
 - [What is the difference between synchronous and asynchronous communication?](microservices.md#what-is-the-difference-between-synchronous-and-asynchronous-communication)
 - [What are possible ways for implementing authentication in microservices?](microservices.md#what-are-possible-ways-for-implementing-authentication-in-microservices)
+- [What is Eventual consistency?](microservices.md#what-is-eventual-consistency)
 
 ## JavaScript
 - [What are possible variable scopes?](javascript.md#what-are-possible-variable-scopes)
@@ -178,4 +179,3 @@ This repository contains interview questions for Java developers.
 - [What are the possible issues in the case of parallel access by transactions?](transaction.md#what-are-the-possible-issues-in-the-case-of-parallel-access-by-transactions)
 - [What are possible options for implementing transactions in microservices](transaction.md#what-are-possible-options-for-implementing-transactions-in-microservices)
 - [What is the difference between optimistic and pessimistic locking?](transaction.md#what-is-the-difference-between-optimistic-and-pessimistic-locking)
-- [What is Eventual consistency?](transaction.md#what-is-eventual-consistency)
