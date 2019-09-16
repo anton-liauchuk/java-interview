@@ -165,6 +165,7 @@ This repository contains interview questions for Java developers.
 ## SQL
 - [What is having in sql?](sql.md#what-is-having-in-sql)
 - [What are the possible issues with indexes?](sql.md#what-are-the-possible-issues-with-indexes)
+- [Sql works very slowly, what are the possible improvements (the database is MySQL, for example)?](#sql-works-very-slowly-what-are-the-possible-improvements-the-database-is-mysql-for-example)
 
 ## Test
 - [What is the difference between integration and unit tests?](test.md#what-is-the-difference-between-integration-and-unit-tests)
@@ -179,3 +180,4 @@ This repository contains interview questions for Java developers.
 - [What are the possible issues in the case of parallel access by transactions?](transaction.md#what-are-the-possible-issues-in-the-case-of-parallel-access-by-transactions)
 - [What are possible options for implementing transactions in microservices](transaction.md#what-are-possible-options-for-implementing-transactions-in-microservices)
 - [What is the difference between optimistic and pessimistic locking?](transaction.md#what-is-the-difference-between-optimistic-and-pessimistic-locking)
+- [Is it possible to use transaction for select statements?](transaction.md#is-it-possible-to-use-transaction-for-select-statements)

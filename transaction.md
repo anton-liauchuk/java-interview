@@ -7,6 +7,7 @@
 - [What are possible options for implementing transactions in microservices](#what-are-possible-options-for-implementing-transactions-in-microservices)
 - [What is the difference between optimistic and pessimistic locking?](#what-is-the-difference-between-optimistic-and-pessimistic-locking)
 - [What is Eventual consistency?](#what-is-eventual-consistency)
+- [Is it possible to use transaction for select statements?](#is-it-possible-to-use-transaction-for-select-statements)
 
 ## What is transaction?
 A **transaction** is a sequence of operations performed (using one or more SQL statements) on a database as a single logical unit of work. The effects of all the SQL statements in a transaction can be either all committed (applied to the database) or all rolled back (undone from the database). A database transaction must be atomic, consistent, isolated and durable.
@@ -57,5 +58,12 @@ A **transaction** is a sequence of operations performed (using one or more SQL s
 + ***Pessimistic Locking*** is when you lock the record for your exclusive use until you have finished with it. It has much better integrity than optimistic locking but requires you to be careful with your application design to avoid Deadlocks. To use pessimistic locking you need either a direct connection to the database (as would typically be the case in a two tier client server application) or an externally available transaction ID that can be used independently of the connection.
 ###### Relative links:
 + https://stackoverflow.com/questions/129329/optimistic-vs-pessimistic-locking
+
+## Is it possible to use transaction for select statements?
+In a highly concurrent application it could (theoretically) happen that data you've read in the first select is modified before the other selects are executed.
+
+If that is a situation that could occur in your application you should use a transaction to wrap your selects.
+###### Relative links:
++ https://stackoverflow.com/questions/5982517/use-transactions-for-select-statements
 
 [Home Page](README.md)
