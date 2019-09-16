@@ -33,3 +33,5 @@ Allowing to explicitly flush the Session gives finer control that may be require
 ###### Relative links:
 + https://dzone.com/articles/all-about-hibernate-second
 + https://habr.com/ru/post/135176/
+
+[Home Page](README.md)

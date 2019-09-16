@@ -76,9 +76,9 @@ Stop-the-world will occur no matter which GC algorithm you choose. Stop-the-worl
 + https://stackoverflow.com/questions/16695874/why-does-the-jvm-full-gc-need-to-stop-the-world
 
 ## What is the difference between int, Integer and AtomicInteger?
-+ int is a primitive type. Variables of type int store the actual binary value for the integer you want to represent. int.parseInt("1") doesn't make sense because int is not a class and therefore doesn't have any methods.
-+ Integer is a class, no different from any other in the Java language. Variables of type Integer store references to Integer objects, just as with any other reference (object) type. Integer.parseInt("1") is a call to the static method parseInt from class Integer (note that this method actually returns an int and not an Integer). To be more specific, Integer is a class with a single field of type int. This class is used where you need an int to be treated like any other object, such as in generic types or situations where you need nullability.
-+ AtomicInteger is used in multithreaded environments when you need to make sure that only one thread can update an int variable. The advantage is that no external synchronization is requried since the operations which modify it's value are executed in a thread-safe way.
++ ***int*** is a primitive type. Variables of type int store the actual binary value for the integer you want to represent. int.parseInt("1") doesn't make sense because int is not a class and therefore doesn't have any methods.
++ ***Integer*** is a class, no different from any other in the Java language. Variables of type Integer store references to Integer objects, just as with any other reference (object) type. Integer.parseInt("1") is a call to the static method parseInt from class Integer (note that this method actually returns an int and not an Integer). To be more specific, Integer is a class with a single field of type int. This class is used where you need an int to be treated like any other object, such as in generic types or situations where you need nullability.
++ ***AtomicInteger*** is used in multithreaded environments when you need to make sure that only one thread can update an int variable. The advantage is that no external synchronization is requried since the operations which modify it's value are executed in a thread-safe way.
 ###### Relative links:
 + https://stackoverflow.com/questions/8660691/what-is-the-difference-between-integer-and-int-in-java
 + https://stackoverflow.com/questions/38846976/what-is-the-difference-between-atomic-integer-and-normal-immutable-integer-class
@@ -159,3 +159,5 @@ Apache JMeter is an open source, Java-based, load testing tool that can be used 
 Possible options from the link.
 ###### Relative links:
 + https://www.baeldung.com/java-heap-dump-capture
+
+[Home Page](README.md)

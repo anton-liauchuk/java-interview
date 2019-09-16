@@ -20,3 +20,5 @@ Although indexes are intended to enhance a database's performance, there are tim
 + Columns that are frequently manipulated should not be indexed.
 ###### Relative links:
 + https://www.tutorialspoint.com/sql/sql-indexes.htm
+
+[Home Page](README.md)

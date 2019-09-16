@@ -155,3 +155,5 @@ After the bean instances are created they are run through a series of BeanPostPr
 The problem here is, that Spring's AOP proxies don't extend but rather wrap your service instance to intercept calls. This has the effect, that any call to "this" from within your service instance is directly invoked on that instance and cannot be intercepted by the wrapping proxy (the proxy is not even aware of any such call).
 ###### Relative links:
 + https://stackoverflow.com/questions/3423972/spring-transaction-method-call-by-the-method-within-the-same-class-does-not-wo
+
+[Home Page](README.md)

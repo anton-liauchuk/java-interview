@@ -88,3 +88,5 @@ https://docs.microsoft.com/en-us/dotnet/architecture/microservices/architect-mic
 Rather than ensuring that the system is in a consistent state all the time, instead we can accept that the system will get it at some point in the future. This approach is especially useful for long-living business operations.
 ###### Relative links:
 + https://softwareengineering.stackexchange.com/questions/354911/microservices-handling-eventual-consistency
+
+[Home Page](README.md)

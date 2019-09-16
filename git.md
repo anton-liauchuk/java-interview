@@ -21,3 +21,5 @@ git-reset - Reset current HEAD to the specified state
 - hard: uncommit + unstage + delete changes, nothing left.
 ###### Relative links:
 - https://stackoverflow.com/questions/3528245/whats-the-difference-between-git-reset-mixed-soft-and-hard
+
+[Home Page](README.md)

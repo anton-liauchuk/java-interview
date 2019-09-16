@@ -79,3 +79,5 @@ Synchronized blocks in Java are marked with the synchronized keyword. A synchron
 When synchronizing a non static method, the monitor belongs to the instance.
 ###### Relative links:
 + https://stackoverflow.com/questions/6367885/difference-between-synchronizing-a-static-method-and-a-non-static-method
+
+[Home Page](README.md)

@@ -56,3 +56,5 @@ if (typeof(element) != 'undefined' && element != null)
 it is not possible to overload functions in Javascript
 ###### Relative links:
 - https://stackoverflow.com/questions/456177/function-overloading-in-javascript-best-practices
+
+[Home Page](README.md)

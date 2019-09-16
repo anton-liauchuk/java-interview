@@ -82,3 +82,5 @@ Main differences between a Set and a Map in Java are:
 + Collections.synchronizedMap(Map) is the second option if you need to ensure data consistency, and each thread needs to have an up-to-date view of the map. Use the first if performance is critical, and each thread only inserts data to the map, with reads happening less frequently.
 ###### Relative links:
 + https://stackoverflow.com/questions/510632/whats-the-difference-between-concurrenthashmap-and-collections-synchronizedmap
+
+[Home Page](README.md)
