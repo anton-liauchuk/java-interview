@@ -20,7 +20,7 @@ In general, I would say that it's unit tests but with requirements:
 - test checks only one scenario (in the nested execution there is no branching).
 
 ## What can be used for unit tests?
-JUnit and TestNG are the main unit test frameworks.
+**JUnit** and **TestNG** are the main unit test frameworks.
 ###### Relative links:
 - https://stackoverflow.com/questions/4055957/what-are-the-unit-testing-frameworks-available-in-java
 

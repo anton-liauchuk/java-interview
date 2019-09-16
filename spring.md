@@ -47,11 +47,11 @@ The responsibilities of IoC container are:
 + https://www.zoltanraffai.com/blog/how-does-spring-work-internally/
 
 ## What are the possible bean scopes?
-+ singleton. Scopes a single bean definition to a single object instance per Spring IoC container.
-+ prototype. Scopes a single bean definition to any number of object instances.
-+ request. Scopes a single bean definition to the lifecycle of a single HTTP request; that is each and every HTTP request will have its own instance of a bean created off the back of a single bean definition. Only valid in the context of a web-aware Spring ApplicationContext.
-+ session. Scopes a single bean definition to the lifecycle of a HTTP Session. Only valid in the context of a web-aware Spring ApplicationContext.
-+ global session. Scopes a single bean definition to the lifecycle of a global HTTP Session. Typically only valid when used in a portlet context. Only valid in the context of a web-aware Spring ApplicationContext.
++ ***singleton.*** Scopes a single bean definition to a single object instance per Spring IoC container.
++ ***prototype.*** Scopes a single bean definition to any number of object instances.
++ ***request.***  Scopes a single bean definition to the lifecycle of a single HTTP request; that is each and every HTTP request will have its own instance of a bean created off the back of a single bean definition. Only valid in the context of a web-aware Spring ApplicationContext.
++ ***session.*** Scopes a single bean definition to the lifecycle of a HTTP Session. Only valid in the context of a web-aware Spring ApplicationContext.
++ ***global session.*** Scopes a single bean definition to the lifecycle of a global HTTP Session. Typically only valid when used in a portlet context. Only valid in the context of a web-aware Spring ApplicationContext.
 ###### Relative links:
 + https://docs.spring.io/spring/docs/3.0.0.M3/reference/html/ch04s04.html
 
@@ -75,7 +75,7 @@ singleton
 + https://www.tutorialspoint.com/spring/spring_bean_scopes.htm
 
 ## What is the prototype scope?
-prototype. Scopes a single bean definition to any number of object instances.
+Scopes a single bean definition to any number of object instances.
 ###### Relative links:
 + https://docs.spring.io/spring/docs/3.0.0.M3/reference/html/ch04s04.html
 
@@ -94,13 +94,13 @@ prototype. Scopes a single bean definition to any number of object instances.
 + https://www.dariawan.com/tutorials/spring/constructor-vs-setter-dependency-injection/
 
 ## How to catch the exceptions for controllers?
-ExceptionHandler is a Spring annotation that provides a mechanism to treat exceptions that are thrown during execution of handlers (Controller operations). This annotation, if used on methods of controller classes, will serve as the entry point for handling exceptions thrown within this controller only. Altogether, the most common way is to use @ExceptionHandler on methods of @ControllerAdvice classes so that the exception handling will be applied globally or to a subset of controllers.
+***ExceptionHandler*** is a Spring annotation that provides a mechanism to treat exceptions that are thrown during execution of handlers (Controller operations). This annotation, if used on methods of controller classes, will serve as the entry point for handling exceptions thrown within this controller only. Altogether, the most common way is to use @ExceptionHandler on methods of @ControllerAdvice classes so that the exception handling will be applied globally or to a subset of controllers.
 ###### Relative links:
 + https://www.toptal.com/java/spring-boot-rest-api-error-handling
 
 ## What is the difference between BeanFactory and FactoryBean?
-+ The BeanFactory is an interface in Spring and is a factory class for managing beans. The BeanFactory is the core of the IOC container. The accusations include: instantiating, configuring objects in the application and establishing dependencies between them. The ApplicationContext is an advanced version of the BeanFactory.
-+ FactoryBean is a way to customize the instantiation of the bean, through the implementation of the FactoryBean, complete the custom bean instantiation details. For example, the FactoryBean proxy object can be used to intercept all its methods to form AOP-like functions. Using FactoryBean avoids the need to configure various properties in the XML file, which is more flexible, but you need to encode the instantiation of the class in the implementation class of the FactoryBean.
++ The ***BeanFactory*** is an interface in Spring and is a factory class for managing beans. The BeanFactory is the core of the IOC container. The accusations include: instantiating, configuring objects in the application and establishing dependencies between them. The ApplicationContext is an advanced version of the BeanFactory.
++ ***FactoryBean*** is a way to customize the instantiation of the bean, through the implementation of the FactoryBean, complete the custom bean instantiation details. For example, the FactoryBean proxy object can be used to intercept all its methods to form AOP-like functions. Using FactoryBean avoids the need to configure various properties in the XML file, which is more flexible, but you need to encode the instantiation of the class in the implementation class of the FactoryBean.
 ###### Relative links:
 + http://www.programmersought.com/article/6987917473/
 

@@ -30,7 +30,7 @@ A piece of logic marked with synchronized becomes a synchronized block, allowing
 + https://www.baeldung.com/java-synchronized
 
 ## What is the keyword volatile?
-the volatile modifier guarantees that any thread that reads a field will see the most recently written value. In Java, each thread has a separate memory space known as working memory; this holds the values of different variables used for performing operations. After performing an operation, thread copies the updated value of the variable to the main memory, and from there other threads can read the latest value. Simply put, the volatile keyword marks a variable to always go to main memory, for both reads and writes, in the case of multiple threads accessing it.
+The ***volatile*** modifier guarantees that any thread that reads a field will see the most recently written value. In Java, each thread has a separate memory space known as working memory; this holds the values of different variables used for performing operations. After performing an operation, thread copies the updated value of the variable to the main memory, and from there other threads can read the latest value. Simply put, the volatile keyword marks a variable to always go to main memory, for both reads and writes, in the case of multiple threads accessing it.
 ###### Relative links:
 + https://stackoverflow.com/questions/106591/what-is-the-volatile-keyword-useful-for
 + https://www.baeldung.com/java-volatile
@@ -45,9 +45,9 @@ The above happens-before guarantee assures that the visibility guarantee of the 
 + http://tutorials.jenkov.com/java-concurrency/volatile.html#the-java-volatile-happens-before-guarantee
 
 ## What are the concurrent collections?
-+ ConcurrentHashMap
-+ CopyOnWriteArrayList/CopyOnWriteArraySet
-+ BlockingQueue
++ ***ConcurrentHashMap***
++ ***CopyOnWriteArrayList/CopyOnWriteArraySet***
++ ***BlockingQueue***
 ###### Relative links:
 + https://medium.com/coding-corpus/concurrent-collections-in-java-9b131e41b3ad
 

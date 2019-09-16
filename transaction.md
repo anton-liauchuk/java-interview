@@ -9,22 +9,22 @@
 - [What is Eventual consistency?](#what-is-eventual-consistency)
 
 ## What is transaction?
-A transaction is a sequence of operations performed (using one or more SQL statements) on a database as a single logical unit of work. The effects of all the SQL statements in a transaction can be either all committed (applied to the database) or all rolled back (undone from the database). A database transaction must be atomic, consistent, isolated and durable.
+A **transaction** is a sequence of operations performed (using one or more SQL statements) on a database as a single logical unit of work. The effects of all the SQL statements in a transaction can be either all committed (applied to the database) or all rolled back (undone from the database). A database transaction must be atomic, consistent, isolated and durable.
 ###### Relative links:
 + https://www.w3resource.com/sql/controlling-transactions.php
 
 ## What are the requirements for transactions?
-***- Atomic:*** A transaction is a logical unit of work which must be either completed with all of its data modifications, or none of them is performed.
-***- Consistent:*** At the end of the transaction, all data must be left in a consistent state.
-***- Isolated:*** Modifications of data performed by a transaction must be independent of another transaction. Unless this happens, the outcome of a transaction may be erroneous.
-***- Durable:*** When the transaction is completed, effects of the modifications performed by the transaction must be permanent in the system.
+- ***Atomic:*** A transaction is a logical unit of work which must be either completed with all of its data modifications, or none of them is performed.
+- ***Consistent:*** At the end of the transaction, all data must be left in a consistent state.
+- ***Isolated:*** Modifications of data performed by a transaction must be independent of another transaction. Unless this happens, the outcome of a transaction may be erroneous.
+- ***Durable:*** When the transaction is completed, effects of the modifications performed by the transaction must be permanent in the system.
 ###### Relative links:
 - https://www.w3resource.com/sql/controlling-transactions.php
 + https://github.com/enhorse/java-interview/blob/master/db.md#%D0%BD%D0%B0%D0%B7%D0%BE%D0%B2%D0%B8%D1%82%D0%B5-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%8B%D0%B5-%D1%81%D0%B2%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%B0-%D1%82%D1%80%D0%B0%D0%BD%D0%B7%D0%B0%D0%BA%D1%86%D0%B8%D0%B8
 + https://habr.com/ru/post/446662/
 
 ## What is a distributed transaction?
-Distributed transactions span multiple physical systems, whereas standard transactions do not. Synchronization amongst the systems becomes a need which traditionally would not exist in a standard transaction.
+**Distributed transactions** span multiple physical systems, whereas standard transactions do not. Synchronization amongst the systems becomes a need which traditionally would not exist in a standard transaction.
 ###### Relative links:
 - https://stackoverflow.com/questions/4217270/what-is-a-distributed-transaction
 

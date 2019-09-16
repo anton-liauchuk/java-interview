@@ -35,8 +35,8 @@ I'd recommend putting any required parameters in the path, and any optional para
 + https://stackoverflow.com/questions/11552248/when-to-use-queryparam-vs-pathparam
 
 ## What is the difference get and post?
-- GET is idempotent: it is for obtaining a resource, without changing anything on the server. As a consequence it should be perfectly safe to resubmit a GET request.
-- POST is not: it is for updating information on the server. It can therefore not be assumed that it is safe to re-submit the request which is why most browsers ask for confirmation when you hit refresh on a POST request.
+- **GET** is idempotent: it is for obtaining a resource, without changing anything on the server. As a consequence it should be perfectly safe to resubmit a GET request.
+- **POST** is not: it is for updating information on the server. It can therefore not be assumed that it is safe to re-submit the request which is why most browsers ask for confirmation when you hit refresh on a POST request.
 ###### Relative links:
 + https://stackoverflow.com/questions/2080863/what-is-the-difference-between-a-http-get-and-http-post-and-why-is-http-post-wea
 
@@ -103,7 +103,7 @@ The PATCH method is used to apply partial modifications to a resource.
 - https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods
 
 ## Why method options is needed?
-The HTTP OPTIONS method is used to request information about the communication options available for the target resource. The response may include an Allow header indicating allowed HTTP methods on the resource, or various Cross Origin Resource Sharing headers. The HTTP OPTIONS method is both safe and idempotent, as it is intended only for use in querying information about ways to interact with a resource.
+The **HTTP OPTIONS** method is used to request information about the communication options available for the target resource. The response may include an Allow header indicating allowed HTTP methods on the resource, or various Cross Origin Resource Sharing headers. The HTTP OPTIONS method is both safe and idempotent, as it is intended only for use in querying information about ways to interact with a resource.
 ###### Relative links:
 - https://egghead.io/lessons/tools-use-http-options-method
 

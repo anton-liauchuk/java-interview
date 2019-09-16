@@ -48,7 +48,7 @@ We will configure all of the fields that we want on the builder, and then we'll 
 The core of this pattern is the Visitor interface. This interface defines a visit operation for each type of ConcreteElement in the object structure. Meanwhile, the ConcreteVisitor implements the operations defined in the Visitor interface. The concrete visitor will store local state, typically as it traverses the set of elements. The element interface simply defines an accept method to allow the visitor to run some action over that element - the ConcreteElement will implement this accept method. 
 ###### Relative links:
 + https://dzone.com/articles/design-patterns-visitor
-+ https://refactoring.guru/ru/design-patterns/visito
++ https://refactoring.guru/ru/design-patterns/visitor
 
 ## What is the issue can be solved by visitor?
 So, while the Visitor may seem a bit strange at first, you can see how much it helps to clean up your code. That's the whole point of this pattern - to allow you seperate out certain logic from the elements themselves, keeping your data classes simple.
@@ -57,7 +57,7 @@ So, while the Visitor may seem a bit strange at first, you can see how much it h
 + https://refactoring.guru/ru/design-patterns/visitor
 
 ## What can you say about pattern observer?
-Observer is a behavioral design pattern. It specifies communication between objects: observable and observers. An observable is an object which notifies observers about the changes in its state.
+***Observer*** is a behavioral design pattern. It specifies communication between objects: observable and observers. An observable is an object which notifies observers about the changes in its state.
 ###### Relative links:
 + https://www.baeldung.com/java-observer-pattern
 

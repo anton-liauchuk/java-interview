@@ -4,8 +4,8 @@
 - [What is the servlet mapping?](#what-is-the-servlet-mapping)
 
 ## What is difference between parameters and attributes?
-+ getParameter() returns http request parameters. Those passed from the client to the server. For example http://example.com/servlet?parameter=1. Can only return String
-+ getAttribute() is for server-side usage only - you fill the request with attributes that you can use within the same request. For example - you set an attribute in a servlet, and read it from a JSP. Can be used for any object, not just string.
++ ***getParameter()*** returns http request parameters. Those passed from the client to the server. For example http://example.com/servlet?parameter=1. Can only return String
++ ***getAttribute()*** is for server-side usage only - you fill the request with attributes that you can use within the same request. For example - you set an attribute in a servlet, and read it from a JSP. Can be used for any object, not just string.
 ###### Relative links:
 + https://stackoverflow.com/questions/5243754/difference-between-getattribute-and-getparameter
 

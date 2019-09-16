@@ -10,15 +10,15 @@
 - https://stackoverflow.com/questions/16666089/whats-the-difference-between-git-merge-and-git-rebase
 
 ## What is git reset?
-git-reset - Reset current HEAD to the specified state
+***git-reset*** - Reset current HEAD to the specified state
 ###### Relative links:
 - https://git-scm.com/docs/git-reset
 - https://www.atlassian.com/git/tutorials/undoing-changes/git-reset
 
 ## What is the difference between soft reset and hard reset?
-- soft: uncommit changes, changes are left staged (index).
-- mixed (default): uncommit + unstage changes, changes are left in working tree.
-- hard: uncommit + unstage + delete changes, nothing left.
+- ***soft***: uncommit changes, changes are left staged (index).
+- ***mixed (default)***: uncommit + unstage changes, changes are left in working tree.
+- ***hard***: uncommit + unstage + delete changes, nothing left.
 ###### Relative links:
 - https://stackoverflow.com/questions/3528245/whats-the-difference-between-git-reset-mixed-soft-and-hard
 

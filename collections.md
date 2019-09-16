@@ -54,13 +54,13 @@ The difference of their performance is obvious. LinkedList is faster in add and 
 + https://stackoverflow.com/questions/322715/when-to-use-linkedlist-over-arraylist-in-java
 
 ## What is the implementation of HashMap?
-Hashmap uses the array of Nodes(named as table), where Node has fields like the key, value (and much more). Here the Node is represented by class HashMapEntry. Basically, HashMap has an array where the key-value data is stored. It calculates the index in the array where the Node can be placed and it is placed there. Now while getting the element from HashMap, it again calculates the index of the element to retrieve and goes to the array index and returns the value of the element/Node(if exists).
+***HashMap*** uses the array of Nodes(named as table), where Node has fields like the key, value (and much more). Here the Node is represented by class HashMapEntry. Basically, HashMap has an array where the key-value data is stored. It calculates the index in the array where the Node can be placed and it is placed there. Now while getting the element from HashMap, it again calculates the index of the element to retrieve and goes to the array index and returns the value of the element/Node(if exists).
 ###### Relative links:
 + https://medium.com/@mr.anmolsehgal/java-hashmap-internal-implementation-21597e1efec3
 + https://www.geeksforgeeks.org/java-util-hashmap-in-java/
 
 ## What are the implementations of Map?
-The Java platform contains three general-purpose Map implementations: HashMap, TreeMap, and LinkedHashMap. Their behavior and performance are precisely analogous to HashSet, TreeSet, and LinkedHashSet
+The Java platform contains three general-purpose Map implementations: ***HashMap***, ***TreeMap***, and ***LinkedHashMap***. Their behavior and performance are precisely analogous to HashSet, TreeSet, and LinkedHashSet
 ###### Relative links:
 + https://docs.oracle.com/javase/tutorial/collections/interfaces/map.html
 
@@ -70,7 +70,7 @@ O(1)
 + https://stackoverflow.com/questions/322715/when-to-use-linkedlist-over-arraylist-in-java
 
 ## What are the differences between Set and Map?
-Main differences between a Set and a Map in Java are:
+Main differences between a ***Set*** and a ***Map*** in Java are:
 + Duplicate Elements: A Set does not allow inserting duplicate elements. A Map does not allow using duplicate keys, but it allows inserting duplicate values for unique keys.
 + Null values: A Set allows inserting maximum one null value. In a Map we can have single null key at most and any number of null values.
 + Ordering: A Set does not maintain any order of elements. Some of sub-classes of a Set can sort the elements in an order like LinkedHashSet. A Map does not maintain any order of its elements. Some of its sub-classes like TreeMap store elements of the map in ascending order of keys.
@@ -78,8 +78,8 @@ Main differences between a Set and a Map in Java are:
 + https://www.quora.com/What-is-the-difference-between-a-Set-and-a-Map-in-Java
 
 ## Possible maps in concurrency?
-+ ConcurrentHashMap allows concurrent modification of the Map from several threads without the need to block them. Collections.synchronizedMap(map) creates a blocking Map which will degrade performance, albeit ensure consistency (if used properly).
-+ Collections.synchronizedMap(Map) is the second option if you need to ensure data consistency, and each thread needs to have an up-to-date view of the map. Use the first if performance is critical, and each thread only inserts data to the map, with reads happening less frequently.
++ ***ConcurrentHashMap*** allows concurrent modification of the Map from several threads without the need to block them. Collections.synchronizedMap(map) creates a blocking Map which will degrade performance, albeit ensure consistency (if used properly).
++ ***Collections.synchronizedMap(Map)*** is the second option if you need to ensure data consistency, and each thread needs to have an up-to-date view of the map. Use the first if performance is critical, and each thread only inserts data to the map, with reads happening less frequently.
 ###### Relative links:
 + https://stackoverflow.com/questions/510632/whats-the-difference-between-concurrenthashmap-and-collections-synchronizedmap
 
