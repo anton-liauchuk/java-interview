@@ -1,5 +1,5 @@
 # Concurrency
-- [Методы wait/notify для чего используются?](#методы-waitnotify-для-чего-используются)
+- [What is usage of wait/notify methods?](#what-is-usage-of-waitnotify-methods)
 - [Where wait() can be used?](#where-wait-can-be-used)
 - [What is the keyword synchronized?](#what-is-the-keyword-synchronized)
 - [What is the keyword volatile?](#what-is-the-keyword-volatile)
@@ -10,9 +10,9 @@
 - [What are the benefits of using ConcurrentHashMap over HashTable?](#what-are-the-benefits-of-using-concurrenthashmap-over-hashtable)
 - [What is the synchronized access?](#what-is-the-synchronized-access)
 - [What is the monitor for non-static synchronized method?](#what-is-the-monitor-for-non-static-synchronized-method)
+- [What are possible ways for synchronization threads?](#what-are-possible-ways-for-synchronization-threads)
 
-
-## Методы wait/notify для чего используются?
+## What is usage of wait/notify methods?
 ***wait().*** It tells the calling thread to give up the lock and go to sleep until some other thread enters the same monitor and calls notify().
 ***notify().*** It wakes up one single thread that called wait() on the same object. It should be noted that calling notify() does not actually give up a lock on a resource. It tells a waiting thread that that thread can wake up. However, the lock is not actually given up until the notifier’s synchronized block has completed.
 ***notifyAll().*** It wakes up all the threads that called wait() on the same object. The highest priority thread will run first in most of the situation, though not guaranteed. Other things are same as notify() method above.
@@ -79,5 +79,14 @@ Synchronized blocks in Java are marked with the synchronized keyword. A synchron
 When synchronizing a non static method, the monitor belongs to the instance.
 ###### Relative links:
 + https://stackoverflow.com/questions/6367885/difference-between-synchronizing-a-static-method-and-a-non-static-method
+
+## What are possible ways for synchronization threads?
+- Volatile;
+- Synchronized;
+- Atomic Primitives;
+- Locks;
+- Concurrent Utilities (Semaphore, CyclicBarrier, CountDownLatch, Concurrent collections).
+###### Relative links:
+- https://proandroiddev.com/synchronization-and-thread-safety-techniques-in-java-and-kotlin-f63506370e6d
 
 [Home Page](README.md)

@@ -57,7 +57,7 @@ This repository contains interview questions for Java developers.
 - [Possible maps in concurrency?](collections.md#possible-maps-in-concurrency)
 
 ## Concurrency
-- [Методы wait/notify для чего используются?](concurrency.md#методы-waitnotify-для-чего-используются)
+- [What is usage of wait/notify methods?](#what-is-usage-of-waitnotify-methods)
 - [Where wait() can be used?](concurrency.md#where-wait-can-be-used)
 - [What is the keyword synchronized?](concurrency.md#what-is-the-keyword-synchronized)
 - [What is the keyword volatile?](concurrency.md#what-is-the-keyword-volatile)
@@ -68,6 +68,7 @@ This repository contains interview questions for Java developers.
 - [What are the benefits of using ConcurrentHashMap over HashTable?](concurrency.md#what-are-the-benefits-of-using-concurrenthashmap-over-hashtable)
 - [What is the synchronized access?](concurrency.md#what-is-the-synchronized-access)
 - [What is the monitor for non-static synchronized method?](concurrency.md#what-is-the-monitor-for-non-static-synchronized-method)
+- [What are possible ways for synchronization threads?](#what-are-possible-ways-for-synchronization-threads)
 
 ## Spring
 - [How make spring service thread-safe?](spring.md#how-make-spring-service-thread-safe)
