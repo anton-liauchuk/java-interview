@@ -1,7 +1,15 @@
 # Servlet
+- [What is servlet?](#what-is-servlet)
 - [What is difference between parameters and attributes?](#what-is-difference-between-parameters-and-attributes)
 - [What is the life cycle of servlet?](#what-is-the-life-cycle-of-servlet)
 - [What is the servlet mapping?](#what-is-the-servlet-mapping)
+
+## What is servlet?
+A servlet is simply a class which responds to a particular type of network request - most commonly an HTTP request. Basically servlets are usually used to implement web applications - but there are also various frameworks which operate on top of servlets (e.g. Struts) to give a higher-level abstraction than the "here's an HTTP request, write to this HTTP response" level which servlets provide.
+
+Servlets run in a servlet container which handles the networking side (e.g. parsing an HTTP request, connection handling etc). One of the best-known open source servlet containers is Tomcat.
+###### Relative links:
+https://stackoverflow.com/questions/7213541/what-is-java-servlet
 
 ## What is difference between parameters and attributes?
 + ***getParameter()*** returns http request parameters. Those passed from the client to the server. For example http://example.com/servlet?parameter=1. Can only return String

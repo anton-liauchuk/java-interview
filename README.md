@@ -93,6 +93,7 @@ This repository contains interview questions for Java developers.
 - [Does @transactional method work in the case of execution in the same class?](spring.md#does-transactional-method-work-in-the-case-of-execution-in-the-same-class)
 
 ## Servlet
+- [What is servlet?](servlet.md#what-is-servlet)
 - [What is difference between parameters and attributes?](servlet.md#what-is-difference-between-parameters-and-attributes)
 - [What is the life cycle of servlet?](servlet.md#what-is-the-life-cycle-of-servlet)
 - [What is the servlet mapping?](servlet.md#what-is-the-servlet-mapping)
