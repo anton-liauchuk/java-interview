@@ -68,7 +68,8 @@ This repository contains interview questions for Java developers.
 - [What are the benefits of using ConcurrentHashMap over HashTable?](concurrency.md#what-are-the-benefits-of-using-concurrenthashmap-over-hashtable)
 - [What is the synchronized access?](concurrency.md#what-is-the-synchronized-access)
 - [What is the monitor for non-static synchronized method?](concurrency.md#what-is-the-monitor-for-non-static-synchronized-method)
-- [What are possible ways for synchronization threads?](#what-are-possible-ways-for-synchronization-threads)
+- [What are possible ways for synchronization threads?](concurrency.md#what-are-possible-ways-for-synchronization-threads)
+- [How to wait for finish of thread?](concurrency.md#how-to-wait-for-finish-of-thread)
 
 ## Spring
 - [How make spring service thread-safe?](spring.md#how-make-spring-service-thread-safe)

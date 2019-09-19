@@ -11,6 +11,7 @@
 - [What is the synchronized access?](#what-is-the-synchronized-access)
 - [What is the monitor for non-static synchronized method?](#what-is-the-monitor-for-non-static-synchronized-method)
 - [What are possible ways for synchronization threads?](#what-are-possible-ways-for-synchronization-threads)
+- [How to wait for finish of thread?](#how-to-wait-for-finish-of-thread)
 
 ## What is usage of wait/notify methods?
 ***wait().*** It tells the calling thread to give up the lock and go to sleep until some other thread enters the same monitor and calls notify().
@@ -88,5 +89,10 @@ When synchronizing a non static method, the monitor belongs to the instance.
 - Concurrent Utilities (Semaphore, CyclicBarrier, CountDownLatch, Concurrent collections).
 ###### Relative links:
 - https://proandroiddev.com/synchronization-and-thread-safety-techniques-in-java-and-kotlin-f63506370e6d
+
+## How to wait for finish of thread?
+Thread has a method that does that for you join which will block until the thread has finished executing.
+###### Relative links:
+- https://stackoverflow.com/questions/4691533/java-wait-for-thread-to-finish
 
 [Home Page](README.md)
