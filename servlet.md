@@ -9,7 +9,7 @@ A servlet is simply a class which responds to a particular type of network reque
 
 Servlets run in a servlet container which handles the networking side (e.g. parsing an HTTP request, connection handling etc). One of the best-known open source servlet containers is Tomcat.
 ###### Relative links:
-https://stackoverflow.com/questions/7213541/what-is-java-servlet
++ https://stackoverflow.com/questions/7213541/what-is-java-servlet
 
 ## What is difference between parameters and attributes?
 + ***getParameter()*** returns http request parameters. Those passed from the client to the server. For example http://example.com/servlet?parameter=1. Can only return String
