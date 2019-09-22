@@ -43,6 +43,7 @@ This repository contains interview questions for Java developers.
 - [What are the methods of Object class?](core.md#what-are-the-methods-of-object-class)
 - [What is Jmeter?](core.md#what-is-jmeter)
 - [Possible Ways to Capture Java Heap Dumps?](core.md#possible-ways-to-capture-java-heap-dumps)
+- [Implement custom version of java.util.stream.Stream with filter/map methods](core.md#implement-custom-version-of-javautilstreamstream-with-filtermap-methods)
 
 ## Collections
 - [What is the complexity for get in Hashmap?](collections.md#what-is-the-complexity-for-get-in-hashmap)
