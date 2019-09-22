@@ -6,7 +6,7 @@ import java.util.function.Predicate;
 
 public class ReferencePipeline implements Stream {
 
-    protected ReferencePipeline previousStage;
+    ReferencePipeline previousStage;
 
     private List<StreamObject> objects;
 
@@ -14,7 +14,7 @@ public class ReferencePipeline implements Stream {
         this.objects = objects;
     }
 
-    public ReferencePipeline() {
+    ReferencePipeline() {
     }
 
     public Sink opWrapSink(Sink sink) {
@@ -78,15 +78,15 @@ public class ReferencePipeline implements Stream {
 
     abstract class Operation extends ReferencePipeline {
 
-        public Operation(ReferencePipeline previousStage) {
+        Operation(ReferencePipeline previousStage) {
             this.previousStage = previousStage;
         }
     }
 
     abstract class ChainedReference implements Sink {
-        protected final Sink downstream;
+        final Sink downstream;
 
-        public ChainedReference(Sink downstream) {
+        ChainedReference(Sink downstream) {
             this.downstream = Objects.requireNonNull(downstream);
         }
     }
