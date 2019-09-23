@@ -21,6 +21,7 @@
 - [What is Jmeter?](#what-is-jmeter)
 - [Possible Ways to Capture Java Heap Dumps?](#possible-ways-to-capture-java-heap-dumps)
 - [Implement custom version of java.util.stream.Stream with filter/map methods](#implement-custom-version-of-javautilstreamstream-with-filtermap-methods)
+- [What is the result of this code:](#what-is-the-result-of-this-code)
 
 ## What's new in Java 8?
 + Lambda expressions, Method Reference , Optional, Streams added.
@@ -165,6 +166,35 @@ Possible options from the link.
 The example of implementation can be found in folder [custom-stream](./custom-stream)
 
 ## What is the result of this code:
+```java
+public static void main(String[] args) {
+    Point pnt1 = new Point(0, 0);
+    Point pnt2 = new Point(0, 0);
+    System.out.println("X: " + pnt1.x + " Y: " + pnt1.y);
+    System.out.println("X: " + pnt2.x + " Y: " + pnt2.y);
+    System.out.println(" ");
+    tricky(pnt1, pnt2);
+    System.out.println("X: " + pnt1.x + " Y:" + pnt1.y);
+    System.out.println("X: " + pnt2.x + " Y: " + pnt2.y);
+}
+
+public void tricky(Point arg1, Point arg2) {
+    arg1.x = 100;
+    arg1.y = 100;
+    Point temp = arg1;
+    arg1 = arg2;
+    arg2 = temp;
+}
+```
+
+If we execute this main() method, we see the following output:
+```
+X: 0 Y: 0
+X: 0 Y: 0
+X: 100 Y: 100
+X: 0 Y: 0
+```
+The method successfully alters the value of pnt1, even though it is passed by value; however, a swap of pnt1 and pnt2 fails! This is the major source of confusion. In the main() method, pnt1 and pnt2 are nothing more than object references. When you pass pnt1 and pnt2 to the tricky() method, Java passes the references by value just like any other parameter. This means the references passed to the method are actually copies of the original references. 
 ###### Relative links:
 - https://www.javaworld.com/article/2077424/learn-java-does-java-pass-by-reference-or-pass-by-value.html
 
