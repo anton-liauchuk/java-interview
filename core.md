@@ -164,4 +164,8 @@ Possible options from the link.
 ## Implement custom version of java.util.stream.Stream with filter/map methods
 The example of implementation can be found in folder [custom-stream](./custom-stream)
 
+## What is the result of this code:
+###### Relative links:
+- https://www.javaworld.com/article/2077424/learn-java-does-java-pass-by-reference-or-pass-by-value.html
+
 [Home Page](README.md)
