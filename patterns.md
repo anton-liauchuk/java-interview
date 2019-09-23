@@ -8,6 +8,7 @@
 - [What is the issue can be solved by visitor?](#what-is-the-issue-can-be-solved-by-visitor)
 - [What can you say about pattern observer?](#what-can-you-say-about-pattern-observer)
 - [How to initialize object depends on type?](#how-to-initialize-object-depends-on-type)
+- [Why Dependency Injection is needed?](#why-dependency-injection-is-needed)
 
 ## Which architectural patterns you know?
 + Layered Pattern
@@ -66,5 +67,10 @@ Abstract Factory, Factory method
 ###### Relative links:
 + https://www.geeksforgeeks.org/design-patterns-set-2-factory-method/
 + https://www.geeksforgeeks.org/abstract-factory-pattern/
+
+## Why Dependency Injection is needed?
+Dependency injection is one of two ways of how to remove dependencies in your code. It is very useful for configuration changes after compile-time, and it is a great thing for unit testing (as it makes it very easy to inject stubs and / or mocks).
+###### Relative links:
+- https://stackoverflow.com/questions/14301389/why-does-one-use-dependency-injection
 
 [Home Page](README.md)

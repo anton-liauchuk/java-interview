@@ -19,6 +19,7 @@
 - [What is declarative transaction in Spring?](#what-is-declarative-transaction-in-spring)
 - [What creates a proxy?](#what-creates-a-proxy)
 - [Does @transactional method work in the case of execution in the same class?](#does-transactional-method-work-in-the-case-of-execution-in-the-same-class)
+- [What is environment?](#what-is-environment)
 
 ## How make spring service thread-safe?
 There are several ways, probably too long to list here but here are a few examples:
@@ -155,5 +156,14 @@ After the bean instances are created they are run through a series of BeanPostPr
 The problem here is, that Spring's AOP proxies don't extend but rather wrap your service instance to intercept calls. This has the effect, that any call to "this" from within your service instance is directly invoked on that instance and cannot be intercepted by the wrapping proxy (the proxy is not even aware of any such call).
 ###### Relative links:
 + https://stackoverflow.com/questions/3423972/spring-transaction-method-call-by-the-method-within-the-same-class-does-not-wo
+
+## What is environment?
+Interface representing the environment in which the current application is running. Models two key aspects of the application environment: profiles and properties. Methods related to property access are exposed via the PropertyResolver superinterface.
+
+A profile is a named, logical group of bean definitions to be registered with the container only if the given profile is active. Beans may be assigned to a profile whether defined in XML or via annotations; see the spring-beans 3.1 schema or the @Profile annotation for syntax details. The role of the Environment object with relation to profiles is in determining which profiles (if any) are currently active, and which profiles (if any) should be active by default.
+
+Properties play an important role in almost all applications, and may originate from a variety of sources: properties files, JVM system properties, system environment variables, JNDI, servlet context parameters, ad-hoc Properties objects, Maps, and so on. The role of the environment object with relation to properties is to provide the user with a convenient service interface for configuring property sources and resolving properties from them.
+###### Relative links:
+- https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/core/env/Environment.html
 
 [Home Page](README.md)

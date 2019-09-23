@@ -94,6 +94,7 @@ This repository contains interview questions for Java developers.
 - [What is declarative transaction in Spring?](spring.md#what-is-declarative-transaction-in-spring)
 - [What creates a proxy?](spring.md#what-creates-a-proxy)
 - [Does @transactional method work in the case of execution in the same class?](spring.md#does-transactional-method-work-in-the-case-of-execution-in-the-same-class)
+- [What is environment?](spring.md#what-is-environment)
 
 ## Servlet
 - [What is servlet?](servlet.md#what-is-servlet)
@@ -152,6 +153,7 @@ This repository contains interview questions for Java developers.
 - [What is the issue can be solved by visitor?](patterns.md#what-is-the-issue-can-be-solved-by-visitor)
 - [What can you say about pattern observer?](patterns.md#what-can-you-say-about-pattern-observer)
 - [How to initialize object depends on type?](patterns.md#how-to-initialize-object-depends-on-type)
+- [Why Dependency Injection is needed?](patterns.md#why-dependency-injection-is-needed)
 
 ## REST
 - [What is rest architecture? What are the requirements?](rest.md#what-is-rest-architecture-what-are-the-requirements)
