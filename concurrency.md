@@ -12,6 +12,7 @@
 - [What is the monitor for non-static synchronized method?](#what-is-the-monitor-for-non-static-synchronized-method)
 - [What are possible ways for synchronization threads?](#what-are-possible-ways-for-synchronization-threads)
 - [How to wait for finish of thread?](#how-to-wait-for-finish-of-thread)
+- [What is the result of this code?](#what-is-the-result-of-this-code)
 
 ## What is usage of wait/notify methods?
 ***wait().*** It tells the calling thread to give up the lock and go to sleep until some other thread enters the same monitor and calls notify().
@@ -94,5 +95,32 @@ When synchronizing a non static method, the monitor belongs to the instance.
 Thread has a method that does that for you join which will block until the thread has finished executing.
 ###### Relative links:
 - https://stackoverflow.com/questions/4691533/java-wait-for-thread-to-finish
+
+## What is the result of this code?
+```java
+public class StopThread {
+    private static boolean stopRequested;
+    public static void main(String[] args)
+            throws InterruptedException {
+        Thread backgroundThread = new Thread(new Runnable() {
+            public void run() {
+                int i = 0;
+                while (!stopRequested)
+                    i++;
+            }
+        });
+        backgroundThread.start();
+        TimeUnit.SECONDS.sleep(1);
+        stopRequested = true;
+    }
+}
+```
+Ideally, the program should run for 1 second and after the “stopRequested” has become true, the “backgroundThread” should end, terminating the whole program.
+
+But if you run the above on a computer with multiple cores, you will observe that the program keeps on executing without getting terminated. The problem occurs with the write operation on the “stopRequested” variable. There is no guarantee that the change of the value in “stopRequested” variable (from the main thread) becoming visible to the “backgroundThread” that we created. As the write operation to the “stopRequested” variable to true from the main method is invisible to the “backgroundThread”, it will go into an infinite loop.
+
+As the main thread and our “backgroundThread” is running on two different cores inside the processor, the “stopRequested” will be loaded into the cache of the core that executes the “backgroundThread”. The main thread will keep the updated value of the “stopRequested” value in a cache of a different core. Since now the “stopRequested” value resides in two different caches, the updated value may not be visible to the “backgroundThread”.
+###### Relative links:
+- https://medium.com/@kasunpdh/handling-java-memory-consistency-with-happens-before-relationship-95ddc837ab13
 
 [Home Page](README.md)

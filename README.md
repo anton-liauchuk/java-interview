@@ -72,6 +72,7 @@ This repository contains interview questions for Java developers.
 - [What is the monitor for non-static synchronized method?](concurrency.md#what-is-the-monitor-for-non-static-synchronized-method)
 - [What are possible ways for synchronization threads?](concurrency.md#what-are-possible-ways-for-synchronization-threads)
 - [How to wait for finish of thread?](concurrency.md#how-to-wait-for-finish-of-thread)
+- [What is the result of this code?](concurrency.md#what-is-the-result-of-this-code)
 
 ## Spring
 - [How make spring service thread-safe?](spring.md#how-make-spring-service-thread-safe)
