@@ -4,6 +4,10 @@ import java.util.Objects;
 import java.util.function.Function;
 import java.util.function.Predicate;
 
+/**
+ * Custom reference pipeline implementation with basic functions.
+ * The original class is {@link java.util.stream.ReferencePipeline}
+ */
 public class ReferencePipeline implements Stream {
 
     ReferencePipeline previousStage;
@@ -76,6 +80,9 @@ public class ReferencePipeline implements Stream {
         return result;
     }
 
+    /**
+     * Represents Operation which has the info about previous stage.
+     */
     abstract class Operation extends ReferencePipeline {
 
         Operation(ReferencePipeline previousStage) {
@@ -83,6 +90,9 @@ public class ReferencePipeline implements Stream {
         }
     }
 
+    /**
+     * Represents Chained Reference which has the link to downstream.
+     */
     abstract class ChainedReference implements Sink {
         final Sink downstream;
 
