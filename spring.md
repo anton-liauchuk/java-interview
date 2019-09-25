@@ -20,6 +20,7 @@
 - [What creates a proxy?](#what-creates-a-proxy)
 - [Does @transactional method work in the case of execution in the same class?](#does-transactional-method-work-in-the-case-of-execution-in-the-same-class)
 - [What is environment?](#what-is-environment)
+- [How does auto-configuration work?](#how-does-auto-configuration-work)
 
 ## How make spring service thread-safe?
 There are several ways, probably too long to list here but here are a few examples:
@@ -165,5 +166,10 @@ A profile is a named, logical group of bean definitions to be registered with th
 Properties play an important role in almost all applications, and may originate from a variety of sources: properties files, JVM system properties, system environment variables, JNDI, servlet context parameters, ad-hoc Properties objects, Maps, and so on. The role of the environment object with relation to properties is to provide the user with a convenient service interface for configuring property sources and resolving properties from them.
 ###### Relative links:
 - https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/core/env/Environment.html
+
+## How does auto-configuration work?
+Under the hood, auto-configuration is implemented with standard @Configuration classes. Additional @Conditional annotations are used to constrain when the auto-configuration should apply. Usually, auto-configuration classes use @ConditionalOnClass and @ConditionalOnMissingBean annotations. This ensures that auto-configuration applies only when relevant classes are found and when you have not declared your own @Configuration.
+###### Relative links:
+- https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-developing-auto-configuration.html
 
 [Home Page](README.md)

@@ -96,6 +96,7 @@ This repository contains interview questions for Java developers.
 - [What creates a proxy?](spring.md#what-creates-a-proxy)
 - [Does @transactional method work in the case of execution in the same class?](spring.md#does-transactional-method-work-in-the-case-of-execution-in-the-same-class)
 - [What is environment?](spring.md#what-is-environment)
+- [How does auto-configuration work?](spring.md#how-does-auto-configuration-work)
 
 ## Servlet
 - [What is servlet?](servlet.md#what-is-servlet)
