@@ -43,7 +43,6 @@ This repository contains interview questions for Java developers.
 - [What are the methods of Object class?](core.md#what-are-the-methods-of-object-class)
 - [What is Jmeter?](core.md#what-is-jmeter)
 - [Possible Ways to Capture Java Heap Dumps?](core.md#possible-ways-to-capture-java-heap-dumps)
-- [Implement custom version of java.util.stream.Stream with filter/map methods](core.md#implement-custom-version-of-javautilstreamstream-with-filtermap-methods)
 - [What is the result of this code:](core.md#what-is-the-result-of-this-code)
 
 ## Collections
@@ -57,6 +56,8 @@ This repository contains interview questions for Java developers.
 - [What is the complexity of removing the last element from LinkedList?](collections.md#what-is-the-complexity-of-removing-the-last-element-from-linkedlist)
 - [What are the differences between Set and Map?](collections.md#what-are-the-differences-between-set-and-map)
 - [Possible maps in concurrency?](collections.md#possible-maps-in-concurrency)
+- [Implement custom version of java.util.stream.Stream with filter/map methods](collections.md#implement-custom-version-of-javautilstreamstream-with-filtermap-methods)
+- [When is it better to use foreach loop instead of Iterable.forEach()?](collections.md#when-is-it-better-to-use-foreach-loop-instead-of-iterableforeach)
 
 ## Concurrency
 - [What is usage of wait/notify methods?](#what-is-usage-of-waitnotify-methods)
@@ -97,6 +98,7 @@ This repository contains interview questions for Java developers.
 - [Does @transactional method work in the case of execution in the same class?](spring.md#does-transactional-method-work-in-the-case-of-execution-in-the-same-class)
 - [What is environment?](spring.md#what-is-environment)
 - [How does auto-configuration work?](spring.md#how-does-auto-configuration-work)
+- [What is the difference between @Resource and @Autowired annotations?](spring.md#what-is-the-difference-between-resource-and-autowired-annotations)
 
 ## Servlet
 - [What is servlet?](servlet.md#what-is-servlet)

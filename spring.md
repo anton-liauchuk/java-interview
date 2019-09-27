@@ -21,6 +21,7 @@
 - [Does @transactional method work in the case of execution in the same class?](#does-transactional-method-work-in-the-case-of-execution-in-the-same-class)
 - [What is environment?](#what-is-environment)
 - [How does auto-configuration work?](#how-does-auto-configuration-work)
+- [What is the difference between @Resource and @Autowired annotations?](#what-is-the-difference-between-resource-and-autowired-annotations)
 
 ## How make spring service thread-safe?
 There are several ways, probably too long to list here but here are a few examples:
@@ -171,5 +172,11 @@ Properties play an important role in almost all applications, and may originate 
 Under the hood, auto-configuration is implemented with standard @Configuration classes. Additional @Conditional annotations are used to constrain when the auto-configuration should apply. Usually, auto-configuration classes use @ConditionalOnClass and @ConditionalOnMissingBean annotations. This ensures that auto-configuration applies only when relevant classes are found and when you have not declared your own @Configuration.
 ###### Relative links:
 - https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-developing-auto-configuration.html
+
+## What is the difference between @Resource and @Autowired annotations?
+- @Resource means get me a known resource by name. The name is extracted from the name of the annotated setter or field, or it is taken from the name-Parameter.
+- @Inject or @Autowired try to wire in a suitable other component by type.
+###### Relative links:
+- https://stackoverflow.com/questions/4093504/resource-vs-autowired
 
 [Home Page](README.md)

@@ -20,7 +20,6 @@
 - [What are the methods of Object class?](#what-are-the-methods-of-object-class)
 - [What is Jmeter?](#what-is-jmeter)
 - [Possible Ways to Capture Java Heap Dumps?](#possible-ways-to-capture-java-heap-dumps)
-- [Implement custom version of java.util.stream.Stream with filter/map methods](#implement-custom-version-of-javautilstreamstream-with-filtermap-methods)
 - [What is the result of this code:](#what-is-the-result-of-this-code)
 
 ## What's new in Java 8?
@@ -161,9 +160,6 @@ Apache JMeter is an open source, Java-based, load testing tool that can be used 
 Possible options from the link.
 ###### Relative links:
 + https://www.baeldung.com/java-heap-dump-capture
-
-## Implement custom version of java.util.stream.Stream with filter/map methods
-The example of implementation can be found in folder [custom-stream](./custom-stream)
 
 ## What is the result of this code:
 ```java

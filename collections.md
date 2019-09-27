@@ -9,6 +9,8 @@
 - [What is the complexity of removing the last element from LinkedList?](#what-is-the-complexity-of-removing-the-last-element-from-linkedlist)
 - [What are the differences between Set and Map?](#what-are-the-differences-between-set-and-map)
 - [Possible maps in concurrency?](#possible-maps-in-concurrency)
+- [Implement custom version of java.util.stream.Stream with filter/map methods](#implement-custom-version-of-javautilstreamstream-with-filtermap-methods)
+- [When is it better to use foreach loop instead of Iterable.forEach()?](#when-is-it-better-to-use-foreach-loop-instead-of-iterableforeach)
 
 ## What is the complexity for get in Hashmap?
 It depends on many things. It's usually O(1), with a decent hash which itself is constant time... but you could have a hash which takes a long time to compute, and if there are multiple items in the hash map which return the same hash code, get will have to iterate over them calling equals on each of them to find a match.
@@ -82,5 +84,21 @@ Main differences between a ***Set*** and a ***Map*** in Java are:
 + ***Collections.synchronizedMap(Map)*** is the second option if you need to ensure data consistency, and each thread needs to have an up-to-date view of the map. Use the first if performance is critical, and each thread only inserts data to the map, with reads happening less frequently.
 ###### Relative links:
 + https://stackoverflow.com/questions/510632/whats-the-difference-between-concurrenthashmap-and-collections-synchronizedmap
+
+## Implement custom version of java.util.stream.Stream with filter/map methods
+The example of implementation can be found in folder [custom-stream](./custom-stream)
+
+## When is it better to use foreach loop instead of Iterable.forEach()?
+The deficiencies of Iterable.forEach():
+- Can't use non-final variables;
+- Can't handle checked exceptions;
+- Limited flow-control;
+- Might execute in parallel;
+- Might hurt performance;
+- If you do need parallelism, it is probably much faster and not much more difficult to use an ExecutorService;
+- Makes debugging more confusing;
+- Streams in general are more difficult to code, read, and debug;
+###### Relative links:
+- https://stackoverflow.com/questions/16635398/java-8-iterable-foreach-vs-foreach-loop
 
 [Home Page](README.md)
