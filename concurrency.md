@@ -13,6 +13,7 @@
 - [What are possible ways for synchronization threads?](#what-are-possible-ways-for-synchronization-threads)
 - [How to wait for finish of thread?](#how-to-wait-for-finish-of-thread)
 - [What is the result of this code?](#what-is-the-result-of-this-code)
+- [Change the code for getting deadlock](#change-the-code-for-getting-deadlock)
 
 ## What is usage of wait/notify methods?
 ***wait().*** It tells the calling thread to give up the lock and go to sleep until some other thread enters the same monitor and calls notify().
@@ -122,5 +123,47 @@ But if you run the above on a computer with multiple cores, you will observe tha
 As the main thread and our “backgroundThread” is running on two different cores inside the processor, the “stopRequested” will be loaded into the cache of the core that executes the “backgroundThread”. The main thread will keep the updated value of the “stopRequested” value in a cache of a different core. Since now the “stopRequested” value resides in two different caches, the updated value may not be visible to the “backgroundThread”.
 ###### Relative links:
 - https://medium.com/@kasunpdh/handling-java-memory-consistency-with-happens-before-relationship-95ddc837ab13
+
+## Change the code for getting deadlock
+```java
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Random;
+
+public class Deadlock {
+    private static final Object monitor1 = new Object();
+    private static final Object monitor2 = new Object();
+
+    public static void main(final String[] args) throws InterruptedException {
+        List<Thread> threads = new ArrayList<>();
+        threads.add(new Thread(Deadlock::handler1));
+        threads.add(new Thread(Deadlock::handler2));
+
+        Collections.shuffle(threads);
+
+        threads.get(0).start();
+        Thread.sleep(new Random().nextLong());
+        threads.get(1).start();
+    }
+
+    private static void handler1() {
+        synchronized (monitor1) {
+            synchronized (monitor2) {
+                System.out.println("Hello from handler1");
+            }
+        }
+    }
+
+    private static void handler2() {
+        synchronized (monitor2) {
+            synchronized (monitor1) {
+                System.out.println("Hello from handler2");
+            }
+        }
+    }
+}
+```
+Possible solution - adding delays inside synchronized blocks, the example is in module [deadlock](./deadlock).
 
 [Home Page](README.md)
