@@ -11,6 +11,7 @@
 - [различия между put и post?](#различия-между-put-и-post)
 - [в качестве rest-клиента что может использоваться?](#в-качестве-rest-клиента-что-может-использоваться)
 - [как http протокол работает?](#как-http-протокол-работает)
+- [What are the possible solutions in the case of big number of parameters for search method?](#what-are-the-possible-solutions-in-the-case-of-big-number-of-parameters-for-search-method)
 
 ## What is rest architecture? What are the requirements?
 - resources being identified by a persistent identifier: URIs are the ubiquitous choice of identifier these days
@@ -127,5 +128,12 @@ As a request-response protocol, HTTP gives users a way to interact with web reso
 ###### Relative links:
 + https://www.extrahop.com/resources/protocols/http/
 + https://www.quora.com/How-does-HTTP-work
+
+## What are the possible solutions in the case of big number of parameters for search method?
+1. POST request with body;
+2. Encoding the query string in GET request;
+3. Aliases.
+###### Relative links:
+- https://softwareengineering.stackexchange.com/questions/353086/what-is-a-proper-way-to-do-a-complex-restful-search-method
 
 [Home Page](README.md)

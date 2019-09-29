@@ -173,6 +173,7 @@ This repository contains interview questions for Java developers.
 - [What is the difference between put and post?](rest.md#what-is-the-difference-between-put-and-post)
 - [What can be used as rest client?](rest.md#what-can-be-used-as-rest-client)
 - [How http protocol work?](rest.md#how-http-protocol-work)
+- [What are the possible solutions in the case of big number of parameters for search method?](rest.md#what-are-the-possible-solutions-in-the-case-of-big-number-of-parameters-for-search-method)
 
 ## SQL
 - [What is having in sql?](sql.md#what-is-having-in-sql)
