@@ -22,6 +22,8 @@
 - [What is environment?](#what-is-environment)
 - [How does auto-configuration work?](#how-does-auto-configuration-work)
 - [What is the difference between @Resource and @Autowired annotations?](#what-is-the-difference-between-resource-and-autowired-annotations)
+- [What is the feature in Spring Boot for setting up the dependencies?](#what-is-the-feature-in-spring-boot-for-setting-up-the-dependencies)
+- [Where does Spring Boot application begin?](#where-does-spring-boot-application-begin)
 
 ## How make spring service thread-safe?
 There are several ways, probably too long to list here but here are a few examples:
@@ -178,5 +180,15 @@ Under the hood, auto-configuration is implemented with standard @Configuration c
 - @Inject or @Autowired try to wire in a suitable other component by type.
 ###### Relative links:
 - https://stackoverflow.com/questions/4093504/resource-vs-autowired
+
+## What is the feature in Spring Boot for setting up the dependencies?
+Spring Boot Starters is one of the major key features or components of Spring Boot Framework. The main responsibility of Spring Boot Starter is to combine a group of common or related dependencies into single dependencies.
+###### Relative links:
+- https://www.journaldev.com/7989/key-components-and-internals-of-spring-boot-framework
+
+## Where does Spring Boot application begin?
+Spring Boot application begins from dependency to Spring Boot Starter.
+###### Relative links:
+- https://spring.io/guides/gs/spring-boot/
 
 [Home Page](README.md)
