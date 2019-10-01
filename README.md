@@ -20,6 +20,7 @@ This repository contains interview questions for Java developers.
 + [SQL](#SQL)
 + [Test](#Test)
 + [Transactions](#Transactions)
++ [RabbitMQ](#RabbitMQ)
 
 ## Core
 - [What's new in Java 8?](core.md#whats-new-in-java-8)
@@ -196,3 +197,6 @@ This repository contains interview questions for Java developers.
 - [What are possible options for implementing transactions in microservices](transaction.md#what-are-possible-options-for-implementing-transactions-in-microservices)
 - [What is the difference between optimistic and pessimistic locking?](transaction.md#what-is-the-difference-between-optimistic-and-pessimistic-locking)
 - [Is it possible to use transaction for select statements?](transaction.md#is-it-possible-to-use-transaction-for-select-statements)
+
+## RabbitMQ
+- [What is the Exchange in RabbitMQ?](rabbitmq.md#what-is-the-exchange-in-rabbitmq)
