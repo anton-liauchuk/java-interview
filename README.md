@@ -134,7 +134,6 @@ This repository contains interview questions for Java developers.
 - [What are the disadvantages of microservices?](microservices.md#what-are-the-disadvantages-of-microservices)
 - [What are the possible issues in microservices](microservices.md#what-are-the-possible-issues-in-microservices)
 - [What are the possible solutions for the case when one service is not available?](microservices.md#what-are-the-possible-solutions-for-the-case-when-one-service-is-not-available)
-- [What is RabbitMQ?](microservices.md#what-is-rabbitmq)
 - [What is the difference between synchronous and asynchronous communication?](microservices.md#what-is-the-difference-between-synchronous-and-asynchronous-communication)
 - [What are possible ways for implementing authentication in microservices?](microservices.md#what-are-possible-ways-for-implementing-authentication-in-microservices)
 - [What is Eventual consistency?](microservices.md#what-is-eventual-consistency)
@@ -199,4 +198,6 @@ This repository contains interview questions for Java developers.
 - [Is it possible to use transaction for select statements?](transaction.md#is-it-possible-to-use-transaction-for-select-statements)
 
 ## RabbitMQ
+- [What is RabbitMQ?](rabbitmq.md#what-is-rabbitmq)
+- [What are the advantages/disadvantages of using message brokers?](rabbitmq.md#what-are-the-advantagesdisadvantages-of-using-message-brokers)
 - [What is the Exchange in RabbitMQ?](rabbitmq.md#what-is-the-exchange-in-rabbitmq)

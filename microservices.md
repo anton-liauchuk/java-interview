@@ -5,7 +5,6 @@
 - [What are the disadvantages of microservices?](#what-are-the-disadvantages-of-microservices)
 - [What are the possible issues in microservices](#what-are-the-possible-issues-in-microservices)
 - [What are the possible solutions for the case when one service is not available?](#what-are-the-possible-solutions-for-the-case-when-one-service-is-not-available)
-- [What is RabbitMQ?](#what-is-rabbitmq)
 - [What is the difference between synchronous and asynchronous communication?](#what-is-the-difference-between-synchronous-and-asynchronous-communication)
 - [What are possible ways for implementing authentication in microservices?](#what-are-possible-ways-for-implementing-authentication-in-microservices)
 - [What is Eventual consistency?](#what-is-eventual-consistency)
@@ -57,15 +56,6 @@ https://www.tiempodev.com/blog/disadvantages-of-a-microservices-architecture/
 ###### Relative links:
 + https://blog.risingstack.com/designing-microservices-architecture-for-failure/
 + https://dzone.com/articles/circuit-breaker-pattern
-
-## What is RabbitMQ?
-RabbitMQ, also known as Open-Source Message Broker, supports multiple message protocols and can be deployed on distributed systems. It is lightweight and makes it easy to deploy applications. It mainly acts as a queue where a message which is entered can first be operated on. RabbitMQ runs on many operating systems and cloud environments and provides a wide range of developer tools for most popular languages. It is a Producer-Consumer style pattern where the producer sends a message and the consumer consumes it. The main features of RabbitMQ are mentioned below:
-+ Asynchronous Messaging
-+ Distributed Deployment
-+ Management & Monitoring
-+ Enterprise- and Cloud-Ready
-###### Relative links:
-+ https://dzone.com/articles/rabbitmq-in-microservices
 
 ## What is the difference between synchronous and asynchronous communication?
 + ***Synchronous protocol.*** HTTP is a synchronous protocol. The client sends a request and waits for a response from the service. That's independent of the client code execution that could be synchronous (thread is blocked) or asynchronous (thread isn't blocked, and the response will reach a callback eventually). The important point here is that the protocol (HTTP/HTTPS) is synchronous and the client code can only continue its task when it receives the HTTP server response.
