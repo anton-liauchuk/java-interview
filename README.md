@@ -103,6 +103,7 @@ This repository contains interview questions for Java developers.
 - [What is the difference between @Resource and @Autowired annotations?](spring.md#what-is-the-difference-between-resource-and-autowired-annotations)
 - [What is the feature in Spring Boot for setting up the dependencies?](spring.md#what-is-the-feature-in-spring-boot-for-setting-up-the-dependencies)
 - [Where does Spring Boot application begin?](spring.md#where-does-spring-boot-application-begin)
+- [What is the difference between @Controller and @RestController annotations?](spring.md#what-is-the-difference-between-controller-and-restcontroller-annotations)
 
 ## Servlet
 - [What is servlet?](servlet.md#what-is-servlet)

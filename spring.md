@@ -24,6 +24,7 @@
 - [What is the difference between @Resource and @Autowired annotations?](#what-is-the-difference-between-resource-and-autowired-annotations)
 - [What is the feature in Spring Boot for setting up the dependencies?](#what-is-the-feature-in-spring-boot-for-setting-up-the-dependencies)
 - [Where does Spring Boot application begin?](#where-does-spring-boot-application-begin)
+- [What is the difference between @Controller and @RestController annotations?](#what-is-the-difference-between-controller-and-restcontroller-annotations)
 
 ## How make spring service thread-safe?
 There are several ways, probably too long to list here but here are a few examples:
@@ -190,5 +191,12 @@ Spring Boot Starters is one of the major key features or components of Spring Bo
 Spring Boot application begins from dependency to Spring Boot Starter.
 ###### Relative links:
 - https://spring.io/guides/gs/spring-boot/
+
+## What is the difference between @Controller and @RestController annotations?
+The job of @Controller is to create a Map of model object and find a view but @RestController simply return the object and object data is directly written into HTTP response as JSON or XML.
+
+This can also be done with traditional @Controller and use @ResponseBody annotation but since this is the default behavior of RESTful Web services, Spring introduced @RestController which combined the behavior of @Controller and @ResponseBody together.
+###### Relative links:
+- https://javarevisited.blogspot.com/2017/08/difference-between-restcontroller-and-controller-annotations-spring-mvc-rest.html#ixzz61TUwViPi
 
 [Home Page](README.md)
