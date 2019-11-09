@@ -104,6 +104,7 @@ This repository contains interview questions for Java developers.
 - [What is the feature in Spring Boot for setting up the dependencies?](spring.md#what-is-the-feature-in-spring-boot-for-setting-up-the-dependencies)
 - [Where does Spring Boot application begin?](spring.md#where-does-spring-boot-application-begin)
 - [What is the difference between @Controller and @RestController annotations?](spring.md#what-is-the-difference-between-controller-and-restcontroller-annotations)
+- [Does @Qualifier annotation can work only with bean name from @Component annotation?](spring.md#does-qualifier-annotation-can-work-only-with-bean-name-from-component-annotation)
 
 ## Servlet
 - [What is servlet?](servlet.md#what-is-servlet)
