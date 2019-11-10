@@ -105,6 +105,7 @@ This repository contains interview questions for Java developers.
 - [Where does Spring Boot application begin?](spring.md#where-does-spring-boot-application-begin)
 - [What is the difference between @Controller and @RestController annotations?](spring.md#what-is-the-difference-between-controller-and-restcontroller-annotations)
 - [Does @Qualifier annotation can work only with bean name from @Component annotation?](spring.md#does-qualifier-annotation-can-work-only-with-bean-name-from-component-annotation)
+- [Is it required to put @Repository annotation in the case of extending JpaRepository?](spring.md#is-it-required-to-put-repository-annotation-in-the-case-of-extending-jparepository)
 
 ## Servlet
 - [What is servlet?](servlet.md#what-is-servlet)

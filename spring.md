@@ -26,6 +26,7 @@
 - [Where does Spring Boot application begin?](#where-does-spring-boot-application-begin)
 - [What is the difference between @Controller and @RestController annotations?](#what-is-the-difference-between-controller-and-restcontroller-annotations)
 - [Does @Qualifier annotation can work only with bean name from @Component annotation?](#does-qualifier-annotation-can-work-only-with-bean-name-from-component-annotation)
+- [Is it required to put @Repository annotation in the case of extending JpaRepository?](#is-it-required-to-put-repository-annotation-in-the-case-of-extending-jparepository)
 
 ## How make spring service thread-safe?
 There are several ways, probably too long to list here but here are a few examples:
@@ -204,5 +205,10 @@ This can also be done with traditional @Controller and use @ResponseBody annotat
 @Qualifier annotation can be used on classes instead of specifying bean name in @Component annotation.
 ###### Relative links:
 - https://www.baeldung.com/spring-qualifier-annotation
+
+## Is it required to put @Repository annotation in the case of extending JpaRepository?
+It is indeed not necessary to put the @Repository annotation on interfaces that extend JpaRepository; Spring recognises the repositories by the fact that they extend one of the predefined Repository interfaces.
+###### Relative links:
+- https://stackoverflow.com/questions/44069367/repository-not-necessary-when-implementing-jparepository
 
 [Home Page](README.md)
