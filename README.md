@@ -179,6 +179,7 @@ This repository contains interview questions for Java developers.
 - [What can be used as rest client?](rest.md#what-can-be-used-as-rest-client)
 - [How http protocol work?](rest.md#how-http-protocol-work)
 - [What are the possible solutions in the case of big number of parameters for search method?](rest.md#what-are-the-possible-solutions-in-the-case-of-big-number-of-parameters-for-search-method)
+- [What should be the response in the case of DELETE request?](rest.md#what-should-be-the-response-in-the-case-of-delete-request)
 
 ## SQL
 - [What is having in sql?](sql.md#what-is-having-in-sql)

@@ -12,6 +12,7 @@
 - [What can be used as rest client?](#what-can-be-used-as-rest-client)
 - [How http protocol work?](#how-http-protocol-work)
 - [What are the possible solutions in the case of big number of parameters for search method?](#what-are-the-possible-solutions-in-the-case-of-big-number-of-parameters-for-search-method)
+- [What should be the response in the case of DELETE request?](#what-should-be-the-response-in-the-case-of-delete-request)
 
 ## What is rest architecture? What are the requirements?
 - resources being identified by a persistent identifier: URIs are the ubiquitous choice of identifier these days
@@ -135,5 +136,10 @@ As a request-response protocol, HTTP gives users a way to interact with web reso
 3. Aliases.
 ###### Relative links:
 - https://softwareengineering.stackexchange.com/questions/353086/what-is-a-proper-way-to-do-a-complex-restful-search-method
+
+## What should be the response in the case of DELETE request?
+There is no hard RESTful standard. **204 No Content** is a popular response for DELETE.
+###### Relative links:
+- https://stackoverflow.com/questions/25970523/restful-what-should-a-delete-response-body-contain
 
 [Home Page](README.md)
