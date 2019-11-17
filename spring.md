@@ -217,4 +217,9 @@ ResponseEntity is meant to represent the entire HTTP response. You can control a
 ###### Relative links:
 - https://stackoverflow.com/questions/26549379/when-use-responseentityt-and-restcontroller-for-spring-restful-applications
 
+## Does entity from @Transactional method can be updated without executing save method?
+Yes, because hibernate will automatically detect changes made to persistent entities and update the database accordingly.
+###### Relative links:
+- https://stackoverflow.com/questions/8190926/transactional-saves-without-calling-update-method
+
 [Home Page](README.md)

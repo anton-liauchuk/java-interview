@@ -106,7 +106,8 @@ This repository contains interview questions for Java developers.
 - [What is the difference between @Controller and @RestController annotations?](spring.md#what-is-the-difference-between-controller-and-restcontroller-annotations)
 - [Does @Qualifier annotation can work only with bean name from @Component annotation?](spring.md#does-qualifier-annotation-can-work-only-with-bean-name-from-component-annotation)
 - [Is it required to put @Repository annotation in the case of extending JpaRepository?](spring.md#is-it-required-to-put-repository-annotation-in-the-case-of-extending-jparepository)
-- [How ResponseEntity can be used?](#how-responseentity-can-be-used)
+- [How ResponseEntity can be used?](spring.md#how-responseentity-can-be-used)
+- [Does entity from @Transactional method can be updated without executing save method?](spring.md#does-entity-from-transactional-method-can-be-updated-without-executing-save-method)
 
 ## Servlet
 - [What is servlet?](servlet.md#what-is-servlet)
