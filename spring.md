@@ -27,6 +27,7 @@
 - [What is the difference between @Controller and @RestController annotations?](#what-is-the-difference-between-controller-and-restcontroller-annotations)
 - [Does @Qualifier annotation can work only with bean name from @Component annotation?](#does-qualifier-annotation-can-work-only-with-bean-name-from-component-annotation)
 - [Is it required to put @Repository annotation in the case of extending JpaRepository?](#is-it-required-to-put-repository-annotation-in-the-case-of-extending-jparepository)
+- [How ResponseEntity can be used?](#how-responseentity-can-be-used)
 
 ## How make spring service thread-safe?
 There are several ways, probably too long to list here but here are a few examples:
@@ -210,5 +211,10 @@ This can also be done with traditional @Controller and use @ResponseBody annotat
 It is indeed not necessary to put the @Repository annotation on interfaces that extend JpaRepository; Spring recognises the repositories by the fact that they extend one of the predefined Repository interfaces.
 ###### Relative links:
 - https://stackoverflow.com/questions/44069367/repository-not-necessary-when-implementing-jparepository
+
+## How ResponseEntity can be used?
+ResponseEntity is meant to represent the entire HTTP response. You can control anything that goes into it: status code, headers, and body.
+###### Relative links:
+- https://stackoverflow.com/questions/26549379/when-use-responseentityt-and-restcontroller-for-spring-restful-applications
 
 [Home Page](README.md)

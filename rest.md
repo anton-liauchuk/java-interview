@@ -13,6 +13,7 @@
 - [How http protocol work?](#how-http-protocol-work)
 - [What are the possible solutions in the case of big number of parameters for search method?](#what-are-the-possible-solutions-in-the-case-of-big-number-of-parameters-for-search-method)
 - [What should be the response in the case of DELETE request?](#what-should-be-the-response-in-the-case-of-delete-request)
+- [What is the best solution for representing Enum in API?](#what-is-the-best-solution-for-representing-enum-in-api)
 
 ## What is rest architecture? What are the requirements?
 - resources being identified by a persistent identifier: URIs are the ubiquitous choice of identifier these days
@@ -141,5 +142,10 @@ As a request-response protocol, HTTP gives users a way to interact with web reso
 There is no hard RESTful standard. **204 No Content** is a popular response for DELETE.
 ###### Relative links:
 - https://stackoverflow.com/questions/25970523/restful-what-should-a-delete-response-body-contain
+
+## What is the best solution for representing Enum in API?
+Strings.
+###### Relative links:
+- https://softwareengineering.stackexchange.com/questions/220091/how-to-represent-enum-types-in-a-public-api
 
 [Home Page](README.md)

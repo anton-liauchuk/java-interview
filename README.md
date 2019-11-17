@@ -106,6 +106,7 @@ This repository contains interview questions for Java developers.
 - [What is the difference between @Controller and @RestController annotations?](spring.md#what-is-the-difference-between-controller-and-restcontroller-annotations)
 - [Does @Qualifier annotation can work only with bean name from @Component annotation?](spring.md#does-qualifier-annotation-can-work-only-with-bean-name-from-component-annotation)
 - [Is it required to put @Repository annotation in the case of extending JpaRepository?](spring.md#is-it-required-to-put-repository-annotation-in-the-case-of-extending-jparepository)
+- [How ResponseEntity can be used?](#how-responseentity-can-be-used)
 
 ## Servlet
 - [What is servlet?](servlet.md#what-is-servlet)
@@ -180,6 +181,7 @@ This repository contains interview questions for Java developers.
 - [How http protocol work?](rest.md#how-http-protocol-work)
 - [What are the possible solutions in the case of big number of parameters for search method?](rest.md#what-are-the-possible-solutions-in-the-case-of-big-number-of-parameters-for-search-method)
 - [What should be the response in the case of DELETE request?](rest.md#what-should-be-the-response-in-the-case-of-delete-request)
+- [What is the best solution for representing Enum in API?](rest.md#what-is-the-best-solution-for-representing-enum-in-api)
 
 ## SQL
 - [What is having in sql?](sql.md#what-is-having-in-sql)
