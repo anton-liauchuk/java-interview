@@ -3,6 +3,7 @@
 - [Unit test executes code from 2 classes, is it correct? Is it unit or integration test?](#unit-test-executes-code-from-2-classes-is-it-correct-is-it-unit-or-integration-test)
 - [What can be used for unit tests?](#what-can-be-used-for-unit-tests)
 - [What is better to use randomized or hardcode data for unit tests?](#what-is-better-to-use-randomized-or-hardcode-data-for-unit-tests)
+- [Is it possible to test the architecture of application?](#is-it-possible-to-test-the-architecture-of-application)
 
 ## What is the difference between integration and unit tests?
 A ***unit test*** is a test written by the programmer to verify that a relatively small piece of code is doing what it is intended to do. They are narrow in scope, they should be easy to write and execute, and their effectiveness depends on what the programmer considers to be useful. The tests are intended for the use of the programmer, they are not directly useful to anybody else, though, if they do their job, testers and users downstream should benefit from seeing fewer bugs.
@@ -31,5 +32,11 @@ Avoid randomized data as it can lead to toggling tests which can be hard to debu
 Instead, use fixed values for everything. They will create highly reproducible tests, which are easy to debug and create error messages that can be easily traced back to the relevant line of code.
 ###### Relative links:
 - https://phauer.com/2019/modern-best-practices-testing-java/
+
+## Is it possible to test the architecture of application?
+Yes, ArchUnit as example. It does not test your code flow or business logic. The library lets you test your “architecture” including class dependencies, cyclic dependencies, layer accesses, naming conventions, and inheritance checking.
+###### Relative links:
+- https://www.freecodecamp.org/news/java-archunit-testing-the-architecture-a09f089585be/
+- https://github.com/TNG/ArchUnit
 
 [Home Page](README.md)

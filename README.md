@@ -194,6 +194,7 @@ This repository contains interview questions for Java developers.
 - [Unit test executes code from 2 classes, is it correct? Is it unit or integration test?](test.md#unit-test-executes-code-from-2-classes-is-it-correct-is-it-unit-or-integration-test)
 - [What can be used for unit tests?](test.md#what-can-be-used-for-unit-tests)
 - [What is better to use randomized or hardcode data for unit tests?](test.md#what-is-better-to-use-randomized-or-hardcode-data-for-unit-tests)
+- [Is it possible to test the architecture of application?](test.md#is-it-possible-to-test-the-architecture-of-application)
 
 ## Transactions
 - [What is transaction?](transaction.md#what-is-transaction)
