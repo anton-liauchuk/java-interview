@@ -108,6 +108,7 @@ This repository contains interview questions for Java developers.
 - [Is it required to put @Repository annotation in the case of extending JpaRepository?](spring.md#is-it-required-to-put-repository-annotation-in-the-case-of-extending-jparepository)
 - [How ResponseEntity can be used?](spring.md#how-responseentity-can-be-used)
 - [Does entity from @Transactional method can be updated without executing save method?](spring.md#does-entity-from-transactional-method-can-be-updated-without-executing-save-method)
+- [Is it possible to have only one transaction in the case of executing several @Transactional methods?](spring.md#is-it-possible-to-have-only-one-transaction-in-the-case-of-executing-several-transactional-methods)
 
 ## Servlet
 - [What is servlet?](servlet.md#what-is-servlet)

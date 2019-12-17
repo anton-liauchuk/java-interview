@@ -28,6 +28,8 @@
 - [Does @Qualifier annotation can work only with bean name from @Component annotation?](#does-qualifier-annotation-can-work-only-with-bean-name-from-component-annotation)
 - [Is it required to put @Repository annotation in the case of extending JpaRepository?](#is-it-required-to-put-repository-annotation-in-the-case-of-extending-jparepository)
 - [How ResponseEntity can be used?](#how-responseentity-can-be-used)
+- [Does entity from @Transactional method can be updated without executing save method?](#does-entity-from-transactional-method-can-be-updated-without-executing-save-method)
+- [Is it possible to have only one transaction in the case of executing several @Transactional methods?](#is-it-possible-to-have-only-one-transaction-in-the-case-of-executing-several-transactional-methods)
 
 ## How make spring service thread-safe?
 There are several ways, probably too long to list here but here are a few examples:
@@ -221,5 +223,10 @@ ResponseEntity is meant to represent the entire HTTP response. You can control a
 Yes, because hibernate will automatically detect changes made to persistent entities and update the database accordingly.
 ###### Relative links:
 - https://stackoverflow.com/questions/8190926/transactional-saves-without-calling-update-method
+
+## Is it possible to have only one transaction in the case of executing several @Transactional methods?
+Yes, it depends on the propagation attribute. ***PROPAGATION_REQUIRED*** - the same transaction for both methods, ***PROPAGATION_REQUIRES_NEW*** starts a new transaction.
+###### Relative links:
+- https://docs.spring.io/spring/docs/current/spring-framework-reference/data-access.html#tx-propagation
 
 [Home Page](README.md)
