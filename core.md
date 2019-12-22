@@ -21,6 +21,7 @@
 - [What is Jmeter?](#what-is-jmeter)
 - [Possible Ways to Capture Java Heap Dumps?](#possible-ways-to-capture-java-heap-dumps)
 - [What is the result of this code:](#what-is-the-result-of-this-code)
+- [Are checked exceptions bad?](#are-checked-exceptions-bad)
 
 ## What's new in Java 8?
 + Lambda expressions, Method Reference , Optional, Streams added.
@@ -193,5 +194,11 @@ X: 0 Y: 0
 The method successfully alters the value of pnt1, even though it is passed by value; however, a swap of pnt1 and pnt2 fails! This is the major source of confusion. In the main() method, pnt1 and pnt2 are nothing more than object references. When you pass pnt1 and pnt2 to the tricky() method, Java passes the references by value just like any other parameter. This means the references passed to the method are actually copies of the original references. 
 ###### Relative links:
 - https://www.javaworld.com/article/2077424/learn-java-does-java-pass-by-reference-or-pass-by-value.html
+
+## Are checked exceptions bad?
+###### Relative links:
+- https://www.javaworld.com/article/3142626/are-checked-exceptions-good-or-bad.html
+- https://www.yegor256.com/2015/07/28/checked-vs-unchecked-exceptions.html
+- https://medium.com/@eob/checked-exceptions-considered-evil-f7d07e051fa6
 
 [Home Page](README.md)

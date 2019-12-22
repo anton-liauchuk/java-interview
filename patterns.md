@@ -9,6 +9,8 @@
 - [What can you say about pattern observer?](#what-can-you-say-about-pattern-observer)
 - [How to initialize object depends on type?](#how-to-initialize-object-depends-on-type)
 - [Why Dependency Injection is needed?](#why-dependency-injection-is-needed)
+- [What is the best practice for validation in DDD?](#what-is-the-best-practice-for-validation-in-ddd)
+- [Should services always return dtos?](#should-services-always-return-dtos)
 
 ## Which architectural patterns you know?
 + Layered Pattern
@@ -72,5 +74,16 @@ Abstract Factory, Factory method
 Dependency injection is one of two ways of how to remove dependencies in your code. It is very useful for configuration changes after compile-time, and it is a great thing for unit testing (as it makes it very easy to inject stubs and / or mocks).
 ###### Relative links:
 - https://stackoverflow.com/questions/14301389/why-does-one-use-dependency-injection
+
+## What is the best practice for validation in DDD?
+###### Relative links:
+- https://docs.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/domain-model-layer-validations
+- http://gorodinski.com/blog/2012/05/19/validation-in-domain-driven-design-ddd/
+- https://enterprisecraftsmanship.com/posts/always-valid-vs-not-always-valid-domain-model/
+
+## Should services always return dtos?
+###### Relative links:
+- https://stackoverflow.com/questions/21554977/should-services-always-return-dtos-or-can-they-also-return-domain-models
+- https://vaadin.com/learn/tutorials/ddd/ddd_and_hexagonal
 
 [Home Page](README.md)

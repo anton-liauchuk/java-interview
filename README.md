@@ -45,6 +45,7 @@ This repository contains interview questions for Java developers.
 - [What is Jmeter?](core.md#what-is-jmeter)
 - [Possible Ways to Capture Java Heap Dumps?](core.md#possible-ways-to-capture-java-heap-dumps)
 - [What is the result of this code:](core.md#what-is-the-result-of-this-code)
+- [Are checked exceptions bad?](core.md#are-checked-exceptions-bad)
 
 ## Collections
 - [What is the complexity for get in Hashmap?](collections.md#what-is-the-complexity-for-get-in-hashmap)
@@ -167,6 +168,8 @@ This repository contains interview questions for Java developers.
 - [What can you say about pattern observer?](patterns.md#what-can-you-say-about-pattern-observer)
 - [How to initialize object depends on type?](patterns.md#how-to-initialize-object-depends-on-type)
 - [Why Dependency Injection is needed?](patterns.md#why-dependency-injection-is-needed)
+- [What is the best practice for validation in DDD?](patterns.md#what-is-the-best-practice-for-validation-in-ddd)
+- [Should services always return dtos?](patterns.md#should-services-always-return-dtos)
 
 ## REST
 - [What is rest architecture? What are the requirements?](rest.md#what-is-rest-architecture-what-are-the-requirements)
