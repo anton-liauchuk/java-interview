@@ -9,6 +9,8 @@
 - [What is the complexity of removing the last element from LinkedList?](#what-is-the-complexity-of-removing-the-last-element-from-linkedlist)
 - [What are the differences between Set and Map?](#what-are-the-differences-between-set-and-map)
 - [Possible maps in concurrency?](#possible-maps-in-concurrency)
+- [What is the main difference between Stream API and Collection?](#what-is-the-main-difference-between-stream-api-and-collection)
+- [What should be avoided in parallel stream?](#what-should-be-avoided-in-parallel-stream)
 - [Implement custom version of java.util.stream.Stream with filter/map methods](#implement-custom-version-of-javautilstreamstream-with-filtermap-methods)
 - [When is it better to use foreach loop instead of Iterable.forEach()?](#when-is-it-better-to-use-foreach-loop-instead-of-iterableforeach)
 
@@ -84,6 +86,22 @@ Main differences between a ***Set*** and a ***Map*** in Java are:
 + ***Collections.synchronizedMap(Map)*** is the second option if you need to ensure data consistency, and each thread needs to have an up-to-date view of the map. Use the first if performance is critical, and each thread only inserts data to the map, with reads happening less frequently.
 ###### Relative links:
 + https://stackoverflow.com/questions/510632/whats-the-difference-between-concurrenthashmap-and-collections-synchronizedmap
+
+## What is the main difference between Stream API and Collection?
+Streams differ from collections in several ways:
++ No storage. A stream is not a data structure that stores elements; instead, it conveys elements from a source such as a data structure, an array, a generator function, or an I/O channel, through a pipeline of computational operations.
++ Functional in nature. An operation on a stream produces a result, but does not modify its source. For example, filtering a Stream obtained from a collection produces a new Stream without the filtered elements, rather than removing elements from the source collection.
++ Laziness-seeking. Many stream operations, such as filtering, mapping, or duplicate removal, can be implemented lazily, exposing opportunities for optimization. For example, "find the first  String with three consecutive vowels" need not examine all the input strings. Stream operations are divided into intermediate (Stream-producing) operations and terminal (value- or side-effect-producing) operations. Intermediate operations are always lazy.
++ Possibly unbounded. While collections have a finite size, streams need not. Short-circuiting operations such as limit(n) or findFirst() can allow computations on infinite streams to complete in finite time.
++ Consumable. The elements of a stream are only visited once during the life of a stream. Like an Iterator, a new stream must be generated to revisit the same elements of the source.
+###### Relative links:
++ https://stackoverflow.com/questions/39432699/what-is-the-difference-between-streams-and-collections-in-java-8
+
+## What should be avoided in parallel stream?
+The problem is that all parallel streams use common fork-join thread pool, and if you submit a long-running task, you effectively block all threads in the pool. Consequently, you block all other tasks that are using parallel streams.
+###### Relative links:
++ https://dzone.com/articles/think-twice-using-java-8
++ https://stackoverflow.com/questions/20375176/should-i-always-use-a-parallel-stream-when-possible
 
 ## Implement custom version of java.util.stream.Stream with filter/map methods
 The example of implementation can be found in folder [custom-stream](./custom-stream)

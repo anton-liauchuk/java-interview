@@ -24,7 +24,6 @@ This repository contains interview questions for Java developers.
 
 ## Core
 - [What's new in Java 8?](core.md#whats-new-in-java-8)
-- [What is the main difference between Stream API and Collection?](core.md#what-is-the-main-difference-between-stream-api-and-collection)
 - [What are the memory types in Java?](core.md#what-are-the-memory-types-in-java)
 - [What is java agent?](core.md#what-is-java-agent)
 - [Possible Performance Tools for Java?](core.md#possible-performance-tools-for-java)
@@ -40,12 +39,15 @@ This repository contains interview questions for Java developers.
 - [What is better interfaces or abstract classes?](core.md#what-is-better-interfaces-or-abstract-classes)
 - [Do inner classes have access to private fields from outer class?](core.md#do-inner-classes-have-access-to-private-fields-from-outer-class)
 - [What are the differences between static nested classes and non-static nested classes?](core.md#what-are-the-differences-between-static-nested-classes-and-non-static-nested-classes)
-- [What should be avoided in parallel stream?](core.md#what-should-be-avoided-in-parallel-stream)
 - [What are the methods of Object class?](core.md#what-are-the-methods-of-object-class)
 - [What is Jmeter?](core.md#what-is-jmeter)
 - [Possible Ways to Capture Java Heap Dumps?](core.md#possible-ways-to-capture-java-heap-dumps)
 - [What is the result of this code:](core.md#what-is-the-result-of-this-code)
 - [Are checked exceptions bad?](core.md#are-checked-exceptions-bad)
+- [How var in Java 10 can be used?](core.md#how-var-in-java-10-can-be-used)
+- [Functional interfaces vs abstract classes?](core.md#functional-interfaces-vs-abstract-classes)
+- [Why getters/setters?](core.md#why-getterssetters)
+- [Serialization?](core.md#serialization)
 
 ## Collections
 - [What is the complexity for get in Hashmap?](collections.md#what-is-the-complexity-for-get-in-hashmap)
@@ -58,6 +60,8 @@ This repository contains interview questions for Java developers.
 - [What is the complexity of removing the last element from LinkedList?](collections.md#what-is-the-complexity-of-removing-the-last-element-from-linkedlist)
 - [What are the differences between Set and Map?](collections.md#what-are-the-differences-between-set-and-map)
 - [Possible maps in concurrency?](collections.md#possible-maps-in-concurrency)
+- [What is the main difference between Stream API and Collection?](collections.md#what-is-the-main-difference-between-stream-api-and-collection)
+- [What should be avoided in parallel stream?](collections.md#what-should-be-avoided-in-parallel-stream)
 - [Implement custom version of java.util.stream.Stream with filter/map methods](collections.md#implement-custom-version-of-javautilstreamstream-with-filtermap-methods)
 - [When is it better to use foreach loop instead of Iterable.forEach()?](collections.md#when-is-it-better-to-use-foreach-loop-instead-of-iterableforeach)
 
