@@ -174,6 +174,8 @@ This repository contains interview questions for Java developers.
 - [Why Dependency Injection is needed?](patterns.md#why-dependency-injection-is-needed)
 - [What is the best practice for validation in DDD?](patterns.md#what-is-the-best-practice-for-validation-in-ddd)
 - [Should services always return dtos?](patterns.md#should-services-always-return-dtos)
+- [What is DDD?](patterns.md#what-is-ddd)
+- [Why DDD is needed?](patterns.md#why-ddd-is-needed)
 
 ## REST
 - [What is rest architecture? What are the requirements?](rest.md#what-is-rest-architecture-what-are-the-requirements)

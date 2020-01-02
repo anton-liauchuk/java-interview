@@ -11,6 +11,8 @@
 - [Why Dependency Injection is needed?](#why-dependency-injection-is-needed)
 - [What is the best practice for validation in DDD?](#what-is-the-best-practice-for-validation-in-ddd)
 - [Should services always return dtos?](#should-services-always-return-dtos)
+- [What is DDD?](#what-is-ddd)
+- [Why DDD is needed?](#why-ddd-is-needed)
 
 ## Which architectural patterns you know?
 + Layered Pattern
@@ -85,5 +87,16 @@ Dependency injection is one of two ways of how to remove dependencies in your co
 ###### Relative links:
 - https://stackoverflow.com/questions/21554977/should-services-always-return-dtos-or-can-they-also-return-domain-models
 - https://vaadin.com/learn/tutorials/ddd/ddd_and_hexagonal
+
+## What is DDD?
+###### Relative links:
+- https://vaadin.com/learn/tutorials/ddd/strategic_domain_driven_design
+- https://vaadin.com/learn/tutorials/ddd/tactical_domain_driven_design
+- https://vaadin.com/learn/tutorials/ddd/ddd_and_hexagonal
+- https://github.com/peholmst/DDDExample
+
+## Why DDD is needed?
+###### Relative links:
+- https://simpleprogrammer.com/importance-domain-driven-design/
 
 [Home Page](README.md)
