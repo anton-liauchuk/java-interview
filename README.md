@@ -176,6 +176,9 @@ This repository contains interview questions for Java developers.
 - [Should services always return dtos?](patterns.md#should-services-always-return-dtos)
 - [What is DDD?](patterns.md#what-is-ddd)
 - [Why DDD is needed?](patterns.md#why-ddd-is-needed)
+- [What is aggregate in DDD?](patterns.md#what-is-aggregate-in-ddd)
+- [What is anemic domain model?](patterns.md#what-is-anemic-domain-model)
+- [What is the correct way for having relations between aggregates?](patterns.md#what-is-the-correct-way-for-having-relations-between-aggregates)
 
 ## REST
 - [What is rest architecture? What are the requirements?](rest.md#what-is-rest-architecture-what-are-the-requirements)

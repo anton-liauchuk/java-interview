@@ -13,6 +13,9 @@
 - [Should services always return dtos?](#should-services-always-return-dtos)
 - [What is DDD?](#what-is-ddd)
 - [Why DDD is needed?](#why-ddd-is-needed)
+- [What is aggregate in DDD?](#what-is-aggregate-in-ddd)
+- [What is anemic domain model?](#what-is-anemic-domain-model)
+- [What is the correct way for having relations between aggregates?](#what-is-the-correct-way-for-having-relations-between-aggregates)
 
 ## Which architectural patterns you know?
 + Layered Pattern
@@ -98,5 +101,17 @@ Dependency injection is one of two ways of how to remove dependencies in your co
 ## Why DDD is needed?
 ###### Relative links:
 - https://simpleprogrammer.com/importance-domain-driven-design/
+
+## What is aggregate in DDD?
+###### Relative links:
+- https://martinfowler.com/bliki/DDD_Aggregate.html
+
+## What is anemic domain model?
+###### Relative links:
+- https://martinfowler.com/bliki/AnemicDomainModel.html
+
+## What is the correct way for having relations between aggregates?
+###### Relative links:
+- https://vaadin.com/learn/tutorials/ddd/tactical_domain_driven_design
 
 [Home Page](README.md)
