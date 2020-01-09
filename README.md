@@ -174,11 +174,17 @@ This repository contains interview questions for Java developers.
 - [Why Dependency Injection is needed?](patterns.md#why-dependency-injection-is-needed)
 - [What is the best practice for validation in DDD?](patterns.md#what-is-the-best-practice-for-validation-in-ddd)
 - [Should services always return dtos?](patterns.md#should-services-always-return-dtos)
-- [What is DDD?](patterns.md#what-is-ddd)
-- [Why DDD is needed?](patterns.md#why-ddd-is-needed)
-- [What is aggregate in DDD?](patterns.md#what-is-aggregate-in-ddd)
-- [What is anemic domain model?](patterns.md#what-is-anemic-domain-model)
-- [What is the correct way for having relations between aggregates?](patterns.md#what-is-the-correct-way-for-having-relations-between-aggregates)
+
+## DDD
+- [What is DDD?](ddd.md#what-is-ddd)
+- [Why DDD is needed?](ddd.md#why-ddd-is-needed)
+- [What is aggregate in DDD?](ddd.md#what-is-aggregate-in-ddd)
+- [What is anemic domain model?](ddd.md#what-is-anemic-domain-model)
+- [What is the correct way for having relations between aggregates?](ddd.md#what-is-the-correct-way-for-having-relations-between-aggregates)
+- [How to update several aggregates during one transaction?](ddd.md#how-to-update-several-aggregates-during-one-transaction)
+- [What is event storming?](ddd.md#what-is-event-storming)
+- [How domain events are related to eventual consistency?](ddd.md#how-domain-events-are-related-to-eventual-consistency)
+- [What is the difference between domain events and event sourcing?](ddd.md#what-is-the-difference-between-domain-events-and-event-sourcing)
 
 ## REST
 - [What is rest architecture? What are the requirements?](rest.md#what-is-rest-architecture-what-are-the-requirements)
