@@ -1,5 +1,5 @@
-# Java interview questions
-This repository contains interview questions for Java developers.
+# About project
+At the beginning, it was the repository with questions from Java interviews. Currently, it's more like knowledge base about different topic with useful links.
 
 # Table of Contents
 - [Core](#core)
