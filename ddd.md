@@ -8,6 +8,7 @@
 - [What is event storming?](#what-is-event-storming)
 - [How domain events are related to eventual consistency?](#how-domain-events-are-related-to-eventual-consistency)
 - [What is the difference between domain events and event sourcing?](#what-is-the-difference-between-domain-events-and-event-sourcing)
+- [What is CQRS?](#what-is-cqrs)
 
 ## What is DDD?
 ###### Relative links:
@@ -39,6 +40,7 @@
 ## What is event storming?
 ###### Relative links:
 - https://philippe.bourgau.net/how-to-use-event-storming-to-introduce-domain-driven-design/
+- https://github.com/mariuszgil/awesome-eventstorming
 
 ## How domain events are related to eventual consistency?
 ###### Relative links:
@@ -47,3 +49,8 @@
 ## What is the difference between domain events and event sourcing?
 ###### Relative links:
 - https://www.innoq.com/en/blog/domain-events-versus-event-sourcing/
+
+## What is CQRS?
+###### Relative links:
+- https://docs.microsoft.com/en-us/azure/architecture/patterns/cqrs
+- https://www.kamilgrzybek.com/design/simple-cqrs-implementation-with-raw-sql-and-ddd/

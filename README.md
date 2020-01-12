@@ -2,25 +2,25 @@
 This repository contains interview questions for Java developers.
 
 # Table of Contents
-+ [Core](#Core)
-+ [Collections](#Collections)
-+ [Concurrency](#Concurrency)
-+ [Spring](#Spring)
-+ [Servlet](#Servlet)
-+ [Hibernate](#Hibernate)
-+ [Git](#Git)
-+ [Maven](#Maven)
-+ [Microservices](#Microservices)
-+ [JavaScript](#JavaScript)
-+ [Linux](#Linux)
-+ [Algorithms](#Algorithms)
-+ [Patterns](#Patterns)
-+ [React](#React)
-+ [REST](#REST)
-+ [SQL](#SQL)
-+ [Test](#Test)
-+ [Transactions](#Transactions)
-+ [RabbitMQ](#RabbitMQ)
+- [Core](#core)
+- [Collections](#collections)
+- [Concurrency](#concurrency)
+- [Spring](#spring)
+- [Servlet](#servlet)
+- [Hibernate](#hibernate)
+- [Git](#git)
+- [Maven](#maven)
+- [Microservices](#microservices)
+- [JavaScript](#javascript)
+- [Linux](#linux)
+- [Patterns](#patterns)
+- [DDD](#ddd)
+- [Architecture](#architecture)
+- [REST](#rest)
+- [SQL](#sql)
+- [Test](#test)
+- [Transactions](#transactions)
+- [RabbitMQ](#rabbitmq)
 
 ## Core
 - [What's new in Java 8?](core.md#whats-new-in-java-8)
@@ -185,6 +185,10 @@ This repository contains interview questions for Java developers.
 - [What is event storming?](ddd.md#what-is-event-storming)
 - [How domain events are related to eventual consistency?](ddd.md#how-domain-events-are-related-to-eventual-consistency)
 - [What is the difference between domain events and event sourcing?](ddd.md#what-is-the-difference-between-domain-events-and-event-sourcing)
+- [What is CQRS?](ddd.md#what-is-cqrs)
+
+## Architecture
+- [What are the differences between monolith and microservices? (Performance/Deployability/Failure impact and etc)](architecture.md#what-are-the-differences-between-monolith-and-microservices-performancedeployabilityfailure-impact-and-etc)
 
 ## REST
 - [What is rest architecture? What are the requirements?](rest.md#what-is-rest-architecture-what-are-the-requirements)
