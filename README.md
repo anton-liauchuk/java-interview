@@ -1,5 +1,5 @@
 # About project
-At the beginning, it was the repository with questions from Java interviews. Currently, it's more like knowledge base about different topic with useful links.
+At the beginning, it was the repository with questions from Java interviews. Currently, it's more like knowledge base with useful links.
 
 # Table of Contents
 - [Core](#core)
