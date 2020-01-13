@@ -21,9 +21,16 @@
 - [What is the result of this code:](#what-is-the-result-of-this-code)
 - [Are checked exceptions bad?](#are-checked-exceptions-bad)
 - [How var in Java 10 can be used?](#how-var-in-java-10-can-be-used)
+- [What is functional interface?](#what-is-functional-interface)
 - [Functional interfaces vs abstract classes?](#functional-interfaces-vs-abstract-classes)
 - [Why getters/setters?](#why-getterssetters)
 - [Serialization?](#serialization)
+- [Deserialization after changes in class? Possible issues?](#deserialization-after-changes-in-class-possible-issues)
+- [What is the difference between cohesion and coupling?](#what-is-the-difference-between-cohesion-and-coupling)
+- [@Override annotation?](#override-annotation)
+- [Java modifiers?](#java-modifiers)
+- [Exception Hierarchy?](#exception-hierarchy)
+- [One exception is thrown by catch block and another one is thrown from finally block, which exception will be thrown by method?](#one-exception-is-thrown-by-catch-block-and-another-one-is-thrown-from-finally-block-which-exception-will-be-thrown-by-method)
 
 ## What's new in Java 8?
 + Lambda expressions, Method Reference , Optional, Streams added.
@@ -191,6 +198,10 @@ The method successfully alters the value of pnt1, even though it is passed by va
 ###### Relative links:
 - https://dzone.com/articles/finally-java-10-has-var-to-declare-local-variables
 
+## What is functional interface?
+###### Relative links:
+- https://www.geeksforgeeks.org/functional-interfaces-java/
+
 ## Functional interfaces vs abstract classes?
 ###### Relative links:
 - https://stackoverflow.com/questions/19998454/interface-with-default-methods-vs-abstract-class-in-java-8
@@ -202,5 +213,29 @@ The method successfully alters the value of pnt1, even though it is passed by va
 ## Serialization?
 ###### Relative links:
 - https://dev.to/njnareshjoshi/what-is-serialization-everything-you-need-to-know-about-java-serialization-explained-with-example-9mj
+
+## Deserialization after changes in class? Possible issues?
+###### Relative links:
+- https://howtodoinjava.com/java/serialization/a-mini-guide-for-implementing-serializable-interface-in-java/
+
+## What is the difference between cohesion and coupling?
+###### Relative links:
+- https://stackoverflow.com/questions/3085285/difference-between-cohesion-and-coupling
+
+## @Override annotation?
+###### Relative links:
+- https://www.tutorialspoint.com/importance-of-override-annotation-in-java
+
+## Java modifiers?
+###### Relative links:
+- https://www.tutorialspoint.com/java/java_modifier_types.htm
+
+## Exception Hierarchy?
+###### Relative links:
+- https://www.geeksforgeeks.org/exceptions-in-java/
+
+## One exception is thrown by catch block and another one is thrown from finally block, which exception will be thrown by method?
+###### Relative links:
+- https://stackoverflow.com/questions/3779285/exception-thrown-in-catch-and-finally-clause
 
 [Home Page](README.md)

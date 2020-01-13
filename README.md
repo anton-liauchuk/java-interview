@@ -45,9 +45,16 @@ At the beginning, it was the repository with questions from Java interviews. Cur
 - [What is the result of this code:](core.md#what-is-the-result-of-this-code)
 - [Are checked exceptions bad?](core.md#are-checked-exceptions-bad)
 - [How var in Java 10 can be used?](core.md#how-var-in-java-10-can-be-used)
+- [What is functional interface?](#what-is-functional-interface)
 - [Functional interfaces vs abstract classes?](core.md#functional-interfaces-vs-abstract-classes)
 - [Why getters/setters?](core.md#why-getterssetters)
 - [Serialization?](core.md#serialization)
+- [Deserialization after changes in class? Possible issues?](#deserialization-after-changes-in-class-possible-issues)
+- [What is the difference between cohesion and coupling?](#what-is-the-difference-between-cohesion-and-coupling)
+- [@Override annotation?](#override-annotation)
+- [Java modifiers?](#java-modifiers)
+- [Exception Hierarchy?](#exception-hierarchy)
+- [One exception is thrown by catch block and another one is thrown from finally block, which exception will be thrown by method?](#one-exception-is-thrown-by-catch-block-and-another-one-is-thrown-from-finally-block-which-exception-will-be-thrown-by-method)
 
 ## Collections
 - [What is the complexity for get in Hashmap?](collections.md#what-is-the-complexity-for-get-in-hashmap)
@@ -63,7 +70,9 @@ At the beginning, it was the repository with questions from Java interviews. Cur
 - [What is the main difference between Stream API and Collection?](collections.md#what-is-the-main-difference-between-stream-api-and-collection)
 - [What should be avoided in parallel stream?](collections.md#what-should-be-avoided-in-parallel-stream)
 - [Implement custom version of java.util.stream.Stream with filter/map methods](collections.md#implement-custom-version-of-javautilstreamstream-with-filtermap-methods)
+- [What is forEach?](collections.md#what-is-foreach)
 - [When is it better to use foreach loop instead of Iterable.forEach()?](collections.md#when-is-it-better-to-use-foreach-loop-instead-of-iterableforeach)
+- [SplitIterator?](collections.md#splititerator)
 
 ## Concurrency
 - [What is usage of wait/notify methods?](#what-is-usage-of-waitnotify-methods)
@@ -126,6 +135,7 @@ At the beginning, it was the repository with questions from Java interviews. Cur
 - [What is the use of flush?](hibernate.md#what-is-the-use-of-flush)
 - [What are the cache levels?](hibernate.md#what-are-the-cache-levels)
 - [What is the first-level cache?](hibernate.md#what-is-the-first-level-cache)
+- [Hibernate inheritance?](hibernate.md#hibernate-inheritance)
 
 ## Git
 - [What is the difference between merge and rebase?](git.md#what-is-the-difference-between-merge-and-rebase)

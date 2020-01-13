@@ -12,7 +12,9 @@
 - [What is the main difference between Stream API and Collection?](#what-is-the-main-difference-between-stream-api-and-collection)
 - [What should be avoided in parallel stream?](#what-should-be-avoided-in-parallel-stream)
 - [Implement custom version of java.util.stream.Stream with filter/map methods](#implement-custom-version-of-javautilstreamstream-with-filtermap-methods)
+- [What is forEach?](#what-is-foreach)
 - [When is it better to use foreach loop instead of Iterable.forEach()?](#when-is-it-better-to-use-foreach-loop-instead-of-iterableforeach)
+- [SplitIterator?](#splititerator)
 
 ## What is the complexity for get in Hashmap?
 It depends on many things. It's usually O(1), with a decent hash which itself is constant time... but you could have a hash which takes a long time to compute, and if there are multiple items in the hash map which return the same hash code, get will have to iterate over them calling equals on each of them to find a match.
@@ -106,6 +108,10 @@ The problem is that all parallel streams use common fork-join thread pool, and i
 ## Implement custom version of java.util.stream.Stream with filter/map methods
 The example of implementation can be found in folder [custom-stream](./custom-stream)
 
+## What is forEach?
+###### Relative links:
+- https://mkyong.com/java8/java-8-foreach-examples/
+
 ## When is it better to use foreach loop instead of Iterable.forEach()?
 The deficiencies of Iterable.forEach():
 - Can't use non-final variables;
@@ -118,5 +124,10 @@ The deficiencies of Iterable.forEach():
 - Streams in general are more difficult to code, read, and debug;
 ###### Relative links:
 - https://stackoverflow.com/questions/16635398/java-8-iterable-foreach-vs-foreach-loop
+
+## SplitIterator?
+###### Relative links:
+- https://www.baeldung.com/java-spliterator
+- https://www.geeksforgeeks.org/java-util-interface-spliterator-java8/
 
 [Home Page](README.md)

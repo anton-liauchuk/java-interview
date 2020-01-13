@@ -3,6 +3,7 @@
 - [What is the use of flush?](#what-is-the-use-of-flush)
 - [What are the cache levels?](#what-are-the-cache-levels)
 - [What is the first-level cache?](#what-is-the-first-level-cache)
+- [Hibernate inheritance?](#hibernate-inheritance)
 
 ## What is detached entity?
 - A `new` instance of a persistent class which is not associated with a `Session`, has no representation in the database and no identifier value is considered ***transient*** by Hibernate.
@@ -21,8 +22,8 @@ Allowing to explicitly flush the Session gives finer control that may be require
 + https://stackoverflow.com/questions/3220336/whats-the-use-of-session-flush-in-hibernate
 
 ## What are the cache levels?
-+ ***Session Cache.*** The session cache caches objects within the current session. It is enabled by default in Hibernate. Read more about  Session Cache . Objects in the session cache reside in the same memory location.
-+ ***Second Level Cache.*** The second level cache is responsible for caching objects across sessions. When this is turned on, objects will first be searched in the cache and if they are not found, a database query will be fired. Read here on how to implement  Second Level Cache. Second level cache will be used when the objects are loaded using their primary key. This includes fetching of associations. Second level cache objects are constructed and reside in different memory locations. 
++ ***Session Cache.*** The session cache caches objects within the current session. It is enabled by default in Hibernate. Objects in the session cache reside in the same memory location.
++ ***Second Level Cache.*** The second level cache is responsible for caching objects across sessions. When this is turned on, objects will first be searched in the cache and if they are not found, a database query will be fired. Second level cache will be used when the objects are loaded using their primary key. This includes fetching of associations. Second level cache objects are constructed and reside in different memory locations. 
 + ***Query Cache.*** Query Cache is used to cache the results of a query.
 ###### Relative links:
 + https://dzone.com/articles/all-about-hibernate-second
@@ -33,5 +34,9 @@ Allowing to explicitly flush the Session gives finer control that may be require
 ###### Relative links:
 + https://dzone.com/articles/all-about-hibernate-second
 + https://habr.com/ru/post/135176/
+
+## Hibernate inheritance?
+###### Relative links:
+- https://www.baeldung.com/hibernate-inheritance
 
 [Home Page](README.md)
