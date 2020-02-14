@@ -10,6 +10,7 @@ At the beginning, it was the repository with questions from Java interviews. Cur
 - [Hibernate](#hibernate)
 - [Git](#git)
 - [Maven](#maven)
+- [Gradle](#gradle)
 - [Microservices](#microservices)
 - [JavaScript](#javascript)
 - [Linux](#linux)
@@ -49,12 +50,14 @@ At the beginning, it was the repository with questions from Java interviews. Cur
 - [Functional interfaces vs abstract classes?](core.md#functional-interfaces-vs-abstract-classes)
 - [Why getters/setters?](core.md#why-getterssetters)
 - [Serialization?](core.md#serialization)
-- [Deserialization after changes in class? Possible issues?](#deserialization-after-changes-in-class-possible-issues)
-- [What is the difference between cohesion and coupling?](#what-is-the-difference-between-cohesion-and-coupling)
-- [@Override annotation?](#override-annotation)
-- [Java modifiers?](#java-modifiers)
-- [Exception Hierarchy?](#exception-hierarchy)
-- [One exception is thrown by catch block and another one is thrown from finally block, which exception will be thrown by method?](#one-exception-is-thrown-by-catch-block-and-another-one-is-thrown-from-finally-block-which-exception-will-be-thrown-by-method)
+- [Deserialization after changes in class? Possible issues?](core.md#deserialization-after-changes-in-class-possible-issues)
+- [What is the difference between cohesion and coupling?](core.md#what-is-the-difference-between-cohesion-and-coupling)
+- [@Override annotation?](core.md#override-annotation)
+- [Java modifiers?](core.md#java-modifiers)
+- [Exception Hierarchy?](core.md#exception-hierarchy)
+- [One exception is thrown by catch block and another one is thrown from finally block, which exception will be thrown by method?](core.md#one-exception-is-thrown-by-catch-block-and-another-one-is-thrown-from-finally-block-which-exception-will-be-thrown-by-method)
+- [Is it possible to serialize lambda expression?](core.md#is-it-possible-to-serialize-lambda-expression)
+- [Why can Java Collections not directly store Primitives types?](core.md#why-can-java-collections-not-directly-store-primitives-types)
 
 ## Collections
 - [What is the complexity for get in Hashmap?](collections.md#what-is-the-complexity-for-get-in-hashmap)
@@ -147,6 +150,9 @@ At the beginning, it was the repository with questions from Java interviews. Cur
 - [How will work Maven in the case of multiple version of the same dependency?](maven.md#how-will-work-maven-in-the-case-of-multiple-version-of-the-same-dependency)
 - [What is the dependency management in Maven?](maven.md#what-is-the-dependency-management-in-maven)
 - [Does maven support inheritance for pom files?](maven.md#does-maven-support-inheritance-for-pom-files)
+
+## Gradle
+- [What is the difference between `api` and `implementation`?](gradle.md#what-is-the-difference-between-api-and-implementation)
 
 ## Microservices
 - [What are the possible ways for communication between microservices?](microservices.md#what-are-the-possible-ways-for-communication-between-microservices)

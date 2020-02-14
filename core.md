@@ -31,6 +31,8 @@
 - [Java modifiers?](#java-modifiers)
 - [Exception Hierarchy?](#exception-hierarchy)
 - [One exception is thrown by catch block and another one is thrown from finally block, which exception will be thrown by method?](#one-exception-is-thrown-by-catch-block-and-another-one-is-thrown-from-finally-block-which-exception-will-be-thrown-by-method)
+- [Is it possible to serialize lambda expression?](#is-it-possible-to-serialize-lambda-expression)
+- [Why can Java Collections not directly store Primitives types?](#why-can-java-collections-not-directly-store-primitives-types)
 
 ## What's new in Java 8?
 + Lambda expressions, Method Reference , Optional, Streams added.
@@ -237,5 +239,16 @@ The method successfully alters the value of pnt1, even though it is passed by va
 ## One exception is thrown by catch block and another one is thrown from finally block, which exception will be thrown by method?
 ###### Relative links:
 - https://stackoverflow.com/questions/3779285/exception-thrown-in-catch-and-finally-clause
+
+## Is it possible to serialize lambda expression?
+###### Relative links:
+- https://stackoverflow.com/questions/22807912/how-to-serialize-a-lambda
+
+## Why can Java Collections not directly store Primitives types?
+It's a combination of two facts:
+- Java primitive types are not reference types (e.g. an int is not an Object)
+- Java does generics using type-erasure of reference types (e.g. a List<?> is really a List<Object> at run-time)
+###### Relative links:
+- https://stackoverflow.com/questions/2504959/why-can-java-collections-not-directly-store-primitives-types
 
 [Home Page](README.md)
