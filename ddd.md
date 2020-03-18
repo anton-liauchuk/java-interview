@@ -9,6 +9,8 @@
 - [How domain events are related to eventual consistency?](#how-domain-events-are-related-to-eventual-consistency)
 - [What is the difference between domain events and event sourcing?](#what-is-the-difference-between-domain-events-and-event-sourcing)
 - [What is CQRS?](#what-is-cqrs)
+- [What is the best practice for validation in DDD?](#what-is-the-best-practice-for-validation-in-ddd)
+- [What is the best practice for Value Object?](#what-is-the-best-practice-for-value-object)
 
 ## What is DDD?
 ###### Relative links:
@@ -54,3 +56,14 @@
 ###### Relative links:
 - https://docs.microsoft.com/en-us/azure/architecture/patterns/cqrs
 - https://www.kamilgrzybek.com/design/simple-cqrs-implementation-with-raw-sql-and-ddd/
+
+## What is the best practice for validation in DDD?
+###### Relative links:
+- https://docs.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/domain-model-layer-validations
+- http://gorodinski.com/blog/2012/05/19/validation-in-domain-driven-design-ddd/
+- https://enterprisecraftsmanship.com/posts/always-valid-vs-not-always-valid-domain-model/
+- https://enterprisecraftsmanship.com/posts/validation-and-ddd/
+
+## What is the best practice for Value Object?
+###### Relative links:
+- https://dzone.com/articles/value-objects

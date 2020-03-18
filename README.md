@@ -202,6 +202,8 @@ At the beginning, it was the repository with questions from Java interviews. Cur
 - [How domain events are related to eventual consistency?](ddd.md#how-domain-events-are-related-to-eventual-consistency)
 - [What is the difference between domain events and event sourcing?](ddd.md#what-is-the-difference-between-domain-events-and-event-sourcing)
 - [What is CQRS?](ddd.md#what-is-cqrs)
+- [What is the best practice for validation in DDD?](ddd.md#what-is-the-best-practice-for-validation-in-ddd)
+- [What is the best practice for Value Object?](ddd.md#what-is-the-best-practice-for-value-object)
 
 ## Architecture
 - [What are the differences between monolith and microservices? (Performance/Deployability/Failure impact and etc)](architecture.md#what-are-the-differences-between-monolith-and-microservices-performancedeployabilityfailure-impact-and-etc)
