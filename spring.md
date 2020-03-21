@@ -30,6 +30,8 @@
 - [How ResponseEntity can be used?](#how-responseentity-can-be-used)
 - [Does entity from @Transactional method can be updated without executing save method?](#does-entity-from-transactional-method-can-be-updated-without-executing-save-method)
 - [Is it possible to have only one transaction in the case of executing several @Transactional methods?](#is-it-possible-to-have-only-one-transaction-in-the-case-of-executing-several-transactional-methods)
+- [Anti-patterns of bean validation?](#anti-patterns-of-bean-validation)
+- [Is it good practice to define interface for Spring bean?](#is-it-good-practice-to-define-interface-for-spring-bean)
 
 ## How make spring service thread-safe?
 There are several ways, probably too long to list here but here are a few examples:
@@ -228,5 +230,18 @@ Yes, because hibernate will automatically detect changes made to persistent enti
 Yes, it depends on the propagation attribute. ***PROPAGATION_REQUIRED*** - the same transaction for both methods, ***PROPAGATION_REQUIRES_NEW*** starts a new transaction.
 ###### Relative links:
 - https://docs.spring.io/spring/docs/current/spring-framework-reference/data-access.html#tx-propagation
+
+## Anti-patterns of bean validation?
+- Anti-Pattern #1: Validating Only in the Persistence Layer;
+- Anti-Pattern #2: Validating with a Shotgun;
+- Anti-Pattern #3: Using Validation Groups for Use Case Validations;
+###### Relative links:
+- https://reflectoring.io/bean-validation-anti-patterns/
+
+## Is it good practice to define interface for Spring bean?
+###### Relative links:
+- http://stackoverflow.com/questions/5288153/using-spring-to-wire-directly-a-concrete-class
+- https://octoperf.com/blog/2016/10/27/impl-classes-are-evil/
+- https://dzone.com/articles/spring-pitfalls-proxying
 
 [Home Page](README.md)

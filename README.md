@@ -126,6 +126,8 @@ At the beginning, it was the repository with questions from Java interviews. Cur
 - [How ResponseEntity can be used?](spring.md#how-responseentity-can-be-used)
 - [Does entity from @Transactional method can be updated without executing save method?](spring.md#does-entity-from-transactional-method-can-be-updated-without-executing-save-method)
 - [Is it possible to have only one transaction in the case of executing several @Transactional methods?](spring.md#is-it-possible-to-have-only-one-transaction-in-the-case-of-executing-several-transactional-methods)
+- [Anti-patterns of bean validation?](spring.md#anti-patterns-of-bean-validation)
+- [Is it good practice to define interface for Spring bean?](spring.md#is-it-good-practice-to-define-interface-for-spring-bean)
 
 ## Servlet
 - [What is servlet?](servlet.md#what-is-servlet)
@@ -188,7 +190,6 @@ At the beginning, it was the repository with questions from Java interviews. Cur
 - [What can you say about pattern observer?](patterns.md#what-can-you-say-about-pattern-observer)
 - [How to initialize object depends on type?](patterns.md#how-to-initialize-object-depends-on-type)
 - [Why Dependency Injection is needed?](patterns.md#why-dependency-injection-is-needed)
-- [What is the best practice for validation in DDD?](patterns.md#what-is-the-best-practice-for-validation-in-ddd)
 - [Should services always return dtos?](patterns.md#should-services-always-return-dtos)
 
 ## DDD
@@ -204,6 +205,8 @@ At the beginning, it was the repository with questions from Java interviews. Cur
 - [What is CQRS?](ddd.md#what-is-cqrs)
 - [What is the best practice for validation in DDD?](ddd.md#what-is-the-best-practice-for-validation-in-ddd)
 - [What is the best practice for Value Object?](ddd.md#what-is-the-best-practice-for-value-object)
+- [Possible issues with using domain model with public getters/setters and empty constructor?](ddd.md#possible-issues-with-using-domain-model-with-public-getterssetters-and-empty-constructor)
+- [How to work with large domain models? Is it correct to have a lot of fields in domain model?](ddd.md#how-to-work-with-large-domain-models-is-it-correct-to-have-a-lot-of-fields-in-domain-model)
 
 ## Architecture
 - [What are the differences between monolith and microservices? (Performance/Deployability/Failure impact and etc)](architecture.md#what-are-the-differences-between-monolith-and-microservices-performancedeployabilityfailure-impact-and-etc)

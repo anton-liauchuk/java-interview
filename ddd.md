@@ -11,6 +11,8 @@
 - [What is CQRS?](#what-is-cqrs)
 - [What is the best practice for validation in DDD?](#what-is-the-best-practice-for-validation-in-ddd)
 - [What is the best practice for Value Object?](#what-is-the-best-practice-for-value-object)
+- [Possible issues with using domain model with public getters/setters and empty constructor?](#possible-issues-with-using-domain-model-with-public-getterssetters-and-empty-constructor)
+- [How to work with large domain models? Is it correct to have a lot of fields in domain model?](#how-to-work-with-large-domain-models-is-it-correct-to-have-a-lot-of-fields-in-domain-model)
 
 ## What is DDD?
 ###### Relative links:
@@ -30,6 +32,7 @@
 ## What is anemic domain model?
 ###### Relative links:
 - https://martinfowler.com/bliki/AnemicDomainModel.html
+- https://thedomaindrivendesign.io/anemic-model/
 
 ## What is the correct way for having relations between aggregates?
 ###### Relative links:
@@ -67,3 +70,11 @@
 ## What is the best practice for Value Object?
 ###### Relative links:
 - https://dzone.com/articles/value-objects
+
+## Possible issues with using domain model with public getters/setters and empty constructor?
+###### Relative links:
+- https://thedomaindrivendesign.io/anemic-model/
+
+## How to work with large domain models? Is it correct to have a lot of fields in domain model?
+###### Relative links:
+- https://martinfowler.com/bliki/BoundedContext.html
