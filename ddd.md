@@ -66,6 +66,10 @@
 - http://gorodinski.com/blog/2012/05/19/validation-in-domain-driven-design-ddd/
 - https://enterprisecraftsmanship.com/posts/always-valid-vs-not-always-valid-domain-model/
 - https://enterprisecraftsmanship.com/posts/validation-and-ddd/
+- https://danielwhittaker.me/2016/04/20/how-to-validate-commands-in-a-cqrs-application/
+- https://enterprisecraftsmanship.com/posts/validate-commands-cqrs/
+- http://www.kamilgrzybek.com/design/domain-model-validation/
+- http://www.kamilgrzybek.com/design/rest-api-data-validation/
 
 ## What is the best practice for Value Object?
 ###### Relative links:

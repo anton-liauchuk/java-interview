@@ -21,8 +21,9 @@ A **transaction** is a sequence of operations performed (using one or more SQL s
 - ***Durable:*** When the transaction is completed, effects of the modifications performed by the transaction must be permanent in the system.
 ###### Relative links:
 - https://www.w3resource.com/sql/controlling-transactions.php
-+ https://github.com/enhorse/java-interview/blob/master/db.md#%D0%BD%D0%B0%D0%B7%D0%BE%D0%B2%D0%B8%D1%82%D0%B5-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%8B%D0%B5-%D1%81%D0%B2%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%B0-%D1%82%D1%80%D0%B0%D0%BD%D0%B7%D0%B0%D0%BA%D1%86%D0%B8%D0%B8
-+ https://habr.com/ru/post/446662/
+- https://github.com/enhorse/java-interview/blob/master/db.md#%D0%BD%D0%B0%D0%B7%D0%BE%D0%B2%D0%B8%D1%82%D0%B5-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%8B%D0%B5-%D1%81%D0%B2%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%B0-%D1%82%D1%80%D0%B0%D0%BD%D0%B7%D0%B0%D0%BA%D1%86%D0%B8%D0%B8
+- https://habr.com/ru/post/446662/
+- https://vladmihalcea.com/a-beginners-guide-to-acid-and-database-transactions/
 
 ## What is a distributed transaction?
 **Distributed transactions** span multiple physical systems, whereas standard transactions do not. Synchronization amongst the systems becomes a need which traditionally would not exist in a standard transaction.

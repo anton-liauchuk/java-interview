@@ -129,5 +129,6 @@ The deficiencies of Iterable.forEach():
 ###### Relative links:
 - https://www.baeldung.com/java-spliterator
 - https://www.geeksforgeeks.org/java-util-interface-spliterator-java8/
+- https://blog.rapid7.com/2015/10/28/java-8-introduction-to-parallelism-and-spliterator/
 
 [Home Page](README.md)
