@@ -227,6 +227,10 @@ At the beginning, it was the repository with questions from Java interviews. Cur
 - [What are the possible solutions in the case of big number of parameters for search method?](rest.md#what-are-the-possible-solutions-in-the-case-of-big-number-of-parameters-for-search-method)
 - [What should be the response in the case of DELETE request?](rest.md#what-should-be-the-response-in-the-case-of-delete-request)
 - [What is the best solution for representing Enum in API?](rest.md#what-is-the-best-solution-for-representing-enum-in-api)
+- [What is the best practice for getting Unique Resource From Sub-Collection?](rest.md#what-is-the-best-practice-for-getting-unique-resource-from-sub-collection)
+- [How search in sub-collections can be implemented?](rest.md#how-search-in-sub-collections-can-be-implemented)
+- [What is the best practice for nested resources?](rest.md#what-is-the-best-practice-for-nested-resources)
+- [Fine Grained CRUD Resources vs. Coarse Grained Resources?](rest.md#fine-grained-crud-resources-vs-coarse-grained-resources)
 
 ## SQL
 - [What is having in sql?](sql.md#what-is-having-in-sql)

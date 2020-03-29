@@ -14,6 +14,10 @@
 - [What are the possible solutions in the case of big number of parameters for search method?](#what-are-the-possible-solutions-in-the-case-of-big-number-of-parameters-for-search-method)
 - [What should be the response in the case of DELETE request?](#what-should-be-the-response-in-the-case-of-delete-request)
 - [What is the best solution for representing Enum in API?](#what-is-the-best-solution-for-representing-enum-in-api)
+- [What is the best practice for getting Unique Resource From Sub-Collection?](#what-is-the-best-practice-for-getting-unique-resource-from-sub-collection)
+- [How search in sub-collections can be implemented?](#how-search-in-sub-collections-can-be-implemented)
+- [What is the best practice for nested resources?](#what-is-the-best-practice-for-nested-resources)
+- [Fine Grained CRUD Resources vs. Coarse Grained Resources?](#fine-grained-crud-resources-vs-coarse-grained-resources)
 
 ## What is rest architecture? What are the requirements?
 - resources being identified by a persistent identifier: URIs are the ubiquitous choice of identifier these days
@@ -147,5 +151,23 @@ There is no hard RESTful standard. **204 No Content** is a popular response for 
 Strings.
 ###### Relative links:
 - https://softwareengineering.stackexchange.com/questions/220091/how-to-represent-enum-types-in-a-public-api
+
+## What is the best practice for getting Unique Resource From Sub-Collection?
+###### Relative links:
+- https://cloud.google.com/apis/design/design_patterns#get_unique_resource_from_sub-collection
+
+## How search in sub-collections can be implemented?
+###### Relative links:
+- https://cloud.google.com/apis/design/design_patterns#list_sub-collections
+
+## What is the best practice for nested resources?
+###### Relative links:
+- https://www.moesif.com/blog/technical/api-design/REST-API-Design-Best-Practices-for-Sub-and-Nested-Resources/
+
+## Fine Grained CRUD Resources vs. Coarse Grained Resources?
+###### Relative links:
+- https://dzone.com/articles/rest-api-design-resource-modeling-1
+- https://medium.com/garri-hov/rest-api-guideline-resource-modeling-48e63807a1b3
+- https://nordicapis.com/how-granular-should-you-design-apis/
 
 [Home Page](README.md)
