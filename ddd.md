@@ -59,6 +59,9 @@
 ###### Relative links:
 - https://docs.microsoft.com/en-us/azure/architecture/patterns/cqrs
 - https://www.kamilgrzybek.com/design/simple-cqrs-implementation-with-raw-sql-and-ddd/
+- https://dzone.com/articles/cqrs-understanding-from-first-principles
+- https://stackoverflow.com/questions/24474859/what-is-the-difference-between-command-commandhandler-and-service
+
 
 ## What is the best practice for validation in DDD?
 ###### Relative links:

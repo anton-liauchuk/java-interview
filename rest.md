@@ -18,6 +18,8 @@
 - [How search in sub-collections can be implemented?](#how-search-in-sub-collections-can-be-implemented)
 - [What is the best practice for nested resources?](#what-is-the-best-practice-for-nested-resources)
 - [Fine Grained CRUD Resources vs. Coarse Grained Resources?](#fine-grained-crud-resources-vs-coarse-grained-resources)
+- [Best guidelines?](#best-guidelines)
+- [Best practice for PATCH?](#best-practice-for-patch)
 
 ## What is rest architecture? What are the requirements?
 - resources being identified by a persistent identifier: URIs are the ubiquitous choice of identifier these days
@@ -169,5 +171,14 @@ Strings.
 - https://dzone.com/articles/rest-api-design-resource-modeling-1
 - https://medium.com/garri-hov/rest-api-guideline-resource-modeling-48e63807a1b3
 - https://nordicapis.com/how-granular-should-you-design-apis/
+
+## Best guidelines?
+###### Relative links:
+- https://github.com/microsoft/api-guidelines/blob/vNext/Guidelines.md
+- https://opensource.zalando.com/restful-api-guidelines/
+
+## Best practice for PATCH?
+###### Relative links:
+- https://opensource.zalando.com/restful-api-guidelines/#patch
 
 [Home Page](README.md)

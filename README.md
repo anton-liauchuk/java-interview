@@ -128,6 +128,7 @@ At the beginning, it was the repository with questions from Java interviews. Cur
 - [Is it possible to have only one transaction in the case of executing several @Transactional methods?](spring.md#is-it-possible-to-have-only-one-transaction-in-the-case-of-executing-several-transactional-methods)
 - [Anti-patterns of bean validation?](spring.md#anti-patterns-of-bean-validation)
 - [Is it good practice to define interface for Spring bean?](spring.md#is-it-good-practice-to-define-interface-for-spring-bean)
+- [How does @Transactional annotation work?](spring.md#how-does-transactional-annotation-work)
 
 ## Servlet
 - [What is servlet?](servlet.md#what-is-servlet)
@@ -141,6 +142,8 @@ At the beginning, it was the repository with questions from Java interviews. Cur
 - [What are the cache levels?](hibernate.md#what-are-the-cache-levels)
 - [What is the first-level cache?](hibernate.md#what-is-the-first-level-cache)
 - [Hibernate inheritance?](hibernate.md#hibernate-inheritance)
+- [Common hibernate mistakes?](hibernate.md#common-hibernate-mistakes)
+- [Hibernate best practice?](hibernate.md#hibernate-best-practice)
 
 ## Git
 - [What is the difference between merge and rebase?](git.md#what-is-the-difference-between-merge-and-rebase)
@@ -231,6 +234,8 @@ At the beginning, it was the repository with questions from Java interviews. Cur
 - [How search in sub-collections can be implemented?](rest.md#how-search-in-sub-collections-can-be-implemented)
 - [What is the best practice for nested resources?](rest.md#what-is-the-best-practice-for-nested-resources)
 - [Fine Grained CRUD Resources vs. Coarse Grained Resources?](rest.md#fine-grained-crud-resources-vs-coarse-grained-resources)
+- [Best guidelines?](rest.md#best-guidelines)
+- [Best practice for PATCH?](rest.md#best-practice-for-patch)
 
 ## SQL
 - [What is having in sql?](sql.md#what-is-having-in-sql)
@@ -243,6 +248,7 @@ At the beginning, it was the repository with questions from Java interviews. Cur
 - [What can be used for unit tests?](test.md#what-can-be-used-for-unit-tests)
 - [What is better to use randomized or hardcode data for unit tests?](test.md#what-is-better-to-use-randomized-or-hardcode-data-for-unit-tests)
 - [Is it possible to test the architecture of application?](test.md#is-it-possible-to-test-the-architecture-of-application)
+- [Does TDD include integration tests?](test.md#does-tdd-include-integration-tests)
 
 ## Transactions
 - [What is transaction?](transaction.md#what-is-transaction)

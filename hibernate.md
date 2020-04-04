@@ -4,6 +4,8 @@
 - [What are the cache levels?](#what-are-the-cache-levels)
 - [What is the first-level cache?](#what-is-the-first-level-cache)
 - [Hibernate inheritance?](#hibernate-inheritance)
+- [Common hibernate mistakes?](#common-hibernate-mistakes)
+- [Hibernate best practice?](#hibernate-best-practice)
 
 ## What is detached entity?
 - A `new` instance of a persistent class which is not associated with a `Session`, has no representation in the database and no identifier value is considered ***transient*** by Hibernate.
@@ -38,5 +40,16 @@ Allowing to explicitly flush the Session gives finer control that may be require
 ## Hibernate inheritance?
 ###### Relative links:
 - https://www.baeldung.com/hibernate-inheritance
+
+## Common hibernate mistakes?
+- When you’re defining your associations, you should prefer FetchType.LAZY and map many-to-many associations to a java.util.Set.
+- If your use case uses a lazily fetched association, you should initialize it within the query that loads the entity, e.g., with a JOIN FETCH expression.
+- Cascading and updating or removing multiple entities require more SQL statements than you might expect. It’s often better to implement a bulk operation as a native, JPQL or Criteria query.
+###### Relative links:
+- https://thoughts-on-java.org/5-common-hibernate-mistakes-that-cause-dozens-of-unexpected-queries/
+
+## Hibernate best practice?
+###### Relative links:
+- https://thoughts-on-java.org/hibernate-best-practices/
 
 [Home Page](README.md)

@@ -32,6 +32,7 @@
 - [Is it possible to have only one transaction in the case of executing several @Transactional methods?](#is-it-possible-to-have-only-one-transaction-in-the-case-of-executing-several-transactional-methods)
 - [Anti-patterns of bean validation?](#anti-patterns-of-bean-validation)
 - [Is it good practice to define interface for Spring bean?](#is-it-good-practice-to-define-interface-for-spring-bean)
+- [How does @Transactional annotation work?](#how-does-transactional-annotation-work)
 
 ## How make spring service thread-safe?
 There are several ways, probably too long to list here but here are a few examples:
@@ -243,5 +244,9 @@ Yes, it depends on the propagation attribute. ***PROPAGATION_REQUIRED*** - the s
 - http://stackoverflow.com/questions/5288153/using-spring-to-wire-directly-a-concrete-class
 - https://octoperf.com/blog/2016/10/27/impl-classes-are-evil/
 - https://dzone.com/articles/spring-pitfalls-proxying
+
+## How does @Transactional annotation work?
+###### Relative links:
+- https://www.marcobehler.com/guides/spring-transaction-management-transactional-in-depth
 
 [Home Page](README.md)
