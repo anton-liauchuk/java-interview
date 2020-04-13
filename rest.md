@@ -20,6 +20,7 @@
 - [Fine Grained CRUD Resources vs. Coarse Grained Resources?](#fine-grained-crud-resources-vs-coarse-grained-resources)
 - [Best guidelines?](#best-guidelines)
 - [Best practice for PATCH?](#best-practice-for-patch)
+- [Do sessions violate REST?](#do-sessions-violate-rest)
 
 ## What is rest architecture? What are the requirements?
 - resources being identified by a persistent identifier: URIs are the ubiquitous choice of identifier these days
@@ -180,5 +181,9 @@ Strings.
 ## Best practice for PATCH?
 ###### Relative links:
 - https://opensource.zalando.com/restful-api-guidelines/#patch
+
+## Do sessions violate REST?
+###### Relative links:
+- https://stackoverflow.com/questions/6068113/do-sessions-really-violate-restfulness
 
 [Home Page](README.md)

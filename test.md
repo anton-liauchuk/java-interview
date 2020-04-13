@@ -5,6 +5,7 @@
 - [What is better to use randomized or hardcode data for unit tests?](#what-is-better-to-use-randomized-or-hardcode-data-for-unit-tests)
 - [Is it possible to test the architecture of application?](#is-it-possible-to-test-the-architecture-of-application)
 - [Does TDD include integration tests?](#does-tdd-include-integration-tests)
+- [Is it good practice to check in tests that non-state-changing methods were called?](#is-it-good-practice-to-check-in-tests-that-non-state-changing-methods-were-called)
 
 ## What is the difference between integration and unit tests?
 A ***unit test*** is a test written by the programmer to verify that a relatively small piece of code is doing what it is intended to do. They are narrow in scope, they should be easy to write and execute, and their effectiveness depends on what the programmer considers to be useful. The tests are intended for the use of the programmer, they are not directly useful to anybody else, though, if they do their job, testers and users downstream should benefit from seeing fewer bugs.
@@ -43,5 +44,9 @@ Yes, ArchUnit as example. It does not test your code flow or business logic. The
 ## Does TDD include integration tests?
 ###### Relative links:
 - https://stackoverflow.com/questions/18988040/does-tdd-include-integration-tests
+
+## Is it good practice to check in tests that non-state-changing methods were called?
+###### Relative links:
+- https://testing.googleblog.com/2017/12/testing-on-toilet-only-verify-state.html
 
 [Home Page](README.md)

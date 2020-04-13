@@ -129,6 +129,7 @@ At the beginning, it was the repository with questions from Java interviews. Cur
 - [Anti-patterns of bean validation?](spring.md#anti-patterns-of-bean-validation)
 - [Is it good practice to define interface for Spring bean?](spring.md#is-it-good-practice-to-define-interface-for-spring-bean)
 - [How does @Transactional annotation work?](spring.md#how-does-transactional-annotation-work)
+- [How to use @NamedEntityGraph with Spring Data JPA?](spring.md#how-to-use-namedentitygraph-with-spring-data-jpa)
 
 ## Servlet
 - [What is servlet?](servlet.md#what-is-servlet)
@@ -144,6 +145,8 @@ At the beginning, it was the repository with questions from Java interviews. Cur
 - [Hibernate inheritance?](hibernate.md#hibernate-inheritance)
 - [Common hibernate mistakes?](hibernate.md#common-hibernate-mistakes)
 - [Hibernate best practice?](hibernate.md#hibernate-best-practice)
+- [How to Define and Use a @NamedEntityGraph?](hibernate.md#how-to-define-and-use-a-namedentitygraph)
+- [Possible issues with defining equals/hashcode on JPA entities?](hibernate.md#possible-issues-with-defining-equalshashcode-on-jpa-entities)
 
 ## Git
 - [What is the difference between merge and rebase?](git.md#what-is-the-difference-between-merge-and-rebase)
@@ -236,6 +239,7 @@ At the beginning, it was the repository with questions from Java interviews. Cur
 - [Fine Grained CRUD Resources vs. Coarse Grained Resources?](rest.md#fine-grained-crud-resources-vs-coarse-grained-resources)
 - [Best guidelines?](rest.md#best-guidelines)
 - [Best practice for PATCH?](rest.md#best-practice-for-patch)
+- [Do sessions violate REST?](rest.md#do-sessions-violate-rest)
 
 ## SQL
 - [What is having in sql?](sql.md#what-is-having-in-sql)
@@ -249,6 +253,7 @@ At the beginning, it was the repository with questions from Java interviews. Cur
 - [What is better to use randomized or hardcode data for unit tests?](test.md#what-is-better-to-use-randomized-or-hardcode-data-for-unit-tests)
 - [Is it possible to test the architecture of application?](test.md#is-it-possible-to-test-the-architecture-of-application)
 - [Does TDD include integration tests?](test.md#does-tdd-include-integration-tests)
+- [Is it good practice to check in tests that non-state-changing methods were called?](test.md#is-it-good-practice-to-check-in-tests-that-non-state-changing-methods-were-called)
 
 ## Transactions
 - [What is transaction?](transaction.md#what-is-transaction)
