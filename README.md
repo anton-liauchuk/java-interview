@@ -58,6 +58,10 @@ At the beginning, it was the repository with questions from Java interviews. Cur
 - [One exception is thrown by catch block and another one is thrown from finally block, which exception will be thrown by method?](core.md#one-exception-is-thrown-by-catch-block-and-another-one-is-thrown-from-finally-block-which-exception-will-be-thrown-by-method)
 - [Is it possible to serialize lambda expression?](core.md#is-it-possible-to-serialize-lambda-expression)
 - [Why can Java Collections not directly store Primitives types?](core.md#why-can-java-collections-not-directly-store-primitives-types)
+- [How is recursion implemented in Java?](core.md#how-is-recursion-implemented-in-java)
+- [Is it needed to document unchecked exceptions?](core.md#is-it-needed-to-document-unchecked-exceptions)
+- [Java Date classes?](core.md#java-date-classes)
+- [Why Do Local Variables Used in Lambdas Have to Be Final or Effectively Final?](core.md#why-do-local-variables-used-in-lambdas-have-to-be-final-or-effectively-final)
 
 ## Collections
 - [What is the complexity for get in Hashmap?](collections.md#what-is-the-complexity-for-get-in-hashmap)
@@ -147,6 +151,7 @@ At the beginning, it was the repository with questions from Java interviews. Cur
 - [Hibernate best practice?](hibernate.md#hibernate-best-practice)
 - [How to Define and Use a @NamedEntityGraph?](hibernate.md#how-to-define-and-use-a-namedentitygraph)
 - [Possible issues with defining equals/hashcode on JPA entities?](hibernate.md#possible-issues-with-defining-equalshashcode-on-jpa-entities)
+- [How lazy loading works in hibernate?](hibernate.md#how-lazy-loading-works-in-hibernate)
 
 ## Git
 - [What is the difference between merge and rebase?](git.md#what-is-the-difference-between-merge-and-rebase)
@@ -240,6 +245,8 @@ At the beginning, it was the repository with questions from Java interviews. Cur
 - [Best guidelines?](rest.md#best-guidelines)
 - [Best practice for PATCH?](rest.md#best-practice-for-patch)
 - [Do sessions violate REST?](rest.md#do-sessions-violate-rest)
+- [When to use GraphQL?](rest.md#when-to-use-graphql)
+- [What is ElasticSearch?](rest.md#what-is-elasticsearch)
 
 ## SQL
 - [What is having in sql?](sql.md#what-is-having-in-sql)

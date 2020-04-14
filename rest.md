@@ -21,6 +21,8 @@
 - [Best guidelines?](#best-guidelines)
 - [Best practice for PATCH?](#best-practice-for-patch)
 - [Do sessions violate REST?](#do-sessions-violate-rest)
+- [When to use GraphQL?](#when-to-use-graphql)
+- [What is ElasticSearch?](#what-is-elasticsearch)
 
 ## What is rest architecture? What are the requirements?
 - resources being identified by a persistent identifier: URIs are the ubiquitous choice of identifier these days
@@ -185,5 +187,13 @@ Strings.
 ## Do sessions violate REST?
 ###### Relative links:
 - https://stackoverflow.com/questions/6068113/do-sessions-really-violate-restfulness
+
+## When to use GraphQL?
+###### Relative links:
+- https://dzone.com/articles/why-and-when-to-use-graphql-1
+
+## What is ElasticSearch?
+###### Relative links:
+- https://dzone.com/articles/what-is-elasticsearch-and-how-it-can-be-useful
 
 [Home Page](README.md)

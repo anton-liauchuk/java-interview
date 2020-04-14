@@ -33,6 +33,10 @@
 - [One exception is thrown by catch block and another one is thrown from finally block, which exception will be thrown by method?](#one-exception-is-thrown-by-catch-block-and-another-one-is-thrown-from-finally-block-which-exception-will-be-thrown-by-method)
 - [Is it possible to serialize lambda expression?](#is-it-possible-to-serialize-lambda-expression)
 - [Why can Java Collections not directly store Primitives types?](#why-can-java-collections-not-directly-store-primitives-types)
+- [How is recursion implemented in Java?](#how-is-recursion-implemented-in-java)
+- [Is it needed to document unchecked exceptions?](#is-it-needed-to-document-unchecked-exceptions)
+- [Java Date classes?](#java-date-classes)
+- [Why Do Local Variables Used in Lambdas Have to Be Final or Effectively Final?](#why-do-local-variables-used-in-lambdas-have-to-be-final-or-effectively-final)
 
 ## What's new in Java 8?
 + Lambda expressions, Method Reference , Optional, Streams added.
@@ -250,5 +254,21 @@ It's a combination of two facts:
 - Java does generics using type-erasure of reference types (e.g. a List<?> is really a List<Object> at run-time)
 ###### Relative links:
 - https://stackoverflow.com/questions/2504959/why-can-java-collections-not-directly-store-primitives-types
+
+## How is recursion implemented in Java?
+###### Relative links:
+- https://freecontent.manning.com/stack-safe-recursion-in-java/
+
+## Is it needed to document unchecked exceptions?
+###### Relative links:
+- https://books.google.by/books?id=ka2VUBqHiWkC&pg=PA252&lpg=PA252&dq=java+is+it+needed+document+unchecked+exceptions&source=bl&ots=y_KhOeo_M3&sig=ACfU3U0TpATCoEC62Irm3SaPj6tMWDnZLQ&hl=en&sa=X&ved=2ahUKEwiS7_vG4OvnAhXF8qQKHeniBtIQ6AEwD3oECAkQAQ#v=onepage&q&f=false
+
+## Java Date classes?
+###### Relative links:
+- https://www.baeldung.com/java-8-date-time-intro
+
+## Why Do Local Variables Used in Lambdas Have to Be Final or Effectively Final?
+###### Relative links:
+- https://www.baeldung.com/java-lambda-effectively-final-local-variables
 
 [Home Page](README.md)
