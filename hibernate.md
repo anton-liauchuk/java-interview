@@ -9,6 +9,7 @@
 - [How to Define and Use a @NamedEntityGraph?](#how-to-define-and-use-a-namedentitygraph)
 - [Possible issues with defining equals/hashcode on JPA entities?](#possible-issues-with-defining-equalshashcode-on-jpa-entities)
 - [How lazy loading works in hibernate?](#how-lazy-loading-works-in-hibernate)
+- [Optimal queries in Hibernate?](#optimal-queries-in-hibernate)
 
 ## What is detached entity?
 - A `new` instance of a persistent class which is not associated with a `Session`, has no representation in the database and no identifier value is considered ***transient*** by Hibernate.
@@ -71,5 +72,9 @@ Allowing to explicitly flush the Session gives finer control that may be require
 ## How lazy loading works in hibernate?
 ###### Relative links:
 - https://howtodoinjava.com/hibernate/lazy-loading-in-hibernate/
+
+## Optimal queries in Hibernate?
+###### Relative links:
+- https://thorben-janssen.com/optimal-query-and-projection-jpa-hibernate/
 
 [Home Page](README.md)

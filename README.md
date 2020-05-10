@@ -152,6 +152,7 @@ At the beginning, it was the repository with questions from Java interviews. Cur
 - [How to Define and Use a @NamedEntityGraph?](hibernate.md#how-to-define-and-use-a-namedentitygraph)
 - [Possible issues with defining equals/hashcode on JPA entities?](hibernate.md#possible-issues-with-defining-equalshashcode-on-jpa-entities)
 - [How lazy loading works in hibernate?](hibernate.md#how-lazy-loading-works-in-hibernate)
+- [Optimal queries in Hibernate?](hibernate.md#optimal-queries-in-hibernate)
 
 ## Git
 - [What is the difference between merge and rebase?](git.md#what-is-the-difference-between-merge-and-rebase)
@@ -218,6 +219,9 @@ At the beginning, it was the repository with questions from Java interviews. Cur
 - [What is the best practice for Value Object?](ddd.md#what-is-the-best-practice-for-value-object)
 - [Possible issues with using domain model with public getters/setters and empty constructor?](ddd.md#possible-issues-with-using-domain-model-with-public-getterssetters-and-empty-constructor)
 - [How to work with large domain models? Is it correct to have a lot of fields in domain model?](ddd.md#how-to-work-with-large-domain-models-is-it-correct-to-have-a-lot-of-fields-in-domain-model)
+- [How should be published integration events? Inside or outside transaction?](ddd.md#how-should-be-published-integration-events-inside-or-outside-transaction)
+- [How to define the reference between aggregates?](ddd.md#how-to-define-the-reference-between-aggregates)
+- [Where to put validation rule for value object?](ddd.md#where-to-put-validation-rule-for-value-object)
 
 ## Architecture
 - [What are the differences between monolith and microservices? (Performance/Deployability/Failure impact and etc)](architecture.md#what-are-the-differences-between-monolith-and-microservices-performancedeployabilityfailure-impact-and-etc)

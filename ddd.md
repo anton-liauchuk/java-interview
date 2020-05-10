@@ -13,6 +13,9 @@
 - [What is the best practice for Value Object?](#what-is-the-best-practice-for-value-object)
 - [Possible issues with using domain model with public getters/setters and empty constructor?](#possible-issues-with-using-domain-model-with-public-getterssetters-and-empty-constructor)
 - [How to work with large domain models? Is it correct to have a lot of fields in domain model?](#how-to-work-with-large-domain-models-is-it-correct-to-have-a-lot-of-fields-in-domain-model)
+- [How should be published integration events? Inside or outside transaction?](#how-should-be-published-integration-events-inside-or-outside-transaction)
+- [How to define the reference between aggregates?](#how-to-define-the-reference-between-aggregates)
+- [Where to put validation rule for value object?](#where-to-put-validation-rule-for-value-object)
 
 ## What is DDD?
 ###### Relative links:
@@ -85,3 +88,15 @@
 ## How to work with large domain models? Is it correct to have a lot of fields in domain model?
 ###### Relative links:
 - https://martinfowler.com/bliki/BoundedContext.html
+
+## How should be published integration events? Inside or outside transaction?
+###### Relative links:
+- https://devblogs.microsoft.com/cesardelatorre/domain-events-vs-integration-events-in-domain-driven-design-and-microservices-architectures/
+
+## How to define the reference between aggregates?
+###### Relative links:
+- https://www.informit.com/articles/article.aspx?p=2020371&seqNum=4
+
+## Where to put validation rule for value object?
+###### Relative links:
+- https://builtwithdot.net/blog/where-do-i-put-my-business-rules-and-validation
