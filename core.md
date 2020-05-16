@@ -37,6 +37,7 @@
 - [Is it needed to document unchecked exceptions?](#is-it-needed-to-document-unchecked-exceptions)
 - [Java Date classes?](#java-date-classes)
 - [Why Do Local Variables Used in Lambdas Have to Be Final or Effectively Final?](#why-do-local-variables-used-in-lambdas-have-to-be-final-or-effectively-final)
+- [orElse() vs orElseGet() in Optional?](#orelse-vs-orelseget-in-optional)
 
 ## What's new in Java 8?
 + Lambda expressions, Method Reference , Optional, Streams added.
@@ -270,5 +271,9 @@ It's a combination of two facts:
 ## Why Do Local Variables Used in Lambdas Have to Be Final or Effectively Final?
 ###### Relative links:
 - https://www.baeldung.com/java-lambda-effectively-final-local-variables
+
+## orElse() vs orElseGet() in Optional?
+###### Relative links:
+- https://www.baeldung.com/java-optional-or-else-vs-or-else-get
 
 [Home Page](README.md)

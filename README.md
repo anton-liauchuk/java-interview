@@ -62,6 +62,7 @@ At the beginning, it was the repository with questions from Java interviews. Cur
 - [Is it needed to document unchecked exceptions?](core.md#is-it-needed-to-document-unchecked-exceptions)
 - [Java Date classes?](core.md#java-date-classes)
 - [Why Do Local Variables Used in Lambdas Have to Be Final or Effectively Final?](core.md#why-do-local-variables-used-in-lambdas-have-to-be-final-or-effectively-final)
+- [orElse() vs orElseGet() in Optional?](core.md#orelse-vs-orelseget-in-optional)
 
 ## Collections
 - [What is the complexity for get in Hashmap?](collections.md#what-is-the-complexity-for-get-in-hashmap)
@@ -153,6 +154,7 @@ At the beginning, it was the repository with questions from Java interviews. Cur
 - [Possible issues with defining equals/hashcode on JPA entities?](hibernate.md#possible-issues-with-defining-equalshashcode-on-jpa-entities)
 - [How lazy loading works in hibernate?](hibernate.md#how-lazy-loading-works-in-hibernate)
 - [Optimal queries in Hibernate?](hibernate.md#optimal-queries-in-hibernate)
+- [Possible enum mapping solutions?](hibernate.md#possible-enum-mapping-solutions)
 
 ## Git
 - [What is the difference between merge and rebase?](git.md#what-is-the-difference-between-merge-and-rebase)
