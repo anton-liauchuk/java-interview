@@ -2,6 +2,7 @@
 - [What is the difference between merge and rebase?](#what-is-the-difference-between-merge-and-rebase)
 - [What is git reset?](#what-is-git-reset)
 - [What is the difference between soft reset and hard reset?](#what-is-the-difference-between-soft-reset-and-hard-reset)
+- [How to combine multiple commits into one prior to push?](#how-to-combine-multiple-commits-into-one-prior-to-push)
 
 ## What is the difference between merge and rebase?
 - Both commits D and E are still here, but we create merge commit M that inherits changes from both D and E. However, this creates diamond shape, which many people find very confusing.
@@ -21,5 +22,9 @@
 - ***hard***: uncommit + unstage + delete changes, nothing left.
 ###### Relative links:
 - https://stackoverflow.com/questions/3528245/whats-the-difference-between-git-reset-mixed-soft-and-hard
+
+## How to combine multiple commits into one prior to push?
+###### Relative links:
+- https://www.internalpointers.com/post/squash-commits-into-one-git
 
 [Home Page](README.md)

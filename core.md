@@ -38,6 +38,7 @@
 - [Java Date classes?](#java-date-classes)
 - [Why Do Local Variables Used in Lambdas Have to Be Final or Effectively Final?](#why-do-local-variables-used-in-lambdas-have-to-be-final-or-effectively-final)
 - [orElse() vs orElseGet() in Optional?](#orelse-vs-orelseget-in-optional)
+- [How to filter list of objects using Stream API without .filter()?](#howto-filter-list-of-objects-using-stream-without-filter)
 
 ## What's new in Java 8?
 + Lambda expressions, Method Reference , Optional, Streams added.
@@ -275,5 +276,18 @@ It's a combination of two facts:
 ## orElse() vs orElseGet() in Optional?
 ###### Relative links:
 - https://www.baeldung.com/java-optional-or-else-vs-or-else-get
+
+## How to filter list of objects using Stream API without .filter()?
+```java
+public static void main(String[] args) {
+
+       final List<Person> list = Arrays.asList(Person.builder().setAge(25).build(), Person.builder().setAge(10).build(),
+               Person.builder().setAge(15).build(), Person.builder().setAge(21).build());
+
+        list.stream()
+                .flatMap(person -> person.getAge() < 18 ? Stream.of(person) : Stream.empty())
+                .forEach(person -> System.out.println(person.getAge()));
+    }
+```
 
 [Home Page](README.md)

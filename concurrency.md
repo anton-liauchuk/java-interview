@@ -14,6 +14,7 @@
 - [How to wait for finish of thread?](#how-to-wait-for-finish-of-thread)
 - [What is the result of this code?](#what-is-the-result-of-this-code)
 - [Change the code for getting deadlock](#change-the-code-for-getting-deadlock)
+- [What is the Difference between Future and CompletableFuture?](#what-is-the-difference-between-future-and-completablefuture)
 
 ## What is usage of wait/notify methods?
 ***wait().*** It tells the calling thread to give up the lock and go to sleep until some other thread enters the same monitor and calls notify().
@@ -165,5 +166,9 @@ public class Deadlock {
 }
 ```
 Possible solution - adding delays inside synchronized blocks, the example is in module [deadlock](./deadlock).
+
+## What is the Difference between Future and CompletableFuture
+###### Relative links:
+- https://www.youtube.com/watch?v=ImtZgX1nmr8
 
 [Home Page](README.md)
