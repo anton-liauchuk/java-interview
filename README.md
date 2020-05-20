@@ -63,6 +63,7 @@ At the beginning, it was the repository with questions from Java interviews. Cur
 - [Java Date classes?](core.md#java-date-classes)
 - [Why Do Local Variables Used in Lambdas Have to Be Final or Effectively Final?](core.md#why-do-local-variables-used-in-lambdas-have-to-be-final-or-effectively-final)
 - [orElse() vs orElseGet() in Optional?](core.md#orelse-vs-orelseget-in-optional)
+- [How to filter list of objects using Stream API without .filter()?](#howto-filter-list-of-objects-using-stream-without-filter)
 
 ## Collections
 - [What is the complexity for get in Hashmap?](collections.md#what-is-the-complexity-for-get-in-hashmap)
