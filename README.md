@@ -63,7 +63,7 @@ At the beginning, it was the repository with questions from Java interviews. Cur
 - [Java Date classes?](core.md#java-date-classes)
 - [Why Do Local Variables Used in Lambdas Have to Be Final or Effectively Final?](core.md#why-do-local-variables-used-in-lambdas-have-to-be-final-or-effectively-final)
 - [orElse() vs orElseGet() in Optional?](core.md#orelse-vs-orelseget-in-optional)
-- [How to filter list of objects using Stream API without .filter()?](core.md#howto-filter-list-of-objects-using-stream-without-filter)
+- [How to filter list of objects using Stream API without .filter()?](core.md#how-to-filter-list-of-objects-using-stream-api-without-filter)
 - [What is String Pool? How do Strings get there?](core.md#what-is-string-pool-how-do-strings-get-there)
 
 ## Collections
