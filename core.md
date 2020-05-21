@@ -39,6 +39,7 @@
 - [Why Do Local Variables Used in Lambdas Have to Be Final or Effectively Final?](#why-do-local-variables-used-in-lambdas-have-to-be-final-or-effectively-final)
 - [orElse() vs orElseGet() in Optional?](#orelse-vs-orelseget-in-optional)
 - [How to filter list of objects using Stream API without .filter()?](#howto-filter-list-of-objects-using-stream-without-filter)
+- [What is String Pool? How do Strings get there?](#what-is-string-pool-how-do-strings-get-there)
 
 ## What's new in Java 8?
 + Lambda expressions, Method Reference , Optional, Streams added.
@@ -289,5 +290,10 @@ public static void main(String[] args) {
                 .forEach(person -> System.out.println(person.getAge()));
     }
 ```
+
+## What is String Pool? How do Strings get there?
+String pool is the special memory region where Strings are stored by the JVM.
+###### Relative links:
+- https://www.baeldung.com/java-string-pool
 
 [Home Page](README.md)
