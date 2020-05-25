@@ -38,7 +38,7 @@
 - [Java Date classes?](#java-date-classes)
 - [Why Do Local Variables Used in Lambdas Have to Be Final or Effectively Final?](#why-do-local-variables-used-in-lambdas-have-to-be-final-or-effectively-final)
 - [orElse() vs orElseGet() in Optional?](#orelse-vs-orelseget-in-optional)
-- [How to filter list of objects using Stream API without .filter()?](#howto-filter-list-of-objects-using-stream-without-filter)
+- [How to filter list of objects using Stream API without .filter()?](#how-to-filter-list-of-objects-using-stream-api-without-filter)
 - [What is String Pool? How do Strings get there?](#what-is-string-pool-how-do-strings-get-there)
 - [What is the difference between StringBuilder and StringBuffer?](#what-is-the-difference-between-stringbuilder-and-stringbuffer)
 - [Difference between <? super T> and <? extends T> ?](#difference-between-superT-and-extendsT)
