@@ -65,6 +65,7 @@ At the beginning, it was the repository with questions from Java interviews. Cur
 - [orElse() vs orElseGet() in Optional?](core.md#orelse-vs-orelseget-in-optional)
 - [How to filter list of objects using Stream API without .filter()?](core.md#howto-filter-list-of-objects-using-stream-without-filter)
 - [What is String Pool? How do Strings get there?](core.md#what-is-string-pool-how-do-strings-get-there)
+- [What is the difference between StringBuilder and StringBuffer?](core.md#what-is-the-difference-between-stringbuilder-and-stringbuffer)
 
 ## Collections
 - [What is the complexity for get in Hashmap?](collections.md#what-is-the-complexity-for-get-in-hashmap)

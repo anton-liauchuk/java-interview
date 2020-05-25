@@ -40,6 +40,7 @@
 - [orElse() vs orElseGet() in Optional?](#orelse-vs-orelseget-in-optional)
 - [How to filter list of objects using Stream API without .filter()?](#howto-filter-list-of-objects-using-stream-without-filter)
 - [What is String Pool? How do Strings get there?](#what-is-string-pool-how-do-strings-get-there)
+- [What is the difference between StringBuilder and StringBuffer?](#what-is-the-difference-between-stringbuilder-and-stringbuffer)
 
 ## What's new in Java 8?
 + Lambda expressions, Method Reference , Optional, Streams added.
@@ -295,5 +296,8 @@ public static void main(String[] args) {
 String pool is the special memory region where Strings are stored by the JVM.
 ###### Relative links:
 - https://www.baeldung.com/java-string-pool
+
+## What is the difference between StringBuilder and StringBuffer?
+All public methods of StringBuffer are synchronized, it provides Thread safety but on a performance cost.
 
 [Home Page](README.md)
