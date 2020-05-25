@@ -11,6 +11,8 @@
 - [How lazy loading works in hibernate?](#how-lazy-loading-works-in-hibernate)
 - [Optimal queries in Hibernate?](#optimal-queries-in-hibernate)
 - [Possible enum mapping solutions?](#possible-enum-mapping-solutions)
+- [In which cases LazyInitializationException can occur?](#in-which-cases-lazyinizializtion-can-occur)
+- [There are three SQL statements in one transaction, during the first one exception occurred on DB level, what will happen with others if you catch the first one?](#there-are-three-sql-statements-in-one-transaction-during-the-first-one-exception-occurred-on-db-level-what-will-happen-with-others-if-you-catch-the-first-one)
 
 ## What is detached entity?
 - A `new` instance of a persistent class which is not associated with a `Session`, has no representation in the database and no identifier value is considered ***transient*** by Hibernate.
@@ -81,5 +83,13 @@ Allowing to explicitly flush the Session gives finer control that may be require
 ## Possible enum mapping solutions?
 ###### Relative links:
 - https://thorben-janssen.com/hibernate-enum-mappings/#standardMapping
+
+## In which cases LazyInitializationException can occur?
+###### Relative links:
+- https://thorben-janssen.com/lazyinitializationexception/ 
+
+## There are three SQL statements in one transaction, during the first one exception occurred on DB level, what will happen with others if you catch the first one?
+All Java code after Exception catching will be normally executed with other statements, but at the moment you want to try to close transaction, it won't commit any of statements, 
+because transaction was marked as "to be rollbacked".
 
 [Home Page](README.md)

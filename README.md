@@ -160,6 +160,8 @@ At the beginning, it was the repository with questions from Java interviews. Cur
 - [How lazy loading works in hibernate?](hibernate.md#how-lazy-loading-works-in-hibernate)
 - [Optimal queries in Hibernate?](hibernate.md#optimal-queries-in-hibernate)
 - [Possible enum mapping solutions?](hibernate.md#possible-enum-mapping-solutions)
+- [In which cases LazyInitializationException can occur?](hibernate.md#in-which-cases-lazyinitializationexception-can-occur)
+- [There are three SQL statements in one transaction, during the first one exception occurred on DB level, what will happen with others if you catch the first one?](hibernate.md#there-are-three-sql-statements-in-one-transaction-during-the-first-one-exception-occurred-on-db-level-what-will-happen-with-others-if-you-catch-the-first-one)
 
 ## Git
 - [What is the difference between merge and rebase?](git.md#what-is-the-difference-between-merge-and-rebase)
