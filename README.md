@@ -236,6 +236,7 @@ At the beginning, it was the repository with questions from Java interviews. Cur
 ## Architecture
 - [What are the differences between monolith and microservices? (Performance/Deployability/Failure impact and etc)](architecture.md#what-are-the-differences-between-monolith-and-microservices-performancedeployabilityfailure-impact-and-etc)
 - [Imperative vs functional vs reactive programming?](architecture.md#imperative-vs-functional-vs-reactive-programming)
+- [What is Serverless](architecture.md#what-is-serverless)
 
 ## REST
 - [What is rest architecture? What are the requirements?](rest.md#what-is-rest-architecture-what-are-the-requirements)
