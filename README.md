@@ -290,3 +290,6 @@ At the beginning, it was the repository with questions from Java interviews. Cur
 - [What is RabbitMQ?](rabbitmq.md#what-is-rabbitmq)
 - [What are the advantages/disadvantages of using message brokers?](rabbitmq.md#what-are-the-advantagesdisadvantages-of-using-message-brokers)
 - [What is the Exchange in RabbitMQ?](rabbitmq.md#what-is-the-exchange-in-rabbitmq)
+
+## GraalVM
+- [What is GraalVM Native Image?](graalvm.md#what-is-graalvm-native-image)
