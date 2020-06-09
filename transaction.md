@@ -6,7 +6,6 @@
 - [What are the possible issues in the case of parallel access by transactions?](#what-are-the-possible-issues-in-the-case-of-parallel-access-by-transactions)
 - [What are possible options for implementing transactions in microservices](#what-are-possible-options-for-implementing-transactions-in-microservices)
 - [What is the difference between optimistic and pessimistic locking?](#what-is-the-difference-between-optimistic-and-pessimistic-locking)
-- [What is Eventual consistency?](#what-is-eventual-consistency)
 - [Is it possible to use transaction for select statements?](#is-it-possible-to-use-transaction-for-select-statements)
 
 ## What is transaction?
