@@ -188,6 +188,7 @@ At the beginning, it was the repository with questions from Java interviews. Cur
 - [What is the difference between synchronous and asynchronous communication?](microservices.md#what-is-the-difference-between-synchronous-and-asynchronous-communication)
 - [What are possible ways for implementing authentication in microservices?](microservices.md#what-are-possible-ways-for-implementing-authentication-in-microservices)
 - [What is Eventual consistency?](microservices.md#what-is-eventual-consistency)
+- [How different types of communication can influence on performance?](microservices.md#how-different-types-of-communication-can-influence-on-performance)
 
 ## JavaScript
 - [What are possible variable scopes?](javascript.md#what-are-possible-variable-scopes)

@@ -8,6 +8,7 @@
 - [What is the difference between synchronous and asynchronous communication?](#what-is-the-difference-between-synchronous-and-asynchronous-communication)
 - [What are possible ways for implementing authentication in microservices?](#what-are-possible-ways-for-implementing-authentication-in-microservices)
 - [What is Eventual consistency?](#what-is-eventual-consistency)
+- [How different types of communication can influence on performance?](#how-different-types-of-communication-can-influence-on-performance)
 
 ## What are the possible ways for communication between microservices?
 + ***Synchronous protocol.*** HTTP is a synchronous protocol. The client sends a request and waits for a response from the service. That's independent of the client code execution that could be synchronous (thread is blocked) or asynchronous (thread isn't blocked, and the response will reach a callback eventually). The important point here is that the protocol (HTTP/HTTPS) is synchronous and the client code can only continue its task when it receives the HTTP server response.
@@ -78,5 +79,12 @@ https://docs.microsoft.com/en-us/dotnet/architecture/microservices/architect-mic
 Rather than ensuring that the system is in a consistent state all the time, instead we can accept that the system will get it at some point in the future. This approach is especially useful for long-living business operations.
 ###### Relative links:
 + https://softwareengineering.stackexchange.com/questions/354911/microservices-handling-eventual-consistency
+
+## How different types of communication can influence on performance?
+You should prefer asynchronous communication for all remote calls. They don’t block any resources while you’re waiting for the response and you can even execute multiple calls in parallel. That can provide huge performance improvements because you just need to wait until the slowest service answered your request.
+
+As always, there are several ways to implement an asynchronous communication between two services. One of them is an asynchronous REST call.
+###### Relative links:
+- https://stackify.com/communication-microservices-avoid-common-problems/
 
 [Home Page](README.md)
