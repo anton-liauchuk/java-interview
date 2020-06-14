@@ -6,6 +6,7 @@
 - [Is it possible to test the architecture of application?](#is-it-possible-to-test-the-architecture-of-application)
 - [Does TDD include integration tests?](#does-tdd-include-integration-tests)
 - [Is it good practice to check in tests that non-state-changing methods were called?](#is-it-good-practice-to-check-in-tests-that-non-state-changing-methods-were-called)
+- [The differences between Spy and Mock in Mockito?](#the-differences-between-spy-and-mock-in-mockito)
 
 ## What is the difference between integration and unit tests?
 A ***unit test*** is a test written by the programmer to verify that a relatively small piece of code is doing what it is intended to do. They are narrow in scope, they should be easy to write and execute, and their effectiveness depends on what the programmer considers to be useful. The tests are intended for the use of the programmer, they are not directly useful to anybody else, though, if they do their job, testers and users downstream should benefit from seeing fewer bugs.
@@ -48,5 +49,12 @@ Yes, ArchUnit as example. It does not test your code flow or business logic. The
 ## Is it good practice to check in tests that non-state-changing methods were called?
 ###### Relative links:
 - https://testing.googleblog.com/2017/12/testing-on-toilet-only-verify-state.html
+
+## The differences between Spy and Mock in Mockito?
+When Mockito creates a mock – it does so from the Class of a Type, not from an actual instance. The mock simply creates a bare-bones shell instance of the Class, entirely instrumented to track interactions with it.
+
+On the other hand, the spy will wrap an existing instance. It will still behave in the same way as the normal instance – the only difference is that it will also be instrumented to track all the interactions with it.
+###### Relative links:
+- https://www.baeldung.com/mockito-spy
 
 [Home Page](README.md)
