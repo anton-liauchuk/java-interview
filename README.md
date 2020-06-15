@@ -214,6 +214,7 @@ At the beginning, it was the repository with questions from Java interviews. Cur
 - [How to initialize object depends on type?](patterns.md#how-to-initialize-object-depends-on-type)
 - [Why Dependency Injection is needed?](patterns.md#why-dependency-injection-is-needed)
 - [Should services always return dtos?](patterns.md#should-services-always-return-dtos)
+- [The difference between adapter and decorator?](patterns.md#the-difference-between-adapter-and-decorator)
 
 ## DDD
 - [What is DDD?](ddd.md#what-is-ddd)

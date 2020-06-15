@@ -10,6 +10,7 @@
 - [How to initialize object depends on type?](#how-to-initialize-object-depends-on-type)
 - [Why Dependency Injection is needed?](#why-dependency-injection-is-needed)
 - [Should services always return dtos?](#should-services-always-return-dtos)
+- [The difference between adapter and decorator?](#the-difference-between-adapter-and-decorator)
 
 ## Which architectural patterns you know?
 + Layered Pattern
@@ -78,5 +79,12 @@ Dependency injection is one of two ways of how to remove dependencies in your co
 ###### Relative links:
 - https://stackoverflow.com/questions/21554977/should-services-always-return-dtos-or-can-they-also-return-domain-models
 - https://vaadin.com/learn/tutorials/ddd/ddd_and_hexagonal
+
+## The difference between adapter and decorator?
+**Decorator**, attach additional responsibilities to an object dynamically.
+
+**Adapter**, adapts interface of an existing class to another interface.
+###### Relative links:
+- https://stackoverflow.com/questions/42737096/design-patterns-adapter-pattern-vs-decorator-pattern
 
 [Home Page](README.md)
