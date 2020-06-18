@@ -2,6 +2,7 @@
 - [What are the differences between monolith and microservices? (Performance/Deployability/Failure impact and etc)](#what-are-the-differences-between-monolith-and-microservices-performancedeployabilityfailure-impact-and-etc)
 - [Imperative vs functional vs reactive programming?](#imperative-vs-functional-vs-reactive-programming)
 - [What is Serverless](#what-is-serverless)
+- [What is the difference between native code, machine code and assembly code?](#what-is-the-difference-between-native-code-machine-code-and-assembly-code)
 
 ## What are the differences between monolith and microservices? (Performance/Deployability/Failure impact and etc)
 ###### Relative links:
@@ -23,3 +24,7 @@ Like many trends in software, there’s no one clear view of what Serverless is.
 2. Serverless can also mean applications where server-side logic is still written by the application developer, but, unlike traditional architectures, it’s run in stateless compute containers that are event-triggered, ephemeral (may only last for one invocation), and fully managed by a third party. One way to think of this is “Functions as a Service” or "FaaS". (Note: The original source for this name—a tweet by @marak—is no longer publicly available.) AWS Lambda is one of the most popular implementations of a Functions-as-a-Service platform at present, but there are many others, too.
 ###### Relative links:
 - https://martinfowler.com/articles/serverless.html
+
+## What is the difference between native code, machine code and assembly code?
+###### Relative links:
+- https://stackoverflow.com/questions/3434202/what-is-the-difference-between-native-code-machine-code-and-assembly-code
