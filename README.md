@@ -67,6 +67,7 @@ At the beginning, it was the repository with questions from Java interviews. Cur
 - [What is String Pool? How do Strings get there?](core.md#what-is-string-pool-how-do-strings-get-there)
 - [What is the difference between StringBuilder and StringBuffer?](core.md#what-is-the-difference-between-stringbuilder-and-stringbuffer)
 - [Difference between <? super T> and <? extends T> ?](core.md#difference-between--super-t-and--extends-t-)
+- [How does JIT compiler work?](core.md#how-does-jit-compiler-work)
 
 ## Collections
 - [What is the complexity for get in Hashmap?](collections.md#what-is-the-complexity-for-get-in-hashmap)

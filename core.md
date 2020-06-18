@@ -42,6 +42,7 @@
 - [What is String Pool? How do Strings get there?](#what-is-string-pool-how-do-strings-get-there)
 - [What is the difference between StringBuilder and StringBuffer?](#what-is-the-difference-between-stringbuilder-and-stringbuffer)
 - [Difference between <? super T> and <? extends T> ?](#difference-between-superT-and-extendsT)
+- [How does JIT compiler work?](#how-does-jit-compiler-work)
 
 ## What's new in Java 8?
 + Lambda expressions, Method Reference , Optional, Streams added.
@@ -305,5 +306,9 @@ All public methods of StringBuffer are synchronized, it provides Thread safety b
 ## Difference between <? super T> and <? extends T> ?
 ###### Relative links:
 - https://stackoverflow.com/questions/4343202/difference-between-super-t-and-extends-t-in-java
+
+## How does JIT compiler work?
+###### Relative links:
+- https://aboullaite.me/understanding-jit-compiler-just-in-time-compiler/
 
 [Home Page](README.md)
