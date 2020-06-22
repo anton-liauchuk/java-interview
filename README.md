@@ -111,6 +111,7 @@ At the beginning, it was the repository with questions from Java interviews. Cur
 - [How bean gets into the container?](spring.md#how-bean-gets-into-the-container)
 - [What are the possible bean scopes?](spring.md#what-are-the-possible-bean-scopes)
 - [What is the difference @Service between @Component?](spring.md#what-is-the-difference-service-between-component)
+- [What is the difference between @Service and @Bean](spring.md#what-is-the-difference-between-service-and-bean)
 - [How to call a method after bean initialization?](spring.md#how-to-call-a-method-after-bean-initialization)
 - [What is the default scope?](spring.md#what-is-the-default-scope)
 - [What is the prototype scope?](spring.md#what-is-the-prototype-scope)

@@ -4,6 +4,7 @@
 - [How bean gets into the container?](#how-bean-gets-into-the-container)
 - [What are the possible bean scopes?](#what-are-the-possible-bean-scopes)
 - [What is the difference @Service between @Component?](#what-is-the-difference-service-between-component)
+- [What is the difference between @Service and @Bean](#what-is-the-difference-between-service-and-bean)
 - [How to call a method after bean initialization?](#how-to-call-a-method-after-bean-initialization)
 - [What is the default scope?](#what-is-the-default-scope)
 - [What is the prototype scope?](#what-is-the-prototype-scope)
@@ -74,6 +75,9 @@ The responsibilities of IoC container are:
 Apart from the fact that it's used to indicate, that it's holding the business logic, there’s nothing else noticeable in this annotation; but who knows, Spring may add some additional exceptional in future.
 ###### Relative links:
 + https://stackoverflow.com/questions/6827752/whats-the-difference-between-component-repository-service-annotations-in
+
+## What-is-the-difference-between-service-and-bean
+@Bean annotation is method-level and is used in configuration classes to fine tune special bean and add it to IoC container. @Service annotation is class-level and is used to show Spring that this class has to be managed by IoC container. 
 
 ## How to call a method after bean initialization?
 + afterPropertiesSet method;
