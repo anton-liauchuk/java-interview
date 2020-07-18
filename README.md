@@ -268,6 +268,7 @@ At the beginning, it was the repository with questions from Java interviews. Cur
 - [Do sessions violate REST?](rest.md#do-sessions-violate-rest)
 - [When to use GraphQL?](rest.md#when-to-use-graphql)
 - [What is ElasticSearch?](rest.md#what-is-elasticsearch)
+- [What are the possible ways of versioning?](rest.md#what-are-the-possible-ways-of-versioning)
 
 ## SQL
 - [What is having in sql?](sql.md#what-is-having-in-sql)
