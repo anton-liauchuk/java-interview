@@ -273,7 +273,8 @@ At the beginning, it was the repository with questions from Java interviews. Cur
 ## SQL
 - [What is having in sql?](sql.md#what-is-having-in-sql)
 - [What are the possible issues with indexes?](sql.md#what-are-the-possible-issues-with-indexes)
-- [Sql works very slowly, what are the possible improvements (the database is MySQL, for example)?](#sql-works-very-slowly-what-are-the-possible-improvements-the-database-is-mysql-for-example)
+- [Sql works very slowly, what are the possible improvements (the database is MySQL, for example)?](sql.md#sql-works-very-slowly-what-are-the-possible-improvements-the-database-is-mysql-for-example)
+- [NoSQL vs SQL Databases](sql.md#nosql-vs-sql-databases)
 
 ## Test
 - [What is the difference between integration and unit tests?](test.md#what-is-the-difference-between-integration-and-unit-tests)

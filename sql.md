@@ -2,6 +2,7 @@
 - [What is having in sql?](#what-is-having-in-sql)
 - [What are the possible issues with indexes?](#what-are-the-possible-issues-with-indexes)
 - [Sql works very slowly, what are the possible improvements (the database is MySQL, for example)?](#sql-works-very-slowly-what-are-the-possible-improvements-the-database-is-mysql-for-example)
+- [NoSQL vs SQL Databases](#nosql-vs-sql-databases)
 
 ## What is having in sql?
 + HAVING filters records that work on summarized GROUP BY results.
@@ -31,5 +32,9 @@ Although indexes are intended to enhance a database's performance, there are tim
 6. MySQL Query Caching
 ###### Relative links:
 - https://dzone.com/articles/how-to-optimize-mysql-queries-for-speed-and-perfor
+
+## NoSQL vs SQL Databases
+###### Relative links:
+- https://www.mongodb.com/nosql-explained/nosql-vs-sql
 
 [Home Page](README.md)
