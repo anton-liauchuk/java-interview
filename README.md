@@ -285,6 +285,7 @@ At the beginning, it was the repository with questions from Java interviews. Cur
 - [Does TDD include integration tests?](test.md#does-tdd-include-integration-tests)
 - [Is it good practice to check in tests that non-state-changing methods were called?](test.md#is-it-good-practice-to-check-in-tests-that-non-state-changing-methods-were-called)
 - [The differences between Spy and Mock in Mockito?](test.md#the-differences-between-spy-and-mock-in-mockito)
+- [Is it good practice to use in-memory db for tests?](test.md#is-it-good-practice-to-use-in-memory-db-for-tests)
 
 ## Transactions
 - [What is transaction?](transaction.md#what-is-transaction)

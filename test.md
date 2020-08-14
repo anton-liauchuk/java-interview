@@ -7,6 +7,7 @@
 - [Does TDD include integration tests?](#does-tdd-include-integration-tests)
 - [Is it good practice to check in tests that non-state-changing methods were called?](#is-it-good-practice-to-check-in-tests-that-non-state-changing-methods-were-called)
 - [The differences between Spy and Mock in Mockito?](#the-differences-between-spy-and-mock-in-mockito)
+- [Is it good practice to use in-memory db for tests?](#is-it-good-practice-to-use-in-memory-db-for-tests)
 
 ## What is the difference between integration and unit tests?
 A ***unit test*** is a test written by the programmer to verify that a relatively small piece of code is doing what it is intended to do. They are narrow in scope, they should be easy to write and execute, and their effectiveness depends on what the programmer considers to be useful. The tests are intended for the use of the programmer, they are not directly useful to anybody else, though, if they do their job, testers and users downstream should benefit from seeing fewer bugs.
@@ -56,5 +57,9 @@ When Mockito creates a mock – it does so from the Class of a Type, not from an
 On the other hand, the spy will wrap an existing instance. It will still behave in the same way as the normal instance – the only difference is that it will also be instrumented to track all the interactions with it.
 ###### Relative links:
 - https://www.baeldung.com/mockito-spy
+
+## Is it good practice to use in-memory db for tests?
+###### Relative links:
+- https://phauer.com/2017/dont-use-in-memory-databases-tests-h2/
 
 [Home Page](README.md)
