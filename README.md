@@ -236,6 +236,7 @@ At the beginning, it was the repository with questions from Java interviews. Cur
 - [How should be published integration events? Inside or outside transaction?](ddd.md#how-should-be-published-integration-events-inside-or-outside-transaction)
 - [How to define the reference between aggregates?](ddd.md#how-to-define-the-reference-between-aggregates)
 - [Where to put validation rule for value object?](ddd.md#where-to-put-validation-rule-for-value-object)
+- [Possible integration ways between modules?](ddd.md#possible-integration-ways-between-modules)
 
 ## Architecture
 - [What are the differences between monolith and microservices? (Performance/Deployability/Failure impact and etc)](architecture.md#what-are-the-differences-between-monolith-and-microservices-performancedeployabilityfailure-impact-and-etc)
@@ -286,6 +287,7 @@ At the beginning, it was the repository with questions from Java interviews. Cur
 - [Is it good practice to check in tests that non-state-changing methods were called?](test.md#is-it-good-practice-to-check-in-tests-that-non-state-changing-methods-were-called)
 - [The differences between Spy and Mock in Mockito?](test.md#the-differences-between-spy-and-mock-in-mockito)
 - [Is it good practice to use in-memory db for tests?](test.md#is-it-good-practice-to-use-in-memory-db-for-tests)
+- [Mockito: doReturn vs thenReturn?](test.md#mockito-doreturn-vs-thenreturn)
 
 ## Transactions
 - [What is transaction?](transaction.md#what-is-transaction)

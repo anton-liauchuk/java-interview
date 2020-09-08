@@ -16,6 +16,7 @@
 - [How should be published integration events? Inside or outside transaction?](#how-should-be-published-integration-events-inside-or-outside-transaction)
 - [How to define the reference between aggregates?](#how-to-define-the-reference-between-aggregates)
 - [Where to put validation rule for value object?](#where-to-put-validation-rule-for-value-object)
+- [Possible integration ways between modules?](#possible-integration-ways-between-modules)
 
 ## What is DDD?
 ###### Relative links:
@@ -100,3 +101,7 @@
 ## Where to put validation rule for value object?
 ###### Relative links:
 - https://builtwithdot.net/blog/where-do-i-put-my-business-rules-and-validation
+
+## Possible integration ways between modules?
+###### Relative links:
+- https://www.kamilgrzybek.com/design/modular-monolith-integration-styles/
