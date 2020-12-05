@@ -169,6 +169,7 @@ Possible solution - adding delays inside synchronized blocks, the example is in 
 
 ## What is the Difference between Future and CompletableFuture
 ###### Relative links:
+- https://stackoverflow.com/questions/35329845/difference-between-completablefuture-future-and-rxjavas-observable
 - https://www.youtube.com/watch?v=ImtZgX1nmr8
 
 [Home Page](README.md)
