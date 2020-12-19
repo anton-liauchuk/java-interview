@@ -68,6 +68,8 @@ At the beginning, it was the repository with questions from Java interviews. Cur
 - [What is the difference between StringBuilder and StringBuffer?](core.md#what-is-the-difference-between-stringbuilder-and-stringbuffer)
 - [Difference between <? super T> and <? extends T> ?](core.md#difference-between--super-t-and--extends-t-)
 - [How does JIT compiler work?](core.md#how-does-jit-compiler-work)
+- [Mutable vs Immutable object?](core.md#mutable-vs-immutable-object)
+- [Provide some examples when a finally block won't be executed in Java?](core.md#provide-some-examples-when-a-finally-block-wont-be-executed-in-java)
 
 ## Collections
 - [What is the complexity for get in Hashmap?](collections.md#what-is-the-complexity-for-get-in-hashmap)

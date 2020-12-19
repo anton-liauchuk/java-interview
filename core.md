@@ -43,6 +43,8 @@
 - [What is the difference between StringBuilder and StringBuffer?](#what-is-the-difference-between-stringbuilder-and-stringbuffer)
 - [Difference between <? super T> and <? extends T> ?](#difference-between-superT-and-extendsT)
 - [How does JIT compiler work?](#how-does-jit-compiler-work)
+- [Mutable vs Immutable object?](#mutable-vs-immutable-object)
+- [Provide some examples when a finally block won't be executed in Java?](#provide-some-examples-when-a-finally-block-wont-be-executed-in-java)
 
 ## What's new in Java 8?
 + Lambda expressions, Method Reference , Optional, Streams added.
@@ -302,7 +304,6 @@ String pool is the special memory region where Strings are stored by the JVM.
 ## What is the difference between StringBuilder and StringBuffer?
 All public methods of StringBuffer are synchronized, it provides Thread safety but on a performance cost.
 
-
 ## Difference between <? super T> and <? extends T> ?
 ###### Relative links:
 - https://stackoverflow.com/questions/4343202/difference-between-super-t-and-extends-t-in-java
@@ -310,5 +311,15 @@ All public methods of StringBuffer are synchronized, it provides Thread safety b
 ## How does JIT compiler work?
 ###### Relative links:
 - https://aboullaite.me/understanding-jit-compiler-just-in-time-compiler/
+
+## Mutable vs Immutable object?
+###### Relative links:
+- https://www.interviewcake.com/concept/java/mutable#:~:text=A%20mutable%20object%20can%20be,an%20immutable%20object%20can't.&text=That%20said%2C%20if%20you're,all%20fields%20final%20and%20private.&text=Strings%20are%20immutable%20in%20Java.
+- https://www.edureka.co/blog/java-mutable-and-immutable-objects/
+
+## Provide some examples when a finally block won't be executed in Java?
+If the JVM exits while the try or catch code is being executed, then the finally block may not execute. Likewise, if the thread executing the try or catch code is interrupted or killed, the finally block may not execute even though the application as a whole continues.
+###### Relative links:
+- https://stackoverflow.com/questions/2417958/is-there-possibility-that-a-finally-block-might-not-execute
 
 [Home Page](README.md)
