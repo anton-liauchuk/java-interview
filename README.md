@@ -247,6 +247,7 @@ At the beginning, it was the repository with questions from Java interviews. Cur
 - [Imperative vs functional vs reactive programming?](architecture.md#imperative-vs-functional-vs-reactive-programming)
 - [What is Serverless](architecture.md#what-is-serverless)
 - [What is the difference between native code, machine code and assembly code?](architecture.md#what-is-the-difference-between-native-code-machine-code-and-assembly-code)
+- [What is the difference between sharding and partitioning for databases?](architecture.md#what-is-the-difference-between-sharding-and-partitioning-for-databases)
 
 ## REST
 - [What is rest architecture? What are the requirements?](rest.md#what-is-rest-architecture-what-are-the-requirements)

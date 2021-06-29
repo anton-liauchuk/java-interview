@@ -3,6 +3,7 @@
 - [Imperative vs functional vs reactive programming?](#imperative-vs-functional-vs-reactive-programming)
 - [What is Serverless](#what-is-serverless)
 - [What is the difference between native code, machine code and assembly code?](#what-is-the-difference-between-native-code-machine-code-and-assembly-code)
+- [What is the difference between sharding and partitioning for databases?](#what-is-the-difference-between-sharding-and-partitioning-for-databases)
 
 ## What are the differences between monolith and microservices? (Performance/Deployability/Failure impact and etc)
 ###### Relative links:
@@ -28,3 +29,7 @@ Like many trends in software, there’s no one clear view of what Serverless is.
 ## What is the difference between native code, machine code and assembly code?
 ###### Relative links:
 - https://stackoverflow.com/questions/3434202/what-is-the-difference-between-native-code-machine-code-and-assembly-code
+
+## What is the difference between sharding and partitioning for databases?
+###### Relative links:
+- https://hazelcast.com/glossary/sharding/
