@@ -3,6 +3,7 @@
 - [What are the possible issues with indexes?](#what-are-the-possible-issues-with-indexes)
 - [Sql works very slowly, what are the possible improvements (the database is MySQL, for example)?](#sql-works-very-slowly-what-are-the-possible-improvements-the-database-is-mysql-for-example)
 - [NoSQL vs SQL Databases](#nosql-vs-sql-databases)
+- [OLAP vs OLTP Databases](#olap-vs-oltp-databases)
 
 ## What is having in sql?
 + HAVING filters records that work on summarized GROUP BY results.
@@ -36,5 +37,9 @@ Although indexes are intended to enhance a database's performance, there are tim
 ## NoSQL vs SQL Databases
 ###### Relative links:
 - https://www.mongodb.com/nosql-explained/nosql-vs-sql
+
+## OLAP vs OLTP Databases
+###### Relative links:
+- https://www.ibm.com/cloud/blog/olap-vs-oltp
 
 [Home Page](README.md)
