@@ -106,6 +106,7 @@ At the beginning, it was the repository with questions from Java interviews. Cur
 - [What is the result of this code?](concurrency.md#what-is-the-result-of-this-code)
 - [Change the code for getting deadlock](concurrency.md#change-the-code-for-getting-deadlock)
 - [What is the Difference between Future and CompletableFuture?](concurrency.md#what-is-the-difference-between-future-and-completablefuture)
+- [How do AtomicVariables work?](concurrency.md#how-do-atomicvariables-work)
 
 ## Spring
 - [How make spring service thread-safe?](spring.md#how-make-spring-service-thread-safe)

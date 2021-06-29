@@ -15,6 +15,7 @@
 - [What is the result of this code?](#what-is-the-result-of-this-code)
 - [Change the code for getting deadlock](#change-the-code-for-getting-deadlock)
 - [What is the Difference between Future and CompletableFuture?](#what-is-the-difference-between-future-and-completablefuture)
+- [How do AtomicVariables work?](#how-do-atomicvariables-work)
 
 ## What is usage of wait/notify methods?
 ***wait().*** It tells the calling thread to give up the lock and go to sleep until some other thread enters the same monitor and calls notify().
@@ -173,3 +174,8 @@ Possible solution - adding delays inside synchronized blocks, the example is in 
 - https://www.youtube.com/watch?v=ImtZgX1nmr8
 
 [Home Page](README.md)
+
+## How do AtomicVariables work?
+Long story short: they use compare and swap algorithm.
+###### Relative links:
+- https://www.baeldung.com/java-atomic-variables
