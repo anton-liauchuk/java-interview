@@ -194,6 +194,7 @@ At the beginning, it was the repository with questions from Java interviews. Cur
 - [What are possible ways for implementing authentication in microservices?](microservices.md#what-are-possible-ways-for-implementing-authentication-in-microservices)
 - [What is Eventual consistency?](microservices.md#what-is-eventual-consistency)
 - [How different types of communication can influence on performance?](microservices.md#how-different-types-of-communication-can-influence-on-performance)
+- [What are possible strategies and issues in microservices deployment?](microservices.md#what-are-possible-strategies-and-issues-in-microservices-deployment)
 
 ## JavaScript
 - [What are possible variable scopes?](javascript.md#what-are-possible-variable-scopes)
