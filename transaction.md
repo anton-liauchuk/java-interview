@@ -7,6 +7,7 @@
 - [What are possible options for implementing transactions in microservices](#what-are-possible-options-for-implementing-transactions-in-microservices)
 - [What is the difference between optimistic and pessimistic locking?](#what-is-the-difference-between-optimistic-and-pessimistic-locking)
 - [Is it possible to use transaction for select statements?](#is-it-possible-to-use-transaction-for-select-statements)
+- [What locks are made in the case of using Repeatable Read isolation level?](#what-locks-are-made-in-the-case-of-using-repeatable-read-isolation-level)
 
 ## What is transaction?
 A **transaction** is a sequence of operations performed (using one or more SQL statements) on a database as a single logical unit of work. The effects of all the SQL statements in a transaction can be either all committed (applied to the database) or all rolled back (undone from the database). A database transaction must be atomic, consistent, isolated and durable.
@@ -65,5 +66,8 @@ In a highly concurrent application it could (theoretically) happen that data you
 If that is a situation that could occur in your application you should use a transaction to wrap your selects.
 ###### Relative links:
 + https://stackoverflow.com/questions/5982517/use-transactions-for-select-statements
+
+## What locks are made in the case of using Repeatable Read isolation level?
+The transaction holds read locks on all rows it references and writes locks on all rows it inserts, updates, or deletes. Since other transaction cannot read, update or delete these rows, consequently it avoids non-repeatable read.
 
 [Home Page](README.md)

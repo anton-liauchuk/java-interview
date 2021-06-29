@@ -301,6 +301,7 @@ At the beginning, it was the repository with questions from Java interviews. Cur
 - [What are possible options for implementing transactions in microservices](transaction.md#what-are-possible-options-for-implementing-transactions-in-microservices)
 - [What is the difference between optimistic and pessimistic locking?](transaction.md#what-is-the-difference-between-optimistic-and-pessimistic-locking)
 - [Is it possible to use transaction for select statements?](transaction.md#is-it-possible-to-use-transaction-for-select-statements)
+- [What locks are made in the case of using Repeatable Read isolation level?](transaction.md#what-locks-are-made-in-the-case-of-using-repeatable-read-isolation-level)
 
 ## RabbitMQ
 - [What is RabbitMQ?](rabbitmq.md#what-is-rabbitmq)
