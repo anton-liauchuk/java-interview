@@ -32,7 +32,7 @@
 - [Exception Hierarchy?](#exception-hierarchy)
 - [One exception is thrown by catch block and another one is thrown from finally block, which exception will be thrown by method?](#one-exception-is-thrown-by-catch-block-and-another-one-is-thrown-from-finally-block-which-exception-will-be-thrown-by-method)
 - [Is it possible to serialize lambda expression?](#is-it-possible-to-serialize-lambda-expression)
-- [Why can Java Collections not directly store Primitives types?](#why-can-java-collections-not-directly-store-primitives-types)
+- [Why do Java Collections can not directly store Primitives types?](#why-do-java-collections-can-not-directly-store-primitives-types)
 - [How is recursion implemented in Java?](#how-is-recursion-implemented-in-java)
 - [Is it needed to document unchecked exceptions?](#is-it-needed-to-document-unchecked-exceptions)
 - [Java Date classes?](#java-date-classes)
