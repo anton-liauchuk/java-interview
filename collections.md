@@ -8,13 +8,13 @@
 - [What are the implementations of Map?](#what-are-the-implementations-of-map)
 - [What is the complexity of removing the last element from LinkedList?](#what-is-the-complexity-of-removing-the-last-element-from-linkedlist)
 - [What are the differences between Set and Map?](#what-are-the-differences-between-set-and-map)
-- [Possible maps in concurrency?](#possible-maps-in-concurrency)
+- [What are the possible implementations of Map for concurrency?](#what-are-the-possible-implementations-of-map-for-concurrency)
 - [What is the main difference between Stream API and Collection?](#what-is-the-main-difference-between-stream-api-and-collection)
 - [What should be avoided in parallel stream?](#what-should-be-avoided-in-parallel-stream)
 - [Implement custom version of java.util.stream.Stream with filter/map methods](#implement-custom-version-of-javautilstreamstream-with-filtermap-methods)
 - [What is forEach?](#what-is-foreach)
 - [When is it better to use foreach loop instead of Iterable.forEach()?](#when-is-it-better-to-use-foreach-loop-instead-of-iterableforeach)
-- [SplitIterator?](#splititerator)
+- [What is SplitIterator?](#what-is-splititerator)
 
 ## What is the complexity for get in Hashmap?
 It depends on many things. It's usually O(1), with a decent hash which itself is constant time... but you could have a hash which takes a long time to compute, and if there are multiple items in the hash map which return the same hash code, get will have to iterate over them calling equals on each of them to find a match.
@@ -49,6 +49,7 @@ The other collection interfaces are based on java.util.Map and are not true coll
 ## What is the difference between LinkedList and ArrayList?
 From the hierarchy diagram, they all implement List interface. They are very similar to use. Their main difference is their implementation which causes different performance for different operations.  ArrayList is implemented as a resizable array. As more elements are added to ArrayList, its size is increased dynamically. It's elements can be accessed directly by using the get and set methods, since ArrayList is essentially an array. LinkedList is implemented as a double linked list. Its performance on add and remove is better than Arraylist, but worse on get and set methods.
 ###### Relative links:
++ https://stackoverflow.com/questions/322715/when-to-use-linkedlist-over-arraylist-in-java
 + https://dzone.com/articles/arraylist-vs-linkedlist-vs
 
 ## What is better to use LinkedList or ArrayList?
@@ -83,7 +84,7 @@ Main differences between a ***Set*** and a ***Map*** in Java are:
 ###### Relative links:
 + https://www.quora.com/What-is-the-difference-between-a-Set-and-a-Map-in-Java
 
-## Possible maps in concurrency?
+## What are the possible implementations of Map for concurrency?
 + ***ConcurrentHashMap*** allows concurrent modification of the Map from several threads without the need to block them. Collections.synchronizedMap(map) creates a blocking Map which will degrade performance, albeit ensure consistency (if used properly).
 + ***Collections.synchronizedMap(Map)*** is the second option if you need to ensure data consistency, and each thread needs to have an up-to-date view of the map. Use the first if performance is critical, and each thread only inserts data to the map, with reads happening less frequently.
 ###### Relative links:
@@ -125,7 +126,7 @@ The deficiencies of Iterable.forEach():
 ###### Relative links:
 - https://stackoverflow.com/questions/16635398/java-8-iterable-foreach-vs-foreach-loop
 
-## SplitIterator?
+## What is SplitIterator?
 ###### Relative links:
 - https://www.baeldung.com/java-spliterator
 - https://www.geeksforgeeks.org/java-util-interface-spliterator-java8/

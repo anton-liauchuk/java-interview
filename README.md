@@ -81,13 +81,13 @@ At the beginning, it was the repository with questions from Java interviews. Cur
 - [What are the implementations of Map?](collections.md#what-are-the-implementations-of-map)
 - [What is the complexity of removing the last element from LinkedList?](collections.md#what-is-the-complexity-of-removing-the-last-element-from-linkedlist)
 - [What are the differences between Set and Map?](collections.md#what-are-the-differences-between-set-and-map)
-- [Possible maps in concurrency?](collections.md#possible-maps-in-concurrency)
+- [What are the possible implementations of Map for concurrency?](collections.md#what-are-the-possible-implementations-of-map-for-concurrency)
 - [What is the main difference between Stream API and Collection?](collections.md#what-is-the-main-difference-between-stream-api-and-collection)
 - [What should be avoided in parallel stream?](collections.md#what-should-be-avoided-in-parallel-stream)
 - [Implement custom version of java.util.stream.Stream with filter/map methods](collections.md#implement-custom-version-of-javautilstreamstream-with-filtermap-methods)
 - [What is forEach?](collections.md#what-is-foreach)
 - [When is it better to use foreach loop instead of Iterable.forEach()?](collections.md#when-is-it-better-to-use-foreach-loop-instead-of-iterableforeach)
-- [SplitIterator?](collections.md#splititerator)
+- [What is SplitIterator?](collections.md#what-is-splititerator)
 
 ## Concurrency
 - [What is usage of wait/notify methods?](#what-is-usage-of-waitnotify-methods)
