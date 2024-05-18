@@ -45,6 +45,7 @@
 - [How does JIT compiler work?](#how-does-jit-compiler-work)
 - [Mutable vs Immutable object?](#mutable-vs-immutable-object)
 - [Provide some examples when a finally block won't be executed in Java?](#provide-some-examples-when-a-finally-block-wont-be-executed-in-java)
+- [What is type erasure?](#what-is-type-erasure)
 
 ## What's new in Java 8?
 + Lambda expressions, Method Reference , Optional, Streams added.
@@ -321,5 +322,10 @@ All public methods of StringBuffer are synchronized, it provides Thread safety b
 If the JVM exits while the try or catch code is being executed, then the finally block may not execute. Likewise, if the thread executing the try or catch code is interrupted or killed, the finally block may not execute even though the application as a whole continues.
 ###### Relative links:
 - https://stackoverflow.com/questions/2417958/is-there-possibility-that-a-finally-block-might-not-execute
+
+## What is type erasure?
+Type erasure removes all type parameters and replaces them with their bounds or with Object if the type parameter is unbounded. This way, the bytecode after compilation contains only normal classes, interfaces and methods, ensuring that no new types are produced. Proper casting is applied as well to the Object type at compile time.
+###### Relative links:
+- https://www.baeldung.com/java-generics
 
 [Home Page](README.md)
