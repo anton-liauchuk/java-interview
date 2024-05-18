@@ -1,6 +1,3 @@
-# About project
-At the beginning, it was the repository with questions from Java interviews. Currently, it's more like knowledge base with useful links.
-
 # Table of Contents
 - [Core](#core)
 - [Collections](#collections)
@@ -108,6 +105,7 @@ At the beginning, it was the repository with questions from Java interviews. Cur
 - [Change the code for getting deadlock](concurrency.md#change-the-code-for-getting-deadlock)
 - [What is the Difference between Future and CompletableFuture?](concurrency.md#what-is-the-difference-between-future-and-completablefuture)
 - [How do AtomicVariables work?](concurrency.md#how-do-atomicvariables-work)
+- [What is the difference between Runnable and Callable?](concurrency.md#what-is-the-difference-between-runnable-and-callable)
 
 ## Spring
 - [How make spring service thread-safe?](spring.md#how-make-spring-service-thread-safe)
@@ -295,6 +293,7 @@ At the beginning, it was the repository with questions from Java interviews. Cur
 - [The differences between Spy and Mock in Mockito?](test.md#the-differences-between-spy-and-mock-in-mockito)
 - [Is it good practice to use in-memory db for tests?](test.md#is-it-good-practice-to-use-in-memory-db-for-tests)
 - [Mockito: doReturn vs thenReturn?](test.md#mockito-doreturn-vs-thenreturn)
+- [How to mock third party service?](test.md#how-to-mock-third-party-service)
 
 ## Transactions
 - [What is transaction?](transaction.md#what-is-transaction)
