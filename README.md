@@ -68,6 +68,7 @@
 - [Mutable vs Immutable object?](core.md#mutable-vs-immutable-object)
 - [Provide some examples when a finally block won't be executed in Java?](core.md#provide-some-examples-when-a-finally-block-wont-be-executed-in-java)
 - [What is type erasure?](core.md#what-is-type-erasure)
+- [What is built-in mechanism for creating singletons in Java?](core.md#what-is-built-in-mechanism-for-creating-singletons-in-java)
 
 ## Collections
 - [What is the complexity for get in Hashmap?](collections.md#what-is-the-complexity-for-get-in-hashmap)

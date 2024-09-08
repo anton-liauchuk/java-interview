@@ -328,4 +328,9 @@ Type erasure removes all type parameters and replaces them with their bounds or 
 ###### Relative links:
 - https://www.baeldung.com/java-generics
 
+## What is built-in mechanism for creating singletons in Java?
+Java enum
+###### Relative links:
+- https://dzone.com/articles/java-singletons-using-enum
+
 [Home Page](README.md)
