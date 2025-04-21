@@ -295,6 +295,7 @@
 - [Is it good practice to use in-memory db for tests?](test.md#is-it-good-practice-to-use-in-memory-db-for-tests)
 - [Mockito: doReturn vs thenReturn?](test.md#mockito-doreturn-vs-thenreturn)
 - [How to mock third party service?](test.md#how-to-mock-third-party-service)
+- [How would you assess the quality and effectiveness of unit tests in a Java codebase? Can you explain what mutation testing is and how tools like PIT can help?](test.md#how-would-you-assess-the-quality-and-effectiveness-of-unit-tests-in-a-java-codebase-can-you-explain-what-mutation-testing-is-and-how-tools-like-pit-can-help)
 
 ## Transactions
 - [What is transaction?](transaction.md#what-is-transaction)

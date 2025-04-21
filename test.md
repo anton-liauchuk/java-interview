@@ -9,6 +9,7 @@
 - [The differences between Spy and Mock in Mockito?](#the-differences-between-spy-and-mock-in-mockito)
 - [Is it good practice to use in-memory db for tests?](#is-it-good-practice-to-use-in-memory-db-for-tests)
 - [Mockito: doReturn vs thenReturn?](#mockito-doreturn-vs-thenreturn)
+- [How would you assess the quality and effectiveness of unit tests in a Java codebase? Can you explain what mutation testing is and how tools like PIT can help?](#how-would-you-assess-the-quality-and-effectiveness-of-unit-tests-in-a-java-codebase-can-you-explain-what-mutation-testing-is-and-how-tools-like-pit-can-help)
 
 ## What is the difference between integration and unit tests?
 A ***unit test*** is a test written by the programmer to verify that a relatively small piece of code is doing what it is intended to do. They are narrow in scope, they should be easy to write and execute, and their effectiveness depends on what the programmer considers to be useful. The tests are intended for the use of the programmer, they are not directly useful to anybody else, though, if they do their job, testers and users downstream should benefit from seeing fewer bugs.
@@ -66,5 +67,10 @@ On the other hand, the spy will wrap an existing instance. It will still behave 
 ## Mockito doReturn vs thenReturn?
 ###### Relative links:
 - http://sangsoonam.github.io/2019/02/04/mockito-doreturn-vs-thenreturn.html
+
+## How would you assess the quality and effectiveness of unit tests in a Java codebase? Can you explain what mutation testing is and how tools like PIT can help?
+One effective way to assess the quality of unit tests in Java is through **mutation testing**, which checks whether tests can detect intentional defects. A commonly used tool for this is **PIT (Pitest)**. PIT works by introducing small changes (mutations) to the production code—like flipping conditions or modifying operators—and then running the existing tests. If the tests fail, the mutation is “killed.” If not, it indicates a possible gap in the test’s effectiveness. This approach goes beyond traditional code coverage, focusing on how well tests catch real issues.
+###### Relative links:
+- https://pitest.org/
 
 [Home Page](README.md)
