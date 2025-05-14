@@ -333,4 +333,7 @@ Java enum
 ###### Relative links:
 - https://dzone.com/articles/java-singletons-using-enum
 
+## How to understand a third-party library without source code?
+One way to understand how a third-party library works without its source code is by using a **decompiler**. A decompiler converts the compiled bytecode (e.g., `.class` files in Java) back into readable source code.
+
 [Home Page](README.md)
