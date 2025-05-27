@@ -24,6 +24,7 @@
 - [When to use GraphQL?](#when-to-use-graphql)
 - [What is ElasticSearch?](#what-is-elasticsearch)
 - [What are the possible ways of versioning?](#what-are-the-possible-ways-of-versioning)
+- [Is it good practice to use Map<String, Object> in a model for a REST API?](#is-it-good-practice-to-use-mapstring-object-in-a-model-for-a-rest-api)
 
 ## What is rest architecture? What are the requirements?
 - resources being identified by a persistent identifier: URIs are the ubiquitous choice of identifier these days
@@ -200,5 +201,8 @@ Strings.
 ## What are the possible ways of versioning?
 ###### Relative links:
 - https://restfulapi.net/versioning/
+
+## Is it good practice to use `Map<String, Object>` in a model for a REST API?
+Using `Map<String, Object>` in REST models is generally discouraged due to poor type safety, lack of schema clarity, and harder API validation. However, it can be acceptable for internal use, plugin-like extensibility, or storing custom metadata.
 
 [Home Page](README.md)

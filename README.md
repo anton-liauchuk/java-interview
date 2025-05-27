@@ -276,6 +276,7 @@
 - [When to use GraphQL?](rest.md#when-to-use-graphql)
 - [What is ElasticSearch?](rest.md#what-is-elasticsearch)
 - [What are the possible ways of versioning?](rest.md#what-are-the-possible-ways-of-versioning)
+- [Is it good practice to use Map<String, Object> in a model for a REST API?](rest.md#is-it-good-practice-to-use-mapstring-object-in-a-model-for-a-rest-api)
 
 ## SQL
 - [What is having in sql?](sql.md#what-is-having-in-sql)
