@@ -48,11 +48,10 @@
 - [What is type erasure?](#what-is-type-erasure)
 
 ## What's new in Java 8?
-+ Lambda expressions, Method Reference , Optional, Streams added.
-+ Advanced Date , Time, Zone and Calendar Classes introduced.
++ Lambda expressions, Method Reference, Optional, Streams added.
++ Advanced Date, Time, Zone and Calendar Classes introduced.
 + PermGen Removed.
 ###### Relative links:
-+ https://codete.com/blog/java-8-java-11-quick-guide/
 + https://www.quora.com/What-are-the-differences-between-Java-8-9-10-and-11
 
 ## What are the memory types in Java?
@@ -88,7 +87,6 @@ A Java Profiler is a tool that monitors Java bytecode constructs and operations 
 ## What is stop the world?
 Stop-the-world will occur no matter which GC algorithm you choose. Stop-the-world means that the JVM is stopping the application from running to execute a GC. When stop-the-world occurs, every thread except for the threads needed for the GC will stop their tasks. The interrupted tasks will resume only after the GC task has completed. GC tuning often means reducing this stop-the-world time.
 ###### Relative links:
-+ https://www.cubrid.org/blog/understanding-java-garbage-collection
 + https://stackoverflow.com/questions/16695874/why-does-the-jvm-full-gc-need-to-stop-the-world
 
 ## What is the difference between int, Integer and AtomicInteger?
@@ -205,7 +203,6 @@ The method successfully alters the value of pnt1, even though it is passed by va
 
 ## Are checked exceptions bad?
 ###### Relative links:
-- https://www.javaworld.com/article/3142626/are-checked-exceptions-good-or-bad.html
 - https://www.yegor256.com/2015/07/28/checked-vs-unchecked-exceptions.html
 - https://medium.com/@eob/checked-exceptions-considered-evil-f7d07e051fa6
 
