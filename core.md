@@ -1,5 +1,6 @@
 # Core
 - [What is the difference between JDK and JRE?](#what-is-the-difference-between-jdk-and-jre)
+- [What is ClassLoader? What are the types of class loaders?](#what-is-classloader-what-are-the-types-of-class-loaders)
 - [What's new in Java 8?](#whats-new-in-java-8)
 - [What are the memory types in Java?](#what-are-the-memory-types-in-java)
 - [What is java agent?](#what-is-java-agent)
@@ -52,6 +53,14 @@
 JRE runs Java programs. JDK is JRE + development tools.
 ###### Relative links:
 + https://www.geeksforgeeks.org/java/differences-jdk-jre-jvm/
+
+## What is ClassLoader? What are the types of class loaders?
+***ClassLoader*** is a subsystem of JVM responsible for loading class files into memory during runtime. Types of ClassLoader:
++ ***Bootstrap*** loads JDK internal classes, typically ***rt.jar*** and other core libs.
++ ***Platform*** loads standard core Java classes.
++ ***System*** loads classes from classpath.
+###### Relative links:
++ https://www.baeldung.com/java-classloaders
 
 ## What's new in Java 8?
 + Lambda expressions, Method Reference, Optional, Streams added.
