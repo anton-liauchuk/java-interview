@@ -1,4 +1,5 @@
 # Core
+- [What is the difference between JDK and JRE?](#what-is-the-difference-between-jdk-and-jre)
 - [What's new in Java 8?](#whats-new-in-java-8)
 - [What are the memory types in Java?](#what-are-the-memory-types-in-java)
 - [What is java agent?](#what-is-java-agent)
@@ -46,6 +47,11 @@
 - [Mutable vs Immutable object?](#mutable-vs-immutable-object)
 - [Provide some examples when a finally block won't be executed in Java?](#provide-some-examples-when-a-finally-block-wont-be-executed-in-java)
 - [What is type erasure?](#what-is-type-erasure)
+
+## What is the difference between JDK and JRE?
+JRE runs Java programs. JDK is JRE + development tools.
+###### Relative links:
++ https://www.geeksforgeeks.org/java/differences-jdk-jre-jvm/
 
 ## What's new in Java 8?
 + Lambda expressions, Method Reference, Optional, Streams added.

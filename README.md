@@ -21,6 +21,7 @@
 - [RabbitMQ](#rabbitmq)
 
 ## Core
+- [What is the difference between JDK and JRE?](core.md#what-is-the-difference-between-jdk-and-jre)
 - [What's new in Java 8?](core.md#whats-new-in-java-8)
 - [What are the memory types in Java?](core.md#what-are-the-memory-types-in-java)
 - [What is java agent?](core.md#what-is-java-agent)
