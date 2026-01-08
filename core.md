@@ -67,7 +67,7 @@ JRE runs Java programs. JDK is JRE + development tools.
 + Advanced Date, Time, Zone and Calendar Classes introduced.
 + PermGen Removed.
 ###### Relative links:
-+ https://www.quora.com/What-are-the-differences-between-Java-8-9-10-and-11
++ https://www.oracle.com/java/technologies/javase/8-whats-new.html
 
 ## What are the memory types in Java?
 + ***Stack.*** Stack memory is responsible for holding references to heap objects and for storing value types (also known in Java as primitive types), which hold the value itself rather than a reference to an object from the heap.
