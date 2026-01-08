@@ -19,6 +19,7 @@
 - [Test](#test)
 - [Transactions](#transactions)
 - [RabbitMQ](#rabbitmq)
+- [GraalVM](#graalvm)
 
 ## Core
 - [What is the difference between JDK and JRE?](core.md#what-is-the-difference-between-jdk-and-jre)
