@@ -15,8 +15,7 @@
 + https://www.dofactory.com/sql/having
 
 ## What are the possible issues with indexes?
-Although indexes are intended to enhance a database's performance, there are times when they should be avoided.
-+ The following guidelines indicate when the use of an index should be reconsidered.
+Although indexes are intended to enhance a database's performance, there are times when they should be avoided. The following guidelines indicate when the use of an index should be reconsidered.
 + Indexes should not be used on small tables.
 + Tables that have frequent, large batch updates or insert operations.
 + Indexes should not be used on columns that contain a high number of NULL values.
