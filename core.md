@@ -48,6 +48,8 @@
 - [Mutable vs Immutable object?](#mutable-vs-immutable-object)
 - [Provide some examples when a finally block won't be executed in Java?](#provide-some-examples-when-a-finally-block-wont-be-executed-in-java)
 - [What is type erasure?](#what-is-type-erasure)
+- [What is built-in mechanism for creating singletons in Java?](#what-is-built-in-mechanism-for-creating-singletons-in-java)
+- [How to understand a third-party library without source code?](#how-to-understand-a-third-party-library-without-source-code)
 
 ## What is the difference between JDK and JRE?
 JRE runs Java programs. JDK is JRE + development tools.
