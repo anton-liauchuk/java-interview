@@ -8,7 +8,7 @@
 - [What is java profiler?](#what-is-java-profiler)
 - [What is stop the world?](#what-is-stop-the-world)
 - [What is the difference between int, Integer and AtomicInteger?](#what-is-the-difference-between-int-integer-and-atomicinteger)
-- [How i++ will work for Integer?](#how-i-will-work-for-integer)
+- [How does post-increment work for wrapper classes (for example, Integer)?](#how-does-post-increment-work-for-wrapper-classes-for-example-integer)
 - [What can you say about interface constants?](#what-can-you-say-about-interface-constants)
 - [What is the contract between equals and hashcode?](#what-is-the-contract-between-equals-and-hashcode)
 - [What are the rules for overriding equals/hashcode methods?](#what-are-the-rules-for-overriding-equalshashcode-methods)
@@ -114,10 +114,10 @@ Stop-the-world will occur no matter which GC algorithm you choose. Stop-the-worl
 + https://stackoverflow.com/questions/8660691/what-is-the-difference-between-integer-and-int-in-java
 + https://stackoverflow.com/questions/38846976/what-is-the-difference-between-atomic-integer-and-normal-immutable-integer-class
 
-## How i++ will work for Integer?
-variable will be changed
+## How does post-increment work for wrapper classes (for example, Integer)?
+The result is assigned to a variable of the corresponding wrapper class (autoboxing/autounboxing feature).
 ###### Relative links:
-+ https://stackoverflow.com/questions/13280134/why-does-post-increment-work-on-wrapper-classes
++ https://docs.oracle.com/javase/tutorial/java/data/autoboxing.html
 
 ## What can you say about interface constants?
 The constant interface pattern is a poor use of interfaces. That a class uses some constants internally is an implementation detail. Implementing a constant interface causes this implementation detail to leak into the class's exported API. It is of no consequence to the users of a class that the class implements a constant interface. In fact, it may even confuse them. Worse, it represents a commitment: if in a future release the class is modified so that it no longer needs to use the constants, it still must implement the interface to ensure binary compatibility. If a nonfinal class implements a constant interface, all of its subclasses will have their namespaces polluted by the constants in the interface. There are several constant interfaces in the java platform libraries, such as java.io.ObjectStreamConstants. These interfaces should be regarded as anomalies and should not be emulated.

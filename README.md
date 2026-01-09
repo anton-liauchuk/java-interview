@@ -31,7 +31,7 @@
 - [What is java profiler?](core.md#what-is-java-profiler)
 - [What is stop the world?](core.md#what-is-stop-the-world)
 - [What is the difference between int, Integer and AtomicInteger?](core.md#what-is-the-difference-between-int-integer-and-atomicinteger)
-- [How i++ will work for Integer?](core.md#how-i-will-work-for-integer)
+- [How does post-increment work for wrapper classes (for example, Integer)?](core.md#how-does-post-increment-work-for-wrapper-classes-for-example-integer)
 - [What can you say about interface constants?](core.md#what-can-you-say-about-interface-constants)
 - [What is the contract between equals and hashcode?](core.md#what-is-the-contract-between-equals-and-hashcode)
 - [What are the rules for overriding equals/hashcode methods?](core.md#what-are-the-rules-for-overriding-equalshashcode-methods)
