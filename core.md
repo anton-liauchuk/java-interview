@@ -12,7 +12,7 @@
 - [What can you say about interface constants?](#what-can-you-say-about-interface-constants)
 - [What is the contract between equals and hashcode?](#what-is-the-contract-between-equals-and-hashcode)
 - [What are the purposes of inner classes?](#what-are-the-purposes-of-inner-classes)
-- [What is better interfaces or abstract classes?](#what-is-better-interfaces-or-abstract-classes)
+- [Why composition is preferred over inheritance?](#why-composition-is-preferred-over-inheritance)
 - [Do inner classes have access to private fields from outer class?](#do-inner-classes-have-access-to-private-fields-from-outer-class)
 - [What are the differences between static nested classes and non-static nested classes?](#what-are-the-differences-between-static-nested-classes-and-non-static-nested-classes)
 - [What are the methods of Object class?](#what-are-the-methods-of-object-class)
@@ -137,13 +137,11 @@ It goes against the purpose of an interface. When we create an interface full of
 + https://stackoverflow.com/questions/11398122/what-are-the-purposes-of-inner-classes
 + https://docs.oracle.com/javase/tutorial/java/javaOO/nested.html
 
-## What is better interfaces or abstract classes?
-Use abstract classes when you have a class that A is kind of B and interface when A can do B.
-+ A class can implement multiple interfaces, but it can only extend one abstract class.
-+ Interfaces allow the creation of proxies that encapsulate a concrete class. This is used extensively by frameworks in order to intercept method calls to the concrete class (e.g., for starting a transaction before the method is executed or to write to the log).
+## Why composition is preferred over inheritance?
+Inheritance is tightly coupled whereas composition is loosely coupled.
 ###### Relative links:
-+ https://stackoverflow.com/questions/2971265/situation-where-interface-is-better-than-abstract-class
-+ https://stackoverflow.com/questions/11889588/choosing-interface-or-abstract-class
++ https://www.digitalocean.com/community/tutorials/composition-vs-inheritance
++ https://dev.to/leapcell/from-java-to-go-why-composition-is-preferred-over-inheritance-17h4
 
 ## Do inner classes have access to private fields from outer class?
 Inner classes has access to private fields from outer class.

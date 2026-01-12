@@ -35,7 +35,7 @@
 - [What can you say about interface constants?](core.md#what-can-you-say-about-interface-constants)
 - [What is the contract between equals and hashcode?](core.md#what-is-the-contract-between-equals-and-hashcode)
 - [What are the purposes of inner classes?](core.md#what-are-the-purposes-of-inner-classes)
-- [What is better interfaces or abstract classes?](core.md#what-is-better-interfaces-or-abstract-classes)
+- [Why composition is preferred over inheritance?](core.md#why-composition-is-preferred-over-inheritance)
 - [Do inner classes have access to private fields from outer class?](core.md#do-inner-classes-have-access-to-private-fields-from-outer-class)
 - [What are the differences between static nested classes and non-static nested classes?](core.md#what-are-the-differences-between-static-nested-classes-and-non-static-nested-classes)
 - [What are the methods of Object class?](core.md#what-are-the-methods-of-object-class)
