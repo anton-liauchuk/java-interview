@@ -34,8 +34,6 @@
 - [How does post-increment work for wrapper classes (for example, Integer)?](core.md#how-does-post-increment-work-for-wrapper-classes-for-example-integer)
 - [What can you say about interface constants?](core.md#what-can-you-say-about-interface-constants)
 - [What is the contract between equals and hashcode?](core.md#what-is-the-contract-between-equals-and-hashcode)
-- [What are the rules for overriding equals/hashcode methods?](core.md#what-are-the-rules-for-overriding-equalshashcode-methods)
-- [Are the same fields needed for equals/hashcode implementation?](core.md#are-the-same-fields-needed-for-equalshashcode-implementation)
 - [What are the purposes of inner classes?](core.md#what-are-the-purposes-of-inner-classes)
 - [What is better interfaces or abstract classes?](core.md#what-is-better-interfaces-or-abstract-classes)
 - [Do inner classes have access to private fields from outer class?](core.md#do-inner-classes-have-access-to-private-fields-from-outer-class)

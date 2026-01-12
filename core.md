@@ -11,8 +11,6 @@
 - [How does post-increment work for wrapper classes (for example, Integer)?](#how-does-post-increment-work-for-wrapper-classes-for-example-integer)
 - [What can you say about interface constants?](#what-can-you-say-about-interface-constants)
 - [What is the contract between equals and hashcode?](#what-is-the-contract-between-equals-and-hashcode)
-- [What are the rules for overriding equals/hashcode methods?](#what-are-the-rules-for-overriding-equalshashcode-methods)
-- [Are the same fields needed for equals/hashcode implementation?](#are-the-same-fields-needed-for-equalshashcode-implementation)
 - [What are the purposes of inner classes?](#what-are-the-purposes-of-inner-classes)
 - [What is better interfaces or abstract classes?](#what-is-better-interfaces-or-abstract-classes)
 - [Do inner classes have access to private fields from outer class?](#do-inner-classes-have-access-to-private-fields-from-outer-class)
@@ -125,22 +123,11 @@ It goes against the purpose of an interface. When we create an interface full of
 + https://www.baeldung.com/java-constants-good-practices
 
 ## What is the contract between equals and hashcode?
-objects which are .equals() MUST have the same .hashCode().
++ Use same properties in both equals() and hashCode() method implementations, so that their contract doesn’t violate when any properties is updated.
++ It’s better to use immutable objects as Hash table key so that we can cache the hash code rather than calculating it on every call. That’s why String is a good candidate for Hash table key because it’s immutable and cache the hash code value.
++ Implement hashCode() method so that least number of hash collision occurs and entries are evenly distributed across all the buckets.
 ###### Relative links:
-+ https://stackoverflow.com/questions/17027777/relationship-between-hashcode-and-equals-method-in-java
-
-## What are the rules for overriding equals/hashcode methods?
-+ Always use same attributes of an object to generate hashCode() and equals() both.
-+ equals() must be consistent (if the objects are not modified, then it must keep returning the same value).
-+ Whenever a.equals(b), then a.hashCode() must be same as b.hashCode().
-+ If you override one, then you should override the other.
-###### Relative links:
-+ https://howtodoinjava.com/java/basics/java-hashcode-equals-methods/
-
-## Are the same fields needed for equals/hashcode implementation?
-The fields don't have to be the same. The requirement is for two objects that are equal, they must have the same hash code. If they have the same hash code, they don't have to be equal. For example, you could return 1 as your hash code always, and you would obey the hash code contract, no matter what fields you used in your equals method. Returning 1 all the time would improve the computation time of hashCode, but HashMap's performance would drop since it would have to resort to equals() more often.
-###### Relative links:
-+ https://stackoverflow.com/questions/22827652/different-fields-for-equals-and-hashcode
++ https://www.digitalocean.com/community/tutorials/java-equals-hashcode#best-practices-for-implementing-equals-and-hashcode-method
 
 ## What are the purposes of inner classes?
 + It is a way of logically grouping classes that are only used in one place.
