@@ -7,7 +7,7 @@
 - [Common hibernate mistakes?](#common-hibernate-mistakes)
 - [Hibernate best practice?](#hibernate-best-practice)
 - [How to Define and Use a @NamedEntityGraph?](#how-to-define-and-use-a-namedentitygraph)
-- [Possible issues with defining equals/hashcode on JPA entities?](#possible-issues-with-defining-equalshashcode-on-jpa-entities)
+- [Is it required to implement equals and hashcode on JPA entities?](#is-it-required-to-implement-equals-and-hashcode-on-jpa-entities)
 - [How lazy loading works in hibernate?](#how-lazy-loading-works-in-hibernate)
 - [Optimal queries in Hibernate?](#optimal-queries-in-hibernate)
 - [Possible enum mapping solutions?](#possible-enum-mapping-solutions)
@@ -63,10 +63,14 @@ Allowing to explicitly flush the Session gives finer control that may be require
 ###### Relative links:
 - https://thoughts-on-java.org/jpa-21-entity-graph-part-1-named-entity/
 
-## Possible issues with defining equals/hashcode on JPA entities?
+## Is it required to implement equals and hashcode on JPA entities?
+The Hibernate documentation lists the situations when these two methods are required:
+- when adding entities to Set collections
+- when reattaching entities to a new persistence context
 ###### Relative links:
-- https://stackoverflow.com/questions/4388360/should-i-write-equals-and-hashcode-methods-in-jpa-entities
-- https://developer.jboss.org/wiki/EqualsandHashCode
+- https://vladmihalcea.com/how-to-implement-equals-and-hashcode-using-the-jpa-entity-identifier/
+- https://vladmihalcea.com/hibernate-facts-equals-and-hashcode/
+- https://docs.hibernate.org/stable/orm/userguide/html_single/#mapping-model-pojo-equalshashcode
 
 ## Scripts vs table generation from entity annotations?
 ###### Relative links:

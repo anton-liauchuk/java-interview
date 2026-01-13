@@ -163,7 +163,7 @@
 - [Common hibernate mistakes?](hibernate.md#common-hibernate-mistakes)
 - [Hibernate best practice?](hibernate.md#hibernate-best-practice)
 - [How to Define and Use a @NamedEntityGraph?](hibernate.md#how-to-define-and-use-a-namedentitygraph)
-- [Possible issues with defining equals/hashcode on JPA entities?](hibernate.md#possible-issues-with-defining-equalshashcode-on-jpa-entities)
+- [Is it required to implement equals and hashcode on JPA entities?](hibernate.md#is-it-required-to-implement-equals-and-hashcode-on-jpa-entities)
 - [How lazy loading works in hibernate?](hibernate.md#how-lazy-loading-works-in-hibernate)
 - [Optimal queries in Hibernate?](hibernate.md#optimal-queries-in-hibernate)
 - [Possible enum mapping solutions?](hibernate.md#possible-enum-mapping-solutions)
