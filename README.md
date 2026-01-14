@@ -100,6 +100,7 @@
 - [What is CopyOnWriteArrayList?](concurrency.md#what-is-copyonwritearraylist)
 - [What can you say about ConcurrentHashMap?](concurrency.md#what-can-you-say-about-concurrenthashmap)
 - [What are the benefits of using ConcurrentHashMap over HashTable?](concurrency.md#what-are-the-benefits-of-using-concurrenthashmap-over-hashtable)
+- [What is the time complexity of get() operation in ConcurrentHashMap?](concurrency.md#what-is-the-time-complexity-of-get-operation-in-concurrenthashmap)
 - [What is the synchronized access?](concurrency.md#what-is-the-synchronized-access)
 - [What is the monitor for non-static synchronized method?](concurrency.md#what-is-the-monitor-for-non-static-synchronized-method)
 - [What are possible ways for synchronization threads?](concurrency.md#what-are-possible-ways-for-synchronization-threads)

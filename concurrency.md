@@ -8,6 +8,7 @@
 - [What is CopyOnWriteArrayList?](#what-is-copyonwritearraylist)
 - [What can you say about ConcurrentHashMap?](#what-can-you-say-about-concurrenthashmap)
 - [What are the benefits of using ConcurrentHashMap over HashTable?](#what-are-the-benefits-of-using-concurrenthashmap-over-hashtable)
+- [What is the time complexity of get() operation in ConcurrentHashMap?](#what-is-the-time-complexity-of-get-operation-in-concurrenthashmap)
 - [What is the synchronized access?](#what-is-the-synchronized-access)
 - [What is the monitor for non-static synchronized method?](#what-is-the-monitor-for-non-static-synchronized-method)
 - [What are possible ways for synchronization threads?](#what-are-possible-ways-for-synchronization-threads)
@@ -67,6 +68,7 @@ A hash table supporting full concurrency of retrievals and high expected concurr
 ###### Relative links:
 + https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentHashMap.html
 + https://habr.com/ru/post/132884/
++ https://tomaszjarosz.dev/blog/java-collections-part-18-concurrenthashmap-internals
 
 ## What are the benefits of using ConcurrentHashMap over HashTable?
 ConcurrentHashMap uses multiple buckets to store data. This avoids read locks and greatly improves performance over a HashTable. Both are thread safe, but there are obvious performance wins with ConcurrentHashMap.
@@ -74,6 +76,12 @@ When you read from a ConcurrentHashMap using get(), there are no locks, contrary
 HashMap is the best thing to use in a single threaded application.
 ###### Relative links:
 + https://stackoverflow.com/questions/12646404/concurrenthashmap-and-hashtable-in-java
+
+## What is the time complexity of get() operation in ConcurrentHashMap?
+The `get()` operation in `ConcurrentHashMap` is O(1) average case, and O(log n) worst-case (since Java 8) when there are many hash collisions.
+###### Relative links:
++ https://www.baeldung.com/java-collections-complexity
++ https://freedium-mirror.cfd/https://medium.com/@vikas.taank_40391/core-java-fundamentals-a20efdbaf64a
 
 ## What is the synchronized access?
 Synchronized blocks in Java are marked with the synchronized keyword. A synchronized block in Java is synchronized on some object. All synchronized blocks synchronized on the same object can only have one thread executing inside them at the same time. All other threads attempting to enter the synchronized block are blocked until the thread inside the synchronized block exits the block.
