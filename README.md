@@ -169,6 +169,7 @@
 - [Possible enum mapping solutions?](hibernate.md#possible-enum-mapping-solutions)
 - [In which cases LazyInitializationException can occur?](hibernate.md#in-which-cases-lazyinitializationexception-can-occur)
 - [There are three SQL statements in one transaction, during the first one exception occurred on DB level, what will happen with others if you catch the first one?](hibernate.md#there-are-three-sql-statements-in-one-transaction-during-the-first-one-exception-occurred-on-db-level-what-will-happen-with-others-if-you-catch-the-first-one)
+- [What is the N+1 Query Problem? How to Solve the N+1 Query Problem?](hibernate.md#what-is-the-n1-query-problem-how-to-solve-the-n1-query-problem)
 
 ## Git
 - [What is the difference between merge and rebase?](git.md#what-is-the-difference-between-merge-and-rebase)

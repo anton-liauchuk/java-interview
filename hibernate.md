@@ -13,6 +13,7 @@
 - [Possible enum mapping solutions?](#possible-enum-mapping-solutions)
 - [In which cases LazyInitializationException can occur?](#in-which-cases-lazyinizializtion-can-occur)
 - [There are three SQL statements in one transaction, during the first one exception occurred on DB level, what will happen with others if you catch the first one?](#there-are-three-sql-statements-in-one-transaction-during-the-first-one-exception-occurred-on-db-level-what-will-happen-with-others-if-you-catch-the-first-one)
+- [What is the N+1 Query Problem? How to Solve the N+1 Query Problem?](#what-is-the-n1-query-problem-how-to-solve-the-n1-query-problem)
 
 ## What is detached entity?
 - A `new` instance of a persistent class which is not associated with a `Session`, has no representation in the database and no identifier value is considered ***transient*** by Hibernate.
@@ -95,5 +96,15 @@ The Hibernate documentation lists the situations when these two methods are requ
 ## There are three SQL statements in one transaction, during the first one exception occurred on DB level, what will happen with others if you catch the first one?
 All Java code after Exception catching will be normally executed with other statements, but at the moment you want to try to close transaction, it won't commit any of statements, 
 because transaction was marked as "to be rollbacked".
+
+## What is the N+1 Query Problem? How to Solve the N+1 Query Problem?
+N+1 query problem occurs when an application executes one query to fetch a list of records (1 query) and then N additional queries to fetch related data for each record (N queries). Potential solutions:
+- Using `JOIN FETCH`
+- Using `@EntityGraph`
+- Using `@BatchSize` for Lazy Loading Optimization
+- Using Subselect Fetching (`@Fetch(FetchMode.SUBSELECT)`)
+###### Relative links:
+- https://dev.to/devcorner/solving-the-n1-query-problem-in-hibernate-jpa-1ijj
+- https://vladmihalcea.com/n-plus-1-query-problem/
 
 [Home Page](README.md)
