@@ -15,6 +15,7 @@
 - [What is forEach?](#what-is-foreach)
 - [When is it better to use foreach loop instead of Iterable.forEach()?](#when-is-it-better-to-use-foreach-loop-instead-of-iterableforeach)
 - [What is SplitIterator?](#what-is-splititerator)
+- [Why do Java Collections can not directly store Primitives types?](#why-do-java-collections-can-not-directly-store-primitives-types)
 
 ## What is the complexity for get in Hashmap?
 It depends on many things. It's usually O(1), with a decent hash which itself is constant time... but you could have a hash which takes a long time to compute, and if there are multiple items in the hash map which return the same hash code, get will have to iterate over them calling equals on each of them to find a match.
@@ -131,5 +132,12 @@ The deficiencies of Iterable.forEach():
 - https://www.baeldung.com/java-spliterator
 - https://www.geeksforgeeks.org/java-util-interface-spliterator-java8/
 - https://blog.rapid7.com/2015/10/28/java-8-introduction-to-parallelism-and-spliterator/
+
+## Why do Java Collections can not directly store Primitives types?
+It's a combination of two facts:
++ Java primitive types are not reference types (e.g. an int is not an Object)
++ Java does generics using type-erasure of reference types (e.g. a `List<?>` is really a `List<Object>` at run-time)
+###### Relative links:
++ https://stackoverflow.com/questions/2504959/why-can-java-collections-not-directly-store-primitives-types
 
 [Home Page](README.md)

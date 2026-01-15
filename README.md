@@ -55,7 +55,6 @@
 - [Exception Hierarchy?](core.md#exception-hierarchy)
 - [One exception is thrown by catch block and another one is thrown from finally block, which exception will be thrown by method?](core.md#one-exception-is-thrown-by-catch-block-and-another-one-is-thrown-from-finally-block-which-exception-will-be-thrown-by-method)
 - [Is it possible to serialize lambda expression?](core.md#is-it-possible-to-serialize-lambda-expression)
-- [Why can Java Collections not directly store Primitives types?](core.md#why-can-java-collections-not-directly-store-primitives-types)
 - [How is recursion implemented in Java?](core.md#how-is-recursion-implemented-in-java)
 - [Is it needed to document unchecked exceptions?](core.md#is-it-needed-to-document-unchecked-exceptions)
 - [Java Date classes?](core.md#java-date-classes)
@@ -89,6 +88,7 @@
 - [What is forEach?](collections.md#what-is-foreach)
 - [When is it better to use foreach loop instead of Iterable.forEach()?](collections.md#when-is-it-better-to-use-foreach-loop-instead-of-iterableforeach)
 - [What is SplitIterator?](collections.md#what-is-splititerator)
+- [Why do Java Collections can not directly store Primitives types?](collections.md#why-do-java-collections-can-not-directly-store-primitives-types)
 
 ## Concurrency
 - [What is usage of wait/notify methods?](#what-is-usage-of-waitnotify-methods)
