@@ -107,6 +107,7 @@
 - [What is the result of this code?](concurrency.md#what-is-the-result-of-this-code)
 - [Change the code for getting deadlock](concurrency.md#change-the-code-for-getting-deadlock)
 - [What is the Difference between Future and CompletableFuture?](concurrency.md#what-is-the-difference-between-future-and-completablefuture)
+- [How to handle unsuccessful results of CompletableFuture?](concurrency.md#how-to-handle-unsuccessful-results-of-completablefuture)
 - [How do AtomicVariables work?](concurrency.md#how-do-atomicvariables-work)
 - [What is the difference between Runnable and Callable?](concurrency.md#what-is-the-difference-between-runnable-and-callable)
 

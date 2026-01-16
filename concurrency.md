@@ -16,6 +16,7 @@
 - [What is the result of this code?](#what-is-the-result-of-this-code)
 - [Change the code for getting deadlock](#change-the-code-for-getting-deadlock)
 - [What is the Difference between Future and CompletableFuture?](#what-is-the-difference-between-future-and-completablefuture)
+- [How to handle unsuccessful results of CompletableFuture?](#how-to-handle-unsuccessful-results-of-completablefuture)
 - [How do AtomicVariables work?](#how-do-atomicvariables-work)
 
 ## What is usage of wait/notify methods?
@@ -180,6 +181,17 @@ Possible solution - adding delays inside synchronized blocks, the example is in 
 ###### Relative links:
 - https://stackoverflow.com/questions/35329845/difference-between-completablefuture-future-and-rxjavas-observable
 - https://www.youtube.com/watch?v=ImtZgX1nmr8
+
+## How to handle unsuccessful results of CompletableFuture?
+- `.exceptionally()` - primary method for handling exceptions
+- `.handle()` - for handling both success and failure
+###### Relative links:
+- https://concurrencydeepdives.com/guide-completable-future/
+
+## How do AtomicVariables work?
+Long story short: they use compare and swap algorithm.
+###### Relative links:
+- https://www.baeldung.com/java-atomic-variables
 
 [Home Page](README.md)
 
