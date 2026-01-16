@@ -50,7 +50,6 @@
 - [Serialization?](core.md#serialization)
 - [Deserialization after changes in class? Possible issues?](core.md#deserialization-after-changes-in-class-possible-issues)
 - [What is the difference between cohesion and coupling?](core.md#what-is-the-difference-between-cohesion-and-coupling)
-- [@Override annotation?](core.md#override-annotation)
 - [Java modifiers?](core.md#java-modifiers)
 - [Exception Hierarchy?](core.md#exception-hierarchy)
 - [One exception is thrown by catch block and another one is thrown from finally block, which exception will be thrown by method?](core.md#one-exception-is-thrown-by-catch-block-and-another-one-is-thrown-from-finally-block-which-exception-will-be-thrown-by-method)

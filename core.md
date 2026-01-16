@@ -27,7 +27,6 @@
 - [Serialization?](#serialization)
 - [Deserialization after changes in class? Possible issues?](#deserialization-after-changes-in-class-possible-issues)
 - [What is the difference between cohesion and coupling?](#what-is-the-difference-between-cohesion-and-coupling)
-- [@Override annotation?](#override-annotation)
 - [Java modifiers?](#java-modifiers)
 - [Exception Hierarchy?](#exception-hierarchy)
 - [One exception is thrown by catch block and another one is thrown from finally block, which exception will be thrown by method?](#one-exception-is-thrown-by-catch-block-and-another-one-is-thrown-from-finally-block-which-exception-will-be-thrown-by-method)
@@ -234,10 +233,6 @@ The method successfully alters the value of pnt1, even though it is passed by va
 ## What is the difference between cohesion and coupling?
 ###### Relative links:
 - https://stackoverflow.com/questions/3085285/difference-between-cohesion-and-coupling
-
-## @Override annotation?
-###### Relative links:
-- https://www.tutorialspoint.com/importance-of-override-annotation-in-java
 
 ## Java modifiers?
 ###### Relative links:
