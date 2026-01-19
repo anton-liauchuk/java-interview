@@ -17,6 +17,8 @@
 - [Change the code for getting deadlock](#change-the-code-for-getting-deadlock)
 - [What is the Difference between Future and CompletableFuture?](#what-is-the-difference-between-future-and-completablefuture)
 - [How to handle unsuccessful results of CompletableFuture?](#how-to-handle-unsuccessful-results-of-completablefuture)
+- [Which executor implementation is used by default when you don't specify an executor for CompletableFuture methods like supplyAsync() or runAsync()?](#which-executor-implementation-is-used-by-default-when-you-dont-specify-an-executor-for-completablefuture-methods-like-supplyasync-or-runasync)
+- [What are the main methods in CompletableFuture that allow you to define and execute asynchronous tasks?](#what-are-the-main-methods-in-completablefuture-that-allow-you-to-define-and-execute-asynchronous-tasks)
 - [How do AtomicVariables work?](#how-do-atomicvariables-work)
 
 ## What is usage of wait/notify methods?
@@ -193,14 +195,14 @@ When you don’t specify an executor, then Java’s ForkJoinPool‘s default exe
 ###### Relative links:
 - https://concurrencydeepdives.com/guide-completable-future/
 
+## What are the main methods in CompletableFuture that allow you to define and execute asynchronous tasks?
+runAsync / supplyAsync are the main methods
+###### Relative links:
+- https://concurrencydeepdives.com/guide-completable-future/
+
 ## How do AtomicVariables work?
 Long story short: they use compare and swap algorithm.
 ###### Relative links:
 - https://www.baeldung.com/java-atomic-variables
 
 [Home Page](README.md)
-
-## How do AtomicVariables work?
-Long story short: they use compare and swap algorithm.
-###### Relative links:
-- https://www.baeldung.com/java-atomic-variables
