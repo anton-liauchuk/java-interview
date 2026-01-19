@@ -188,6 +188,11 @@ Possible solution - adding delays inside synchronized blocks, the example is in 
 ###### Relative links:
 - https://concurrencydeepdives.com/guide-completable-future/
 
+## Which executor implementation is used by default when you don't specify an executor for CompletableFuture methods like supplyAsync() or runAsync()?
+When you don’t specify an executor, then Java’s ForkJoinPool‘s default executor is used.
+###### Relative links:
+- https://concurrencydeepdives.com/guide-completable-future/
+
 ## How do AtomicVariables work?
 Long story short: they use compare and swap algorithm.
 ###### Relative links:
