@@ -151,6 +151,9 @@
 - [How does @Transactional annotation work?](spring.md#how-does-transactional-annotation-work)
 - [How to use @NamedEntityGraph with Spring Data JPA?](spring.md#how-to-use-namedentitygraph-with-spring-data-jpa)
 
+## Quarkus
+- [Why does Quarkus have faster startup time, lower memory footprint, and better native image support compared to Spring Boot?](quarkus.md#why-does-quarkus-have-faster-startup-time-lower-memory-footprint-and-better-native-image-support-compared-to-spring-boot)
+
 ## Servlet
 - [What is servlet?](servlet.md#what-is-servlet)
 - [What is difference between parameters and attributes?](servlet.md#what-is-difference-between-parameters-and-attributes)
