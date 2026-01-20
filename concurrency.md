@@ -20,6 +20,7 @@
 - [Which executor implementation is used by default when you don't specify an executor for CompletableFuture methods like supplyAsync() or runAsync()?](#which-executor-implementation-is-used-by-default-when-you-dont-specify-an-executor-for-completablefuture-methods-like-supplyasync-or-runasync)
 - [What are the main methods in CompletableFuture that allow you to define and execute asynchronous tasks?](#what-are-the-main-methods-in-completablefuture-that-allow-you-to-define-and-execute-asynchronous-tasks)
 - [How do AtomicVariables work?](#how-do-atomicvariables-work)
+- [How do you choose between using Virtual Threads (Project Loom) and Reactive Streams frameworks (like Reactor, Mutiny, Akka Streams) for concurrent programming in Java?](#how-do-you-choose-between-using-virtual-threads-project-loom-and-reactive-streams-frameworks-like-reactor-mutiny-akka-streams-for-concurrent-programming-in-java)
 
 ## What is usage of wait/notify methods?
 ***wait().*** It tells the calling thread to give up the lock and go to sleep until some other thread enters the same monitor and calls notify().
@@ -204,5 +205,11 @@ runAsync / supplyAsync are the main methods
 Long story short: they use compare and swap algorithm.
 ###### Relative links:
 - https://www.baeldung.com/java-atomic-variables
+
+## How do you choose between using Virtual Threads (Project Loom) and Reactive Streams frameworks (like Reactor, Mutiny, Akka Streams) for concurrent programming in Java?
+For new projects, consider virtual threads for simpler code unless you specifically need reactive features like backpressure or are using non-blocking libraries. For existing reactive applications, continue with reactive unless complexity is causing issues.
+###### Relative links:
+- https://javapro.io/2025/04/04/from-reactive-streams-to-virtual-threads/
+- https://www.javacodegeeks.com/2025/08/reactive-vs-virtual-thread-patterns-when-to-mix-project-reactor-and-structured-concurrency.html
 
 [Home Page](README.md)

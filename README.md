@@ -112,6 +112,7 @@
 - [What are the main methods in CompletableFuture that allow you to define and execute asynchronous tasks?](concurrency.md#what-are-the-main-methods-in-completablefuture-that-allow-you-to-define-and-execute-asynchronous-tasks)
 - [How do AtomicVariables work?](concurrency.md#how-do-atomicvariables-work)
 - [What is the difference between Runnable and Callable?](concurrency.md#what-is-the-difference-between-runnable-and-callable)
+- [How do you choose between using Virtual Threads (Project Loom) and Reactive Streams frameworks (like Reactor, Mutiny, Akka Streams) for concurrent programming in Java?](concurrency.md#how-do-you-choose-between-using-virtual-threads-project-loom-and-reactive-streams-frameworks-like-reactor-mutiny-akka-streams-for-concurrent-programming-in-java)
 
 ## Spring
 - [How make spring service thread-safe?](spring.md#how-make-spring-service-thread-safe)
