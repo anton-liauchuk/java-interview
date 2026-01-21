@@ -134,6 +134,7 @@
 - [What are the possible ways of configurations in Spring?](spring.md#what-are-the-possible-ways-of-configurations-in-spring)
 - [What is the lookup method?](spring.md#what-is-the-lookup-method)
 - [What is declarative transaction in Spring?](spring.md#what-is-declarative-transaction-in-spring)
+- [What are the types of proxy in Spring? Where does each type used?](spring.md#what-are-the-types-of-proxy-in-spring-where-does-each-type-used)
 - [What creates a proxy?](spring.md#what-creates-a-proxy)
 - [Does @transactional method work in the case of execution in the same class?](spring.md#does-transactional-method-work-in-the-case-of-execution-in-the-same-class)
 - [What is environment?](spring.md#what-is-environment)

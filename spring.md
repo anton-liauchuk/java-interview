@@ -18,6 +18,7 @@
 - [What are the possible ways of configurations in Spring?](#what-are-the-possible-ways-of-configurations-in-spring)
 - [What is the lookup method?](#what-is-the-lookup-method)
 - [What is declarative transaction in Spring?](#what-is-declarative-transaction-in-spring)
+- [What are the types of proxy in Spring? Where does each type used?](#what-are-the-types-of-proxy-in-spring-where-does-each-type-used)
 - [What creates a proxy?](#what-creates-a-proxy)
 - [Does @transactional method work in the case of execution in the same class?](#does-transactional-method-work-in-the-case-of-execution-in-the-same-class)
 - [What is environment?](#what-is-environment)
@@ -162,6 +163,14 @@ The getter method will return us the reference that is been set but suppose you 
 5. Preferred when working with large amount of Transaction logic.
 ###### Relative links:
 + https://stackoverflow.com/questions/11222103/declarative-or-programmatic-transaction-in-spring
+
+## What are the types of proxy in Spring? Where does each type used?
+Spring uses two main proxy types:
+- **JDK Dynamic Proxies** - Used when beans implement interfaces. JDK Dynamic Proxies use standard Java reflection, making it straightforward, generally more lightweight compared to CGLIB proxies.
+- **CGLIB Proxies** - Used when beans don't implement interfaces or when forced via configuration. CGLIB Proxies can only proxy non-final classes and non-final methods. Due to dynamic subclass creation, this may involve more resource consumption.
+###### Relative links:
++ https://docs.spring.io/spring-framework/reference/core/aop/proxying.html
++ https://freedium-mirror.cfd/https://medium.com/@mahammadkhalilov/understanding-spring-proxies-jdk-dynamic-proxy-vs-cglib-proxy-7d76bf5b85ac
 
 ## What creates a proxy?
 After the bean instances are created they are run through a series of BeanPostProcessors - Based on the AOP advice, the proxies are created by a BeanPostProcessor called AnnotationAwareAspectJAutoProxyCreator (or possibly its subclasses)
