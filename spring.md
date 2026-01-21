@@ -20,7 +20,7 @@
 - [What is declarative transaction in Spring?](#what-is-declarative-transaction-in-spring)
 - [What are the types of proxy in Spring? Where does each type used?](#what-are-the-types-of-proxy-in-spring-where-does-each-type-used)
 - [What creates a proxy?](#what-creates-a-proxy)
-- [Does @transactional method work in the case of execution in the same class?](#does-transactional-method-work-in-the-case-of-execution-in-the-same-class)
+- [What is the self-invocation problem with Spring AOP proxies, and how does it affect features like @Transactional?](#what-is-the-self-invocation-problem-with-spring-aop-proxies-and-how-does-it-affect-features-like-transactional)
 - [What is environment?](#what-is-environment)
 - [How does auto-configuration work?](#how-does-auto-configuration-work)
 - [What is the difference between @Resource and @Autowired annotations?](#what-is-the-difference-between-resource-and-autowired-annotations)
@@ -179,10 +179,13 @@ After the bean instances are created they are run through a series of BeanPostPr
 + https://dzone.com/articles/spring-pitfalls-proxying
 + https://ntsim.uk/posts/a-closer-look-at-spring-proxies
 
-## Does @transactional method work in the case of execution in the same class?
-The problem here is, that Spring's AOP proxies don't extend but rather wrap your service instance to intercept calls. This has the effect, that any call to "this" from within your service instance is directly invoked on that instance and cannot be intercepted by the wrapping proxy (the proxy is not even aware of any such call).
+## What is the self-invocation problem with Spring AOP proxies, and how does it affect features like @Transactional?
+Self-invocation occurs when a method in a Spring-managed bean calls another method within the same bean. The problem is that AOP proxies don't intercept these internal calls. To address that, you have the following options:
+- Avoid self invocation - the best approach
+- Inject a self reference
+- Use `AopContext.currentProxy()` - not recommended
 ###### Relative links:
-+ https://stackoverflow.com/questions/3423972/spring-transaction-method-call-by-the-method-within-the-same-class-does-not-wo
+- https://docs.spring.io/spring-framework/reference/core/aop/proxying.html#aop-understanding-aop-proxies
 
 ## What is environment?
 Interface representing the environment in which the current application is running. Models two key aspects of the application environment: profiles and properties. Methods related to property access are exposed via the PropertyResolver superinterface.
