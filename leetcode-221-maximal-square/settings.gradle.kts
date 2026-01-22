@@ -1,0 +1,1 @@
+rootProject.name = "leetcode-221-maximal-square"
