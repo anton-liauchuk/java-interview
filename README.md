@@ -20,6 +20,7 @@
 - [Transactions](#transactions)
 - [RabbitMQ](#rabbitmq)
 - [GraalVM](#graalvm)
+- [System Design](#system-design)
 
 ## Core
 - [What is the difference between JDK and JRE?](core.md#what-is-the-difference-between-jdk-and-jre)
@@ -328,3 +329,6 @@
 ## GraalVM
 - [What is GraalVM Native Image?](graalvm.md#what-is-graalvm-native-image)
 - [Where would be better to use AOT cache feature and where would be better to use GraalVM Native Image?](graalvm.md#where-would-be-better-to-use-aot-cache-feature-and-where-would-be-better-to-use-graalvm-native-image)
+
+## System Design
+- [Design a Messenger](systemdesign.md#design-a-messenger)
