@@ -7,7 +7,6 @@
 - [What is the difference between @Service and @Bean](#what-is-the-difference-between-service-and-bean)
 - [How to call a method after bean initialization?](#how-to-call-a-method-after-bean-initialization)
 - [What is the default scope?](#what-is-the-default-scope)
-- [What is the prototype scope?](#what-is-the-prototype-scope)
 - [What are the possible ways of Dependency Injection?](#what-are-the-possible-ways-of-dependency-injection)
 - [Where better to use dependency injection via constructor? Where via setter?](#where-better-to-use-dependency-injection-via-constructor-where-via-setter)
 - [How to catch the exceptions for controllers?](#how-to-catch-the-exceptions-for-controllers)
@@ -67,10 +66,11 @@ The responsibilities of IoC container are:
 + ***singleton.*** Scopes a single bean definition to a single object instance per Spring IoC container.
 + ***prototype.*** Scopes a single bean definition to any number of object instances.
 + ***request.***  Scopes a single bean definition to the lifecycle of a single HTTP request; that is each and every HTTP request will have its own instance of a bean created off the back of a single bean definition. Only valid in the context of a web-aware Spring ApplicationContext.
-+ ***session.*** Scopes a single bean definition to the lifecycle of a HTTP Session. Only valid in the context of a web-aware Spring ApplicationContext.
-+ ***global session.*** Scopes a single bean definition to the lifecycle of a global HTTP Session. Typically only valid when used in a portlet context. Only valid in the context of a web-aware Spring ApplicationContext.
++ ***session.*** Scopes a single bean definition to the lifecycle of a HTTP Session. Only valid in the context of a web-aware Spring `ApplicationContext`.
++ ***application.*** Scopes a single bean definition to the lifecycle of a `ServletContext`. Only valid in the context of a web-aware Spring `ApplicationContext`.
++ ***websocket.*** Scopes a single bean definition to the lifecycle of a `WebSocket`. Only valid in the context of a web-aware Spring `ApplicationContext`.
 ###### Relative links:
-+ https://docs.spring.io/spring/docs/3.0.0.M3/reference/html/ch04s04.html
++ https://docs.spring.io/spring-framework/reference/core/beans/factory-scopes.html
 
 ## What is the difference @Service between @Component?
 Apart from the fact that it's used to indicate, that it's holding the business logic, there’s nothing else noticeable in this annotation; but who knows, Spring may add some additional exceptional in future.
@@ -92,12 +92,7 @@ Apart from the fact that it's used to indicate, that it's holding the business l
 ## What is the default scope?
 singleton
 ###### Relative links:
-+ https://www.tutorialspoint.com/spring/spring_bean_scopes.htm
-
-## What is the prototype scope?
-Scopes a single bean definition to any number of object instances.
-###### Relative links:
-+ https://docs.spring.io/spring/docs/3.0.0.M3/reference/html/ch04s04.html
++ https://docs.spring.io/spring-framework/reference/core/beans/factory-scopes.html
 
 ## What are the possible ways of Dependency Injection?
 + Constructor-Based Dependency Injection;

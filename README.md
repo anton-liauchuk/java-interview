@@ -124,7 +124,6 @@
 - [What is the difference between @Service and @Bean](spring.md#what-is-the-difference-between-service-and-bean)
 - [How to call a method after bean initialization?](spring.md#how-to-call-a-method-after-bean-initialization)
 - [What is the default scope?](spring.md#what-is-the-default-scope)
-- [What is the prototype scope?](spring.md#what-is-the-prototype-scope)
 - [What are the possible ways of Dependency Injection?](spring.md#what-are-the-possible-ways-of-dependency-injection)
 - [Where better to use dependency injection via constructor? Where via setter?](spring.md#where-better-to-use-dependency-injection-via-constructor-where-via-setter)
 - [How to catch the exceptions for controllers?](spring.md#how-to-catch-the-exceptions-for-controllers)
