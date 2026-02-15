@@ -1,13 +1,21 @@
-package org.example;
+package leetcode;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class MaximalSquareTest {
+class MaximalSquareBruteForceTest {
+
+    private MaximalSquareBruteForce maximalSquareBruteForce;
+
+    @BeforeEach
+    void setUp() {
+        maximalSquareBruteForce = new MaximalSquareBruteForce();
+    }
 
     @Test
-    void testExample1() {
+    void testLeetcodeExample1() {
         // given
         char[][] matrix = {
                 {'1', '0', '1', '0', '0'},
@@ -15,41 +23,38 @@ class MaximalSquareTest {
                 {'1', '1', '1', '1', '1'},
                 {'1', '0', '0', '1', '0'}
         };
-        var solution = new Solution();
 
         // when
-        var result = solution.maximalSquare(matrix);
+        var result = maximalSquareBruteForce.maximalSquare(matrix);
 
         // then
         assertThat(result).isEqualTo(4);
     }
 
     @Test
-    void test2x2Square() {
+    void testLeetcodeExample2() {
         // given
         char[][] matrix = {
                 {'0', '1'},
                 {'1', '0'}
         };
-        var solution = new Solution();
 
         // when
-        var result = solution.maximalSquare(matrix);
+        var result = maximalSquareBruteForce.maximalSquare(matrix);
 
         // then
         assertThat(result).isEqualTo(1);
     }
 
     @Test
-    void test0() {
+    void testLeetcodeExample3() {
         // given
         char[][] matrix = {
                 {'0'}
         };
-        Solution solution = new Solution();
 
         // when
-        var result = solution.maximalSquare(matrix);
+        var result = maximalSquareBruteForce.maximalSquare(matrix);
 
         // then
         assertThat(result).isEqualTo(0);
