@@ -148,6 +148,7 @@
 - [Is it required to put @Repository annotation in the case of extending JpaRepository?](spring.md#is-it-required-to-put-repository-annotation-in-the-case-of-extending-jparepository)
 - [How ResponseEntity can be used?](spring.md#how-responseentity-can-be-used)
 - [Does entity from @Transactional method can be updated without executing save method?](spring.md#does-entity-from-transactional-method-can-be-updated-without-executing-save-method)
+- [What is the difference between physical and logical transactions?](spring.md#what-is-the-difference-between-physical-and-logical-transactions)
 - [Is it possible to have only one transaction in the case of executing several @Transactional methods?](spring.md#is-it-possible-to-have-only-one-transaction-in-the-case-of-executing-several-transactional-methods)
 - [Anti-patterns of bean validation?](spring.md#anti-patterns-of-bean-validation)
 - [Is it good practice to define interface for Spring bean?](spring.md#is-it-good-practice-to-define-interface-for-spring-bean)

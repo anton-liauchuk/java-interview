@@ -31,6 +31,7 @@
 - [Is it required to put @Repository annotation in the case of extending JpaRepository?](#is-it-required-to-put-repository-annotation-in-the-case-of-extending-jparepository)
 - [How ResponseEntity can be used?](#how-responseentity-can-be-used)
 - [Does entity from @Transactional method can be updated without executing save method?](#does-entity-from-transactional-method-can-be-updated-without-executing-save-method)
+- [What is the difference between physical and logical transactions?](#what-is-the-difference-between-physical-and-logical-transactions)
 - [Is it possible to have only one transaction in the case of executing several @Transactional methods?](#is-it-possible-to-have-only-one-transaction-in-the-case-of-executing-several-transactional-methods)
 - [Anti-patterns of bean validation?](#anti-patterns-of-bean-validation)
 - [Is it good practice to define interface for Spring bean?](#is-it-good-practice-to-define-interface-for-spring-bean)
@@ -250,6 +251,13 @@ ResponseEntity is meant to represent the entire HTTP response. You can control a
 Yes, because hibernate will automatically detect changes made to persistent entities and update the database accordingly.
 ###### Relative links:
 - https://stackoverflow.com/questions/8190926/transactional-saves-without-calling-update-method
+
+## What is the difference between physical and logical transactions?
+Physical Transactions are actual JDBC transactions.
+
+Logical Transactions are the (potentially nested) `@Transactional`-annotated (Spring) methods
+###### Relative links:
+- https://www.marcobehler.com/guides/spring-transaction-management-transactional-in-depth
 
 ## Is it possible to have only one transaction in the case of executing several @Transactional methods?
 Yes, it depends on the propagation attribute. ***PROPAGATION_REQUIRED*** - the same transaction for both methods, ***PROPAGATION_REQUIRES_NEW*** starts a new transaction.
