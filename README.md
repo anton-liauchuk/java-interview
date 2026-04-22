@@ -134,6 +134,7 @@
 - [What are the possible ways of configurations in Spring?](spring.md#what-are-the-possible-ways-of-configurations-in-spring)
 - [What is the lookup method?](spring.md#what-is-the-lookup-method)
 - [What is declarative transaction in Spring?](spring.md#what-is-declarative-transaction-in-spring)
+- [Are there any potential differences between the declarative and programmatic ways of using transactions in Spring? Which is preferable?](spring.md#are-there-any-potential-differences-between-the-declarative-and-programmatic-ways-of-using-transactions-in-spring-which-is-preferable)
 - [What are the types of proxy in Spring? Where does each type used?](spring.md#what-are-the-types-of-proxy-in-spring-where-does-each-type-used)
 - [What creates a proxy?](spring.md#what-creates-a-proxy)
 - [What is the self-invocation problem with Spring AOP proxies, and how does it affect features like @Transactional?](spring.md#what-is-the-self-invocation-problem-with-spring-aop-proxies-and-how-does-it-affect-features-like-transactional)
