@@ -21,7 +21,6 @@ A **transaction** is a sequence of operations performed (using one or more SQL s
 - ***Durable:*** When the transaction is completed, effects of the modifications performed by the transaction must be permanent in the system.
 ###### Relative links:
 - https://www.w3resource.com/sql/controlling-transactions.php
-- https://github.com/enhorse/java-interview/blob/master/db.md#%D0%BD%D0%B0%D0%B7%D0%BE%D0%B2%D0%B8%D1%82%D0%B5-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%8B%D0%B5-%D1%81%D0%B2%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%B0-%D1%82%D1%80%D0%B0%D0%BD%D0%B7%D0%B0%D0%BA%D1%86%D0%B8%D0%B8
 - https://habr.com/ru/post/446662/
 - https://vladmihalcea.com/a-beginners-guide-to-acid-and-database-transactions/
 
@@ -36,6 +35,7 @@ A **transaction** is a sequence of operations performed (using one or more SQL s
 - ***Repeatable Read*** – This is the most restrictive isolation level. The transaction holds read locks on all rows it references and writes locks on all rows it inserts, updates, or deletes. Since other transaction cannot read, update or delete these rows, consequently it avoids non-repeatable read.
 - ***Serializable*** – This is the Highest isolation level. A serializable execution is guaranteed to be serializable. Serializable execution is defined to be an execution of operations in which concurrently executing transactions appears to be serially executing.
 ###### Relative links:
++ https://vladmihalcea.com/a-beginners-guide-to-acid-and-database-transactions/
 + https://www.geeksforgeeks.org/transaction-isolation-levels-dbms/
 
 ## What are the possible issues in the case of parallel access by transactions?
@@ -43,6 +43,7 @@ A **transaction** is a sequence of operations performed (using one or more SQL s
 - ***Non Repeatable read*** – Non Repeatable read occurs when a transaction reads same row twice, and get a different value each time. For example, suppose transaction T1 reads data. Due to concurrency, another transaction T2 updates the same data and commit, Now if transaction T1 rereads the same data, it will retrieve a different value.
 - ***Phantom Read*** – Phantom Read occurs when two same queries are executed, but the rows retrieved by the two, are different. For example, suppose transaction T1 retrieves a set of rows that satisfy some search criteria. Now, Transaction T2 generates some new rows that match the search criteria for transaction T1. If transaction T1 re-executes the statement that reads the rows, it gets a different set of rows this time.
 ###### Relative links:
++ https://vladmihalcea.com/a-beginners-guide-to-acid-and-database-transactions/
 + https://www.geeksforgeeks.org/transaction-isolation-levels-dbms/
 
 ## What are possible options for implementing transactions in microservices

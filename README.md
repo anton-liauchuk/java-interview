@@ -112,7 +112,10 @@
 - [Which executor implementation is used by default when you don't specify an executor for CompletableFuture methods like supplyAsync() or runAsync()?](concurrency.md#which-executor-implementation-is-used-by-default-when-you-dont-specify-an-executor-for-completablefuture-methods-like-supplyasync-or-runasync)
 - [What are the main methods in CompletableFuture that allow you to define and execute asynchronous tasks?](concurrency.md#what-are-the-main-methods-in-completablefuture-that-allow-you-to-define-and-execute-asynchronous-tasks)
 - [How do AtomicVariables work?](concurrency.md#how-do-atomicvariables-work)
-- [What is the difference between Runnable and Callable?](concurrency.md#what-is-the-difference-between-runnable-and-callable)
+- [What is the difference between AtomicInteger and synchronized in Java, and when should you use each?](concurrency.md#what-is-the-difference-between-atomicinteger-and-synchronized-in-java-and-when-should-you-use-each)
+- [What do virtual threads mean?](concurrency.md#what-do-virtual-threads-mean)
+- [What does pinning mean for virtual threads, which cases introduce it, and how has the behavior changed across Java versions?](concurrency.md#what-does-pinning-mean-for-virtual-threads-which-cases-introduce-it-and-how-has-the-behavior-changed-across-java-versions)
+- [What are the best practices for working with ThreadLocal when using virtual threads?](concurrency.md#what-are-the-best-practices-for-working-with-threadlocal-when-using-virtual-threads)
 - [How do you choose between using Virtual Threads (Project Loom) and Reactive Streams frameworks (like Reactor, Mutiny, Akka Streams) for concurrent programming in Java?](concurrency.md#how-do-you-choose-between-using-virtual-threads-project-loom-and-reactive-streams-frameworks-like-reactor-mutiny-akka-streams-for-concurrent-programming-in-java)
 
 ## Spring
@@ -120,12 +123,14 @@
 - [What is bean?](spring.md#what-is-bean)
 - [How bean gets into the container?](spring.md#how-bean-gets-into-the-container)
 - [What are the possible bean scopes?](spring.md#what-are-the-possible-bean-scopes)
-- [What is the difference @Service between @Component?](spring.md#what-is-the-difference-service-between-component)
+- [How to inject a prototype bean into a singleton?](spring.md#how-to-inject-a-prototype-bean-into-a-singleton)
+- [What is the difference between @Component, @Service, @Repository, and @Controller?](spring.md#what-is-the-difference-between-component-service-repository-and-controller)
 - [What is the difference between @Service and @Bean](spring.md#what-is-the-difference-between-service-and-bean)
 - [How to call a method after bean initialization?](spring.md#how-to-call-a-method-after-bean-initialization)
 - [What is the default scope?](spring.md#what-is-the-default-scope)
 - [What are the possible ways of Dependency Injection?](spring.md#what-are-the-possible-ways-of-dependency-injection)
 - [Where better to use dependency injection via constructor? Where via setter?](spring.md#where-better-to-use-dependency-injection-via-constructor-where-via-setter)
+- [How does Spring detect circular dependencies?](spring.md#how-does-spring-detect-circular-dependencies)
 - [How to catch the exceptions for controllers?](spring.md#how-to-catch-the-exceptions-for-controllers)
 - [What is the difference between BeanFactory and FactoryBean?](spring.md#what-is-the-difference-between-beanfactory-and-factorybean)
 - [What is the difference Spring and Spring Boot?](spring.md#what-is-the-difference-spring-and-spring-boot)
@@ -261,6 +266,7 @@
 - [What is Serverless](architecture.md#what-is-serverless)
 - [What is the difference between native code, machine code and assembly code?](architecture.md#what-is-the-difference-between-native-code-machine-code-and-assembly-code)
 - [What is the difference between sharding and partitioning for databases?](architecture.md#what-is-the-difference-between-sharding-and-partitioning-for-databases)
+- [What is the key difference between 2-phase commit and saga for distributed transactions?](architecture.md#what-is-the-key-difference-between-2-phase-commit-and-saga-for-distributed-transactions)
 
 ## REST
 - [What is rest architecture? What are the requirements?](rest.md#what-is-rest-architecture-what-are-the-requirements)

@@ -3,12 +3,14 @@
 - [What is bean?](#what-is-bean)
 - [How bean gets into the container?](#how-bean-gets-into-the-container)
 - [What are the possible bean scopes?](#what-are-the-possible-bean-scopes)
-- [What is the difference @Service between @Component?](#what-is-the-difference-service-between-component)
+- [How to inject a prototype bean into a singleton?](#how-to-inject-a-prototype-bean-into-a-singleton)
+- [What is the difference between @Component, @Service, @Repository, and @Controller?](#what-is-the-difference-between-component-service-repository-and-controller)
 - [What is the difference between @Service and @Bean](#what-is-the-difference-between-service-and-bean)
 - [How to call a method after bean initialization?](#how-to-call-a-method-after-bean-initialization)
 - [What is the default scope?](#what-is-the-default-scope)
 - [What are the possible ways of Dependency Injection?](#what-are-the-possible-ways-of-dependency-injection)
 - [Where better to use dependency injection via constructor? Where via setter?](#where-better-to-use-dependency-injection-via-constructor-where-via-setter)
+- [How does Spring detect circular dependencies?](#how-does-spring-detect-circular-dependencies)
 - [How to catch the exceptions for controllers?](#how-to-catch-the-exceptions-for-controllers)
 - [What is the difference between BeanFactory and FactoryBean?](#what-is-the-difference-between-beanfactory-and-factorybean)
 - [What is the difference Spring and Spring Boot?](#what-is-the-difference-spring-and-spring-boot)
@@ -74,10 +76,23 @@ The responsibilities of IoC container are:
 ###### Relative links:
 + https://docs.spring.io/spring-framework/reference/core/beans/factory-scopes.html
 
-## What is the difference @Service between @Component?
-Apart from the fact that it's used to indicate, that it's holding the business logic, there’s nothing else noticeable in this annotation; but who knows, Spring may add some additional exceptional in future.
+## How to inject a prototype bean into a singleton?
+Direct injection makes the singleton bean keep a single prototype instance, so it's not recreated each time. To get a new prototype bean on every access, use one of these methods:
++ ObjectFactory / Provider – Inject ObjectFactory<T> or Provider<T> and call getObject()/get() to fetch a new instance each time.
++ @Lookup – Annotate a method with @Lookup; Spring will override it to return a new prototype bean every time.
++ Use @Scope(value = "prototype", proxyMode = ScopedProxyMode.TARGET_CLASS).
 ###### Relative links:
-+ https://stackoverflow.com/questions/6827752/whats-the-difference-between-component-repository-service-annotations-in
++ https://dev.to/anh_trntun_4732cf3d299/injecting-a-prototype-bean-into-a-singleton-in-spring-328g
++ https://docs.spring.io/spring-framework/reference/core/beans/dependencies/factory-method-injection.html
+
+## What is the difference between @Component, @Service, @Repository, and @Controller?
+The main difference is their specialized roles in a layered architecture:
++ `@Component` — A generic stereotype for any Spring-managed bean.
++ `@Service` — A specialization of `@Component` for the business logic layer. Using it over `@Component` is better practice for service classes as it clarifies intent and makes them ideal targets for aspects.
++ `@Repository` — A specialization of `@Component` for the data access layer that also provides automatic exception translation.
++ `@Controller` — A specialization of `@Component` for the presentation layer, used alongside `@RequestMapping` to handle HTTP requests
+###### Relative links:
++ https://docs.spring.io/spring/reference/core/beans/classpath-scanning.html#beans-stereotype-annotations
 
 ## What-is-the-difference-between-service-and-bean
 @Bean annotation is method-level and is used in configuration classes to fine tune special bean and add it to IoC container. @Service annotation is class-level and is used to show Spring that this class has to be managed by IoC container. 
@@ -109,6 +124,13 @@ singleton
 + optional dependencies via setter;
 ###### Relative links:
 + https://www.dariawan.com/tutorials/spring/constructor-vs-setter-dependency-injection/
+
+## How does Spring detect circular dependencies?
+Spring Boot manages bean creation through the `ApplicationContext`, which acts as a container for all defined beans. When the application starts, Spring Boot scans the classpath for components marked with `@Component`, `@Service`, `@Repository`, or those manually registered using `@Bean` in a `@Configuration` class. As it processes these beans, it builds a dependency graph that determines the relationships between them.
+
+During initialization, Spring Boot follows a structured lifecycle where it resolves dependencies before fully creating a bean. It does this using a singleton factory, which temporarily holds partially created beans to handle dependencies between them. However, if two beans require each other during instantiation, Spring Boot detects a cycle and throws a `BeanCurrentlyInCreationException`.
+###### Relative links:
++ https://medium.com/@AlexanderObregon/the-mechanics-behind-how-spring-boot-handles-dependency-cycles-in-bean-creation-e57c08a5692d
 
 ## How to catch the exceptions for controllers?
 ***ExceptionHandler*** is a Spring annotation that provides a mechanism to treat exceptions that are thrown during execution of handlers (Controller operations). This annotation, if used on methods of controller classes, will serve as the entry point for handling exceptions thrown within this controller only. Altogether, the most common way is to use @ExceptionHandler on methods of @ControllerAdvice classes so that the exception handling will be applied globally or to a subset of controllers.
@@ -278,6 +300,7 @@ Yes, it depends on the propagation attribute. ***PROPAGATION_REQUIRED*** - the s
 - https://dzone.com/articles/spring-pitfalls-proxying
 
 ## How does @Transactional annotation work?
+The `@Transactional` annotation in Spring works by using AOP to wrap the annotated method (or class) in a transactional proxy. When the method is called, Spring either starts a new transaction or joins an existing one (based on propagation settings), executes the method logic, and then commits the transaction if no exception occurs. If a runtime exception (or a specified checked exception) is thrown, Spring rolls back the transaction. The actual transaction management is delegated to a `PlatformTransactionManager`.
 ###### Relative links:
 - https://www.marcobehler.com/guides/spring-transaction-management-transactional-in-depth
 

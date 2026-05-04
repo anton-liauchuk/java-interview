@@ -20,6 +20,10 @@
 - [Which executor implementation is used by default when you don't specify an executor for CompletableFuture methods like supplyAsync() or runAsync()?](#which-executor-implementation-is-used-by-default-when-you-dont-specify-an-executor-for-completablefuture-methods-like-supplyasync-or-runasync)
 - [What are the main methods in CompletableFuture that allow you to define and execute asynchronous tasks?](#what-are-the-main-methods-in-completablefuture-that-allow-you-to-define-and-execute-asynchronous-tasks)
 - [How do AtomicVariables work?](#how-do-atomicvariables-work)
+- [What is the difference between AtomicInteger and synchronized in Java, and when should you use each?](#what-is-the-difference-between-atomicinteger-and-synchronized-in-java-and-when-should-you-use-each)
+- [What do virtual threads mean?](#what-do-virtual-threads-mean)
+- [What does pinning mean for virtual threads, which cases introduce it, and how has the behavior changed across Java versions?](#what-does-pinning-mean-for-virtual-threads-which-cases-introduce-it-and-how-has-the-behavior-changed-across-java-versions)
+- [What are the best practices for working with ThreadLocal when using virtual threads?](#what-are-the-best-practices-for-working-with-threadlocal-when-using-virtual-threads)
 - [How do you choose between using Virtual Threads (Project Loom) and Reactive Streams frameworks (like Reactor, Mutiny, Akka Streams) for concurrent programming in Java?](#how-do-you-choose-between-using-virtual-threads-project-loom-and-reactive-streams-frameworks-like-reactor-mutiny-akka-streams-for-concurrent-programming-in-java)
 
 ## What is usage of wait/notify methods?
@@ -205,6 +209,41 @@ runAsync / supplyAsync are the main methods
 Long story short: they use compare and swap algorithm.
 ###### Relative links:
 - https://www.baeldung.com/java-atomic-variables
+
+## What is the difference between AtomicInteger and synchronized in Java, and when should you use each?
+The core difference is that AtomicInteger uses CAS for lock-free, thread-safe operations on a single variable, while synchronized uses locks to guard blocks of code or methods.
+
+- Use `AtomicInteger` for simple atomic operations (like counters).
+- Use `synchronized` to protect compound actions or multiple variables.
+###### Relative links:
+- https://www.geeksforgeeks.org/java/difference-between-atomic-volatile-and-synchronized-in-java/
+
+## What do virtual threads mean?
+Virtual threads are lightweight threads managed by the JVM rather than the operating system. They decouple Java threads from OS platform threads, allowing many virtual threads to run on a single OS thread. When a virtual thread encounters a blocking operation (e.g., I/O), it's unmounted so the underlying OS thread can execute another virtual thread, dramatically improving resource utilization. Virtual threads are ideal for high-throughput, I/O-heavy tasks but not for CPU-intensive work. They make the traditional "one thread per request" model scalable without complex asynchronous code.
+###### Relative links:
+- https://docs.oracle.com/en/java/javase/25/core/virtual-threads.html
+
+## What does pinning mean for virtual threads, which cases introduce it, and how has the behavior changed across Java versions?
+Pinning is when a virtual thread cannot unmount from its OS-backed platform thread during a blocking operation. Normally virtual threads unmount (freeing the carrier) on I/O. Pinning defeats this scalability mechanism, causing the carrier to block with it.
+
+Main pinning cases in Java 21-23:
+- The virtual thread runs code inside a `synchronized` block or method
+- The virtual thread runs a native method or a foreign function
+
+Starting from Java 24, pinning inside `synchronized` is eliminated via JEP-491. Virtual threads can now unmount, release carriers, and remount inside `synchronized`.
+###### Relative links:
+- https://docs.oracle.com/en/java/javase/25/core/virtual-threads.html
+- https://docs.oracle.com/en/java/javase/21/core/virtual-threads.html
+- https://openjdk.org/jeps/491
+
+## What are the best practices for working with ThreadLocal when using virtual threads?
+The primary best practice when working with virtual threads is to minimize or entirely replace `ThreadLocal` usage, as its traditional benefits are inverted in this concurrency model.
+1. Prefer `ScopedValue`
+2. Avoid `ThreadLocal` for caching
+3. Always clean up
+4. Avoid virtual thread pooling
+###### Relative links:
+- https://openjdk.org/jeps/444#Thread-local-variables
 
 ## How do you choose between using Virtual Threads (Project Loom) and Reactive Streams frameworks (like Reactor, Mutiny, Akka Streams) for concurrent programming in Java?
 For new projects, consider virtual threads for simpler code unless you specifically need reactive features like backpressure or are using non-blocking libraries. For existing reactive applications, continue with reactive unless complexity is causing issues.

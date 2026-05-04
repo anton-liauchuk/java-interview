@@ -4,6 +4,7 @@
 - [What is Serverless](#what-is-serverless)
 - [What is the difference between native code, machine code and assembly code?](#what-is-the-difference-between-native-code-machine-code-and-assembly-code)
 - [What is the difference between sharding and partitioning for databases?](#what-is-the-difference-between-sharding-and-partitioning-for-databases)
+- [What is the key difference between 2-phase commit and saga for distributed transactions?](#what-is-the-key-difference-between-2-phase-commit-and-saga-for-distributed-transactions)
 
 ## What are the differences between monolith and microservices? (Performance/Deployability/Failure impact and etc)
 ###### Relative links:
@@ -33,3 +34,9 @@ Like many trends in software, there’s no one clear view of what Serverless is.
 ## What is the difference between sharding and partitioning for databases?
 ###### Relative links:
 - https://hazelcast.com/glossary/sharding/
+
+## What is the key difference between 2-phase commit and saga for distributed transactions?
+2PC uses a blocking coordinator and locks resources to ensure atomicity (all-or-nothing). Saga uses compensating actions to handle failures without locks, offering higher availability but eventual consistency.
+###### Relative links:
+- https://www.geeksforgeeks.org/system-design/saga-design-pattern/
+- https://www.baeldung.com/cs/two-phase-commit-vs-saga-pattern
