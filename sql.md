@@ -1,6 +1,8 @@
 #SQL
 - [What is having in sql?](#what-is-having-in-sql)
 - [What are the possible issues with indexes?](#what-are-the-possible-issues-with-indexes)
+- [When using a composite index, under what conditions will the database use it for a query that filters only on a subset of the indexed columns?](#when-using-a-composite-index-under-what-conditions-will-the-database-use-it-for-a-query-that-filters-only-on-a-subset-of-the-indexed-columns)
+- [How to verify that an index was used in a query?](#how-to-verify-that-an-index-was-used-in-a-query)
 - [Sql works very slowly, what are the possible improvements (the database is MySQL, for example)?](#sql-works-very-slowly-what-are-the-possible-improvements-the-database-is-mysql-for-example)
 - [NoSQL vs SQL Databases](#nosql-vs-sql-databases)
 - [OLAP vs OLTP Databases](#olap-vs-oltp-databases)
@@ -22,6 +24,14 @@ Although indexes are intended to enhance a database's performance, there are tim
 + Columns that are frequently manipulated should not be indexed.
 ###### Relative links:
 + https://www.tutorialspoint.com/sql/sql-indexes.htm
+
+## When using a composite index, under what conditions will the database use it for a query that filters only on a subset of the indexed columns?
+The database uses the composite index only if the query filters on a leftmost prefix of the index columns. If the leftmost column is omitted, the index is typically not used for efficient seeks (though some databases offer skip‑scan optimization).
+###### Relative links:
+- https://oneuptime.com/blog/post/2026-01-30-composite-index-design/view
+
+## How to verify that an index was used in a query?
+The standard way is to examine the query's execution plan, which reveals the actual operations the database performs. The primary tool is the `EXPLAIN` command, which you prepend to your query.
 
 ## Sql works very slowly, what are the possible improvements (the database is MySQL, for example)?
 1. Index All Columns Used in 'where', 'order by', and 'group by' Clauses

@@ -7,6 +7,8 @@
 - [Possible Performance Tools for Java?](#possible-performance-tools-for-java)
 - [What is java profiler?](#what-is-java-profiler)
 - [What is stop the world?](#what-is-stop-the-world)
+- [What is the default garbage collector?](#what-is-the-default-garbage-collector)
+- [How does G1 GC work?](#how-does-g1-gc-work)
 - [What is the difference between int, Integer and AtomicInteger?](#what-is-the-difference-between-int-integer-and-atomicinteger)
 - [How does post-increment work for wrapper classes (for example, Integer)?](#how-does-post-increment-work-for-wrapper-classes-for-example-integer)
 - [What can you say about interface constants?](#what-can-you-say-about-interface-constants)
@@ -101,6 +103,22 @@ A Java Profiler is a tool that monitors Java bytecode constructs and operations 
 Stop-the-world will occur no matter which GC algorithm you choose. Stop-the-world means that the JVM is stopping the application from running to execute a GC. When stop-the-world occurs, every thread except for the threads needed for the GC will stop their tasks. The interrupted tasks will resume only after the GC task has completed. GC tuning often means reducing this stop-the-world time.
 ###### Relative links:
 + https://stackoverflow.com/questions/16695874/why-does-the-jvm-full-gc-need-to-stop-the-world
+
+## What is the default garbage collector?
+The default depends on whether the JVM classifies the machine as server‑class or client‑class.
+
+- Server‑class machine - G1. In modern versions, this means the VM detects more than two processors and a heap size >= 1792 MB. Previously, in Java 8, the threshold was slightly higher at 2 GB.
+- Client‑class machine (does not meet the above) - Serial GC.
+
+This ergonomic selection has been in place since Java 9. However, JEP 523 (currently a Candidate JEP) aims to make G1 the default in all environments in a future JDK release, eliminating the client‑class distinction.
+###### Relative links:
+- https://docs.oracle.com/en/java/javase/25/gctuning/ergonomics.html#GUID-DA88B6A6-AF89-4423-95A6-BBCBD9FAE781
+- https://openjdk.org/jeps/523
+
+## How does G1 GC work?
+G1 divides the heap into small regions, then concurrently marks live objects, identifies regions with the most garbage, and evacuates/compacts live objects from those regions during short, predictable pauses.
+###### Relative links:
+- https://docs.oracle.com/en/java/javase/25/gctuning/garbage-first-g1-garbage-collector1.html
 
 ## What is the difference between int, Integer and AtomicInteger?
 + ***int*** is a primitive type. Variables of type int store the actual binary value for the integer you want to represent. int.parseInt("1") doesn't make sense because int is not a class and therefore doesn't have any methods.

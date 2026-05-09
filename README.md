@@ -31,6 +31,8 @@
 - [Possible Performance Tools for Java?](core.md#possible-performance-tools-for-java)
 - [What is java profiler?](core.md#what-is-java-profiler)
 - [What is stop the world?](core.md#what-is-stop-the-world)
+- [What is the default garbage collector?](core.md#what-is-the-default-garbage-collector)
+- [How does G1 GC work?](core.md#how-does-g1-gc-work)
 - [What is the difference between int, Integer and AtomicInteger?](core.md#what-is-the-difference-between-int-integer-and-atomicinteger)
 - [How does post-increment work for wrapper classes (for example, Integer)?](core.md#how-does-post-increment-work-for-wrapper-classes-for-example-integer)
 - [What can you say about interface constants?](core.md#what-can-you-say-about-interface-constants)
@@ -299,6 +301,8 @@
 ## SQL
 - [What is having in sql?](sql.md#what-is-having-in-sql)
 - [What are the possible issues with indexes?](sql.md#what-are-the-possible-issues-with-indexes)
+- [When using a composite index, under what conditions will the database use it for a query that filters only on a subset of the indexed columns?](sql.md#when-using-a-composite-index-under-what-conditions-will-the-database-use-it-for-a-query-that-filters-only-on-a-subset-of-the-indexed-columns)
+- [How to verify that an index was used in a query?](sql.md#how-to-verify-that-an-index-was-used-in-a-query)
 - [Sql works very slowly, what are the possible improvements (the database is MySQL, for example)?](sql.md#sql-works-very-slowly-what-are-the-possible-improvements-the-database-is-mysql-for-example)
 - [NoSQL vs SQL Databases](sql.md#nosql-vs-sql-databases)
 - [OLAP vs OLTP Databases](sql.md#olap-vs-oltp-databases)
