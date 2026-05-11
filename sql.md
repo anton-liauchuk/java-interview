@@ -3,6 +3,7 @@
 - [What are the possible issues with indexes?](#what-are-the-possible-issues-with-indexes)
 - [When using a composite index, under what conditions will the database use it for a query that filters only on a subset of the indexed columns?](#when-using-a-composite-index-under-what-conditions-will-the-database-use-it-for-a-query-that-filters-only-on-a-subset-of-the-indexed-columns)
 - [How to verify that an index was used in a query?](#how-to-verify-that-an-index-was-used-in-a-query)
+- [Does it make sense to add an index on a column with a highly skewed distribution to selectively query the minority value?](#does-it-make-sense-to-add-an-index-on-a-column-with-a-highly-skewed-distribution-to-selectively-query-the-minority-value)
 - [Sql works very slowly, what are the possible improvements (the database is MySQL, for example)?](#sql-works-very-slowly-what-are-the-possible-improvements-the-database-is-mysql-for-example)
 - [NoSQL vs SQL Databases](#nosql-vs-sql-databases)
 - [OLAP vs OLTP Databases](#olap-vs-oltp-databases)
@@ -32,6 +33,11 @@ The database uses the composite index only if the query filters on a leftmost pr
 
 ## How to verify that an index was used in a query?
 The standard way is to examine the query's execution plan, which reveals the actual operations the database performs. The primary tool is the `EXPLAIN` command, which you prepend to your query.
+
+## Does it make sense to add an index on a column with a highly skewed distribution to selectively query the minority value?
+Partial indexes are a powerful tool for optimizing database performance when you consistently query a subset of your data.
+###### Relative links:
+- https://oneuptime.com/blog/post/2026-01-30-partial-index-design/view
 
 ## Sql works very slowly, what are the possible improvements (the database is MySQL, for example)?
 1. Index All Columns Used in 'where', 'order by', and 'group by' Clauses

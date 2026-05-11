@@ -5,7 +5,7 @@
 - [What are isolation levels?](#what-are-isolation-levels)
 - [What are the possible issues in the case of parallel access by transactions?](#what-are-the-possible-issues-in-the-case-of-parallel-access-by-transactions)
 - [What are possible options for implementing transactions in microservices](#what-are-possible-options-for-implementing-transactions-in-microservices)
-- [What is the difference between optimistic and pessimistic locking?](#what-is-the-difference-between-optimistic-and-pessimistic-locking)
+- [What is the difference between optimistic and pessimistic locking, and which should you use when?](#what-is-the-difference-between-optimistic-and-pessimistic-locking-and-which-should-you-use-when)
 - [Is it possible to use transaction for select statements?](#is-it-possible-to-use-transaction-for-select-statements)
 - [What locks are made in the case of using Repeatable Read isolation level?](#what-locks-are-made-in-the-case-of-using-repeatable-read-isolation-level)
 
@@ -55,11 +55,11 @@ A **transaction** is a sequence of operations performed (using one or more SQL s
 + https://habr.com/ru/company/nixsolutions/blog/321686/
 + https://habr.com/ru/company/nixsolutions/blog/322214/
 
-## What is the difference between optimistic and pessimistic locking?
-+ ***Optimistic Locking*** is a strategy where you read a record, take note of a version number (other methods to do this involve dates, timestamps or checksums/hashes) and check that the version hasn't changed before you write the record back. When you write the record back you filter the update on the version to make sure it's atomic. (i.e. hasn't been updated between when you check the version and write the record to the disk) and update the version in one hit.
-+ ***Pessimistic Locking*** is when you lock the record for your exclusive use until you have finished with it. It has much better integrity than optimistic locking but requires you to be careful with your application design to avoid Deadlocks. To use pessimistic locking you need either a direct connection to the database (as would typically be the case in a two tier client server application) or an externally available transaction ID that can be used independently of the connection.
+## What is the difference between optimistic and pessimistic locking, and which should you use when?
+- Pessimistic locking assumes conflicts will occur and locks the data before any changes are made. It's better for data integrity but can hurt performance.
+- Optimistic locking assumes conflicts are rare. Optimistic locking is better for efficiency and performance.
 ###### Relative links:
-+ https://stackoverflow.com/questions/129329/optimistic-vs-pessimistic-locking
+- https://bytebytego.com/guides/pessimistic-vs-optimistic-locking/
 
 ## Is it possible to use transaction for select statements?
 In a highly concurrent application it could (theoretically) happen that data you've read in the first select is modified before the other selects are executed.

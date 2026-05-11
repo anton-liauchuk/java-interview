@@ -8,6 +8,7 @@
 - [Hibernate best practice?](#hibernate-best-practice)
 - [How to Define and Use a @NamedEntityGraph?](#how-to-define-and-use-a-namedentitygraph)
 - [Is it required to implement equals and hashcode on JPA entities?](#is-it-required-to-implement-equals-and-hashcode-on-jpa-entities)
+- [Why is Lombok's @Data annotation dangerous for Java entities?](#why-is-lomboks-data-annotation-dangerous-for-java-entities)
 - [How lazy loading works in hibernate?](#how-lazy-loading-works-in-hibernate)
 - [Optimal queries in Hibernate?](#optimal-queries-in-hibernate)
 - [Possible enum mapping solutions?](#possible-enum-mapping-solutions)
@@ -72,6 +73,14 @@ The Hibernate documentation lists the situations when these two methods are requ
 - https://vladmihalcea.com/how-to-implement-equals-and-hashcode-using-the-jpa-entity-identifier/
 - https://vladmihalcea.com/hibernate-facts-equals-and-hashcode/
 - https://docs.hibernate.org/stable/orm/userguide/html_single/#mapping-model-pojo-equalshashcode
+
+## Why is Lombok's @Data annotation dangerous for Java entities?
+`@Data` is dangerous for JPA entities because it generates:
+- `toString()` with bidirectional references → `StackOverflowError`
+- `equals()`/`hashCode()` using all fields → breaks with lazy loading and generated IDs (hash changes after persist)
+- No-args constructor required by JPA is missing
+###### Relative links:
+- https://jpa-buddy.com/blog/lombok-and-jpa-what-may-go-wrong/
 
 ## Scripts vs table generation from entity annotations?
 ###### Relative links:
