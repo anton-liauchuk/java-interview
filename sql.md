@@ -1,4 +1,4 @@
-#SQL
+# SQL
 - [What is having in sql?](#what-is-having-in-sql)
 - [What are the possible issues with indexes?](#what-are-the-possible-issues-with-indexes)
 - [When using a composite index, under what conditions will the database use it for a query that filters only on a subset of the indexed columns?](#when-using-a-composite-index-under-what-conditions-will-the-database-use-it-for-a-query-that-filters-only-on-a-subset-of-the-indexed-columns)
@@ -7,6 +7,8 @@
 - [Sql works very slowly, what are the possible improvements (the database is MySQL, for example)?](#sql-works-very-slowly-what-are-the-possible-improvements-the-database-is-mysql-for-example)
 - [NoSQL vs SQL Databases](#nosql-vs-sql-databases)
 - [OLAP vs OLTP Databases](#olap-vs-oltp-databases)
+- [What is Multi-Version Concurrency Control (MVCC)?](#what-is-multi-version-concurrency-control-mvcc)
+- [What is the difference between keyset and offset pagination?](#what-is-the-difference-between-keyset-and-offset-pagination)
 
 ## What is having in sql?
 + HAVING filters records that work on summarized GROUP BY results.
@@ -56,5 +58,16 @@ Partial indexes are a powerful tool for optimizing database performance when you
 ## OLAP vs OLTP Databases
 ###### Relative links:
 - https://www.ibm.com/cloud/blog/olap-vs-oltp
+
+## What is Multi-Version Concurrency Control (MVCC)?
+MVCC is a database technique that creates a new version of a record instead of overwriting it when updated. This lets readers view the old version while writers update a new version simultaneously without any read/write blocking. It uses timestamps and transaction IDs to maintain consistency, ensuring no transaction ever waits to read an object. The result is increased concurrency and minimized read delays.
+###### Relative links:
+- https://www.geeksforgeeks.org/dbms/what-is-multi-version-concurrency-control-mvcc-in-dbms/
+
+## What is the difference between keyset and offset pagination?
+- Offset pagination uses `OFFSET` and `LIMIT`. Performance degrades linearly (O(n)) as pages get deeper, and results can be inconsistent if data changes between page loads.
+- Keyset pagination uses a `WHERE` clause on a unique, indexed column. It provides consistent O(1) performance regardless of dataset size and is immune to data changes, but it does not support jumping to random pages.
+###### Relative links:
+- https://www.stacksync.com/blog/keyset-cursors-postgres-pagination-fast-accurate-scalable
 
 [Home Page](README.md)

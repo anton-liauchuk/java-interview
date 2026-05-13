@@ -308,6 +308,8 @@
 - [Sql works very slowly, what are the possible improvements (the database is MySQL, for example)?](sql.md#sql-works-very-slowly-what-are-the-possible-improvements-the-database-is-mysql-for-example)
 - [NoSQL vs SQL Databases](sql.md#nosql-vs-sql-databases)
 - [OLAP vs OLTP Databases](sql.md#olap-vs-oltp-databases)
+- [What is Multi-Version Concurrency Control (MVCC)?](sql.md#what-is-multi-version-concurrency-control-mvcc)
+- [What is the difference between keyset and offset pagination?](sql.md#what-is-the-difference-between-keyset-and-offset-pagination)
 
 ## Test
 - [What is the difference between integration and unit tests?](test.md#what-is-the-difference-between-integration-and-unit-tests)
@@ -345,3 +347,12 @@
 
 ## System Design
 - [Design a Messenger](systemdesign.md#design-a-messenger)
+
+## Kafka
+- [What are delivery guarantees in Kafka?](kafka.md#what-are-delivery-guarantees-in-kafka)
+- [What do in-sync replicas mean in Kafka, and what are the related configs?](kafka.md#what-do-in-sync-replicas-mean-in-kafka-and-what-are-the-related-configs)
+- [What happens if a consumer doesn't process a message in time?](kafka.md#what-happens-if-a-consumer-doesnt-process-a-message-in-time)
+- [If the number of consumers is greater than the number of partitions, what will happen?](kafka.md#if-the-number-of-consumers-is-greater-than-the-number-of-partitions-what-will-happen)
+- [There is increasing Kafka lag, but the service works as expected. What are possible options to solve the issue?](kafka.md#there-is-increasing-kafka-lag-but-the-service-works-as-expected-what-are-possible-options-to-solve-the-issue)
+- [Is it possible to change the number of partitions while downstream components are processing messages?](kafka.md#is-it-possible-to-change-the-number-of-partitions-while-downstream-components-are-processing-messages)
+- [How to calculate the optimal number of partitions per Kafka topic?](kafka.md#how-to-calculate-the-optimal-number-of-partitions-per-kafka-topic)
