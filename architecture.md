@@ -5,6 +5,7 @@
 - [What is the difference between native code, machine code and assembly code?](#what-is-the-difference-between-native-code-machine-code-and-assembly-code)
 - [What is the difference between sharding and partitioning for databases?](#what-is-the-difference-between-sharding-and-partitioning-for-databases)
 - [What is the key difference between 2-phase commit and saga for distributed transactions?](#what-is-the-key-difference-between-2-phase-commit-and-saga-for-distributed-transactions)
+- [When is server-side rendering technology useful?](#when-is-server-side-rendering-technology-useful)
 
 ## What are the differences between monolith and microservices? (Performance/Deployability/Failure impact and etc)
 ###### Relative links:
@@ -40,3 +41,10 @@ Like many trends in software, there’s no one clear view of what Serverless is.
 ###### Relative links:
 - https://www.geeksforgeeks.org/system-design/saga-design-pattern/
 - https://www.baeldung.com/cs/two-phase-commit-vs-saga-pattern
+
+## When is server-side rendering technology useful?
+SSR is particularly useful when your primary goals are fast initial page loads and strong search engine optimization. This makes it an excellent choice for content-driven web applications, e-commerce platforms, and any public-facing site where discoverability and user experience are critical. By rendering the full HTML on the server, SSR ensures that users see content immediately and that search engine crawlers can easily index the page without needing to execute complex JavaScript.
+###### Relative links:
+- https://developers.google.com/solutions/content-driven/hosting/rendering?hl=en
+
+[Home Page](README.md)

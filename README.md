@@ -21,6 +21,8 @@
 - [RabbitMQ](#rabbitmq)
 - [GraalVM](#graalvm)
 - [System Design](#system-design)
+- [Kafka](#kafka)
+- [Kubernetes](#kubernetes)
 
 ## Core
 - [What is the difference between JDK and JRE?](core.md#what-is-the-difference-between-jdk-and-jre)
@@ -270,6 +272,7 @@
 - [What is the difference between native code, machine code and assembly code?](architecture.md#what-is-the-difference-between-native-code-machine-code-and-assembly-code)
 - [What is the difference between sharding and partitioning for databases?](architecture.md#what-is-the-difference-between-sharding-and-partitioning-for-databases)
 - [What is the key difference between 2-phase commit and saga for distributed transactions?](architecture.md#what-is-the-key-difference-between-2-phase-commit-and-saga-for-distributed-transactions)
+- [When is server-side rendering technology useful?](architecture.md#when-is-server-side-rendering-technology-useful)
 
 ## REST
 - [What is rest architecture? What are the requirements?](rest.md#what-is-rest-architecture-what-are-the-requirements)
@@ -356,3 +359,6 @@
 - [There is increasing Kafka lag, but the service works as expected. What are possible options to solve the issue?](kafka.md#there-is-increasing-kafka-lag-but-the-service-works-as-expected-what-are-possible-options-to-solve-the-issue)
 - [Is it possible to change the number of partitions while downstream components are processing messages?](kafka.md#is-it-possible-to-change-the-number-of-partitions-while-downstream-components-are-processing-messages)
 - [How to calculate the optimal number of partitions per Kafka topic?](kafka.md#how-to-calculate-the-optimal-number-of-partitions-per-kafka-topic)
+
+## Kubernetes
+- [What are the possible types of deployment? Provide a short description for each type.](kubernetes.md#what-are-the-possible-types-of-deployment-provide-a-short-description-for-each-type)

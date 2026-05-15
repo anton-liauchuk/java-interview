@@ -5,7 +5,7 @@
 Key points:
 - Websocket for notifications
 - Queue for reliable message delivery
-- NoSQL db for fast access to messages###### Relative links:
+- NoSQL db for fast access to messages
 - Relational DB for user info
 - Object storage (S3) for media files
 - Fast in-memory storage (like Redis) for implementing presence
