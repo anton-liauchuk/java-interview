@@ -311,6 +311,7 @@
 - [Sql works very slowly, what are the possible improvements (the database is MySQL, for example)?](sql.md#sql-works-very-slowly-what-are-the-possible-improvements-the-database-is-mysql-for-example)
 - [NoSQL vs SQL Databases](sql.md#nosql-vs-sql-databases)
 - [OLAP vs OLTP Databases](sql.md#olap-vs-oltp-databases)
+- [By which instruments of DB is ACID supported?](sql.md#by-which-instruments-of-db-is-acid-supported)
 - [What is Multi-Version Concurrency Control (MVCC)?](sql.md#what-is-multi-version-concurrency-control-mvcc)
 - [What is the difference between keyset and offset pagination?](sql.md#what-is-the-difference-between-keyset-and-offset-pagination)
 

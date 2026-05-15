@@ -7,6 +7,7 @@
 - [Sql works very slowly, what are the possible improvements (the database is MySQL, for example)?](#sql-works-very-slowly-what-are-the-possible-improvements-the-database-is-mysql-for-example)
 - [NoSQL vs SQL Databases](#nosql-vs-sql-databases)
 - [OLAP vs OLTP Databases](#olap-vs-oltp-databases)
+- [By which instruments of DB is ACID supported?](#by-which-instruments-of-db-is-acid-supported)
 - [What is Multi-Version Concurrency Control (MVCC)?](#what-is-multi-version-concurrency-control-mvcc)
 - [What is the difference between keyset and offset pagination?](#what-is-the-difference-between-keyset-and-offset-pagination)
 
@@ -58,6 +59,14 @@ Partial indexes are a powerful tool for optimizing database performance when you
 ## OLAP vs OLTP Databases
 ###### Relative links:
 - https://www.ibm.com/cloud/blog/olap-vs-oltp
+
+## By which instruments of DB is ACID supported?
+- Write-Ahead Logging – records changes before committing (Atomicity, Durability).
+- Checkpointing – periodically flushes dirty pages to disk to speed recovery (Durability).
+- Locks / MVCC – controls concurrent access to data (Isolation).
+- Constraints & Triggers – enforce data integrity rules (Consistency).
+###### Relative links:
+- https://dev.to/jaiminbariya/implementation-of-acid-transaction-in-database-44nc
 
 ## What is Multi-Version Concurrency Control (MVCC)?
 MVCC is a database technique that creates a new version of a record instead of overwriting it when updated. This lets readers view the old version while writers update a new version simultaneously without any read/write blocking. It uses timestamps and transaction IDs to maintain consistency, ensuring no transaction ever waits to read an object. The result is increased concurrency and minimized read delays.
