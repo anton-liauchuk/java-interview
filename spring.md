@@ -19,7 +19,7 @@
 - [What are the possible ways of configurations in Spring?](#what-are-the-possible-ways-of-configurations-in-spring)
 - [What is the lookup method?](#what-is-the-lookup-method)
 - [What is declarative transaction in Spring?](#what-is-declarative-transaction-in-spring)
-- [Are there any potential differences between the declarative and programmatic ways of using transactions in Spring? Which is preferable?](#are-there-any-potential-differences-between-the-declarative-and-programmatic-ways-of-using-transactions-in-spring-which-is-preferable)
+- [Are there any potential differences between the declarative way (using @Transactional annotation) and the programmatic way (using TransactionTemplate) of using transactions in Spring? Which is preferable?](#are-there-any-potential-differences-between-the-declarative-way-using-transactional-annotation-and-the-programmatic-way-using-transactiontemplate-of-using-transactions-in-spring-which-is-preferable)
 - [What are the types of proxy in Spring? Where does each type used?](#what-are-the-types-of-proxy-in-spring-where-does-each-type-used)
 - [What creates a proxy?](#what-creates-a-proxy)
 - [What is the self-invocation problem with Spring AOP proxies, and how does it affect features like @Transactional?](#what-is-the-self-invocation-problem-with-spring-aop-proxies-and-how-does-it-affect-features-like-transactional)
@@ -183,12 +183,9 @@ The getter method will return us the reference that is been set but suppose you 
 ###### Relative links:
 + https://stackoverflow.com/questions/11222103/declarative-or-programmatic-transaction-in-spring
 
-## Are there any potential differences between the declarative and programmatic ways of using transactions in Spring? Which is preferable?
-The declarative way is more recommended because it separates transaction management from business logic. One difference
-is transaction scope: the programmatic way gives the ability to define a dedicated part of the code for a transaction.
-Another difference, as a continuation of the previous point, is exception handling. In the declarative way, by default,
-only unchecked exceptions cause a rollback. In the programmatic way, you must explicitly call `setRollbackOnly()`, and
-exceptions outside the transaction block do not affect the transaction.
+## Are there any potential differences between the declarative way (using @Transactional annotation) and the programmatic way (using TransactionTemplate) of using transactions in Spring? Which is preferable?
+The declarative way is more recommended because it separates transaction management from business logic. One difference is transaction scope: the programmatic way gives you the ability to define a dedicated part of the code for a transaction. 
+Another difference, as a continuation of the previous point, is exception handling. In the programmatic way, exceptions outside the transaction block do not affect the transaction.
 ###### Relative links:
 + https://docs.spring.io/spring-framework/reference/data-access/transaction/tx-decl-vs-prog.html
 + https://docs.spring.io/spring-framework/reference/data-access/transaction/declarative/rolling-back.html
