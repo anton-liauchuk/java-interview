@@ -7,6 +7,7 @@
 - [What are the concurrent collections?](#what-are-the-concurrent-collections)
 - [What is CopyOnWriteArrayList?](#what-is-copyonwritearraylist)
 - [What can you say about ConcurrentHashMap?](#what-can-you-say-about-concurrenthashmap)
+- [How did the internal implementation of ConcurrentHashMap change before and after Java 8?](#how-did-the-internal-implementation-of-concurrenthashmap-change-before-and-after-java-8)
 - [What are the benefits of using ConcurrentHashMap over HashTable?](#what-are-the-benefits-of-using-concurrenthashmap-over-hashtable)
 - [What is the time complexity of get() operation in ConcurrentHashMap?](#what-is-the-time-complexity-of-get-operation-in-concurrenthashmap)
 - [What is the synchronized access?](#what-is-the-synchronized-access)
@@ -77,6 +78,12 @@ A hash table supporting full concurrency of retrievals and high expected concurr
 + https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentHashMap.html
 + https://habr.com/ru/post/132884/
 + https://tomaszjarosz.dev/blog/java-collections-part-18-concurrenthashmap-internals
+
+## How did the internal implementation of ConcurrentHashMap change before and after Java 8?
+Before Java 8, `ConcurrentHashMap` used a segment lock design where the map was divided into segments, each protected by a `ReentrantLock`. This offered moderate concurrency but suffered from fixed lock granularity, higher memory overhead, and relatively complex expansion.
+Since Java 8, the implementation has been completely overhauled, replacing segments with an array of nodes combined with CAS and `synchronized` only where necessary. When a bucket is empty, insertion is done via lock‑free CAS; if a collision occurs, only the specific bucket is locked with `synchronized`. Additionally, long chains now convert to red‑black trees for more efficient searches.
+###### Relative links:
+- https://javaconceptoftheday.com/how-concurrenthashmap-works-internally-after-java-8/
 
 ## What are the benefits of using ConcurrentHashMap over HashTable?
 ConcurrentHashMap uses multiple buckets to store data. This avoids read locks and greatly improves performance over a HashTable. Both are thread safe, but there are obvious performance wins with ConcurrentHashMap.

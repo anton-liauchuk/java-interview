@@ -6,6 +6,7 @@
 - [Does it make sense to add an index on a column with a highly skewed distribution to selectively query the minority value?](#does-it-make-sense-to-add-an-index-on-a-column-with-a-highly-skewed-distribution-to-selectively-query-the-minority-value)
 - [Sql works very slowly, what are the possible improvements (the database is MySQL, for example)?](#sql-works-very-slowly-what-are-the-possible-improvements-the-database-is-mysql-for-example)
 - [NoSQL vs SQL Databases](#nosql-vs-sql-databases)
+- [What are the main types of NoSQL databases, and when is each type most useful?](#what-are-the-main-types-of-nosql-databases-and-when-is-each-type-most-useful)
 - [OLAP vs OLTP Databases](#olap-vs-oltp-databases)
 - [By which instruments of DB is ACID supported?](#by-which-instruments-of-db-is-acid-supported)
 - [What is Multi-Version Concurrency Control (MVCC)?](#what-is-multi-version-concurrency-control-mvcc)
@@ -55,6 +56,15 @@ Partial indexes are a powerful tool for optimizing database performance when you
 ## NoSQL vs SQL Databases
 ###### Relative links:
 - https://www.mongodb.com/nosql-explained/nosql-vs-sql
+
+## What are the main types of NoSQL databases, and when is each type most useful?
+The four primary NoSQL database types are optimized for specific use cases:
+- Key-value: Ideal for fast lookups, session management, real-time bidding, and shopping carts. Examples: Redis, DynamoDB.
+- Document: Best for product catalogs, user profiles, and content management. Examples: MongoDB, Couchbase.
+- Wide-column / Column-family: Suited for time-series data, real-time analytics (e.g., Sum, Count, Avg), IoT, and recommendation engines. Examples: Cassandra, HBase.
+- Graph: Optimal for social networks, fraud detection, logistics, and recommendation engines. Examples: Neo4j, JanusGraph.
+###### Relative links:
+- https://docs.aws.amazon.com/whitepapers/latest/choosing-an-aws-nosql-database/types-of-nosql-databases.html
 
 ## OLAP vs OLTP Databases
 ###### Relative links:
